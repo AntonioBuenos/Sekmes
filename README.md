@@ -1,4 +1,4 @@
-# Sėkmės: žodynas 🇱🇹🇷🇺
+# Sėkmės: žodynas 🇱🇹
 
 **Sėkmės: žodynas** is a native Android application designed for Russian-speaking learners of the Lithuanian language. It provides a structured way to learn vocabulary across 21 essential themes through interactive quizzes and audio pronunciation.
 
