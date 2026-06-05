@@ -21,3 +21,8 @@ This project is a migration of the "Sėkmės: žodynas" Lithuanian-Russian vocab
 - [x] Theme Selection UI
 - [x] Quiz Logic & Distractor Generation
 - [x] Results & Mistake Tracking
+- [x] GitHub Migration & v1.0 Release
+
+## Releases
+
+- **v1.0**: Initial release with all 21 themes, audio support, and multi-colored UI.
