@@ -1,7 +1,10 @@
 package com.example.sekmeszodynas
 
+import android.annotation.SuppressLint
+import android.content.res.Resources
 import android.os.Bundle
 import androidx.activity.ComponentActivity
+import androidx.activity.compose.BackHandler
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.*
@@ -11,16 +14,19 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import androidx.compose.runtime.saveable.Saver
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
-import kotlinx.coroutines.*
+import kotlinx.coroutines.delay
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.core.net.toUri
 import androidx.media3.common.MediaItem
+import androidx.media3.common.Player
 import androidx.media3.exoplayer.ExoPlayer
 import com.example.sekmeszodynas.ui.theme.SekmesZodynasTheme
 
@@ -34,13 +40,100 @@ sealed class Screen {
     object AudioSelection : Screen()
 }
 
+private val ScreenSaver = Saver<Screen, Bundle>(
+    save = { screen ->
+        Bundle().apply {
+            when (screen) {
+                Screen.Dashboard -> putString("type", "dashboard")
+                Screen.ThemeSelectionForQuiz -> putString("type", "quiz_themes")
+                Screen.ThemeSelectionForDictionary -> putString("type", "dictionary_themes")
+                is Screen.Quiz -> {
+                    putString("type", "quiz")
+                    putString("theme_id", screen.themeId)
+                }
+                is Screen.Dictionary -> {
+                    putString("type", "dictionary")
+                    putString("theme_id", screen.themeId)
+                }
+                is Screen.Results -> {
+                    putString("type", "results")
+                    putInt("score", screen.score)
+                    putInt("total", screen.total)
+                    putStringArrayList("mistake_ids", ArrayList(screen.mistakes.keys))
+                    putIntegerArrayList("mistake_counts", ArrayList(screen.mistakes.values))
+                }
+                Screen.AudioSelection -> putString("type", "audio")
+            }
+        }
+    },
+    restore = { state ->
+        when (state.getString("type")) {
+            "quiz_themes" -> Screen.ThemeSelectionForQuiz
+            "dictionary_themes" -> Screen.ThemeSelectionForDictionary
+            "quiz" -> Screen.Quiz(state.getString("theme_id").orEmpty())
+            "dictionary" -> Screen.Dictionary(state.getString("theme_id").orEmpty())
+            "results" -> {
+                val ids = state.getStringArrayList("mistake_ids").orEmpty()
+                val counts = state.getIntegerArrayList("mistake_counts").orEmpty()
+                Screen.Results(
+                    score = state.getInt("score"),
+                    total = state.getInt("total"),
+                    mistakes = ids.zip(counts).toMap()
+                )
+            }
+            "audio" -> Screen.AudioSelection
+            else -> Screen.Dashboard
+        }
+    }
+)
+
+private val StringSetSaver = Saver<Set<String>, ArrayList<String>>(
+    save = { ArrayList(it) },
+    restore = { it.toSet() }
+)
+
+private val StringListSaver = Saver<List<String>, ArrayList<String>>(
+    save = { ArrayList(it) },
+    restore = { it.toList() }
+)
+
+private val StringIntMapSaver = Saver<Map<String, Int>, Bundle>(
+    save = { values ->
+        Bundle().apply {
+            putStringArrayList("keys", ArrayList(values.keys))
+            putIntegerArrayList("values", ArrayList(values.values))
+        }
+    },
+    restore = { state ->
+        state.getStringArrayList("keys").orEmpty()
+            .zip(state.getIntegerArrayList("values").orEmpty())
+            .toMap()
+    }
+)
+
+private fun previousScreen(screen: Screen): Screen = when (screen) {
+    Screen.Dashboard -> Screen.Dashboard
+    Screen.ThemeSelectionForQuiz,
+    Screen.ThemeSelectionForDictionary,
+    Screen.AudioSelection,
+    is Screen.Results -> Screen.Dashboard
+    is Screen.Quiz -> Screen.ThemeSelectionForQuiz
+    is Screen.Dictionary -> Screen.ThemeSelectionForDictionary
+}
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
             SekmesZodynasTheme {
-                var currentScreen by remember { mutableStateOf<Screen>(Screen.Dashboard) }
+                var currentScreen by rememberSaveable(stateSaver = ScreenSaver) {
+                    mutableStateOf<Screen>(Screen.Dashboard)
+                }
+
+                BackHandler(enabled = currentScreen != Screen.Dashboard) {
+                    currentScreen = previousScreen(currentScreen)
+                }
 
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Box(modifier = Modifier.padding(innerPadding)) {
@@ -254,39 +347,49 @@ fun QuizScreen(
     onQuizFinished: (Int, Int, Map<String, Int>) -> Unit,
     onBack: () -> Unit
 ) {
-    val quizWords = remember {
-        if (themeId == "all") GLOBAL_POOL.shuffled()
-        else THEMES_DATA[themeId]?.words?.shuffled() ?: emptyList()
+    val quizWords = remember(themeId) { quizPoolForTheme(themeId).shuffled() }
+
+    var answeredCorrectlyIds by rememberSaveable(themeId, stateSaver = StringSetSaver) {
+        mutableStateOf(emptySet())
     }
-    
-    var answeredCorrectlyIds by remember { mutableStateOf(setOf<String>()) }
-    val mistakes = remember { mutableStateMapOf<String, Int>() }
-    var currentWord by remember { mutableStateOf<Word?>(null) }
-    var selectedOption by remember { mutableStateOf<String?>(null) }
-    var isCorrect by remember { mutableStateOf<Boolean?>(null) }
-    
-    // Функция для подбора следующего слова
-    val pickNextWord = {
-        val pending = quizWords.filter { !answeredCorrectlyIds.contains(it.id) }
+    var mistakes by rememberSaveable(themeId, stateSaver = StringIntMapSaver) {
+        mutableStateOf(emptyMap())
+    }
+    var currentWordId by rememberSaveable(themeId) { mutableStateOf<String?>(null) }
+    var selectedOption by rememberSaveable(themeId) { mutableStateOf<String?>(null) }
+    var isCorrect by rememberSaveable(themeId) { mutableStateOf<Boolean?>(null) }
+    var options by rememberSaveable(themeId, stateSaver = StringListSaver) {
+        mutableStateOf(emptyList())
+    }
+
+    val currentWord = quizWords.firstOrNull { it.id == currentWordId }
+
+    val pickNextWord: (Set<String>) -> Unit = { completedIds ->
+        val pending = quizWords.filter { it.id !in completedIds }
         if (pending.isEmpty() && quizWords.isNotEmpty()) {
-            onQuizFinished(quizWords.size, quizWords.size, mistakes.toMap())
+            onQuizFinished(
+                calculateQuizScore(quizWords.size, mistakes),
+                quizWords.size,
+                mistakes
+            )
         } else {
-            currentWord = pending.random()
+            val nextWord = pending.random()
+            currentWordId = nextWord.id
+            options = generateOptions(nextWord, quizWords)
             selectedOption = null
             isCorrect = null
         }
     }
 
-    // Инициализация первого слова
-    LaunchedEffect(Unit) {
-        pickNextWord()
+    LaunchedEffect(themeId) {
+        if (currentWord == null) {
+            pickNextWord(answeredCorrectlyIds)
+        } else if (options.isEmpty()) {
+            options = generateOptions(currentWord, quizWords)
+        }
     }
 
     if (currentWord == null) return
-
-    val options = remember(currentWord) {
-        generateOptions(currentWord!!, quizWords)
-    }
 
     Column(
         modifier = Modifier.fillMaxSize().padding(16.dp),
@@ -314,7 +417,7 @@ fun QuizScreen(
         Spacer(modifier = Modifier.height(32.dp))
 
         Text(
-            text = currentWord!!.ru,
+            text = currentWord.ru,
             style = MaterialTheme.typography.headlineLarge,
             textAlign = TextAlign.Center,
             fontWeight = FontWeight.Bold,
@@ -324,13 +427,13 @@ fun QuizScreen(
         Spacer(modifier = Modifier.height(32.dp))
 
         options.forEach { option ->
-            val isThisCorrectOption = option == currentWord!!.lt
+            val isThisCorrectOption = option == currentWord.lt
             val isThisSelected = selectedOption == option
             
             val containerColor = when {
                 selectedOption == null -> MaterialTheme.colorScheme.primary
                 isThisCorrectOption -> Color(0xFF4CAF50) // Всегда зеленый для правильного после выбора
-                isThisSelected && !isCorrect!! -> Color(0xFFF44336) // Красный если выбрали неправильно
+                isThisSelected && isCorrect == false -> Color(0xFFF44336) // Красный если выбрали неправильно
                 else -> MaterialTheme.colorScheme.primary.copy(alpha = 0.6f)
             }
 
@@ -338,11 +441,13 @@ fun QuizScreen(
                 onClick = {
                     if (selectedOption == null) {
                         selectedOption = option
-                        if (option == currentWord!!.lt) {
+                        if (option == currentWord.lt) {
                             isCorrect = true
                         } else {
                             isCorrect = false
-                            mistakes[currentWord!!.lt] = (mistakes[currentWord!!.lt] ?: 0) + 1
+                            mistakes = mistakes + (
+                                currentWord.id to ((mistakes[currentWord.id] ?: 0) + 1)
+                            )
                         }
                     }
                 },
@@ -363,16 +468,19 @@ fun QuizScreen(
             }
         }
         
-    // Обработка перехода
-    if (selectedOption != null) {
-        LaunchedEffect(selectedOption) {
-            delay(if (isCorrect == true) 800 else 1500)
-            if (isCorrect == true) {
-                answeredCorrectlyIds = answeredCorrectlyIds + currentWord!!.id
+        // Обработка перехода
+        if (selectedOption != null) {
+            LaunchedEffect(selectedOption, currentWord.id) {
+                delay(if (isCorrect == true) 800 else 1500)
+                if (isCorrect == true) {
+                    val completedIds = answeredCorrectlyIds + currentWord.id
+                    answeredCorrectlyIds = completedIds
+                    pickNextWord(completedIds)
+                } else {
+                    pickNextWord(answeredCorrectlyIds)
+                }
             }
-            pickNextWord()
         }
-    }
     }
 }
 
@@ -395,7 +503,16 @@ fun ResultScreen(
         )
         
         Spacer(modifier = Modifier.height(16.dp))
-        
+
+        Text(
+            text = "Результат: $score из $total",
+            style = MaterialTheme.typography.headlineSmall,
+            fontWeight = FontWeight.Bold,
+            color = MaterialTheme.colorScheme.primary
+        )
+
+        Spacer(modifier = Modifier.height(8.dp))
+
         Text(
             text = "Отличная работа. Статистика ошибок:",
             style = MaterialTheme.typography.bodyLarge,
@@ -407,7 +524,7 @@ fun ResultScreen(
         if (mistakes.isNotEmpty()) {
             val sortedMistakes = mistakes.toList().sortedByDescending { it.second }
             LazyColumn(modifier = Modifier.weight(1f)) {
-                items(sortedMistakes) { (lt, count) ->
+                items(sortedMistakes) { (wordId, count) ->
                     Card(
                         modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp),
                         colors = CardDefaults.cardColors(
@@ -419,7 +536,11 @@ fun ResultScreen(
                             horizontalArrangement = Arrangement.SpaceBetween,
                             verticalAlignment = Alignment.CenterVertically
                         ) {
-                            Text(text = lt, fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.primary)
+                            Text(
+                                text = mistakeWordLabel(wordId),
+                                fontWeight = FontWeight.Bold,
+                                color = MaterialTheme.colorScheme.primary
+                            )
                             Text(text = "× $count", color = Color(0xFFF44336), fontWeight = FontWeight.ExtraBold)
                         }
                     }
@@ -445,22 +566,63 @@ fun ResultScreen(
 @Composable
 fun AudioScreen(onBack: () -> Unit) {
     val context = androidx.compose.ui.platform.LocalContext.current
-    val scope = rememberCoroutineScope()
+    val resources = androidx.compose.ui.platform.LocalResources.current
     val exoPlayer = remember { ExoPlayer.Builder(context).build() }
-    var playingTrackId by remember { mutableStateOf<Int?>(null) }
+    var playingTrackId by rememberSaveable { mutableStateOf<Int?>(null) }
+    var playbackPosition by rememberSaveable { mutableLongStateOf(0L) }
+    var shouldResumePlaying by rememberSaveable { mutableStateOf(false) }
     var isExoPlaying by remember { mutableStateOf(false) }
 
     // Слушатель состояния плеера
     DisposableEffect(exoPlayer) {
-        val listener = object : androidx.media3.common.Player.Listener {
+        val listener = object : Player.Listener {
             override fun onIsPlayingChanged(isPlaying: Boolean) {
                 isExoPlaying = isPlaying
+            }
+
+            override fun onPlaybackStateChanged(playbackState: Int) {
+                if (playbackState == Player.STATE_ENDED) {
+                    playbackPosition = 0L
+                    shouldResumePlaying = false
+                }
+            }
+
+            override fun onPlayerError(error: androidx.media3.common.PlaybackException) {
+                shouldResumePlaying = false
+                android.util.Log.e("AudioPlayer", "Playback failed", error)
             }
         }
         exoPlayer.addListener(listener)
         onDispose {
             exoPlayer.removeListener(listener)
             exoPlayer.release()
+        }
+    }
+
+    LaunchedEffect(exoPlayer, playingTrackId) {
+        val trackId = playingTrackId ?: return@LaunchedEffect
+        val resId = audioResourceId(resources, context.packageName, trackId)
+        if (resId == 0) {
+            android.util.Log.e("AudioPlayer", "Resource not found: audio_$trackId")
+            playingTrackId = null
+            playbackPosition = 0L
+            shouldResumePlaying = false
+            return@LaunchedEffect
+        }
+
+        val uri = "android.resource://${context.packageName}/$resId".toUri()
+        exoPlayer.setMediaItem(MediaItem.fromUri(uri))
+        exoPlayer.prepare()
+        exoPlayer.seekTo(playbackPosition)
+        if (shouldResumePlaying) {
+            exoPlayer.play()
+        }
+    }
+
+    LaunchedEffect(exoPlayer, isExoPlaying) {
+        while (isExoPlaying) {
+            playbackPosition = exoPlayer.currentPosition.coerceAtLeast(0L)
+            delay(250)
         }
     }
 
@@ -483,7 +645,9 @@ fun AudioScreen(onBack: () -> Unit) {
             modifier = Modifier.padding(start = 48.dp)
         )
 
-        var expandedChapters by remember { mutableStateOf(setOf<String>()) }
+        var expandedChapters by rememberSaveable(stateSaver = StringSetSaver) {
+            mutableStateOf(emptySet())
+        }
 
         LazyColumn(modifier = Modifier.weight(1f)) {
             AUDIO_BOOKS.forEach { book ->
@@ -532,29 +696,27 @@ fun AudioScreen(onBack: () -> Unit) {
                                 onClick = {
                                     if (playingTrackId == track.id) {
                                         if (exoPlayer.isPlaying) {
+                                            playbackPosition = exoPlayer.currentPosition
+                                            shouldResumePlaying = false
                                             exoPlayer.pause()
                                         } else {
+                                            val startPosition = playbackStartPosition(
+                                                exoPlayer.playbackState,
+                                                exoPlayer.currentPosition
+                                            )
+                                            playbackPosition = startPosition
+                                            if (startPosition != exoPlayer.currentPosition) {
+                                                exoPlayer.seekTo(startPosition)
+                                            }
+                                            shouldResumePlaying = true
                                             exoPlayer.play()
                                         }
                                     } else {
                                         exoPlayer.stop()
                                         exoPlayer.clearMediaItems()
-                                        
+                                        playbackPosition = 0L
+                                        shouldResumePlaying = true
                                         playingTrackId = track.id
-                                        
-                                        // Ищем ресурс по имени audio_{id}
-                                        val resName = "audio_${track.id}"
-                                        val resId = context.resources.getIdentifier(resName, "raw", context.packageName)
-                                        
-                                        if (resId != 0) {
-                                            val uri = android.net.Uri.parse("android.resource://${context.packageName}/$resId")
-                                            val mediaItem = MediaItem.fromUri(uri)
-                                            exoPlayer.setMediaItem(mediaItem)
-                                            exoPlayer.prepare()
-                                            exoPlayer.play()
-                                        } else {
-                                            android.util.Log.e("AudioDebug", "Resource not found: $resName")
-                                        }
                                     }
                                 }
                             ) {
@@ -582,6 +744,33 @@ fun AudioScreen(onBack: () -> Unit) {
             }
         }
     }
+}
+
+fun quizPoolForTheme(themeId: String): List<Word> {
+    val words = if (themeId == "all") {
+        GLOBAL_POOL
+    } else {
+        THEMES_DATA[themeId]?.words.orEmpty()
+    }
+    return words.distinctBy { it.id }
+}
+
+fun calculateQuizScore(total: Int, mistakes: Map<String, Int>): Int {
+    return (total - mistakes.keys.size).coerceIn(0, total)
+}
+
+fun playbackStartPosition(playbackState: Int, currentPosition: Long): Long {
+    return if (playbackState == Player.STATE_ENDED) 0L else currentPosition.coerceAtLeast(0L)
+}
+
+fun mistakeWordLabel(wordId: String): String {
+    return GLOBAL_POOL.firstOrNull { it.id == wordId }?.lt
+        ?: wordId.substringBefore("::")
+}
+
+@SuppressLint("DiscouragedApi")
+private fun audioResourceId(resources: Resources, packageName: String, trackId: Int): Int {
+    return resources.getIdentifier("audio_$trackId", "raw", packageName)
 }
 
 
@@ -621,15 +810,4 @@ fun generateOptions(correctWord: Word, themeWords: List<Word>): List<String> {
     }
 
     return (themeDistractors + correctWord.lt).shuffled()
-}
-
-fun translateType(type: String): String {
-    return when (type) {
-        "v" -> "глагол"
-        "n" -> "сущ."
-        "adj" -> "прилаг."
-        "adv" -> "наречие"
-        "other" -> "др."
-        else -> type
-    }
 }
