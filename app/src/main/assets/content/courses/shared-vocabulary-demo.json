@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "shared-vocabulary-demo",
+  "title": "Демонстрационный курс: общие слова",
+  "lessons": [
+    {
+      "id": "shared-demo-01",
+      "title": "Повторение базовых слов",
+      "order": 1,
+      "wordRefs": [
+        { "wordId": "word_000001" },
+        { "wordId": "word_000002" },
+        { "wordId": "word_000003" },
+        { "wordId": "word_000004" }
+      ]
+    }
+  ]
+}

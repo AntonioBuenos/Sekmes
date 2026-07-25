@@ -20,7 +20,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.runtime.collectAsState
 import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+import kotlin.random.Random
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -124,6 +127,8 @@ private fun previousScreen(screen: Screen): Screen = when (screen) {
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        CatalogStore.initialize(assets)
+        ProgressStore.initialize(applicationContext)
         enableEdgeToEdge()
         setContent {
             SekmesZodynasTheme {
@@ -295,6 +300,12 @@ fun ThemeSelectionScreen(title: String, onThemeSelected: (String) -> Unit, onBac
 fun DictionaryScreen(themeId: String, onBack: () -> Unit) {
     val words = if (themeId == "all") GLOBAL_POOL else THEMES_DATA[themeId]?.words ?: emptyList()
     val themeTitle = if (themeId == "all") "Все слова" else THEMES_DATA[themeId]?.title ?: ""
+    val progressByWordId by ProgressStore.repository().observeAll().collectAsState(initial = emptyMap())
+    val scope = rememberCoroutineScope()
+    var showKnown by rememberSaveable(themeId) { mutableStateOf(false) }
+    val visibleWords = words.filter { word ->
+        showKnown || progressByWordId[word.id]?.status != WordLearningStatus.KNOWN
+    }
 
     Column(modifier = Modifier.fillMaxSize().padding(16.dp)) {
         Row(verticalAlignment = Alignment.CenterVertically) {
@@ -306,34 +317,33 @@ fun DictionaryScreen(themeId: String, onBack: () -> Unit) {
                 style = MaterialTheme.typography.headlineSmall,
                 modifier = Modifier.weight(1f)
             )
-            Text("${words.size}", style = MaterialTheme.typography.bodyMedium, color = Color.Gray)
+            Text("${visibleWords.size}", style = MaterialTheme.typography.bodyMedium, color = Color.Gray)
         }
 
-        Spacer(modifier = Modifier.height(16.dp))
+        TextButton(onClick = { showKnown = !showKnown }) {
+            Text(if (showKnown) "Скрыть известные" else "Показать известные")
+        }
 
         LazyColumn(modifier = Modifier.weight(1f)) {
-            items(words) { word ->
+            items(visibleWords) { word ->
+                val status = progressByWordId[word.id]?.status ?: WordLearningStatus.NEW
                 Card(
                     modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp),
                     colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant)
                 ) {
-                    Row(
-                        modifier = Modifier.padding(16.dp),
-                        verticalAlignment = Alignment.CenterVertically
-                    ) {
-                        Text(
-                            text = word.lt,
-                            style = MaterialTheme.typography.titleMedium,
-                            color = MaterialTheme.colorScheme.primary,
-                            fontWeight = FontWeight.Bold,
-                            modifier = Modifier.weight(1f)
-                        )
-                        Text(
-                            text = word.ru,
-                            style = MaterialTheme.typography.bodyLarge,
-                            modifier = Modifier.weight(1f),
-                            textAlign = TextAlign.End
-                        )
+                    Column(modifier = Modifier.padding(16.dp)) {
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Text(text = word.lt, style = MaterialTheme.typography.titleMedium, color = MaterialTheme.colorScheme.primary, fontWeight = FontWeight.Bold, modifier = Modifier.weight(1f))
+                            Text(text = word.ru, style = MaterialTheme.typography.bodyLarge, modifier = Modifier.weight(1f), textAlign = TextAlign.End)
+                        }
+                        Text(statusLabel(status), style = MaterialTheme.typography.bodySmall, color = Color.Gray)
+                        Row {
+                            TextButton(onClick = { scope.launch { ProgressStore.repository().setStatus(word.id, WordLearningStatus.KNOWN) } }) { Text("Знаю") }
+                            TextButton(onClick = { scope.launch { ProgressStore.repository().setStatus(word.id, WordLearningStatus.HARD) } }) { Text("Повторять") }
+                            if (status != WordLearningStatus.LEARNING) {
+                                TextButton(onClick = { scope.launch { ProgressStore.repository().setStatus(word.id, WordLearningStatus.LEARNING) } }) { Text("Изучаю") }
+                            }
+                        }
                     }
                 }
             }
@@ -347,7 +357,9 @@ fun QuizScreen(
     onQuizFinished: (Int, Int, Map<String, Int>) -> Unit,
     onBack: () -> Unit
 ) {
-    val quizWords = remember(themeId) { quizPoolForTheme(themeId).shuffled() }
+    val progressByWordId by ProgressStore.repository().observeAll().collectAsState(initial = emptyMap())
+    val progressScope = rememberCoroutineScope()
+    val quizWords = remember(themeId, progressByWordId) { quizPoolForTheme(themeId, progressByWordId).shuffled() }
 
     var answeredCorrectlyIds by rememberSaveable(themeId, stateSaver = StringSetSaver) {
         mutableStateOf(emptySet())
@@ -373,15 +385,21 @@ fun QuizScreen(
                 mistakes
             )
         } else {
-            val nextWord = pending.random()
-            currentWordId = nextWord.id
-            options = generateOptions(nextWord, quizWords)
-            selectedOption = null
-            isCorrect = null
+            val nextWord = selectNextQuizWord(
+                words = pending,
+                hardWordIds = progressByWordId.filterValues { it.status == WordLearningStatus.HARD }.keys,
+                previousWordId = currentWordId,
+            )
+            if (nextWord != null) {
+                currentWordId = nextWord.id
+                options = generateOptions(nextWord, quizWords)
+                selectedOption = null
+                isCorrect = null
+            }
         }
     }
 
-    LaunchedEffect(themeId) {
+    LaunchedEffect(themeId, quizWords) {
         if (currentWord == null) {
             pickNextWord(answeredCorrectlyIds)
         } else if (options.isEmpty()) {
@@ -423,6 +441,12 @@ fun QuizScreen(
             fontWeight = FontWeight.Bold,
             modifier = Modifier.heightIn(min = 100.dp).wrapContentHeight()
         )
+
+        Text(statusLabel(progressByWordId[currentWord.id]?.status ?: WordLearningStatus.NEW), color = Color.Gray)
+        Row {
+            TextButton(onClick = { progressScope.launch { ProgressStore.repository().setStatus(currentWord.id, WordLearningStatus.KNOWN) } }) { Text("Знаю") }
+            TextButton(onClick = { progressScope.launch { ProgressStore.repository().setStatus(currentWord.id, WordLearningStatus.HARD) } }) { Text("Трудное") }
+        }
 
         Spacer(modifier = Modifier.height(32.dp))
 
@@ -746,17 +770,41 @@ fun AudioScreen(onBack: () -> Unit) {
     }
 }
 
-fun quizPoolForTheme(themeId: String): List<Word> {
+fun quizPoolForTheme(
+    themeId: String,
+    progressByWordId: Map<WordId, WordProgress> = emptyMap(),
+): List<Word> {
     val words = if (themeId == "all") {
         GLOBAL_POOL
     } else {
         THEMES_DATA[themeId]?.words.orEmpty()
     }
     return words.distinctBy { it.id }
+        .filter { word -> progressByWordId[word.id]?.status != WordLearningStatus.KNOWN }
+}
+
+fun selectNextQuizWord(
+    words: List<Word>,
+    hardWordIds: Set<WordId>,
+    previousWordId: WordId?,
+    random: Random = Random.Default,
+): Word? {
+    val withoutImmediateRepeat = words.filter { it.id != previousWordId }.ifEmpty { words }
+    val weighted = withoutImmediateRepeat.flatMap { word ->
+        List(if (word.id in hardWordIds) 3 else 1) { word }
+    }
+    return weighted.randomOrNull(random)
 }
 
 fun calculateQuizScore(total: Int, mistakes: Map<String, Int>): Int {
     return (total - mistakes.keys.size).coerceIn(0, total)
+}
+
+fun statusLabel(status: WordLearningStatus): String = when (status) {
+    WordLearningStatus.NEW -> "Новое слово"
+    WordLearningStatus.LEARNING -> "Изучаю"
+    WordLearningStatus.HARD -> "Повторять чаще"
+    WordLearningStatus.KNOWN -> "Знаю"
 }
 
 fun playbackStartPosition(playbackState: Int, currentPosition: Long): Long {
