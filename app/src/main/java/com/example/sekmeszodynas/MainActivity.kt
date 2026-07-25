@@ -41,6 +41,11 @@ sealed class Screen {
     data class Dictionary(val themeId: String) : Screen()
     data class Results(val score: Int, val total: Int, val mistakes: Map<String, Int>) : Screen()
     object AudioSelection : Screen()
+    object ConstitutionHome : Screen()
+    data class ConstitutionBlock(val blockId: ConstitutionBlockId) : Screen()
+    data class ConstitutionArticle(val blockId: ConstitutionBlockId, val contentId: ConstitutionArticleId) : Screen()
+    data class ConstitutionDictionary(val blockId: ConstitutionBlockId?) : Screen()
+    data class ConstitutionQuiz(val blockId: ConstitutionBlockId?) : Screen()
 }
 
 private val ScreenSaver = Saver<Screen, Bundle>(
@@ -66,6 +71,24 @@ private val ScreenSaver = Saver<Screen, Bundle>(
                     putIntegerArrayList("mistake_counts", ArrayList(screen.mistakes.values))
                 }
                 Screen.AudioSelection -> putString("type", "audio")
+                Screen.ConstitutionHome -> putString("type", "constitution_home")
+                is Screen.ConstitutionBlock -> {
+                    putString("type", "constitution_block")
+                    putString("block_id", screen.blockId)
+                }
+                is Screen.ConstitutionArticle -> {
+                    putString("type", "constitution_article")
+                    putString("block_id", screen.blockId)
+                    putString("content_id", screen.contentId)
+                }
+                is Screen.ConstitutionDictionary -> {
+                    putString("type", "constitution_dictionary")
+                    putString("block_id", screen.blockId)
+                }
+                is Screen.ConstitutionQuiz -> {
+                    putString("type", "constitution_quiz")
+                    putString("block_id", screen.blockId)
+                }
             }
         }
     },
@@ -85,6 +108,14 @@ private val ScreenSaver = Saver<Screen, Bundle>(
                 )
             }
             "audio" -> Screen.AudioSelection
+            "constitution_home" -> Screen.ConstitutionHome
+            "constitution_block" -> Screen.ConstitutionBlock(state.getString("block_id").orEmpty())
+            "constitution_article" -> Screen.ConstitutionArticle(
+                blockId = state.getString("block_id").orEmpty(),
+                contentId = state.getString("content_id").orEmpty(),
+            )
+            "constitution_dictionary" -> Screen.ConstitutionDictionary(state.getString("block_id"))
+            "constitution_quiz" -> Screen.ConstitutionQuiz(state.getString("block_id"))
             else -> Screen.Dashboard
         }
     }
@@ -119,15 +150,21 @@ private fun previousScreen(screen: Screen): Screen = when (screen) {
     Screen.ThemeSelectionForQuiz,
     Screen.ThemeSelectionForDictionary,
     Screen.AudioSelection,
+    Screen.ConstitutionHome,
     is Screen.Results -> Screen.Dashboard
     is Screen.Quiz -> Screen.ThemeSelectionForQuiz
     is Screen.Dictionary -> Screen.ThemeSelectionForDictionary
+    is Screen.ConstitutionBlock -> Screen.ConstitutionHome
+    is Screen.ConstitutionArticle -> Screen.ConstitutionBlock(screen.blockId)
+    is Screen.ConstitutionDictionary -> screen.blockId?.let { Screen.ConstitutionBlock(it) } ?: Screen.ConstitutionHome
+    is Screen.ConstitutionQuiz -> screen.blockId?.let { Screen.ConstitutionBlock(it) } ?: Screen.ConstitutionHome
 }
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         CatalogStore.initialize(assets)
+        ConstitutionStore.initialize(assets, CatalogStore.repository())
         ProgressStore.initialize(applicationContext)
         enableEdgeToEdge()
         setContent {
@@ -146,7 +183,8 @@ class MainActivity : ComponentActivity() {
                             is Screen.Dashboard -> MainDashboardScreen(
                                 onNavigateToDictionary = { currentScreen = Screen.ThemeSelectionForDictionary },
                                 onNavigateToQuiz = { currentScreen = Screen.ThemeSelectionForQuiz },
-                                onNavigateToAudio = { currentScreen = Screen.AudioSelection }
+                                onNavigateToAudio = { currentScreen = Screen.AudioSelection },
+                                onNavigateToConstitution = { currentScreen = Screen.ConstitutionHome },
                             )
                             is Screen.ThemeSelectionForDictionary -> ThemeSelectionScreen(
                                 title = "Словарь: Выбор темы",
@@ -182,6 +220,43 @@ class MainActivity : ComponentActivity() {
                             is Screen.AudioSelection -> AudioScreen(
                                 onBack = { currentScreen = Screen.Dashboard }
                             )
+                            is Screen.ConstitutionHome -> ConstitutionHomeScreen(
+                                onBlockSelected = { currentScreen = Screen.ConstitutionBlock(it) },
+                                onDictionary = { currentScreen = Screen.ConstitutionDictionary(null) },
+                                onQuiz = { currentScreen = Screen.ConstitutionQuiz(null) },
+                                onBack = { currentScreen = Screen.Dashboard },
+                            )
+                            is Screen.ConstitutionBlock -> ConstitutionBlockScreen(
+                                blockId = screen.blockId,
+                                onContentSelected = { contentId ->
+                                    currentScreen = Screen.ConstitutionArticle(screen.blockId, contentId)
+                                },
+                                onDictionary = { currentScreen = Screen.ConstitutionDictionary(screen.blockId) },
+                                onQuiz = { currentScreen = Screen.ConstitutionQuiz(screen.blockId) },
+                                onBack = { currentScreen = Screen.ConstitutionHome },
+                            )
+                            is Screen.ConstitutionArticle -> ConstitutionArticleScreen(
+                                blockId = screen.blockId,
+                                contentId = screen.contentId,
+                                onBack = { currentScreen = Screen.ConstitutionBlock(screen.blockId) },
+                            )
+                            is Screen.ConstitutionDictionary -> ConstitutionDictionaryScreen(
+                                blockId = screen.blockId,
+                                onBack = {
+                                    currentScreen = screen.blockId?.let(Screen::ConstitutionBlock)
+                                        ?: Screen.ConstitutionHome
+                                },
+                            )
+                            is Screen.ConstitutionQuiz -> ConstitutionQuizScreen(
+                                blockId = screen.blockId,
+                                onQuizFinished = { score, total, mistakes ->
+                                    currentScreen = Screen.Results(score, total, mistakes)
+                                },
+                                onBack = {
+                                    currentScreen = screen.blockId?.let(Screen::ConstitutionBlock)
+                                        ?: Screen.ConstitutionHome
+                                },
+                            )
                         }
                     }
                 }
@@ -194,7 +269,8 @@ class MainActivity : ComponentActivity() {
 fun MainDashboardScreen(
     onNavigateToDictionary: () -> Unit,
     onNavigateToQuiz: () -> Unit,
-    onNavigateToAudio: () -> Unit
+    onNavigateToAudio: () -> Unit,
+    onNavigateToConstitution: () -> Unit,
 ) {
     Column(
         modifier = Modifier.fillMaxSize().padding(24.dp).verticalScroll(rememberScrollState()),
@@ -243,6 +319,19 @@ fun MainDashboardScreen(
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
                     Text("🎧", fontSize = 32.sp)
                     Text("Аудио курс", style = MaterialTheme.typography.titleLarge)
+                }
+            }
+        }
+
+        Card(
+            onClick = onNavigateToConstitution,
+            modifier = Modifier.fillMaxWidth().height(120.dp).padding(vertical = 8.dp),
+            colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer)
+        ) {
+            Box(contentAlignment = Alignment.Center, modifier = Modifier.fillMaxSize()) {
+                Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                    Text("⚖️", fontSize = 32.sp)
+                    Text("Конституция Литвы", style = MaterialTheme.typography.titleLarge)
                 }
             }
         }
@@ -300,9 +389,24 @@ fun ThemeSelectionScreen(title: String, onThemeSelected: (String) -> Unit, onBac
 fun DictionaryScreen(themeId: String, onBack: () -> Unit) {
     val words = if (themeId == "all") GLOBAL_POOL else THEMES_DATA[themeId]?.words ?: emptyList()
     val themeTitle = if (themeId == "all") "Все слова" else THEMES_DATA[themeId]?.title ?: ""
+    DictionaryWordsScreen(
+        words = words,
+        themeTitle = themeTitle,
+        stateKey = "sekmes:$themeId",
+        onBack = onBack,
+    )
+}
+
+@Composable
+fun DictionaryWordsScreen(
+    words: List<Word>,
+    themeTitle: String,
+    stateKey: String,
+    onBack: () -> Unit,
+) {
     val progressByWordId by ProgressStore.repository().observeAll().collectAsState(initial = emptyMap())
     val scope = rememberCoroutineScope()
-    var showKnown by rememberSaveable(themeId) { mutableStateOf(false) }
+    var showKnown by rememberSaveable(stateKey) { mutableStateOf(false) }
     val visibleWords = words.filter { word ->
         showKnown || progressByWordId[word.id]?.status != WordLearningStatus.KNOWN
     }
@@ -357,20 +461,40 @@ fun QuizScreen(
     onQuizFinished: (Int, Int, Map<String, Int>) -> Unit,
     onBack: () -> Unit
 ) {
+    val sourceWords = if (themeId == "all") GLOBAL_POOL else THEMES_DATA[themeId]?.words.orEmpty()
+    QuizWordsScreen(
+        sessionKey = "sekmes:$themeId",
+        sourceWords = sourceWords,
+        onQuizFinished = onQuizFinished,
+        onBack = onBack,
+    )
+}
+
+@Composable
+fun QuizWordsScreen(
+    sessionKey: String,
+    sourceWords: List<Word>,
+    onQuizFinished: (Int, Int, Map<String, Int>) -> Unit,
+    onBack: () -> Unit,
+) {
     val progressByWordId by ProgressStore.repository().observeAll().collectAsState(initial = emptyMap())
     val progressScope = rememberCoroutineScope()
-    val quizWords = remember(themeId, progressByWordId) { quizPoolForTheme(themeId, progressByWordId).shuffled() }
+    val quizWords = remember(sessionKey, sourceWords, progressByWordId) {
+        sourceWords.distinctBy(Word::id)
+            .filter { word -> progressByWordId[word.id]?.status != WordLearningStatus.KNOWN }
+            .shuffled()
+    }
 
-    var answeredCorrectlyIds by rememberSaveable(themeId, stateSaver = StringSetSaver) {
+    var answeredCorrectlyIds by rememberSaveable(sessionKey, stateSaver = StringSetSaver) {
         mutableStateOf(emptySet())
     }
-    var mistakes by rememberSaveable(themeId, stateSaver = StringIntMapSaver) {
+    var mistakes by rememberSaveable(sessionKey, stateSaver = StringIntMapSaver) {
         mutableStateOf(emptyMap())
     }
-    var currentWordId by rememberSaveable(themeId) { mutableStateOf<String?>(null) }
-    var selectedOption by rememberSaveable(themeId) { mutableStateOf<String?>(null) }
-    var isCorrect by rememberSaveable(themeId) { mutableStateOf<Boolean?>(null) }
-    var options by rememberSaveable(themeId, stateSaver = StringListSaver) {
+    var currentWordId by rememberSaveable(sessionKey) { mutableStateOf<String?>(null) }
+    var selectedOption by rememberSaveable(sessionKey) { mutableStateOf<String?>(null) }
+    var isCorrect by rememberSaveable(sessionKey) { mutableStateOf<Boolean?>(null) }
+    var options by rememberSaveable(sessionKey, stateSaver = StringListSaver) {
         mutableStateOf(emptyList())
     }
 
@@ -399,7 +523,7 @@ fun QuizScreen(
         }
     }
 
-    LaunchedEffect(themeId, quizWords) {
+    LaunchedEffect(sessionKey, quizWords) {
         if (currentWord == null) {
             pickNextWord(answeredCorrectlyIds)
         } else if (options.isEmpty()) {

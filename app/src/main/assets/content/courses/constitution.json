@@ -1,0 +1,1062 @@
+{
+  "schemaVersion": 1,
+  "id": "constitution",
+  "title": "Конституция Литвы",
+  "lessons": [
+    {
+      "id": "constitution-01",
+      "title": "1. Основы государства",
+      "order": 1,
+      "wordRefs": [
+        {
+          "wordId": "word_001040"
+        },
+        {
+          "wordId": "word_001042"
+        },
+        {
+          "wordId": "word_001043"
+        },
+        {
+          "wordId": "word_001044"
+        },
+        {
+          "wordId": "word_001045"
+        },
+        {
+          "wordId": "word_001052"
+        },
+        {
+          "wordId": "word_001053"
+        },
+        {
+          "wordId": "word_001054"
+        },
+        {
+          "wordId": "word_001055"
+        },
+        {
+          "wordId": "word_001056"
+        },
+        {
+          "wordId": "word_000028"
+        },
+        {
+          "wordId": "word_001057"
+        },
+        {
+          "wordId": "word_001058"
+        },
+        {
+          "wordId": "word_001059"
+        },
+        {
+          "wordId": "word_001062"
+        },
+        {
+          "wordId": "word_001063"
+        },
+        {
+          "wordId": "word_001064"
+        },
+        {
+          "wordId": "word_001070"
+        },
+        {
+          "wordId": "word_001073"
+        },
+        {
+          "wordId": "word_001076"
+        },
+        {
+          "wordId": "word_001078"
+        },
+        {
+          "wordId": "word_001079"
+        },
+        {
+          "wordId": "word_001082"
+        },
+        {
+          "wordId": "word_001103"
+        },
+        {
+          "wordId": "word_000001"
+        },
+        {
+          "wordId": "word_001105"
+        },
+        {
+          "wordId": "word_001106"
+        },
+        {
+          "wordId": "word_001107"
+        },
+        {
+          "wordId": "word_001108"
+        },
+        {
+          "wordId": "word_001109"
+        },
+        {
+          "wordId": "word_001110"
+        },
+        {
+          "wordId": "word_001111"
+        },
+        {
+          "wordId": "word_001112"
+        },
+        {
+          "wordId": "word_001115"
+        },
+        {
+          "wordId": "word_001126"
+        },
+        {
+          "wordId": "word_001127"
+        },
+        {
+          "wordId": "word_001129"
+        },
+        {
+          "wordId": "word_001133"
+        }
+      ]
+    },
+    {
+      "id": "constitution-02",
+      "title": "2. Права, свободы и обязанности человека",
+      "order": 2,
+      "wordRefs": [
+        {
+          "wordId": "word_001042"
+        },
+        {
+          "wordId": "word_001044"
+        },
+        {
+          "wordId": "word_001045"
+        },
+        {
+          "wordId": "word_000135"
+        },
+        {
+          "wordId": "word_001046"
+        },
+        {
+          "wordId": "word_000925"
+        },
+        {
+          "wordId": "word_001047"
+        },
+        {
+          "wordId": "word_001048"
+        },
+        {
+          "wordId": "word_001051"
+        },
+        {
+          "wordId": "word_001059"
+        },
+        {
+          "wordId": "word_001061"
+        },
+        {
+          "wordId": "word_001062"
+        },
+        {
+          "wordId": "word_001063"
+        },
+        {
+          "wordId": "word_001066"
+        },
+        {
+          "wordId": "word_001073"
+        },
+        {
+          "wordId": "word_001082"
+        },
+        {
+          "wordId": "word_001085"
+        },
+        {
+          "wordId": "word_001094"
+        },
+        {
+          "wordId": "word_001098"
+        },
+        {
+          "wordId": "word_000001"
+        },
+        {
+          "wordId": "word_001105"
+        },
+        {
+          "wordId": "word_001106"
+        },
+        {
+          "wordId": "word_001107"
+        },
+        {
+          "wordId": "word_001108"
+        },
+        {
+          "wordId": "word_001112"
+        },
+        {
+          "wordId": "word_001113"
+        },
+        {
+          "wordId": "word_001116"
+        },
+        {
+          "wordId": "word_001122"
+        },
+        {
+          "wordId": "word_001126"
+        },
+        {
+          "wordId": "word_001130"
+        },
+        {
+          "wordId": "word_001131"
+        },
+        {
+          "wordId": "word_001133"
+        },
+        {
+          "wordId": "word_001134"
+        }
+      ]
+    },
+    {
+      "id": "constitution-03",
+      "title": "3. Семья, образование, культура, религия и СМИ",
+      "order": 3,
+      "wordRefs": [
+        {
+          "wordId": "word_001040"
+        },
+        {
+          "wordId": "word_001044"
+        },
+        {
+          "wordId": "word_000925"
+        },
+        {
+          "wordId": "word_001049"
+        },
+        {
+          "wordId": "word_001050"
+        },
+        {
+          "wordId": "word_001059"
+        },
+        {
+          "wordId": "word_001063"
+        },
+        {
+          "wordId": "word_001066"
+        },
+        {
+          "wordId": "word_001089"
+        },
+        {
+          "wordId": "word_000110"
+        },
+        {
+          "wordId": "word_001096"
+        },
+        {
+          "wordId": "word_001097"
+        },
+        {
+          "wordId": "word_000001"
+        },
+        {
+          "wordId": "word_001105"
+        },
+        {
+          "wordId": "word_001106"
+        },
+        {
+          "wordId": "word_001111"
+        },
+        {
+          "wordId": "word_001112"
+        },
+        {
+          "wordId": "word_001113"
+        },
+        {
+          "wordId": "word_001122"
+        },
+        {
+          "wordId": "word_001129"
+        },
+        {
+          "wordId": "word_001130"
+        },
+        {
+          "wordId": "word_001134"
+        }
+      ]
+    },
+    {
+      "id": "constitution-04",
+      "title": "4. Экономика, труд и социальная защита",
+      "order": 4,
+      "wordRefs": [
+        {
+          "wordId": "word_001040"
+        },
+        {
+          "wordId": "word_001044"
+        },
+        {
+          "wordId": "word_000135"
+        },
+        {
+          "wordId": "word_001046"
+        },
+        {
+          "wordId": "word_001059"
+        },
+        {
+          "wordId": "word_001063"
+        },
+        {
+          "wordId": "word_001066"
+        },
+        {
+          "wordId": "word_001095"
+        },
+        {
+          "wordId": "word_001105"
+        },
+        {
+          "wordId": "word_001106"
+        },
+        {
+          "wordId": "word_001107"
+        },
+        {
+          "wordId": "word_001108"
+        },
+        {
+          "wordId": "word_001112"
+        },
+        {
+          "wordId": "word_001113"
+        },
+        {
+          "wordId": "word_001114"
+        },
+        {
+          "wordId": "word_001116"
+        },
+        {
+          "wordId": "word_001129"
+        },
+        {
+          "wordId": "word_001134"
+        }
+      ]
+    },
+    {
+      "id": "constitution-05",
+      "title": "5. Сейм",
+      "order": 5,
+      "wordRefs": [
+        {
+          "wordId": "word_001042"
+        },
+        {
+          "wordId": "word_001045"
+        },
+        {
+          "wordId": "word_001046"
+        },
+        {
+          "wordId": "word_000925"
+        },
+        {
+          "wordId": "word_001048"
+        },
+        {
+          "wordId": "word_001050"
+        },
+        {
+          "wordId": "word_001059"
+        },
+        {
+          "wordId": "word_001061"
+        },
+        {
+          "wordId": "word_001063"
+        },
+        {
+          "wordId": "word_001066"
+        },
+        {
+          "wordId": "word_001071"
+        },
+        {
+          "wordId": "word_001073"
+        },
+        {
+          "wordId": "word_001075"
+        },
+        {
+          "wordId": "word_001076"
+        },
+        {
+          "wordId": "word_001077"
+        },
+        {
+          "wordId": "word_001078"
+        },
+        {
+          "wordId": "word_001082"
+        },
+        {
+          "wordId": "word_001089"
+        },
+        {
+          "wordId": "word_001090"
+        },
+        {
+          "wordId": "word_001091"
+        },
+        {
+          "wordId": "word_001095"
+        },
+        {
+          "wordId": "word_001100"
+        },
+        {
+          "wordId": "word_001102"
+        },
+        {
+          "wordId": "word_000001"
+        },
+        {
+          "wordId": "word_001105"
+        },
+        {
+          "wordId": "word_001106"
+        },
+        {
+          "wordId": "word_001107"
+        },
+        {
+          "wordId": "word_001108"
+        },
+        {
+          "wordId": "word_001110"
+        },
+        {
+          "wordId": "word_001111"
+        },
+        {
+          "wordId": "word_001117"
+        },
+        {
+          "wordId": "word_001118"
+        },
+        {
+          "wordId": "word_001119"
+        },
+        {
+          "wordId": "word_001120"
+        },
+        {
+          "wordId": "word_001121"
+        },
+        {
+          "wordId": "word_001122"
+        },
+        {
+          "wordId": "word_001123"
+        },
+        {
+          "wordId": "word_001124"
+        },
+        {
+          "wordId": "word_001125"
+        },
+        {
+          "wordId": "word_001131"
+        },
+        {
+          "wordId": "word_001134"
+        }
+      ]
+    },
+    {
+      "id": "constitution-06",
+      "title": "6. Президент Республики",
+      "order": 6,
+      "wordRefs": [
+        {
+          "wordId": "word_001045"
+        },
+        {
+          "wordId": "word_001046"
+        },
+        {
+          "wordId": "word_001050"
+        },
+        {
+          "wordId": "word_001061"
+        },
+        {
+          "wordId": "word_001062"
+        },
+        {
+          "wordId": "word_001063"
+        },
+        {
+          "wordId": "word_001066"
+        },
+        {
+          "wordId": "word_001069"
+        },
+        {
+          "wordId": "word_001071"
+        },
+        {
+          "wordId": "word_001072"
+        },
+        {
+          "wordId": "word_001074"
+        },
+        {
+          "wordId": "word_001075"
+        },
+        {
+          "wordId": "word_001076"
+        },
+        {
+          "wordId": "word_001078"
+        },
+        {
+          "wordId": "word_001079"
+        },
+        {
+          "wordId": "word_001081"
+        },
+        {
+          "wordId": "word_001101"
+        },
+        {
+          "wordId": "word_001102"
+        },
+        {
+          "wordId": "word_000001"
+        },
+        {
+          "wordId": "word_001105"
+        },
+        {
+          "wordId": "word_001106"
+        },
+        {
+          "wordId": "word_001108"
+        },
+        {
+          "wordId": "word_001109"
+        },
+        {
+          "wordId": "word_001110"
+        },
+        {
+          "wordId": "word_001111"
+        },
+        {
+          "wordId": "word_001117"
+        },
+        {
+          "wordId": "word_001119"
+        },
+        {
+          "wordId": "word_001120"
+        },
+        {
+          "wordId": "word_001122"
+        },
+        {
+          "wordId": "word_001123"
+        },
+        {
+          "wordId": "word_001124"
+        },
+        {
+          "wordId": "word_001131"
+        },
+        {
+          "wordId": "word_001132"
+        },
+        {
+          "wordId": "word_001134"
+        }
+      ]
+    },
+    {
+      "id": "constitution-07",
+      "title": "7. Правительство",
+      "order": 7,
+      "wordRefs": [
+        {
+          "wordId": "word_001042"
+        },
+        {
+          "wordId": "word_001048"
+        },
+        {
+          "wordId": "word_001059"
+        },
+        {
+          "wordId": "word_001063"
+        },
+        {
+          "wordId": "word_001075"
+        },
+        {
+          "wordId": "word_001076"
+        },
+        {
+          "wordId": "word_001078"
+        },
+        {
+          "wordId": "word_001079"
+        },
+        {
+          "wordId": "word_001080"
+        },
+        {
+          "wordId": "word_001081"
+        },
+        {
+          "wordId": "word_000001"
+        },
+        {
+          "wordId": "word_001105"
+        },
+        {
+          "wordId": "word_001106"
+        },
+        {
+          "wordId": "word_001108"
+        },
+        {
+          "wordId": "word_001109"
+        },
+        {
+          "wordId": "word_001110"
+        },
+        {
+          "wordId": "word_001113"
+        },
+        {
+          "wordId": "word_001119"
+        },
+        {
+          "wordId": "word_001120"
+        },
+        {
+          "wordId": "word_001122"
+        },
+        {
+          "wordId": "word_001124"
+        },
+        {
+          "wordId": "word_001133"
+        },
+        {
+          "wordId": "word_001134"
+        }
+      ]
+    },
+    {
+      "id": "constitution-08",
+      "title": "8. Конституционный Суд, суды и прокуратура",
+      "order": 8,
+      "wordRefs": [
+        {
+          "wordId": "word_001042"
+        },
+        {
+          "wordId": "word_001044"
+        },
+        {
+          "wordId": "word_001046"
+        },
+        {
+          "wordId": "word_000925"
+        },
+        {
+          "wordId": "word_001048"
+        },
+        {
+          "wordId": "word_001057"
+        },
+        {
+          "wordId": "word_001059"
+        },
+        {
+          "wordId": "word_001060"
+        },
+        {
+          "wordId": "word_001061"
+        },
+        {
+          "wordId": "word_001063"
+        },
+        {
+          "wordId": "word_001064"
+        },
+        {
+          "wordId": "word_001066"
+        },
+        {
+          "wordId": "word_001067"
+        },
+        {
+          "wordId": "word_001068"
+        },
+        {
+          "wordId": "word_001076"
+        },
+        {
+          "wordId": "word_001078"
+        },
+        {
+          "wordId": "word_001079"
+        },
+        {
+          "wordId": "word_001082"
+        },
+        {
+          "wordId": "word_001083"
+        },
+        {
+          "wordId": "word_001084"
+        },
+        {
+          "wordId": "word_001085"
+        },
+        {
+          "wordId": "word_001086"
+        },
+        {
+          "wordId": "word_001087"
+        },
+        {
+          "wordId": "word_000001"
+        },
+        {
+          "wordId": "word_001105"
+        },
+        {
+          "wordId": "word_001106"
+        },
+        {
+          "wordId": "word_001108"
+        },
+        {
+          "wordId": "word_001109"
+        },
+        {
+          "wordId": "word_001110"
+        },
+        {
+          "wordId": "word_001112"
+        },
+        {
+          "wordId": "word_001119"
+        },
+        {
+          "wordId": "word_001120"
+        },
+        {
+          "wordId": "word_001122"
+        },
+        {
+          "wordId": "word_001126"
+        },
+        {
+          "wordId": "word_001129"
+        },
+        {
+          "wordId": "word_001130"
+        },
+        {
+          "wordId": "word_001134"
+        }
+      ]
+    },
+    {
+      "id": "constitution-09",
+      "title": "9. Самоуправление, бюджет, контроль и Банк Литвы",
+      "order": 9,
+      "wordRefs": [
+        {
+          "wordId": "word_001040"
+        },
+        {
+          "wordId": "word_000925"
+        },
+        {
+          "wordId": "word_001050"
+        },
+        {
+          "wordId": "word_001063"
+        },
+        {
+          "wordId": "word_001066"
+        },
+        {
+          "wordId": "word_001076"
+        },
+        {
+          "wordId": "word_001079"
+        },
+        {
+          "wordId": "word_001088"
+        },
+        {
+          "wordId": "word_001089"
+        },
+        {
+          "wordId": "word_001090"
+        },
+        {
+          "wordId": "word_001091"
+        },
+        {
+          "wordId": "word_001092"
+        },
+        {
+          "wordId": "word_001093"
+        },
+        {
+          "wordId": "word_000001"
+        },
+        {
+          "wordId": "word_001105"
+        },
+        {
+          "wordId": "word_001106"
+        },
+        {
+          "wordId": "word_001107"
+        },
+        {
+          "wordId": "word_001108"
+        },
+        {
+          "wordId": "word_001109"
+        },
+        {
+          "wordId": "word_001110"
+        },
+        {
+          "wordId": "word_001117"
+        },
+        {
+          "wordId": "word_001119"
+        },
+        {
+          "wordId": "word_001123"
+        },
+        {
+          "wordId": "word_001129"
+        },
+        {
+          "wordId": "word_001134"
+        }
+      ]
+    },
+    {
+      "id": "constitution-10",
+      "title": "10. Внешняя политика, оборона и чрезвычайные режимы",
+      "order": 10,
+      "wordRefs": [
+        {
+          "wordId": "word_001040"
+        },
+        {
+          "wordId": "word_001041"
+        },
+        {
+          "wordId": "word_001044"
+        },
+        {
+          "wordId": "word_000925"
+        },
+        {
+          "wordId": "word_001049"
+        },
+        {
+          "wordId": "word_001053"
+        },
+        {
+          "wordId": "word_001063"
+        },
+        {
+          "wordId": "word_001066"
+        },
+        {
+          "wordId": "word_001071"
+        },
+        {
+          "wordId": "word_001076"
+        },
+        {
+          "wordId": "word_001078"
+        },
+        {
+          "wordId": "word_001079"
+        },
+        {
+          "wordId": "word_001080"
+        },
+        {
+          "wordId": "word_001081"
+        },
+        {
+          "wordId": "word_001089"
+        },
+        {
+          "wordId": "word_001090"
+        },
+        {
+          "wordId": "word_001091"
+        },
+        {
+          "wordId": "word_001092"
+        },
+        {
+          "wordId": "word_001099"
+        },
+        {
+          "wordId": "word_001100"
+        },
+        {
+          "wordId": "word_001101"
+        },
+        {
+          "wordId": "word_001102"
+        },
+        {
+          "wordId": "word_000001"
+        },
+        {
+          "wordId": "word_001105"
+        },
+        {
+          "wordId": "word_001106"
+        },
+        {
+          "wordId": "word_001108"
+        },
+        {
+          "wordId": "word_001109"
+        },
+        {
+          "wordId": "word_001110"
+        },
+        {
+          "wordId": "word_001111"
+        },
+        {
+          "wordId": "word_001112"
+        },
+        {
+          "wordId": "word_001122"
+        },
+        {
+          "wordId": "word_001123"
+        }
+      ]
+    },
+    {
+      "id": "constitution-11",
+      "title": "11. Изменение Конституции и заключительные положения",
+      "order": 11,
+      "wordRefs": [
+        {
+          "wordId": "word_001040"
+        },
+        {
+          "wordId": "word_001042"
+        },
+        {
+          "wordId": "word_001063"
+        },
+        {
+          "wordId": "word_001064"
+        },
+        {
+          "wordId": "word_001065"
+        },
+        {
+          "wordId": "word_001072"
+        },
+        {
+          "wordId": "word_001073"
+        },
+        {
+          "wordId": "word_001075"
+        },
+        {
+          "wordId": "word_001076"
+        },
+        {
+          "wordId": "word_001078"
+        },
+        {
+          "wordId": "word_001101"
+        },
+        {
+          "wordId": "word_001102"
+        },
+        {
+          "wordId": "word_001104"
+        },
+        {
+          "wordId": "word_000001"
+        },
+        {
+          "wordId": "word_001105"
+        },
+        {
+          "wordId": "word_001106"
+        },
+        {
+          "wordId": "word_001111"
+        },
+        {
+          "wordId": "word_001118"
+        },
+        {
+          "wordId": "word_001124"
+        },
+        {
+          "wordId": "word_001125"
+        },
+        {
+          "wordId": "word_001126"
+        },
+        {
+          "wordId": "word_001127"
+        },
+        {
+          "wordId": "word_001128"
+        }
+      ]
+    }
+  ]
+}

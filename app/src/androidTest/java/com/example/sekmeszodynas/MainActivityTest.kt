@@ -8,6 +8,7 @@ import androidx.compose.ui.test.performClick
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import org.junit.Rule
 import org.junit.Test
+import org.junit.Assert.assertEquals
 import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4::class)
@@ -47,5 +48,19 @@ class MainActivityTest {
         composeRule.activityRule.scenario.recreate()
 
         composeRule.onNodeWithText(expectedProgress).assertIsDisplayed()
+    }
+
+    @Test
+    fun constitutionPreambleShowsTranslationAndCanHideIt() {
+        composeRule.onNodeWithText("Конституция Литвы").performClick()
+        composeRule.onNodeWithText("1. Основы государства").performClick()
+        composeRule.onNodeWithText("Преамбула").performClick()
+
+        composeRule.onNodeWithText("LIETUVIŲ TAUTA").assertIsDisplayed()
+        composeRule.onNodeWithText("ЛИТОВСКИЙ НАРОД").assertIsDisplayed()
+
+        composeRule.onNodeWithText("Скрыть русский перевод").performClick()
+
+        assertEquals(0, composeRule.onAllNodesWithText("ЛИТОВСКИЙ НАРОД").fetchSemanticsNodes().size)
     }
 }

@@ -6234,6 +6234,576 @@
       "ru": "популярный / популярная",
       "lt": "populiarus, populiari",
       "type": "adj"
+    },
+    {
+      "id": "word_001040",
+      "ru": "государство",
+      "lt": "valstybė",
+      "type": "n"
+    },
+    {
+      "id": "word_001041",
+      "ru": "Литовская Республика",
+      "lt": "Lietuvos Respublika",
+      "type": "n"
+    },
+    {
+      "id": "word_001042",
+      "ru": "Конституция",
+      "lt": "Konstitucija",
+      "type": "n"
+    },
+    {
+      "id": "word_001043",
+      "ru": "народ, нация",
+      "lt": "tauta",
+      "type": "n"
+    },
+    {
+      "id": "word_001044",
+      "ru": "общество",
+      "lt": "visuomenė",
+      "type": "n"
+    },
+    {
+      "id": "word_001045",
+      "ru": "гражданин, гражданка",
+      "lt": "pilietis, pilietė",
+      "type": "n"
+    },
+    {
+      "id": "word_001046",
+      "ru": "лицо",
+      "lt": "asmuo",
+      "type": "n"
+    },
+    {
+      "id": "word_001047",
+      "ru": "права человека",
+      "lt": "žmogaus teisės",
+      "type": "n"
+    },
+    {
+      "id": "word_001048",
+      "ru": "свобода",
+      "lt": "laisvė",
+      "type": "n"
+    },
+    {
+      "id": "word_001049",
+      "ru": "обязанность",
+      "lt": "pareiga",
+      "type": "n"
+    },
+    {
+      "id": "word_001050",
+      "ru": "равенство",
+      "lt": "lygybė",
+      "type": "n"
+    },
+    {
+      "id": "word_001051",
+      "ru": "достоинство",
+      "lt": "orumas",
+      "type": "n"
+    },
+    {
+      "id": "word_001052",
+      "ru": "суверенитет",
+      "lt": "suverenitetas",
+      "type": "n"
+    },
+    {
+      "id": "word_001053",
+      "ru": "независимость",
+      "lt": "nepriklausomybė",
+      "type": "n"
+    },
+    {
+      "id": "word_001054",
+      "ru": "территория",
+      "lt": "teritorija",
+      "type": "n"
+    },
+    {
+      "id": "word_001055",
+      "ru": "гражданство",
+      "lt": "pilietybė",
+      "type": "n"
+    },
+    {
+      "id": "word_001056",
+      "ru": "государственный язык",
+      "lt": "valstybinė kalba",
+      "type": "n"
+    },
+    {
+      "id": "word_001057",
+      "ru": "власть",
+      "lt": "valdžia",
+      "type": "n"
+    },
+    {
+      "id": "word_001058",
+      "ru": "государственная власть",
+      "lt": "valstybės valdžia",
+      "type": "n"
+    },
+    {
+      "id": "word_001059",
+      "ru": "учреждение, ведомство",
+      "lt": "įstaiga",
+      "type": "n"
+    },
+    {
+      "id": "word_001060",
+      "ru": "институт, учреждение",
+      "lt": "institucija",
+      "type": "n"
+    },
+    {
+      "id": "word_001061",
+      "ru": "должностное лицо",
+      "lt": "pareigūnas, pareigūnė",
+      "type": "n"
+    },
+    {
+      "id": "word_001062",
+      "ru": "представитель, представительница",
+      "lt": "atstovas, atstovė",
+      "type": "n"
+    },
+    {
+      "id": "word_001063",
+      "ru": "закон",
+      "lt": "įstatymas",
+      "type": "n"
+    },
+    {
+      "id": "word_001064",
+      "ru": "акт",
+      "lt": "aktas",
+      "type": "n"
+    },
+    {
+      "id": "word_001065",
+      "ru": "положение, норма",
+      "lt": "nuostata",
+      "type": "n"
+    },
+    {
+      "id": "word_001066",
+      "ru": "порядок, процедура",
+      "lt": "tvarka",
+      "type": "n"
+    },
+    {
+      "id": "word_001067",
+      "ru": "решение",
+      "lt": "sprendimas",
+      "type": "n"
+    },
+    {
+      "id": "word_001068",
+      "ru": "постановление",
+      "lt": "nutarimas",
+      "type": "n"
+    },
+    {
+      "id": "word_001069",
+      "ru": "ответственность",
+      "lt": "atsakomybė",
+      "type": "n"
+    },
+    {
+      "id": "word_001070",
+      "ru": "референдум",
+      "lt": "referendumas",
+      "type": "n"
+    },
+    {
+      "id": "word_001071",
+      "ru": "выборы",
+      "lt": "rinkimai",
+      "type": "n"
+    },
+    {
+      "id": "word_001072",
+      "ru": "избиратель, избирательница",
+      "lt": "rinkėjas, rinkėja",
+      "type": "n"
+    },
+    {
+      "id": "word_001073",
+      "ru": "избирательное право",
+      "lt": "rinkimų teisė",
+      "type": "n"
+    },
+    {
+      "id": "word_001074",
+      "ru": "голосование",
+      "lt": "balsavimas",
+      "type": "n"
+    },
+    {
+      "id": "word_001075",
+      "ru": "большинство",
+      "lt": "dauguma",
+      "type": "n"
+    },
+    {
+      "id": "word_001076",
+      "ru": "Сейм",
+      "lt": "Seimas",
+      "type": "n"
+    },
+    {
+      "id": "word_001077",
+      "ru": "член Сейма",
+      "lt": "Seimo narys, Seimo narė",
+      "type": "n"
+    },
+    {
+      "id": "word_001078",
+      "ru": "Президент Республики",
+      "lt": "Respublikos Prezidentas, Respublikos Prezidentė",
+      "type": "n"
+    },
+    {
+      "id": "word_001079",
+      "ru": "Правительство",
+      "lt": "Vyriausybė",
+      "type": "n"
+    },
+    {
+      "id": "word_001080",
+      "ru": "Премьер-министр",
+      "lt": "Ministras Pirmininkas, Ministrė Pirmininkė",
+      "type": "n"
+    },
+    {
+      "id": "word_001081",
+      "ru": "министр",
+      "lt": "ministras, ministrė",
+      "type": "n"
+    },
+    {
+      "id": "word_001082",
+      "ru": "суд",
+      "lt": "teismas",
+      "type": "n"
+    },
+    {
+      "id": "word_001083",
+      "ru": "Конституционный Суд",
+      "lt": "Konstitucinis Teismas",
+      "type": "n"
+    },
+    {
+      "id": "word_001084",
+      "ru": "судья",
+      "lt": "teisėjas, teisėja",
+      "type": "n"
+    },
+    {
+      "id": "word_001085",
+      "ru": "правосудие",
+      "lt": "teisingumas",
+      "type": "n"
+    },
+    {
+      "id": "word_001086",
+      "ru": "прокуратура",
+      "lt": "prokuratūra",
+      "type": "n"
+    },
+    {
+      "id": "word_001087",
+      "ru": "прокурор",
+      "lt": "prokuroras, prokurorė",
+      "type": "n"
+    },
+    {
+      "id": "word_001088",
+      "ru": "самоуправление",
+      "lt": "savivalda",
+      "type": "n"
+    },
+    {
+      "id": "word_001089",
+      "ru": "самоуправление, муниципалитет",
+      "lt": "savivaldybė",
+      "type": "n"
+    },
+    {
+      "id": "word_001090",
+      "ru": "совет самоуправления",
+      "lt": "savivaldybės taryba",
+      "type": "n"
+    },
+    {
+      "id": "word_001091",
+      "ru": "мэр",
+      "lt": "meras, merė",
+      "type": "n"
+    },
+    {
+      "id": "word_001092",
+      "ru": "бюджет",
+      "lt": "biudžetas",
+      "type": "n"
+    },
+    {
+      "id": "word_001093",
+      "ru": "налог",
+      "lt": "mokestis",
+      "type": "n"
+    },
+    {
+      "id": "word_001094",
+      "ru": "собственность",
+      "lt": "nuosavybė",
+      "type": "n"
+    },
+    {
+      "id": "word_001095",
+      "ru": "труд, работа",
+      "lt": "darbas",
+      "type": "n"
+    },
+    {
+      "id": "word_001096",
+      "ru": "брак",
+      "lt": "santuoka",
+      "type": "n"
+    },
+    {
+      "id": "word_001097",
+      "ru": "образование, просвещение",
+      "lt": "švietimas",
+      "type": "n"
+    },
+    {
+      "id": "word_001098",
+      "ru": "религия",
+      "lt": "religija",
+      "type": "n"
+    },
+    {
+      "id": "word_001099",
+      "ru": "защита, оборона",
+      "lt": "gynyba",
+      "type": "n"
+    },
+    {
+      "id": "word_001100",
+      "ru": "вооружённые силы",
+      "lt": "ginkluotosios pajėgos",
+      "type": "n"
+    },
+    {
+      "id": "word_001101",
+      "ru": "военное положение",
+      "lt": "karo padėtis",
+      "type": "n"
+    },
+    {
+      "id": "word_001102",
+      "ru": "чрезвычайное положение",
+      "lt": "nepaprastoji padėtis",
+      "type": "n"
+    },
+    {
+      "id": "word_001103",
+      "ru": "международный договор",
+      "lt": "tarptautinė sutartis",
+      "type": "n"
+    },
+    {
+      "id": "word_001104",
+      "ru": "поправка к Конституции",
+      "lt": "Konstitucijos pataisa",
+      "type": "n"
+    },
+    {
+      "id": "word_001105",
+      "ru": "иметь",
+      "lt": "turėti, turi, turėjo",
+      "type": "v"
+    },
+    {
+      "id": "word_001106",
+      "ru": "иметь право, мочь",
+      "lt": "galėti, gali, galėjo",
+      "type": "v"
+    },
+    {
+      "id": "word_001107",
+      "ru": "принадлежать",
+      "lt": "priklausyti, priklauso, priklausė",
+      "type": "v"
+    },
+    {
+      "id": "word_001108",
+      "ru": "устанавливать",
+      "lt": "nustatyti, nustato, nustatė",
+      "type": "v"
+    },
+    {
+      "id": "word_001109",
+      "ru": "осуществлять, исполнять",
+      "lt": "vykdyti, vykdo, vykdė",
+      "type": "v"
+    },
+    {
+      "id": "word_001110",
+      "ru": "принимать",
+      "lt": "priimti, priima, priėmė",
+      "type": "v"
+    },
+    {
+      "id": "word_001111",
+      "ru": "объявлять, публиковать",
+      "lt": "skelbti, skelbia, skelbė",
+      "type": "v"
+    },
+    {
+      "id": "word_001112",
+      "ru": "защищать",
+      "lt": "ginti, gina, gynė",
+      "type": "v"
+    },
+    {
+      "id": "word_001113",
+      "ru": "охранять, беречь",
+      "lt": "saugoti, saugo, saugojo",
+      "type": "v"
+    },
+    {
+      "id": "word_001114",
+      "ru": "гарантировать",
+      "lt": "laiduoti, laiduoja, laidavo",
+      "type": "v"
+    },
+    {
+      "id": "word_001115",
+      "ru": "ограничивать",
+      "lt": "riboti, riboja, ribojo",
+      "type": "v"
+    },
+    {
+      "id": "word_001116",
+      "ru": "запрещать",
+      "lt": "drausti, draudžia, draudė",
+      "type": "v"
+    },
+    {
+      "id": "word_001117",
+      "ru": "избирать",
+      "lt": "rinkti, renka, rinko",
+      "type": "v"
+    },
+    {
+      "id": "word_001118",
+      "ru": "голосовать",
+      "lt": "balsuoti, balsuoja, balsavo",
+      "type": "v"
+    },
+    {
+      "id": "word_001119",
+      "ru": "назначать",
+      "lt": "skirti, skiria, skyrė",
+      "type": "v"
+    },
+    {
+      "id": "word_001120",
+      "ru": "освобождать от должности, увольнять",
+      "lt": "atleisti, atleidžia, atleido",
+      "type": "v"
+    },
+    {
+      "id": "word_001121",
+      "ru": "предлагать",
+      "lt": "siūlyti, siūlo, siūlė",
+      "type": "v"
+    },
+    {
+      "id": "word_001122",
+      "ru": "представлять, подавать",
+      "lt": "teikti, teikia, teikė",
+      "type": "v"
+    },
+    {
+      "id": "word_001123",
+      "ru": "утверждать",
+      "lt": "tvirtinti, tvirtina, tvirtino",
+      "type": "v"
+    },
+    {
+      "id": "word_001124",
+      "ru": "подписывать",
+      "lt": "pasirašyti, pasirašo, pasirašė",
+      "type": "v"
+    },
+    {
+      "id": "word_001125",
+      "ru": "вступать в силу",
+      "lt": "įsigalioti, įsigalioja, įsigaliojo",
+      "type": "v"
+    },
+    {
+      "id": "word_001126",
+      "ru": "независимый",
+      "lt": "nepriklausomas, nepriklausoma",
+      "type": "adj"
+    },
+    {
+      "id": "word_001127",
+      "ru": "демократический",
+      "lt": "demokratinis, demokratinė",
+      "type": "adj"
+    },
+    {
+      "id": "word_001128",
+      "ru": "конституционный",
+      "lt": "konstitucinis, konstitucinė",
+      "type": "adj"
+    },
+    {
+      "id": "word_001129",
+      "ru": "государственный",
+      "lt": "valstybinis, valstybinė",
+      "type": "adj"
+    },
+    {
+      "id": "word_001130",
+      "ru": "общественный",
+      "lt": "visuomeninis, visuomeninė",
+      "type": "adj"
+    },
+    {
+      "id": "word_001131",
+      "ru": "неприкосновенный",
+      "lt": "neliečiamas, neliečiama",
+      "type": "adj"
+    },
+    {
+      "id": "word_001132",
+      "ru": "равный",
+      "lt": "lygus, lygi",
+      "type": "adj"
+    },
+    {
+      "id": "word_001133",
+      "ru": "непосредственно",
+      "lt": "tiesiogiai",
+      "type": "adv"
+    },
+    {
+      "id": "word_001134",
+      "ru": "в соответствии с, согласно",
+      "lt": "pagal",
+      "type": "prep"
     }
   ]
 }

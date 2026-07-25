@@ -2,6 +2,7 @@
   "schemaVersion": 1,
   "coursePaths": [
     "content/courses/sekmes.json",
-    "content/courses/shared-vocabulary-demo.json"
+    "content/courses/shared-vocabulary-demo.json",
+    "content/courses/constitution.json"
   ]
 }
