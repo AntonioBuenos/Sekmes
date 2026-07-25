@@ -1,8 +1,8 @@
 # Plan: Учебный модуль «Конституция Литовской Республики»
 
-- Status: in_progress
+- Status: completed
 - Approved: 2026-07-25
-- Updated: 2026-07-25 17:55 Europe/Vilnius
+- Updated: 2026-07-25 18:00 Europe/Vilnius
 
 ## Goal
 
@@ -55,7 +55,7 @@
 | 5 | Встроить модуль в навигацию и реализовать экраны блоков, статей, словаря и тестов | completed | `assembleDebugAndroidTest` успешно: новые навигационные и Compose-сценарии компилируются |
 | 6 | Добавить Compose/UI-проверки, провести полную сборку и исправить регрессии | completed | `testDebugUnitTest`, `assembleDebug`, `lintDebug` и `assembleDebugAndroidTest` успешны; подключённого устройства/эмулятора нет |
 | 7 | Завершить документацию плана, подтвердить итоговое состояние и подготовить изменения к передаче | completed | План и `git diff --check` сверены; изменения остаются незакоммиченными по умолчанию |
-| 8 | Закоммитить проверенные изменения и отправить рабочую ветку | in_progress | — |
+| 8 | Закоммитить проверенные изменения и отправить рабочую ветку | completed | Commit `ac654a7` отправлен в `origin/codex/constitution-learning-module` |
 
 ## Decisions and blockers
 
@@ -88,3 +88,4 @@
 | 2026-07-25 17:45 Europe/Vilnius | 7 | Начата финальная сверка плана, diff и состояния рабочей ветки. |
 | 2026-07-25 17:50 Europe/Vilnius | 7 | План завершён. `git diff --check` успешен; изменения оставлены в ветке `codex/constitution-learning-module` незакоммиченными, поскольку публикация не запрашивалась. |
 | 2026-07-25 17:55 Europe/Vilnius | 8 | Пользователь запросил commit и push. План возобновлён для публикации проверенной рабочей ветки. |
+| 2026-07-25 18:00 Europe/Vilnius | 8 | Создан commit `ac654a7` (`Add Constitution learning module`) и отправлен в `origin/codex/constitution-learning-module`. |
