@@ -2,7 +2,7 @@
 
 - Status: in_progress
 - Approved: 2026-07-25
-- Updated: 2026-07-25 10:43 Europe/Vilnius
+- Updated: 2026-07-25 10:47 Europe/Vilnius
 
 ## Goal
 
@@ -80,6 +80,7 @@
 - Room schema v1 сохраняет статус, счётчики ответов, серию, время последнего показа, следующего повторения и обновления.
 - Для AGP 9 включён совместимый режим KSP `android.disallowKotlinSourceSets=false`; Gradle помечает настройку экспериментальной, но генерация Room-кода и сборка проходят.
 - `connectedDebugAndroidTest` не запускался: на машине нет подключённого Android-устройства или запущенного эмулятора; APK тестов собран и готов к запуску.
+- GitHub CLI отсутствует; запрошена и подтверждена установка GitHub-плагина для создания merge request и merge.
 - Blockers: none.
 
 ## Execution log
@@ -106,3 +107,4 @@
 | 2026-07-25 09:47 Europe/Vilnius | 9 | Начата полная валидация: unit-тесты, debug-сборка, lint и проверка доступности Android-устройства для инструментальных тестов. |
 | 2026-07-25 10:42 Europe/Vilnius | 9 | Успешны `testDebugUnitTest`, `assembleDebug` и `lintDebug`; созданы debug APK, Android test APK и lint-отчёт. Устройство/эмулятор отсутствует, поэтому `connectedDebugAndroidTest` оставлен для запуска при доступном устройстве. |
 | 2026-07-25 10:43 Europe/Vilnius | 10 | Начата финализация: проверен итоговый diff и подготавливаются commit, push, merge request и merge в `development`. |
+| 2026-07-25 10:47 Europe/Vilnius | 10 | Создан commit `b806309` и ветка `codex/shared-dictionary-progress` отправлена в `origin`. Для создания merge request GitHub CLI не найден; установка GitHub-плагина подтверждена и ожидает доступности в среде. |
