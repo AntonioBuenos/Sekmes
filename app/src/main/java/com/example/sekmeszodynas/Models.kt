@@ -4,7 +4,7 @@ data class Word(
     val ru: String,
     val lt: String,
     val type: String,
-    val id: String = "$lt::$ru"
+    val id: String,
 )
 
 data class Theme(

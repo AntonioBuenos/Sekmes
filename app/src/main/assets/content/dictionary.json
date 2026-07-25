@@ -1,0 +1,6239 @@
+{
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "id": "word_000001",
+      "ru": "быть",
+      "lt": "būti, yra, buvo",
+      "type": "v"
+    },
+    {
+      "id": "word_000002",
+      "ru": "не быть",
+      "lt": "nebūti, nėra, nebuvo",
+      "type": "v"
+    },
+    {
+      "id": "word_000003",
+      "ru": "да",
+      "lt": "taip",
+      "type": "other"
+    },
+    {
+      "id": "word_000004",
+      "ru": "нет",
+      "lt": "ne",
+      "type": "other"
+    },
+    {
+      "id": "word_000005",
+      "ru": "здесь",
+      "lt": "čia",
+      "type": "adv"
+    },
+    {
+      "id": "word_000006",
+      "ru": "и",
+      "lt": "ir",
+      "type": "other"
+    },
+    {
+      "id": "word_000007",
+      "ru": "и / а",
+      "lt": "o",
+      "type": "other"
+    },
+    {
+      "id": "word_000008",
+      "ru": "преподаватель университета",
+      "lt": "dėstytojas, dėstytoja",
+      "type": "n"
+    },
+    {
+      "id": "word_000009",
+      "ru": "студент, студентка",
+      "lt": "studentas, studentė",
+      "type": "n"
+    },
+    {
+      "id": "word_000010",
+      "ru": "имя",
+      "lt": "vardas",
+      "type": "n"
+    },
+    {
+      "id": "word_000011",
+      "ru": "фамилия",
+      "lt": "pavardė",
+      "type": "n"
+    },
+    {
+      "id": "word_000012",
+      "ru": "говорить",
+      "lt": "kalbėti, kalba, kalbėjo",
+      "type": "v"
+    },
+    {
+      "id": "word_000013",
+      "ru": "понимать",
+      "lt": "suprasti, supranta, suprato",
+      "type": "v"
+    },
+    {
+      "id": "word_000014",
+      "ru": "но",
+      "lt": "bet",
+      "type": "other"
+    },
+    {
+      "id": "word_000015",
+      "ru": "плохо",
+      "lt": "blogai",
+      "type": "adv"
+    },
+    {
+      "id": "word_000016",
+      "ru": "хорошо",
+      "lt": "gerai",
+      "type": "adv"
+    },
+    {
+      "id": "word_000017",
+      "ru": "так себе",
+      "lt": "šiaip sau",
+      "type": "other"
+    },
+    {
+      "id": "word_000018",
+      "ru": "также, тоже",
+      "lt": "taip pat",
+      "type": "adv"
+    },
+    {
+      "id": "word_000019",
+      "ru": "немного",
+      "lt": "truputį",
+      "type": "adv"
+    },
+    {
+      "id": "word_000020",
+      "ru": "господин",
+      "lt": "ponas",
+      "type": "n"
+    },
+    {
+      "id": "word_000021",
+      "ru": "госпожа",
+      "lt": "ponia",
+      "type": "n"
+    },
+    {
+      "id": "word_000022",
+      "ru": "друг, подруга",
+      "lt": "draugas, draugė",
+      "type": "n"
+    },
+    {
+      "id": "word_000023",
+      "ru": "жить",
+      "lt": "gyventi, gyvena, gyveno",
+      "type": "v"
+    },
+    {
+      "id": "word_000024",
+      "ru": "работать",
+      "lt": "dirbti, dirba, dirbo",
+      "type": "v"
+    },
+    {
+      "id": "word_000025",
+      "ru": "учиться, изучать",
+      "lt": "studijuoti, studijuoja, studijavo",
+      "type": "v"
+    },
+    {
+      "id": "word_000026",
+      "ru": "коллега",
+      "lt": "bendradarbis, bendradarbė",
+      "type": "n"
+    },
+    {
+      "id": "word_000027",
+      "ru": "сосед, соседка",
+      "lt": "kaimynas, kaimynė",
+      "type": "n"
+    },
+    {
+      "id": "word_000028",
+      "ru": "столица",
+      "lt": "sostinė",
+      "type": "n"
+    },
+    {
+      "id": "word_000029",
+      "ru": "город",
+      "lt": "miestas",
+      "type": "n"
+    },
+    {
+      "id": "word_000030",
+      "ru": "центр",
+      "lt": "centras",
+      "type": "n"
+    },
+    {
+      "id": "word_000031",
+      "ru": "старый город",
+      "lt": "senamiestis, senamiesčio",
+      "type": "n"
+    },
+    {
+      "id": "word_000032",
+      "ru": "адрес",
+      "lt": "adresas",
+      "type": "n"
+    },
+    {
+      "id": "word_000033",
+      "ru": "телефон (номер телефона)",
+      "lt": "telefonas (telefono numeris)",
+      "type": "n"
+    },
+    {
+      "id": "word_000034",
+      "ru": "дом",
+      "lt": "namas",
+      "type": "n"
+    },
+    {
+      "id": "word_000035",
+      "ru": "квартира",
+      "lt": "butas",
+      "type": "n"
+    },
+    {
+      "id": "word_000036",
+      "ru": "комната",
+      "lt": "kambarys",
+      "type": "n"
+    },
+    {
+      "id": "word_000037",
+      "ru": "общежитие",
+      "lt": "bendrabutis, bendrabučio",
+      "type": "n"
+    },
+    {
+      "id": "word_000038",
+      "ru": "отель",
+      "lt": "viešbutis, viešbučio",
+      "type": "n"
+    },
+    {
+      "id": "word_000039",
+      "ru": "церковь",
+      "lt": "bažnyčia",
+      "type": "n"
+    },
+    {
+      "id": "word_000040",
+      "ru": "посольство",
+      "lt": "ambasada",
+      "type": "n"
+    },
+    {
+      "id": "word_000041",
+      "ru": "банк",
+      "lt": "bankas",
+      "type": "n"
+    },
+    {
+      "id": "word_000042",
+      "ru": "почта",
+      "lt": "paštas",
+      "type": "n"
+    },
+    {
+      "id": "word_000043",
+      "ru": "министерство",
+      "lt": "ministerija",
+      "type": "n"
+    },
+    {
+      "id": "word_000044",
+      "ru": "бюро, офис",
+      "lt": "biuras",
+      "type": "n"
+    },
+    {
+      "id": "word_000045",
+      "ru": "университет",
+      "lt": "universitetas",
+      "type": "n"
+    },
+    {
+      "id": "word_000046",
+      "ru": "школа",
+      "lt": "mokykla",
+      "type": "n"
+    },
+    {
+      "id": "word_000047",
+      "ru": "детский сад",
+      "lt": "vaikų darželis, darželio",
+      "type": "n"
+    },
+    {
+      "id": "word_000048",
+      "ru": "библиотека",
+      "lt": "biblioteka",
+      "type": "n"
+    },
+    {
+      "id": "word_000049",
+      "ru": "книжный магазин",
+      "lt": "knygynas",
+      "type": "n"
+    },
+    {
+      "id": "word_000050",
+      "ru": "ресторан",
+      "lt": "restoranas",
+      "type": "n"
+    },
+    {
+      "id": "word_000051",
+      "ru": "бар",
+      "lt": "baras",
+      "type": "n"
+    },
+    {
+      "id": "word_000052",
+      "ru": "кафе",
+      "lt": "kavinė",
+      "type": "n"
+    },
+    {
+      "id": "word_000053",
+      "ru": "столовая",
+      "lt": "valgykla",
+      "type": "n"
+    },
+    {
+      "id": "word_000054",
+      "ru": "торговый центр",
+      "lt": "prekybos centras",
+      "type": "n"
+    },
+    {
+      "id": "word_000055",
+      "ru": "магазин",
+      "lt": "parduotuvė",
+      "type": "n"
+    },
+    {
+      "id": "word_000056",
+      "ru": "киоск",
+      "lt": "kioskas",
+      "type": "n"
+    },
+    {
+      "id": "word_000057",
+      "ru": "рынок",
+      "lt": "turgus",
+      "type": "n"
+    },
+    {
+      "id": "word_000058",
+      "ru": "парикмахерская",
+      "lt": "kirpykla",
+      "type": "n"
+    },
+    {
+      "id": "word_000059",
+      "ru": "салон красоты",
+      "lt": "grožio salonas",
+      "type": "n"
+    },
+    {
+      "id": "word_000060",
+      "ru": "кинотеатр",
+      "lt": "kino teatras",
+      "type": "n"
+    },
+    {
+      "id": "word_000061",
+      "ru": "театр",
+      "lt": "teatras",
+      "type": "n"
+    },
+    {
+      "id": "word_000062",
+      "ru": "музей",
+      "lt": "muziejus",
+      "type": "n"
+    },
+    {
+      "id": "word_000063",
+      "ru": "замок",
+      "lt": "pilis, pilies",
+      "type": "n"
+    },
+    {
+      "id": "word_000064",
+      "ru": "спортивный клуб",
+      "lt": "sporto klubas",
+      "type": "n"
+    },
+    {
+      "id": "word_000065",
+      "ru": "больница",
+      "lt": "ligoninė",
+      "type": "n"
+    },
+    {
+      "id": "word_000066",
+      "ru": "клиника",
+      "lt": "klinika",
+      "type": "n"
+    },
+    {
+      "id": "word_000067",
+      "ru": "аптека",
+      "lt": "vaistinė",
+      "type": "n"
+    },
+    {
+      "id": "word_000068",
+      "ru": "улица",
+      "lt": "gatvė",
+      "type": "n"
+    },
+    {
+      "id": "word_000069",
+      "ru": "аллея",
+      "lt": "alėja",
+      "type": "n"
+    },
+    {
+      "id": "word_000070",
+      "ru": "проспект",
+      "lt": "prospektas",
+      "type": "n"
+    },
+    {
+      "id": "word_000071",
+      "ru": "площадь",
+      "lt": "aikštė",
+      "type": "n"
+    },
+    {
+      "id": "word_000072",
+      "ru": "аэропорт",
+      "lt": "oro uostas",
+      "type": "n"
+    },
+    {
+      "id": "word_000073",
+      "ru": "станция",
+      "lt": "stotis, stoties",
+      "type": "n"
+    },
+    {
+      "id": "word_000074",
+      "ru": "автобусная станция",
+      "lt": "autobusų stotis",
+      "type": "n"
+    },
+    {
+      "id": "word_000075",
+      "ru": "железнодорожная станция",
+      "lt": "geležinkelio stotis",
+      "type": "n"
+    },
+    {
+      "id": "word_000076",
+      "ru": "остановка (автобуса, троллейбуса, трамвая)",
+      "lt": "stotelė",
+      "type": "n"
+    },
+    {
+      "id": "word_000077",
+      "ru": "работа",
+      "lt": "darbas",
+      "type": "n"
+    },
+    {
+      "id": "word_000078",
+      "ru": "река",
+      "lt": "upė",
+      "type": "n"
+    },
+    {
+      "id": "word_000079",
+      "ru": "мост",
+      "lt": "tiltas",
+      "type": "n"
+    },
+    {
+      "id": "word_000080",
+      "ru": "озеро",
+      "lt": "ežeras",
+      "type": "n"
+    },
+    {
+      "id": "word_000081",
+      "ru": "море",
+      "lt": "jūra",
+      "type": "n"
+    },
+    {
+      "id": "word_000082",
+      "ru": "парк",
+      "lt": "parkas",
+      "type": "n"
+    },
+    {
+      "id": "word_000083",
+      "ru": "лес",
+      "lt": "miškas",
+      "type": "n"
+    },
+    {
+      "id": "word_000084",
+      "ru": "рядом",
+      "lt": "arti",
+      "type": "adv"
+    },
+    {
+      "id": "word_000085",
+      "ru": "далеко",
+      "lt": "toli",
+      "type": "adv"
+    },
+    {
+      "id": "word_000086",
+      "ru": "дома",
+      "lt": "namie",
+      "type": "adv"
+    },
+    {
+      "id": "word_000087",
+      "ru": "неделя",
+      "lt": "savaitė",
+      "type": "n"
+    },
+    {
+      "id": "word_000088",
+      "ru": "понедельник",
+      "lt": "pirmadienis, pirmadienio",
+      "type": "n"
+    },
+    {
+      "id": "word_000089",
+      "ru": "вторник",
+      "lt": "antradienis, -io",
+      "type": "n"
+    },
+    {
+      "id": "word_000090",
+      "ru": "среда",
+      "lt": "trečiadienis, -io",
+      "type": "n"
+    },
+    {
+      "id": "word_000091",
+      "ru": "четверг",
+      "lt": "ketvirtadienis, -io",
+      "type": "n"
+    },
+    {
+      "id": "word_000092",
+      "ru": "пятница",
+      "lt": "penktadienis, -io",
+      "type": "n"
+    },
+    {
+      "id": "word_000093",
+      "ru": "суббота",
+      "lt": "šeštadienis, -io",
+      "type": "n"
+    },
+    {
+      "id": "word_000094",
+      "ru": "воскресенье",
+      "lt": "sekmadienis, -io",
+      "type": "n"
+    },
+    {
+      "id": "word_000095",
+      "ru": "выходные",
+      "lt": "savaitgalis, savaitgalio",
+      "type": "n"
+    },
+    {
+      "id": "word_000096",
+      "ru": "час",
+      "lt": "valanda",
+      "type": "n"
+    },
+    {
+      "id": "word_000097",
+      "ru": "половина",
+      "lt": "pusė",
+      "type": "n"
+    },
+    {
+      "id": "word_000098",
+      "ru": "идти (пешком)",
+      "lt": "eiti, eina, ėjo",
+      "type": "v"
+    },
+    {
+      "id": "word_000099",
+      "ru": "спешить, торопиться",
+      "lt": "skubėti, skuba, skubėjo",
+      "type": "v"
+    },
+    {
+      "id": "word_000100",
+      "ru": "встречаться",
+      "lt": "susitikti, susitinka, susitiko",
+      "type": "v"
+    },
+    {
+      "id": "word_000101",
+      "ru": "ехать (на транспорте)",
+      "lt": "važiuoti, važiuoja, važiavo",
+      "type": "v"
+    },
+    {
+      "id": "word_000102",
+      "ru": "опаздывать",
+      "lt": "vėluoti, vėluoja, vėlavo",
+      "type": "v"
+    },
+    {
+      "id": "word_000103",
+      "ru": "вместе",
+      "lt": "kartu",
+      "type": "adv"
+    },
+    {
+      "id": "word_000104",
+      "ru": "утро",
+      "lt": "rytas",
+      "type": "n"
+    },
+    {
+      "id": "word_000105",
+      "ru": "день",
+      "lt": "diena",
+      "type": "n"
+    },
+    {
+      "id": "word_000106",
+      "ru": "вечер",
+      "lt": "vakaras",
+      "type": "n"
+    },
+    {
+      "id": "word_000107",
+      "ru": "ночь",
+      "lt": "naktis, nakties",
+      "type": "n"
+    },
+    {
+      "id": "word_000108",
+      "ru": "после обеда (PM)",
+      "lt": "po pietų",
+      "type": "other"
+    },
+    {
+      "id": "word_000109",
+      "ru": "до обеда (AM)",
+      "lt": "prieš pietus",
+      "type": "other"
+    },
+    {
+      "id": "word_000110",
+      "ru": "семья",
+      "lt": "šeima",
+      "type": "n"
+    },
+    {
+      "id": "word_000111",
+      "ru": "родители",
+      "lt": "tėvai",
+      "type": "n"
+    },
+    {
+      "id": "word_000112",
+      "ru": "отец, папа",
+      "lt": "tėvas; tėtis, tėčio",
+      "type": "n"
+    },
+    {
+      "id": "word_000113",
+      "ru": "мать, мама",
+      "lt": "motina, mama",
+      "type": "n"
+    },
+    {
+      "id": "word_000114",
+      "ru": "ребёнок",
+      "lt": "vaikas",
+      "type": "n"
+    },
+    {
+      "id": "word_000115",
+      "ru": "дочь",
+      "lt": "duktė",
+      "type": "n"
+    },
+    {
+      "id": "word_000116",
+      "ru": "сын",
+      "lt": "sūnus",
+      "type": "n"
+    },
+    {
+      "id": "word_000117",
+      "ru": "жена",
+      "lt": "žmona",
+      "type": "n"
+    },
+    {
+      "id": "word_000118",
+      "ru": "муж",
+      "lt": "vyras",
+      "type": "n"
+    },
+    {
+      "id": "word_000119",
+      "ru": "сестра",
+      "lt": "sesuo",
+      "type": "n"
+    },
+    {
+      "id": "word_000120",
+      "ru": "брат",
+      "lt": "brolis, brolio",
+      "type": "n"
+    },
+    {
+      "id": "word_000121",
+      "ru": "дедушка",
+      "lt": "senelis, senelio",
+      "type": "n"
+    },
+    {
+      "id": "word_000122",
+      "ru": "бабушка",
+      "lt": "senelė / močiutė",
+      "type": "n"
+    },
+    {
+      "id": "word_000123",
+      "ru": "внук, внучка",
+      "lt": "anūkas, anūkė",
+      "type": "n"
+    },
+    {
+      "id": "word_000124",
+      "ru": "родственники",
+      "lt": "giminės",
+      "type": "n"
+    },
+    {
+      "id": "word_000125",
+      "ru": "тётя",
+      "lt": "teta",
+      "type": "n"
+    },
+    {
+      "id": "word_000126",
+      "ru": "дядя",
+      "lt": "dėdė",
+      "type": "n"
+    },
+    {
+      "id": "word_000127",
+      "ru": "двоюродный брат",
+      "lt": "pusbrolis, pusbrolio",
+      "type": "n"
+    },
+    {
+      "id": "word_000128",
+      "ru": "двоюродная сестра",
+      "lt": "pusseserė",
+      "type": "n"
+    },
+    {
+      "id": "word_000129",
+      "ru": "племянница",
+      "lt": "dukterėčia",
+      "type": "n"
+    },
+    {
+      "id": "word_000130",
+      "ru": "племянник",
+      "lt": "sūnėnas",
+      "type": "n"
+    },
+    {
+      "id": "word_000131",
+      "ru": "женатый (мужчина)",
+      "lt": "vedęs",
+      "type": "adj"
+    },
+    {
+      "id": "word_000132",
+      "ru": "замужняя (женщина)",
+      "lt": "ištekėjusi",
+      "type": "adj"
+    },
+    {
+      "id": "word_000133",
+      "ru": "разведённый, разведённая",
+      "lt": "išsiskyręs, išsiskyrusi",
+      "type": "adj"
+    },
+    {
+      "id": "word_000134",
+      "ru": "умерший, умершая",
+      "lt": "miręs, mirusi",
+      "type": "adj"
+    },
+    {
+      "id": "word_000135",
+      "ru": "человек",
+      "lt": "žmogus",
+      "type": "n"
+    },
+    {
+      "id": "word_000136",
+      "ru": "мужчина",
+      "lt": "vyras",
+      "type": "n"
+    },
+    {
+      "id": "word_000137",
+      "ru": "женщина",
+      "lt": "moteris, moters",
+      "type": "n"
+    },
+    {
+      "id": "word_000138",
+      "ru": "молодой человек",
+      "lt": "vaikinas",
+      "type": "n"
+    },
+    {
+      "id": "word_000139",
+      "ru": "девушка",
+      "lt": "mergina",
+      "type": "n"
+    },
+    {
+      "id": "word_000140",
+      "ru": "мальчик",
+      "lt": "berniukas",
+      "type": "n"
+    },
+    {
+      "id": "word_000141",
+      "ru": "девочка",
+      "lt": "mergaitė",
+      "type": "n"
+    },
+    {
+      "id": "word_000142",
+      "ru": "школьник",
+      "lt": "mokinys",
+      "type": "n"
+    },
+    {
+      "id": "word_000143",
+      "ru": "школьница",
+      "lt": "mokinė",
+      "type": "n"
+    },
+    {
+      "id": "word_000144",
+      "ru": "домашнее животное",
+      "lt": "naminis gyvūnas",
+      "type": "n"
+    },
+    {
+      "id": "word_000145",
+      "ru": "кошка",
+      "lt": "katė",
+      "type": "n"
+    },
+    {
+      "id": "word_000146",
+      "ru": "собака",
+      "lt": "šuo",
+      "type": "n"
+    },
+    {
+      "id": "word_000147",
+      "ru": "этот",
+      "lt": "šis",
+      "type": "other"
+    },
+    {
+      "id": "word_000148",
+      "ru": "эти",
+      "lt": "šie",
+      "type": "other"
+    },
+    {
+      "id": "word_000149",
+      "ru": "эта",
+      "lt": "ši",
+      "type": "other"
+    },
+    {
+      "id": "word_000150",
+      "ru": "эти",
+      "lt": "šios",
+      "type": "other"
+    },
+    {
+      "id": "word_000151",
+      "ru": "музыка",
+      "lt": "muzika",
+      "type": "n"
+    },
+    {
+      "id": "word_000152",
+      "ru": "литература",
+      "lt": "literatūra",
+      "type": "n"
+    },
+    {
+      "id": "word_000153",
+      "ru": "спорт",
+      "lt": "sportas",
+      "type": "n"
+    },
+    {
+      "id": "word_000154",
+      "ru": "любить",
+      "lt": "mylėti, myli, mylėjo ką?",
+      "type": "v"
+    },
+    {
+      "id": "word_000155",
+      "ru": "сидеть",
+      "lt": "sėdėti, sėdi, sėdėjo",
+      "type": "v"
+    },
+    {
+      "id": "word_000156",
+      "ru": "стоять",
+      "lt": "stovėti, stovi, stovėjo",
+      "type": "v"
+    },
+    {
+      "id": "word_000157",
+      "ru": "иметь",
+      "lt": "turėti, turi, turėjo ką?",
+      "type": "v"
+    },
+    {
+      "id": "word_000158",
+      "ru": "смотреть, наблюдать",
+      "lt": "žiūrėti, žiūri, žiūrėjo ką?",
+      "type": "v"
+    },
+    {
+      "id": "word_000159",
+      "ru": "нравиться",
+      "lt": "mėgti, mėgsta, mėgo ką?",
+      "type": "v"
+    },
+    {
+      "id": "word_000160",
+      "ru": "заниматься спортом",
+      "lt": "sportuoti, sportuoja, sportavo",
+      "type": "v"
+    },
+    {
+      "id": "word_000161",
+      "ru": "ходить",
+      "lt": "vaikščioti, vaikščioja, vaikščiojo",
+      "type": "v"
+    },
+    {
+      "id": "word_000162",
+      "ru": "высокий / высокая",
+      "lt": "aukštas, aukšta",
+      "type": "adj"
+    },
+    {
+      "id": "word_000163",
+      "ru": "дружелюбный / дружелюбная",
+      "lt": "draugiškas, draugiška",
+      "type": "adj"
+    },
+    {
+      "id": "word_000164",
+      "ru": "добрый / добрая, хороший / хорошая",
+      "lt": "geras, gera",
+      "type": "adj"
+    },
+    {
+      "id": "word_000165",
+      "ru": "молодой / молодая",
+      "lt": "jaunas, jauna",
+      "type": "adj"
+    },
+    {
+      "id": "word_000166",
+      "ru": "весёлый / весёлая",
+      "lt": "linksmas, linksma",
+      "type": "adj"
+    },
+    {
+      "id": "word_000167",
+      "ru": "грустный / грустная",
+      "lt": "liūdnas, liūdna",
+      "type": "adj"
+    },
+    {
+      "id": "word_000168",
+      "ru": "маленький / маленькая",
+      "lt": "mažas, maža",
+      "type": "adj"
+    },
+    {
+      "id": "word_000169",
+      "ru": "милый / милая",
+      "lt": "mielas, miela",
+      "type": "adj"
+    },
+    {
+      "id": "word_000170",
+      "ru": "умный / умная",
+      "lt": "protingas, protinga",
+      "type": "adj"
+    },
+    {
+      "id": "word_000171",
+      "ru": "старый / старая",
+      "lt": "senas, sena",
+      "type": "adj"
+    },
+    {
+      "id": "word_000172",
+      "ru": "низкий / низкая",
+      "lt": "žemas, žema",
+      "type": "adj"
+    },
+    {
+      "id": "word_000173",
+      "ru": "красивый / красивая",
+      "lt": "gražus, graži",
+      "type": "adj"
+    },
+    {
+      "id": "word_000174",
+      "ru": "интересный / интересная",
+      "lt": "įdomus, įdomi",
+      "type": "adj"
+    },
+    {
+      "id": "word_000175",
+      "ru": "приятный / приятная",
+      "lt": "malonus, maloni",
+      "type": "adj"
+    },
+    {
+      "id": "word_000176",
+      "ru": "отличный / отличная",
+      "lt": "puikus, puiki",
+      "type": "adj"
+    },
+    {
+      "id": "word_000177",
+      "ru": "светлый / светлая, блондин / блондинка",
+      "lt": "šviesus, šviesi",
+      "type": "adj"
+    },
+    {
+      "id": "word_000178",
+      "ru": "тёмный / тёмная",
+      "lt": "tamsus, tamsi",
+      "type": "adj"
+    },
+    {
+      "id": "word_000179",
+      "ru": "большой / большая",
+      "lt": "didelis, didelė",
+      "type": "adj"
+    },
+    {
+      "id": "word_000180",
+      "ru": "средний / средняя",
+      "lt": "vidurinis, vidurinė",
+      "type": "adj"
+    },
+    {
+      "id": "word_000181",
+      "ru": "младший / младшая",
+      "lt": "jaunesnis, jaunesnė",
+      "type": "adj"
+    },
+    {
+      "id": "word_000182",
+      "ru": "самый младший / самая младшая",
+      "lt": "jauniausias, jauniausia",
+      "type": "adj"
+    },
+    {
+      "id": "word_000183",
+      "ru": "старший / старшая",
+      "lt": "vyresnis, vyresnė",
+      "type": "adj"
+    },
+    {
+      "id": "word_000184",
+      "ru": "самый старший / самая старшая",
+      "lt": "vyriausias, vyriausia",
+      "type": "adj"
+    },
+    {
+      "id": "word_000185",
+      "ru": "тот",
+      "lt": "tas",
+      "type": "other"
+    },
+    {
+      "id": "word_000186",
+      "ru": "та",
+      "lt": "ta",
+      "type": "other"
+    },
+    {
+      "id": "word_000187",
+      "ru": "те",
+      "lt": "tie",
+      "type": "other"
+    },
+    {
+      "id": "word_000188",
+      "ru": "те",
+      "lt": "tos",
+      "type": "other"
+    },
+    {
+      "id": "word_000189",
+      "ru": "молочные продукты",
+      "lt": "pieno produktai",
+      "type": "n"
+    },
+    {
+      "id": "word_000190",
+      "ru": "молоко",
+      "lt": "pienas",
+      "type": "n"
+    },
+    {
+      "id": "word_000191",
+      "ru": "сметана",
+      "lt": "grietinė",
+      "type": "n"
+    },
+    {
+      "id": "word_000192",
+      "ru": "йогурт",
+      "lt": "jogurtas",
+      "type": "n"
+    },
+    {
+      "id": "word_000193",
+      "ru": "кефир",
+      "lt": "kefyras",
+      "type": "n"
+    },
+    {
+      "id": "word_000194",
+      "ru": "сыр",
+      "lt": "sūris, sūrio",
+      "type": "n"
+    },
+    {
+      "id": "word_000195",
+      "ru": "масло",
+      "lt": "sviestas",
+      "type": "n"
+    },
+    {
+      "id": "word_000196",
+      "ru": "творог",
+      "lt": "varškė",
+      "type": "n"
+    },
+    {
+      "id": "word_000197",
+      "ru": "хлеб",
+      "lt": "duona",
+      "type": "n"
+    },
+    {
+      "id": "word_000198",
+      "ru": "чёрный хлеб",
+      "lt": "juoda duona",
+      "type": "n"
+    },
+    {
+      "id": "word_000199",
+      "ru": "белый хлеб",
+      "lt": "šviesi duona",
+      "type": "n"
+    },
+    {
+      "id": "word_000200",
+      "ru": "батон",
+      "lt": "batonas",
+      "type": "n"
+    },
+    {
+      "id": "word_000201",
+      "ru": "мясо",
+      "lt": "mėsa",
+      "type": "n"
+    },
+    {
+      "id": "word_000202",
+      "ru": "говядина",
+      "lt": "jautiena",
+      "type": "n"
+    },
+    {
+      "id": "word_000203",
+      "ru": "индейка",
+      "lt": "kalakutiena",
+      "type": "n"
+    },
+    {
+      "id": "word_000204",
+      "ru": "свинина",
+      "lt": "kiauliena",
+      "type": "n"
+    },
+    {
+      "id": "word_000205",
+      "ru": "курятина",
+      "lt": "vištiena",
+      "type": "n"
+    },
+    {
+      "id": "word_000206",
+      "ru": "колбаса",
+      "lt": "dešra",
+      "type": "n"
+    },
+    {
+      "id": "word_000207",
+      "ru": "сосиски",
+      "lt": "dešrelės",
+      "type": "n"
+    },
+    {
+      "id": "word_000208",
+      "ru": "ветчина",
+      "lt": "kumpis, kumpio",
+      "type": "n"
+    },
+    {
+      "id": "word_000209",
+      "ru": "рыба",
+      "lt": "žuvis, žuvies",
+      "type": "n"
+    },
+    {
+      "id": "word_000210",
+      "ru": "напитки",
+      "lt": "gėrimai",
+      "type": "n"
+    },
+    {
+      "id": "word_000211",
+      "ru": "вода",
+      "lt": "vanduo, vandens",
+      "type": "n"
+    },
+    {
+      "id": "word_000212",
+      "ru": "сок",
+      "lt": "sultys, sulčių",
+      "type": "n"
+    },
+    {
+      "id": "word_000213",
+      "ru": "чай",
+      "lt": "arbata",
+      "type": "n"
+    },
+    {
+      "id": "word_000214",
+      "ru": "кофе",
+      "lt": "kava",
+      "type": "n"
+    },
+    {
+      "id": "word_000215",
+      "ru": "квас",
+      "lt": "gira",
+      "type": "n"
+    },
+    {
+      "id": "word_000216",
+      "ru": "сладости",
+      "lt": "saldumynai",
+      "type": "n"
+    },
+    {
+      "id": "word_000217",
+      "ru": "булочка",
+      "lt": "bandelė",
+      "type": "n"
+    },
+    {
+      "id": "word_000218",
+      "ru": "мёд",
+      "lt": "medus",
+      "type": "n"
+    },
+    {
+      "id": "word_000219",
+      "ru": "пирог",
+      "lt": "pyragas",
+      "type": "n"
+    },
+    {
+      "id": "word_000220",
+      "ru": "шоколад",
+      "lt": "šokoladas",
+      "type": "n"
+    },
+    {
+      "id": "word_000221",
+      "ru": "пончик",
+      "lt": "spurga",
+      "type": "n"
+    },
+    {
+      "id": "word_000222",
+      "ru": "торт",
+      "lt": "tortas",
+      "type": "n"
+    },
+    {
+      "id": "word_000223",
+      "ru": "каша",
+      "lt": "košė",
+      "type": "n"
+    },
+    {
+      "id": "word_000224",
+      "ru": "яйцо",
+      "lt": "kiaušinis, kiaušinio",
+      "type": "n"
+    },
+    {
+      "id": "word_000225",
+      "ru": "бутерброд",
+      "lt": "sumuštinis, sumuštinio",
+      "type": "n"
+    },
+    {
+      "id": "word_000226",
+      "ru": "завтрак",
+      "lt": "pusryčiai",
+      "type": "n"
+    },
+    {
+      "id": "word_000227",
+      "ru": "обед",
+      "lt": "pietūs",
+      "type": "n"
+    },
+    {
+      "id": "word_000228",
+      "ru": "ужин",
+      "lt": "vakarienė",
+      "type": "n"
+    },
+    {
+      "id": "word_000229",
+      "ru": "голодный / голодная",
+      "lt": "alkanas, alkana",
+      "type": "adj"
+    },
+    {
+      "id": "word_000230",
+      "ru": "сытый / сытая",
+      "lt": "sotus, soti",
+      "type": "adj"
+    },
+    {
+      "id": "word_000231",
+      "ru": "вкусный / вкусная",
+      "lt": "skanus, skani",
+      "type": "adj"
+    },
+    {
+      "id": "word_000232",
+      "ru": "тёплый / тёплая",
+      "lt": "šiltas, šilta",
+      "type": "adj"
+    },
+    {
+      "id": "word_000233",
+      "ru": "холодный / холодная",
+      "lt": "šaltas, šalta",
+      "type": "adj"
+    },
+    {
+      "id": "word_000234",
+      "ru": "горячий / горячая",
+      "lt": "karštas, karšta",
+      "type": "adj"
+    },
+    {
+      "id": "word_000235",
+      "ru": "жареный / печёный / запечённый / на гриле",
+      "lt": "keptas, kepta",
+      "type": "adj"
+    },
+    {
+      "id": "word_000236",
+      "ru": "варёный / приготовленный",
+      "lt": "virtas, virta",
+      "type": "adj"
+    },
+    {
+      "id": "word_000237",
+      "ru": "чёрный / чёрная",
+      "lt": "juodas, juoda",
+      "type": "adj"
+    },
+    {
+      "id": "word_000238",
+      "ru": "нравиться",
+      "lt": "patikti, patinka, patiko kam? kas?",
+      "type": "v"
+    },
+    {
+      "id": "word_000239",
+      "ru": "любить",
+      "lt": "mėgti, mėgsta, mėgo ką?",
+      "type": "v"
+    },
+    {
+      "id": "word_000240",
+      "ru": "хотеть",
+      "lt": "norėti, nori, norėjo ko?",
+      "type": "v"
+    },
+    {
+      "id": "word_000241",
+      "ru": "есть",
+      "lt": "valgyti, valgo, valgė ką?, ko?",
+      "type": "v"
+    },
+    {
+      "id": "word_000242",
+      "ru": "пить",
+      "lt": "gerti, geria, gėrė ką?",
+      "type": "v"
+    },
+    {
+      "id": "word_000243",
+      "ru": "пробовать",
+      "lt": "ragauti, ragauja, ragavo ką?, ko?",
+      "type": "v"
+    },
+    {
+      "id": "word_000244",
+      "ru": "брать",
+      "lt": "imti, ima, ėmė ką?, ko?",
+      "type": "v"
+    },
+    {
+      "id": "word_000245",
+      "ru": "передавать",
+      "lt": "paduoti, paduoda, padavė ką?, ko?",
+      "type": "v"
+    },
+    {
+      "id": "word_000246",
+      "ru": "класть",
+      "lt": "įdėti, įdeda, įdėjo ką?, ko?",
+      "type": "v"
+    },
+    {
+      "id": "word_000247",
+      "ru": "наливать",
+      "lt": "įpilti, įpila, įpylė ko?",
+      "type": "v"
+    },
+    {
+      "id": "word_000248",
+      "ru": "завтракать",
+      "lt": "pusryčiauti, pusryčiauja, pusryčiavo",
+      "type": "v"
+    },
+    {
+      "id": "word_000249",
+      "ru": "обедать",
+      "lt": "pietauti, pietauja, pietavo",
+      "type": "v"
+    },
+    {
+      "id": "word_000250",
+      "ru": "ужинать",
+      "lt": "vakarieniauti, vakarieniauja, vakarieniavo",
+      "type": "v"
+    },
+    {
+      "id": "word_000251",
+      "ru": "продавец / продавщица",
+      "lt": "pardavėjas, pardavėja",
+      "type": "n"
+    },
+    {
+      "id": "word_000252",
+      "ru": "кусочек / кусок",
+      "lt": "gabaliukas; gabalėlis, gabalėlio",
+      "type": "n"
+    },
+    {
+      "id": "word_000253",
+      "ru": "килограмм",
+      "lt": "kilogramas",
+      "type": "n"
+    },
+    {
+      "id": "word_000254",
+      "ru": "пакет / мешочек",
+      "lt": "maišelis, maišelio",
+      "type": "n"
+    },
+    {
+      "id": "word_000255",
+      "ru": "цена",
+      "lt": "kaina",
+      "type": "n"
+    },
+    {
+      "id": "word_000256",
+      "ru": "евро",
+      "lt": "euras",
+      "type": "n"
+    },
+    {
+      "id": "word_000257",
+      "ru": "цент",
+      "lt": "centas",
+      "type": "n"
+    },
+    {
+      "id": "word_000258",
+      "ru": "овощи",
+      "lt": "daržovės",
+      "type": "n"
+    },
+    {
+      "id": "word_000259",
+      "ru": "огурец",
+      "lt": "agurkas",
+      "type": "n"
+    },
+    {
+      "id": "word_000260",
+      "ru": "баклажан",
+      "lt": "baklažanas",
+      "type": "n"
+    },
+    {
+      "id": "word_000261",
+      "ru": "свёкла",
+      "lt": "burokėlis, burokėlio",
+      "type": "n"
+    },
+    {
+      "id": "word_000262",
+      "ru": "картофель",
+      "lt": "bulvė",
+      "type": "n"
+    },
+    {
+      "id": "word_000263",
+      "ru": "кабачок",
+      "lt": "cukinija",
+      "type": "n"
+    },
+    {
+      "id": "word_000264",
+      "ru": "чеснок",
+      "lt": "česnakas",
+      "type": "n"
+    },
+    {
+      "id": "word_000265",
+      "ru": "капуста",
+      "lt": "kopūstas",
+      "type": "n"
+    },
+    {
+      "id": "word_000266",
+      "ru": "тыква",
+      "lt": "moliūgas",
+      "type": "n"
+    },
+    {
+      "id": "word_000267",
+      "ru": "морковь",
+      "lt": "morka",
+      "type": "n"
+    },
+    {
+      "id": "word_000268",
+      "ru": "помидор",
+      "lt": "pomidoras",
+      "type": "n"
+    },
+    {
+      "id": "word_000269",
+      "ru": "фасоль",
+      "lt": "pupelės",
+      "type": "n"
+    },
+    {
+      "id": "word_000270",
+      "ru": "лук",
+      "lt": "svogūnas",
+      "type": "n"
+    },
+    {
+      "id": "word_000271",
+      "ru": "горох",
+      "lt": "žirniai",
+      "type": "n"
+    },
+    {
+      "id": "word_000272",
+      "ru": "фрукты",
+      "lt": "vaisiai",
+      "type": "n"
+    },
+    {
+      "id": "word_000273",
+      "ru": "апельсин",
+      "lt": "apelsinas",
+      "type": "n"
+    },
+    {
+      "id": "word_000274",
+      "ru": "банан",
+      "lt": "bananas",
+      "type": "n"
+    },
+    {
+      "id": "word_000275",
+      "ru": "лимон",
+      "lt": "citrina",
+      "type": "n"
+    },
+    {
+      "id": "word_000276",
+      "ru": "груша",
+      "lt": "kriaušė",
+      "type": "n"
+    },
+    {
+      "id": "word_000277",
+      "ru": "яблоко",
+      "lt": "obuolys",
+      "type": "n"
+    },
+    {
+      "id": "word_000278",
+      "ru": "ягоды",
+      "lt": "uogos",
+      "type": "n"
+    },
+    {
+      "id": "word_000279",
+      "ru": "малина",
+      "lt": "avietės",
+      "type": "n"
+    },
+    {
+      "id": "word_000280",
+      "ru": "клубника",
+      "lt": "braškės",
+      "type": "n"
+    },
+    {
+      "id": "word_000281",
+      "ru": "смородина",
+      "lt": "serbentai",
+      "type": "n"
+    },
+    {
+      "id": "word_000282",
+      "ru": "виноград",
+      "lt": "vynuogės",
+      "type": "n"
+    },
+    {
+      "id": "word_000283",
+      "ru": "вишня",
+      "lt": "vyšnios",
+      "type": "n"
+    },
+    {
+      "id": "word_000284",
+      "ru": "орехи",
+      "lt": "riešutai",
+      "type": "n"
+    },
+    {
+      "id": "word_000285",
+      "ru": "приправы",
+      "lt": "prieskoniai",
+      "type": "n"
+    },
+    {
+      "id": "word_000286",
+      "ru": "базилик",
+      "lt": "bazilikai",
+      "type": "n"
+    },
+    {
+      "id": "word_000287",
+      "ru": "тмин",
+      "lt": "kmynai",
+      "type": "n"
+    },
+    {
+      "id": "word_000288",
+      "ru": "укроп",
+      "lt": "krapai",
+      "type": "n"
+    },
+    {
+      "id": "word_000289",
+      "ru": "лавровый лист",
+      "lt": "lauro lapai",
+      "type": "n"
+    },
+    {
+      "id": "word_000290",
+      "ru": "мята",
+      "lt": "mėtos",
+      "type": "n"
+    },
+    {
+      "id": "word_000291",
+      "ru": "петрушка",
+      "lt": "petražolės",
+      "type": "n"
+    },
+    {
+      "id": "word_000292",
+      "ru": "перец",
+      "lt": "pipirai",
+      "type": "n"
+    },
+    {
+      "id": "word_000293",
+      "ru": "орегано",
+      "lt": "raudonėliai",
+      "type": "n"
+    },
+    {
+      "id": "word_000294",
+      "ru": "суп",
+      "lt": "sriuba",
+      "type": "n"
+    },
+    {
+      "id": "word_000295",
+      "ru": "салат",
+      "lt": "salotos",
+      "type": "n"
+    },
+    {
+      "id": "word_000296",
+      "ru": "белый / белая",
+      "lt": "baltas, balta",
+      "type": "adj"
+    },
+    {
+      "id": "word_000297",
+      "ru": "жёлтый / жёлтая",
+      "lt": "geltonas, geltona",
+      "type": "adj"
+    },
+    {
+      "id": "word_000298",
+      "ru": "синий / синяя",
+      "lt": "mėlynas, mėlyna",
+      "type": "adj"
+    },
+    {
+      "id": "word_000299",
+      "ru": "красный / красная",
+      "lt": "raudonas, raudona",
+      "type": "adj"
+    },
+    {
+      "id": "word_000300",
+      "ru": "зелёный / зелёная",
+      "lt": "žalias, žalia",
+      "type": "adj"
+    },
+    {
+      "id": "word_000301",
+      "ru": "делать, производить",
+      "lt": "daryti, daro, darė ką?",
+      "type": "v"
+    },
+    {
+      "id": "word_000302",
+      "ru": "жарить, печь, запекать",
+      "lt": "kepti, kepa, kepė ką?",
+      "type": "v"
+    },
+    {
+      "id": "word_000303",
+      "ru": "варить, кипятить",
+      "lt": "virti, verda, virė ką?",
+      "type": "v"
+    },
+    {
+      "id": "word_000304",
+      "ru": "давать",
+      "lt": "duoti, duoda, davė ką?, ko?",
+      "type": "v"
+    },
+    {
+      "id": "word_000305",
+      "ru": "покупать",
+      "lt": "pirkti, perka, pirko ką?, ko?",
+      "type": "v"
+    },
+    {
+      "id": "word_000306",
+      "ru": "сладкий / сладкая",
+      "lt": "saldus, saldi",
+      "type": "adj"
+    },
+    {
+      "id": "word_000307",
+      "ru": "кислый / кислая",
+      "lt": "rūgštus, rūgšti",
+      "type": "adj"
+    },
+    {
+      "id": "word_000308",
+      "ru": "свежий / свежая",
+      "lt": "šviežias, šviežia",
+      "type": "adj"
+    },
+    {
+      "id": "word_000309",
+      "ru": "несвежий / несвежая",
+      "lt": "senas, sena",
+      "type": "adj"
+    },
+    {
+      "id": "word_000310",
+      "ru": "жирный / насыщенный",
+      "lt": "riebus, riebi",
+      "type": "adj"
+    },
+    {
+      "id": "word_000311",
+      "ru": "копчёный / копчёная",
+      "lt": "rūkytas, rūkyta",
+      "type": "adj"
+    },
+    {
+      "id": "word_000312",
+      "ru": "сырой / сырая",
+      "lt": "žalias, žalia",
+      "type": "adj"
+    },
+    {
+      "id": "word_000313",
+      "ru": "пекарня",
+      "lt": "kepyklėlė",
+      "type": "n"
+    },
+    {
+      "id": "word_000314",
+      "ru": "пиццерия",
+      "lt": "picerija",
+      "type": "n"
+    },
+    {
+      "id": "word_000315",
+      "ru": "официант / официантка",
+      "lt": "padavėjas, padavėja",
+      "type": "n"
+    },
+    {
+      "id": "word_000316",
+      "ru": "меню",
+      "lt": "meniu",
+      "type": "n"
+    },
+    {
+      "id": "word_000317",
+      "ru": "комплексный обед",
+      "lt": "dienos pietūs",
+      "type": "n"
+    },
+    {
+      "id": "word_000318",
+      "ru": "стол",
+      "lt": "staliukas",
+      "type": "n"
+    },
+    {
+      "id": "word_000319",
+      "ru": "счёт",
+      "lt": "sąskaita",
+      "type": "n"
+    },
+    {
+      "id": "word_000320",
+      "ru": "обычно",
+      "lt": "paprastai",
+      "type": "adv"
+    },
+    {
+      "id": "word_000321",
+      "ru": "блюдо",
+      "lt": "patiekalas",
+      "type": "n"
+    },
+    {
+      "id": "word_000322",
+      "ru": "суп дня",
+      "lt": "dienos sriuba",
+      "type": "n"
+    },
+    {
+      "id": "word_000323",
+      "ru": "овощной суп",
+      "lt": "daržovių sriuba",
+      "type": "n"
+    },
+    {
+      "id": "word_000324",
+      "ru": "грибной суп",
+      "lt": "grybų sriuba",
+      "type": "n"
+    },
+    {
+      "id": "word_000325",
+      "ru": "свекольный суп",
+      "lt": "burokėlių sriuba",
+      "type": "n"
+    },
+    {
+      "id": "word_000326",
+      "ru": "овощной салат",
+      "lt": "daržovių salotos",
+      "type": "n"
+    },
+    {
+      "id": "word_000327",
+      "ru": "томатный салат",
+      "lt": "pomidorų salotos",
+      "type": "n"
+    },
+    {
+      "id": "word_000328",
+      "ru": "капустный салат",
+      "lt": "kopūstų salotos",
+      "type": "n"
+    },
+    {
+      "id": "word_000329",
+      "ru": "литовский салат",
+      "lt": "lietuviškos salotos",
+      "type": "n"
+    },
+    {
+      "id": "word_000330",
+      "ru": "омлет",
+      "lt": "omletas",
+      "type": "n"
+    },
+    {
+      "id": "word_000331",
+      "ru": "яичница",
+      "lt": "kiaušinienė",
+      "type": "n"
+    },
+    {
+      "id": "word_000332",
+      "ru": "яичница с беконом",
+      "lt": "kiaušinienė su sonine",
+      "type": "n"
+    },
+    {
+      "id": "word_000333",
+      "ru": "сэндвич",
+      "lt": "sumuštinis, sumuštinio",
+      "type": "n"
+    },
+    {
+      "id": "word_000334",
+      "ru": "сэндвич с ветчиной",
+      "lt": "sumuštinis su kumpiu ir salotomis",
+      "type": "n"
+    },
+    {
+      "id": "word_000335",
+      "ru": "жаркое / гриль",
+      "lt": "kepsnys",
+      "type": "n"
+    },
+    {
+      "id": "word_000336",
+      "ru": "куриное жаркое",
+      "lt": "vištienos kepsnys",
+      "type": "n"
+    },
+    {
+      "id": "word_000337",
+      "ru": "свиное жаркое",
+      "lt": "kiaulienos kepsnys",
+      "type": "n"
+    },
+    {
+      "id": "word_000338",
+      "ru": "говяжье жаркое",
+      "lt": "jautienos kepsnys",
+      "type": "n"
+    },
+    {
+      "id": "word_000339",
+      "ru": "пицца",
+      "lt": "pica",
+      "type": "n"
+    },
+    {
+      "id": "word_000340",
+      "ru": "блины",
+      "lt": "blynai",
+      "type": "n"
+    },
+    {
+      "id": "word_000341",
+      "ru": "картофельные блины",
+      "lt": "bulvių blynai",
+      "type": "n"
+    },
+    {
+      "id": "word_000342",
+      "ru": "блинчик",
+      "lt": "blynelis, blynelio",
+      "type": "n"
+    },
+    {
+      "id": "word_000343",
+      "ru": "блинчики с сыром",
+      "lt": "blyneliai su sūriu",
+      "type": "n"
+    },
+    {
+      "id": "word_000344",
+      "ru": "блинчики с яблоками",
+      "lt": "blyneliai su obuoliais",
+      "type": "n"
+    },
+    {
+      "id": "word_000345",
+      "ru": "блинчики с вареньем",
+      "lt": "blyneliai su uogiene",
+      "type": "n"
+    },
+    {
+      "id": "word_000346",
+      "ru": "макароны",
+      "lt": "makaronai",
+      "type": "n"
+    },
+    {
+      "id": "word_000347",
+      "ru": "макароны с сыром",
+      "lt": "makaronai su sūriu",
+      "type": "n"
+    },
+    {
+      "id": "word_000348",
+      "ru": "рис",
+      "lt": "ryžiai",
+      "type": "n"
+    },
+    {
+      "id": "word_000349",
+      "ru": "рис с овощами",
+      "lt": "ryžiai su daržovėmis",
+      "type": "n"
+    },
+    {
+      "id": "word_000350",
+      "ru": "овсяная каша",
+      "lt": "avižinė košė",
+      "type": "n"
+    },
+    {
+      "id": "word_000351",
+      "ru": "гречневая каша",
+      "lt": "grikių košė",
+      "type": "n"
+    },
+    {
+      "id": "word_000352",
+      "ru": "десерт",
+      "lt": "desertas",
+      "type": "n"
+    },
+    {
+      "id": "word_000353",
+      "ru": "мороженое",
+      "lt": "ledai",
+      "type": "n"
+    },
+    {
+      "id": "word_000354",
+      "ru": "пирожное",
+      "lt": "pyragaitis, pyragaičio",
+      "type": "n"
+    },
+    {
+      "id": "word_000355",
+      "ru": "напиток",
+      "lt": "gėrimas",
+      "type": "n"
+    },
+    {
+      "id": "word_000356",
+      "ru": "газированная вода",
+      "lt": "gazuotas vanduo",
+      "type": "n"
+    },
+    {
+      "id": "word_000357",
+      "ru": "негазированная вода",
+      "lt": "negazuotas vanduo",
+      "type": "n"
+    },
+    {
+      "id": "word_000358",
+      "ru": "чёрный чай",
+      "lt": "juoda arbata",
+      "type": "n"
+    },
+    {
+      "id": "word_000359",
+      "ru": "зелёный чай",
+      "lt": "žalia arbata",
+      "type": "n"
+    },
+    {
+      "id": "word_000360",
+      "ru": "фруктовый чай",
+      "lt": "vaisinė arbata",
+      "type": "n"
+    },
+    {
+      "id": "word_000361",
+      "ru": "травяной чай",
+      "lt": "žolelių arbata",
+      "type": "n"
+    },
+    {
+      "id": "word_000362",
+      "ru": "мятный чай",
+      "lt": "mėtų arbata",
+      "type": "n"
+    },
+    {
+      "id": "word_000363",
+      "ru": "коктейль / шейк",
+      "lt": "kokteilis, kokteilio",
+      "type": "n"
+    },
+    {
+      "id": "word_000364",
+      "ru": "сок",
+      "lt": "sultys",
+      "type": "n"
+    },
+    {
+      "id": "word_000365",
+      "ru": "яблочный сок",
+      "lt": "obuolių sultys",
+      "type": "n"
+    },
+    {
+      "id": "word_000366",
+      "ru": "апельсиновый сок",
+      "lt": "apelsinų sultys",
+      "type": "n"
+    },
+    {
+      "id": "word_000367",
+      "ru": "ананасовый сок",
+      "lt": "ananasų sultys",
+      "type": "n"
+    },
+    {
+      "id": "word_000368",
+      "ru": "виноградный сок",
+      "lt": "vynuogių sultys",
+      "type": "n"
+    },
+    {
+      "id": "word_000369",
+      "ru": "морковный сок",
+      "lt": "morkų sultys",
+      "type": "n"
+    },
+    {
+      "id": "word_000370",
+      "ru": "томатный сок",
+      "lt": "pomidorų sultys",
+      "type": "n"
+    },
+    {
+      "id": "word_000371",
+      "ru": "сахар",
+      "lt": "cukrus",
+      "type": "n"
+    },
+    {
+      "id": "word_000372",
+      "ru": "соль",
+      "lt": "druska",
+      "type": "n"
+    },
+    {
+      "id": "word_000373",
+      "ru": "горчица",
+      "lt": "garstyčios",
+      "type": "n"
+    },
+    {
+      "id": "word_000374",
+      "ru": "хрен",
+      "lt": "krienai",
+      "type": "n"
+    },
+    {
+      "id": "word_000375",
+      "ru": "майонез",
+      "lt": "majonezas",
+      "type": "n"
+    },
+    {
+      "id": "word_000376",
+      "ru": "соус",
+      "lt": "padažas",
+      "type": "n"
+    },
+    {
+      "id": "word_000377",
+      "ru": "варенье",
+      "lt": "uogienė",
+      "type": "n"
+    },
+    {
+      "id": "word_000378",
+      "ru": "уксус",
+      "lt": "actas",
+      "type": "n"
+    },
+    {
+      "id": "word_000379",
+      "ru": "масло (растительное)",
+      "lt": "aliejus",
+      "type": "n"
+    },
+    {
+      "id": "word_000380",
+      "ru": "литовские блюда",
+      "lt": "lietuviški patiekalai",
+      "type": "n"
+    },
+    {
+      "id": "word_000381",
+      "ru": "холодный свекольник",
+      "lt": "šaltibarščiai",
+      "type": "n"
+    },
+    {
+      "id": "word_000382",
+      "ru": "цеппелины",
+      "lt": "cepelinai",
+      "type": "n"
+    },
+    {
+      "id": "word_000383",
+      "ru": "медовый торт",
+      "lt": "medaus tortas",
+      "type": "n"
+    },
+    {
+      "id": "word_000384",
+      "ru": "шакотис",
+      "lt": "šakotis, šakočio",
+      "type": "n"
+    },
+    {
+      "id": "word_000385",
+      "ru": "острый / острая",
+      "lt": "aštrus, aštri",
+      "type": "adj"
+    },
+    {
+      "id": "word_000386",
+      "ru": "мягкий / нежный",
+      "lt": "švelnus, švelni",
+      "type": "adj"
+    },
+    {
+      "id": "word_000387",
+      "ru": "солёный / солёная",
+      "lt": "sūrus, sūri",
+      "type": "adj"
+    },
+    {
+      "id": "word_000388",
+      "ru": "транспортные средства",
+      "lt": "transporto priemonės",
+      "type": "n"
+    },
+    {
+      "id": "word_000389",
+      "ru": "автомобиль",
+      "lt": "automobilis, automobilio",
+      "type": "n"
+    },
+    {
+      "id": "word_000390",
+      "ru": "парковка",
+      "lt": "automobilių stovėjimo aikštelė",
+      "type": "n"
+    },
+    {
+      "id": "word_000391",
+      "ru": "велосипед",
+      "lt": "dviratis, dviračio",
+      "type": "n"
+    },
+    {
+      "id": "word_000392",
+      "ru": "самокат",
+      "lt": "paspirtukas",
+      "type": "n"
+    },
+    {
+      "id": "word_000393",
+      "ru": "автобус",
+      "lt": "autobusas",
+      "type": "n"
+    },
+    {
+      "id": "word_000394",
+      "ru": "автобусная станция",
+      "lt": "autobuso stotis, stoties",
+      "type": "n"
+    },
+    {
+      "id": "word_000395",
+      "ru": "платформа (автобус)",
+      "lt": "autobuso platforma",
+      "type": "n"
+    },
+    {
+      "id": "word_000396",
+      "ru": "поезд",
+      "lt": "traukinys",
+      "type": "n"
+    },
+    {
+      "id": "word_000397",
+      "ru": "скоростной поезд",
+      "lt": "greitasis traukinys",
+      "type": "n"
+    },
+    {
+      "id": "word_000398",
+      "ru": "железнодорожный вокзал",
+      "lt": "geležinkelio stotis, stoties",
+      "type": "n"
+    },
+    {
+      "id": "word_000399",
+      "ru": "платформа (поезд)",
+      "lt": "peronas",
+      "type": "n"
+    },
+    {
+      "id": "word_000400",
+      "ru": "путь, колея",
+      "lt": "kelias",
+      "type": "n"
+    },
+    {
+      "id": "word_000401",
+      "ru": "самолёт",
+      "lt": "lėktuvas",
+      "type": "n"
+    },
+    {
+      "id": "word_000402",
+      "ru": "общественный транспорт",
+      "lt": "viešasis transportas",
+      "type": "n"
+    },
+    {
+      "id": "word_000403",
+      "ru": "скоростной автобус",
+      "lt": "greitasis autobusas",
+      "type": "n"
+    },
+    {
+      "id": "word_000404",
+      "ru": "ночной автобус",
+      "lt": "naktinis autobusas",
+      "type": "n"
+    },
+    {
+      "id": "word_000405",
+      "ru": "троллейбус",
+      "lt": "troleibusas",
+      "type": "n"
+    },
+    {
+      "id": "word_000406",
+      "ru": "остановка автобуса / троллейбуса",
+      "lt": "autobusų, troleibusų stotelė",
+      "type": "n"
+    },
+    {
+      "id": "word_000407",
+      "ru": "информация",
+      "lt": "informacija",
+      "type": "n"
+    },
+    {
+      "id": "word_000408",
+      "ru": "расписание",
+      "lt": "tvarkaraštis, tvarkaraščio",
+      "type": "n"
+    },
+    {
+      "id": "word_000409",
+      "ru": "билет",
+      "lt": "autobuso, troleibuso, traukinio bilietas",
+      "type": "n"
+    },
+    {
+      "id": "word_000410",
+      "ru": "электронный билет",
+      "lt": "elektroninis bilietas",
+      "type": "n"
+    },
+    {
+      "id": "word_000411",
+      "ru": "билет со скидкой",
+      "lt": "bilietas su nuolaida",
+      "type": "n"
+    },
+    {
+      "id": "word_000412",
+      "ru": "билет туда-обратно",
+      "lt": "bilietas pirmyn ir atgal",
+      "type": "n"
+    },
+    {
+      "id": "word_000413",
+      "ru": "билет в одну сторону",
+      "lt": "bilietas į vieną pusę",
+      "type": "n"
+    },
+    {
+      "id": "word_000414",
+      "ru": "билетная касса",
+      "lt": "bilietų kasa",
+      "type": "n"
+    },
+    {
+      "id": "word_000415",
+      "ru": "пункты проката",
+      "lt": "nuomos punktas",
+      "type": "n"
+    },
+    {
+      "id": "word_000416",
+      "ru": "получение / возврат",
+      "lt": "paėmimas, grąžinimas",
+      "type": "n"
+    },
+    {
+      "id": "word_000417",
+      "ru": "бронь",
+      "lt": "rezervacija",
+      "type": "n"
+    },
+    {
+      "id": "word_000418",
+      "ru": "заправочная станция",
+      "lt": "degalinė",
+      "type": "n"
+    },
+    {
+      "id": "word_000419",
+      "ru": "топливо",
+      "lt": "degalai / kuras",
+      "type": "n"
+    },
+    {
+      "id": "word_000420",
+      "ru": "бензин",
+      "lt": "benzinas",
+      "type": "n"
+    },
+    {
+      "id": "word_000421",
+      "ru": "дизель",
+      "lt": "dyzelinas",
+      "type": "n"
+    },
+    {
+      "id": "word_000422",
+      "ru": "газ",
+      "lt": "dujos",
+      "type": "n"
+    },
+    {
+      "id": "word_000423",
+      "ru": "топливная колонка",
+      "lt": "kolonėlė",
+      "type": "n"
+    },
+    {
+      "id": "word_000424",
+      "ru": "воздух",
+      "lt": "oras",
+      "type": "n"
+    },
+    {
+      "id": "word_000425",
+      "ru": "вода",
+      "lt": "vanduo",
+      "type": "n"
+    },
+    {
+      "id": "word_000426",
+      "ru": "быстрый",
+      "lt": "greitas, greita",
+      "type": "adj"
+    },
+    {
+      "id": "word_000427",
+      "ru": "медленный",
+      "lt": "lėtas, lēta",
+      "type": "adj"
+    },
+    {
+      "id": "word_000428",
+      "ru": "дешёвый",
+      "lt": "pigus, pigi",
+      "type": "adj"
+    },
+    {
+      "id": "word_000429",
+      "ru": "дорогой",
+      "lt": "brangus, brangi",
+      "type": "adj"
+    },
+    {
+      "id": "word_000430",
+      "ru": "удобный",
+      "lt": "patogus, patogi",
+      "type": "adj"
+    },
+    {
+      "id": "word_000431",
+      "ru": "долгосрочный / краткосрочный",
+      "lt": "ilgalaikė, trumpalaikė",
+      "type": "adj"
+    },
+    {
+      "id": "word_000432",
+      "ru": "справа",
+      "lt": "dešinėje",
+      "type": "adv"
+    },
+    {
+      "id": "word_000433",
+      "ru": "слева",
+      "lt": "kairėje",
+      "type": "adv"
+    },
+    {
+      "id": "word_000434",
+      "ru": "направо",
+      "lt": "į dešinę",
+      "type": "adv"
+    },
+    {
+      "id": "word_000435",
+      "ru": "налево",
+      "lt": "į kairę",
+      "type": "adv"
+    },
+    {
+      "id": "word_000436",
+      "ru": "прямо",
+      "lt": "tiesiai",
+      "type": "adv"
+    },
+    {
+      "id": "word_000437",
+      "ru": "затем",
+      "lt": "paskui",
+      "type": "adv"
+    },
+    {
+      "id": "word_000438",
+      "ru": "дойти пешком",
+      "lt": "nuėti, nueina, nuėjo",
+      "type": "v"
+    },
+    {
+      "id": "word_000439",
+      "ru": "доехать",
+      "lt": "nuvažiuoti, nuvažiuoja, nuvažiavo",
+      "type": "v"
+    },
+    {
+      "id": "word_000440",
+      "ru": "приезжать",
+      "lt": "atvažiuoti, atvažiuoja, atvažiavo",
+      "type": "v"
+    },
+    {
+      "id": "word_000441",
+      "ru": "уезжать",
+      "lt": "išvažiuoti, išvažiuoja, išvažiavo",
+      "type": "v"
+    },
+    {
+      "id": "word_000442",
+      "ru": "поворачивать",
+      "lt": "pasukti, pasuka, pasuko",
+      "type": "v"
+    },
+    {
+      "id": "word_000443",
+      "ru": "садиться",
+      "lt": "lipti, lipa, lipo",
+      "type": "v"
+    },
+    {
+      "id": "word_000444",
+      "ru": "выходить",
+      "lt": "išlipti, išlipa, išlipo",
+      "type": "v"
+    },
+    {
+      "id": "word_000445",
+      "ru": "лететь",
+      "lt": "skristi, skrenda, skrido",
+      "type": "v"
+    },
+    {
+      "id": "word_000446",
+      "ru": "нужно, требуется",
+      "lt": "reikėti, reikia, reikėjo",
+      "type": "v"
+    },
+    {
+      "id": "word_000447",
+      "ru": "доливать, пополнять",
+      "lt": "papildyti, papildo, papildė",
+      "type": "v"
+    },
+    {
+      "id": "word_000448",
+      "ru": "как",
+      "lt": "kaip",
+      "type": "other"
+    },
+    {
+      "id": "word_000449",
+      "ru": "путешествие, поездка",
+      "lt": "kelionė",
+      "type": "n"
+    },
+    {
+      "id": "word_000450",
+      "ru": "пассажир",
+      "lt": "keleivis, keleivė",
+      "type": "n"
+    },
+    {
+      "id": "word_000451",
+      "ru": "водитель",
+      "lt": "vairuotojas, vairuotoja",
+      "type": "n"
+    },
+    {
+      "id": "word_000452",
+      "ru": "водительские права",
+      "lt": "vairuotojo pažymėjimas",
+      "type": "n"
+    },
+    {
+      "id": "word_000453",
+      "ru": "страховка автомобиля",
+      "lt": "automobilio draudimas",
+      "type": "n"
+    },
+    {
+      "id": "word_000454",
+      "ru": "плата, сбор",
+      "lt": "mokestis",
+      "type": "n"
+    },
+    {
+      "id": "word_000455",
+      "ru": "месяц",
+      "lt": "mėnuo, mėnesio",
+      "type": "n"
+    },
+    {
+      "id": "word_000456",
+      "ru": "дата",
+      "lt": "data",
+      "type": "n"
+    },
+    {
+      "id": "word_000457",
+      "ru": "сутки",
+      "lt": "para",
+      "type": "n"
+    },
+    {
+      "id": "word_000458",
+      "ru": "запчасти автомобиля",
+      "lt": "automobilio dalys",
+      "type": "n"
+    },
+    {
+      "id": "word_000459",
+      "ru": "салон автомобиля",
+      "lt": "salonas",
+      "type": "n"
+    },
+    {
+      "id": "word_000460",
+      "ru": "руль",
+      "lt": "vairas",
+      "type": "n"
+    },
+    {
+      "id": "word_000461",
+      "ru": "ключи",
+      "lt": "raktai",
+      "type": "n"
+    },
+    {
+      "id": "word_000462",
+      "ru": "тормоза",
+      "lt": "stabdžiai",
+      "type": "n"
+    },
+    {
+      "id": "word_000463",
+      "ru": "шины",
+      "lt": "padangos",
+      "type": "n"
+    },
+    {
+      "id": "word_000464",
+      "ru": "дворники",
+      "lt": "valytuvai",
+      "type": "n"
+    },
+    {
+      "id": "word_000465",
+      "ru": "смазочные материалы",
+      "lt": "tepalai",
+      "type": "n"
+    },
+    {
+      "id": "word_000466",
+      "ru": "автомойка",
+      "lt": "automobilio plovykla",
+      "type": "n"
+    },
+    {
+      "id": "word_000467",
+      "ru": "чистка салона",
+      "lt": "salono valymas",
+      "type": "n"
+    },
+    {
+      "id": "word_000468",
+      "ru": "мойка автомобиля",
+      "lt": "automobilio plovimas",
+      "type": "n"
+    },
+    {
+      "id": "word_000469",
+      "ru": "автосервис / ремонт",
+      "lt": "autoservisas / automobilio taisykla",
+      "type": "n"
+    },
+    {
+      "id": "word_000470",
+      "ru": "тех. помощь на дороге",
+      "lt": "techninė pagalba kelyje",
+      "type": "n"
+    },
+    {
+      "id": "word_000471",
+      "ru": "скорость",
+      "lt": "greitis, greičio",
+      "type": "n"
+    },
+    {
+      "id": "word_000472",
+      "ru": "разрешено",
+      "lt": "galima",
+      "type": "adj"
+    },
+    {
+      "id": "word_000473",
+      "ru": "запрещено",
+      "lt": "draudžiama",
+      "type": "adj"
+    },
+    {
+      "id": "word_000474",
+      "ru": "новый",
+      "lt": "naujas, nauja",
+      "type": "adj"
+    },
+    {
+      "id": "word_000475",
+      "ru": "старый",
+      "lt": "senas, sena",
+      "type": "adj"
+    },
+    {
+      "id": "word_000476",
+      "ru": "чистый",
+      "lt": "švarus, švari",
+      "type": "adj"
+    },
+    {
+      "id": "word_000477",
+      "ru": "грязный",
+      "lt": "nešvarus, nešvari",
+      "type": "adj"
+    },
+    {
+      "id": "word_000478",
+      "ru": "длинный",
+      "lt": "ilgas, ilga",
+      "type": "adj"
+    },
+    {
+      "id": "word_000479",
+      "ru": "короткий",
+      "lt": "trumpas, trumpa",
+      "type": "adj"
+    },
+    {
+      "id": "word_000480",
+      "ru": "занятый",
+      "lt": "užimtas, užimta",
+      "type": "adj"
+    },
+    {
+      "id": "word_000481",
+      "ru": "свободный",
+      "lt": "laisvas, laisva",
+      "type": "adj"
+    },
+    {
+      "id": "word_000482",
+      "ru": "следующий",
+      "lt": "kitas, kita",
+      "type": "adj"
+    },
+    {
+      "id": "word_000483",
+      "ru": "бесплатно",
+      "lt": "nemokamas, nemokama",
+      "type": "adj"
+    },
+    {
+      "id": "word_000484",
+      "ru": "превышать скорость",
+      "lt": "viršyti greitį",
+      "type": "v"
+    },
+    {
+      "id": "word_000485",
+      "ru": "путешествовать",
+      "lt": "keliauti, keliauja, keliavo",
+      "type": "v"
+    },
+    {
+      "id": "word_000486",
+      "ru": "водить (машину)",
+      "lt": "vairuoti, vairuoja, vairavo",
+      "type": "v"
+    },
+    {
+      "id": "word_000487",
+      "ru": "ехать",
+      "lt": "važiuoti, važiuoja, važiavo",
+      "type": "v"
+    },
+    {
+      "id": "word_000488",
+      "ru": "резервировать",
+      "lt": "rezervuoti, rezervuoja, rezervavo",
+      "type": "v"
+    },
+    {
+      "id": "word_000489",
+      "ru": "заказывать",
+      "lt": "užsakyti, užsako, užsakė",
+      "type": "v"
+    },
+    {
+      "id": "word_000490",
+      "ru": "показывать",
+      "lt": "parodyti, parodo, parodė",
+      "type": "v"
+    },
+    {
+      "id": "word_000491",
+      "ru": "останавливаться",
+      "lt": "sustoti, sustoja, sustojo",
+      "type": "v"
+    },
+    {
+      "id": "word_000492",
+      "ru": "работать",
+      "lt": "veikti, veikia, veikė",
+      "type": "v"
+    },
+    {
+      "id": "word_000493",
+      "ru": "ломаться",
+      "lt": "sugesti, sugenda, sugedo",
+      "type": "v"
+    },
+    {
+      "id": "word_000494",
+      "ru": "чинить, ремонтировать",
+      "lt": "pataisyti, pataiso, pataisė",
+      "type": "v"
+    },
+    {
+      "id": "word_000495",
+      "ru": "ремонтировать",
+      "lt": "suremontuoti, suremontuoja, suremontavo",
+      "type": "v"
+    },
+    {
+      "id": "word_000496",
+      "ru": "мыть",
+      "lt": "nuplauti, nuplauna, nuplovė",
+      "type": "v"
+    },
+    {
+      "id": "word_000497",
+      "ru": "чистить",
+      "lt": "išvalyti, išvalo, išvalė",
+      "type": "v"
+    },
+    {
+      "id": "word_000498",
+      "ru": "заправляться",
+      "lt": "pildyti, pila, pylė",
+      "type": "v"
+    },
+    {
+      "id": "word_000499",
+      "ru": "быстро",
+      "lt": "greitai",
+      "type": "adv"
+    },
+    {
+      "id": "word_000500",
+      "ru": "кроме",
+      "lt": "išskyrus ką?",
+      "type": "other"
+    },
+    {
+      "id": "word_000501",
+      "ru": "дом (как место)",
+      "lt": "namai",
+      "type": "n"
+    },
+    {
+      "id": "word_000502",
+      "ru": "лестничная площадка",
+      "lt": "laiptinė",
+      "type": "n"
+    },
+    {
+      "id": "word_000503",
+      "ru": "лестница",
+      "lt": "laiptai",
+      "type": "n"
+    },
+    {
+      "id": "word_000504",
+      "ru": "этаж",
+      "lt": "aukštas",
+      "type": "n"
+    },
+    {
+      "id": "word_000505",
+      "ru": "лифт",
+      "lt": "liftas",
+      "type": "n"
+    },
+    {
+      "id": "word_000506",
+      "ru": "балкон",
+      "lt": "balkonas",
+      "type": "n"
+    },
+    {
+      "id": "word_000507",
+      "ru": "гараж",
+      "lt": "garažas",
+      "type": "n"
+    },
+    {
+      "id": "word_000508",
+      "ru": "двор",
+      "lt": "kiemas",
+      "type": "n"
+    },
+    {
+      "id": "word_000509",
+      "ru": "ворота",
+      "lt": "vartai",
+      "type": "n"
+    },
+    {
+      "id": "word_000510",
+      "ru": "дверь",
+      "lt": "durys, durų",
+      "type": "n"
+    },
+    {
+      "id": "word_000511",
+      "ru": "код двери",
+      "lt": "durų kodas",
+      "type": "n"
+    },
+    {
+      "id": "word_000512",
+      "ru": "ключ",
+      "lt": "raktas",
+      "type": "n"
+    },
+    {
+      "id": "word_000513",
+      "ru": "окно",
+      "lt": "langas",
+      "type": "n"
+    },
+    {
+      "id": "word_000514",
+      "ru": "стена",
+      "lt": "siena",
+      "type": "n"
+    },
+    {
+      "id": "word_000515",
+      "ru": "потолок",
+      "lt": "lubos, lubų",
+      "type": "n"
+    },
+    {
+      "id": "word_000516",
+      "ru": "пол",
+      "lt": "grindys, grindų",
+      "type": "n"
+    },
+    {
+      "id": "word_000517",
+      "ru": "ковёр",
+      "lt": "kilimas",
+      "type": "n"
+    },
+    {
+      "id": "word_000518",
+      "ru": "комната",
+      "lt": "kambarys, kambariai",
+      "type": "n"
+    },
+    {
+      "id": "word_000519",
+      "ru": "кухня",
+      "lt": "virtuvė",
+      "type": "n"
+    },
+    {
+      "id": "word_000520",
+      "ru": "гостиная",
+      "lt": "svetainė",
+      "type": "n"
+    },
+    {
+      "id": "word_000521",
+      "ru": "коридор",
+      "lt": "koridorius",
+      "type": "n"
+    },
+    {
+      "id": "word_000522",
+      "ru": "ванная комната",
+      "lt": "vonia",
+      "type": "n"
+    },
+    {
+      "id": "word_000523",
+      "ru": "душ",
+      "lt": "dušas",
+      "type": "n"
+    },
+    {
+      "id": "word_000524",
+      "ru": "туалет",
+      "lt": "tualetas",
+      "type": "n"
+    },
+    {
+      "id": "word_000525",
+      "ru": "спальня",
+      "lt": "miegamasis, miegamieji",
+      "type": "n"
+    },
+    {
+      "id": "word_000526",
+      "ru": "подвал",
+      "lt": "rūsys",
+      "type": "n"
+    },
+    {
+      "id": "word_000527",
+      "ru": "мебель",
+      "lt": "baldai",
+      "type": "n"
+    },
+    {
+      "id": "word_000528",
+      "ru": "стол",
+      "lt": "stalas",
+      "type": "n"
+    },
+    {
+      "id": "word_000529",
+      "ru": "стул",
+      "lt": "kėdė",
+      "type": "n"
+    },
+    {
+      "id": "word_000530",
+      "ru": "кровать",
+      "lt": "lova",
+      "type": "n"
+    },
+    {
+      "id": "word_000531",
+      "ru": "диван",
+      "lt": "sofa",
+      "type": "n"
+    },
+    {
+      "id": "word_000532",
+      "ru": "кресло",
+      "lt": "fotelis, fotelio",
+      "type": "n"
+    },
+    {
+      "id": "word_000533",
+      "ru": "шкаф",
+      "lt": "spinta",
+      "type": "n"
+    },
+    {
+      "id": "word_000534",
+      "ru": "полка",
+      "lt": "lentyna",
+      "type": "n"
+    },
+    {
+      "id": "word_000535",
+      "ru": "коммунальные платежи",
+      "lt": "mokesčiai už šildymą...",
+      "type": "n"
+    },
+    {
+      "id": "word_000536",
+      "ru": "уютный",
+      "lt": "jaukus, jauki",
+      "type": "adj"
+    },
+    {
+      "id": "word_000537",
+      "ru": "спокойный, тихий",
+      "lt": "ramus, rami",
+      "type": "adj"
+    },
+    {
+      "id": "word_000538",
+      "ru": "шумный",
+      "lt": "triukšmingas, triukšminga",
+      "type": "adj"
+    },
+    {
+      "id": "word_000539",
+      "ru": "мягкий",
+      "lt": "minkštas, minkšta",
+      "type": "adj"
+    },
+    {
+      "id": "word_000540",
+      "ru": "оплачивать",
+      "lt": "sumokėti, sumoka, sumokėjo",
+      "type": "v"
+    },
+    {
+      "id": "word_000541",
+      "ru": "закрывать",
+      "lt": "uždaryti, uždaro, uždarė",
+      "type": "v"
+    },
+    {
+      "id": "word_000542",
+      "ru": "открывать",
+      "lt": "atidaryti, atidaro, atidarė",
+      "type": "v"
+    },
+    {
+      "id": "word_000543",
+      "ru": "запирать",
+      "lt": "užrakinti, užrakina, užrakino",
+      "type": "v"
+    },
+    {
+      "id": "word_000544",
+      "ru": "отпирать",
+      "lt": "atrakinti, atrakina, atrakino",
+      "type": "v"
+    },
+    {
+      "id": "word_000545",
+      "ru": "сдавать в аренду",
+      "lt": "nuomoti, nuomoja, nuomojo",
+      "type": "v"
+    },
+    {
+      "id": "word_000546",
+      "ru": "снимать",
+      "lt": "išsinuomoti, išsinuomoja, išsinuomojo",
+      "type": "v"
+    },
+    {
+      "id": "word_000547",
+      "ru": "искать",
+      "lt": "ieškoti, ieško, ieškojo",
+      "type": "v"
+    },
+    {
+      "id": "word_000548",
+      "ru": "лежать",
+      "lt": "gulėti, guli, gulėjo",
+      "type": "v"
+    },
+    {
+      "id": "word_000549",
+      "ru": "спать",
+      "lt": "miegoti, miega, miegojo",
+      "type": "v"
+    },
+    {
+      "id": "word_000550",
+      "ru": "на",
+      "lt": "ant",
+      "type": "other"
+    },
+    {
+      "id": "word_000551",
+      "ru": "бытовая техника",
+      "lt": "buitinė technika",
+      "type": "n"
+    },
+    {
+      "id": "word_000552",
+      "ru": "холодильник",
+      "lt": "šaldytuvas",
+      "type": "n"
+    },
+    {
+      "id": "word_000553",
+      "ru": "духовка",
+      "lt": "orkaitė",
+      "type": "n"
+    },
+    {
+      "id": "word_000554",
+      "ru": "плита",
+      "lt": "viryklė",
+      "type": "n"
+    },
+    {
+      "id": "word_000555",
+      "ru": "микроволновая печь",
+      "lt": "mikrobangų krosnelė",
+      "type": "n"
+    },
+    {
+      "id": "word_000556",
+      "ru": "посудомоечная машина",
+      "lt": "indaplovė",
+      "type": "n"
+    },
+    {
+      "id": "word_000557",
+      "ru": "стиральная машина",
+      "lt": "skalbyklė",
+      "type": "n"
+    },
+    {
+      "id": "word_000558",
+      "ru": "сушильная машина",
+      "lt": "džiovyklė",
+      "type": "n"
+    },
+    {
+      "id": "word_000559",
+      "ru": "чайник",
+      "lt": "virdulys",
+      "type": "n"
+    },
+    {
+      "id": "word_000560",
+      "ru": "кофеварка",
+      "lt": "kavos aparatas",
+      "type": "n"
+    },
+    {
+      "id": "word_000561",
+      "ru": "пылесос",
+      "lt": "dulkių siurblys",
+      "type": "n"
+    },
+    {
+      "id": "word_000562",
+      "ru": "утюг",
+      "lt": "lygintuvas",
+      "type": "n"
+    },
+    {
+      "id": "word_000563",
+      "ru": "вещи, предметы",
+      "lt": "daiktai",
+      "type": "n"
+    },
+    {
+      "id": "word_000564",
+      "ru": "телевизор",
+      "lt": "televizorius",
+      "type": "n"
+    },
+    {
+      "id": "word_000565",
+      "ru": "лампа",
+      "lt": "lempa",
+      "type": "n"
+    },
+    {
+      "id": "word_000566",
+      "ru": "зеркало",
+      "lt": "veidrodis, veidrodžio",
+      "type": "n"
+    },
+    {
+      "id": "word_000567",
+      "ru": "картина",
+      "lt": "paveikslas",
+      "type": "n"
+    },
+    {
+      "id": "word_000568",
+      "ru": "цветок",
+      "lt": "gėlė",
+      "type": "n"
+    },
+    {
+      "id": "word_000569",
+      "ru": "ковёр, коврик",
+      "lt": "kilimas",
+      "type": "n"
+    },
+    {
+      "id": "word_000570",
+      "ru": "посуда",
+      "lt": "indai",
+      "type": "n"
+    },
+    {
+      "id": "word_000571",
+      "ru": "мусорное ведро",
+      "lt": "šiukšlių dėžė",
+      "type": "n"
+    },
+    {
+      "id": "word_000572",
+      "ru": "мусор",
+      "lt": "šiukšlės",
+      "type": "n"
+    },
+    {
+      "id": "word_000573",
+      "ru": "пыль",
+      "lt": "dulkės",
+      "type": "n"
+    },
+    {
+      "id": "word_000574",
+      "ru": "грязь",
+      "lt": "purvas",
+      "type": "n"
+    },
+    {
+      "id": "word_000575",
+      "ru": "уборка",
+      "lt": "valymas",
+      "type": "n"
+    },
+    {
+      "id": "word_000576",
+      "ru": "уборщик / уборщица",
+      "lt": "namų tvarkytojas, namų tvarkytoja",
+      "type": "n"
+    },
+    {
+      "id": "word_000577",
+      "ru": "свет",
+      "lt": "šviesa",
+      "type": "n"
+    },
+    {
+      "id": "word_000578",
+      "ru": "труба",
+      "lt": "vamzdis, vamzdžio",
+      "type": "n"
+    },
+    {
+      "id": "word_000579",
+      "ru": "кран",
+      "lt": "čiaupas",
+      "type": "n"
+    },
+    {
+      "id": "word_000580",
+      "ru": "аварийная служба",
+      "lt": "avarinė tarnyba",
+      "type": "n"
+    },
+    {
+      "id": "word_000581",
+      "ru": "ремонт",
+      "lt": "remontas",
+      "type": "n"
+    },
+    {
+      "id": "word_000582",
+      "ru": "мастер",
+      "lt": "meistras, meistrė",
+      "type": "n"
+    },
+    {
+      "id": "word_000583",
+      "ru": "сантехник",
+      "lt": "santechnikas, santechnikė",
+      "type": "n"
+    },
+    {
+      "id": "word_000584",
+      "ru": "сосед",
+      "lt": "kaimynas, kaimynė",
+      "type": "n"
+    },
+    {
+      "id": "word_000585",
+      "ru": "квадратный метр",
+      "lt": "kvadratinis metras, m²",
+      "type": "n"
+    },
+    {
+      "id": "word_000586",
+      "ru": "квадратные метры",
+      "lt": "kvadratiniai metrai, m²",
+      "type": "n"
+    },
+    {
+      "id": "word_000587",
+      "ru": "аккуратный",
+      "lt": "tvarkingas, tvarkinga",
+      "type": "adj"
+    },
+    {
+      "id": "word_000588",
+      "ru": "убирать",
+      "lt": "tvarkyti, tvarko, tvarkė",
+      "type": "v"
+    },
+    {
+      "id": "word_000589",
+      "ru": "убирать (полностью)",
+      "lt": "sutvarkyti, sutvarko, sutvarkė",
+      "type": "v"
+    },
+    {
+      "id": "word_000590",
+      "ru": "чистить, вытирать",
+      "lt": "valyti, valo, valė",
+      "type": "v"
+    },
+    {
+      "id": "word_000591",
+      "ru": "вытирать",
+      "lt": "nuvalyti, nuvalo, nuvalė",
+      "type": "v"
+    },
+    {
+      "id": "word_000592",
+      "ru": "убирать (мусор)",
+      "lt": "išvalyti, išvalo, išvalė",
+      "type": "v"
+    },
+    {
+      "id": "word_000593",
+      "ru": "мыть посуду",
+      "lt": "išplauti, išplauna, išplovė",
+      "type": "v"
+    },
+    {
+      "id": "word_000594",
+      "ru": "пылесосить",
+      "lt": "išsiurbti, išsiurbia, išsiurbė",
+      "type": "v"
+    },
+    {
+      "id": "word_000595",
+      "ru": "выносить",
+      "lt": "išnešti, išneša, išnešė",
+      "type": "v"
+    },
+    {
+      "id": "word_000596",
+      "ru": "включать",
+      "lt": "įjungti, įjungia, įjungė",
+      "type": "v"
+    },
+    {
+      "id": "word_000597",
+      "ru": "выключать",
+      "lt": "išjungti, išjungia, išjungė",
+      "type": "v"
+    },
+    {
+      "id": "word_000598",
+      "ru": "чинить",
+      "lt": "pataisyti, pataiso, pataisė",
+      "type": "v"
+    },
+    {
+      "id": "word_000599",
+      "ru": "от, с",
+      "lt": "nuo",
+      "type": "other"
+    },
+    {
+      "id": "word_000600",
+      "ru": "под",
+      "lt": "po",
+      "type": "other"
+    },
+    {
+      "id": "word_000601",
+      "ru": "одежда",
+      "lt": "drabužiai / rūbai",
+      "type": "n"
+    },
+    {
+      "id": "word_000602",
+      "ru": "свитер, джемпер",
+      "lt": "megztinis, megztinio",
+      "type": "n"
+    },
+    {
+      "id": "word_000603",
+      "ru": "брюки",
+      "lt": "kelnės",
+      "type": "n"
+    },
+    {
+      "id": "word_000604",
+      "ru": "юбка",
+      "lt": "sijonas",
+      "type": "n"
+    },
+    {
+      "id": "word_000605",
+      "ru": "платье",
+      "lt": "suknelė",
+      "type": "n"
+    },
+    {
+      "id": "word_000606",
+      "ru": "блузка",
+      "lt": "palaidinė",
+      "type": "n"
+    },
+    {
+      "id": "word_000607",
+      "ru": "рубашка",
+      "lt": "marškiniai",
+      "type": "n"
+    },
+    {
+      "id": "word_000608",
+      "ru": "пиджак, жакет",
+      "lt": "švarkas",
+      "type": "n"
+    },
+    {
+      "id": "word_000609",
+      "ru": "костюм",
+      "lt": "kostiumas",
+      "type": "n"
+    },
+    {
+      "id": "word_000610",
+      "ru": "футболка",
+      "lt": "marškinėliai",
+      "type": "n"
+    },
+    {
+      "id": "word_000611",
+      "ru": "шорты",
+      "lt": "šortai",
+      "type": "n"
+    },
+    {
+      "id": "word_000612",
+      "ru": "джинсы",
+      "lt": "džinsai",
+      "type": "n"
+    },
+    {
+      "id": "word_000613",
+      "ru": "куртка",
+      "lt": "striukė",
+      "type": "n"
+    },
+    {
+      "id": "word_000614",
+      "ru": "пальто",
+      "lt": "paltas",
+      "type": "n"
+    },
+    {
+      "id": "word_000615",
+      "ru": "носки",
+      "lt": "kojinės",
+      "type": "n"
+    },
+    {
+      "id": "word_000616",
+      "ru": "перчатки",
+      "lt": "pirštinės",
+      "type": "n"
+    },
+    {
+      "id": "word_000617",
+      "ru": "шапка, кепка",
+      "lt": "kepurė",
+      "type": "n"
+    },
+    {
+      "id": "word_000618",
+      "ru": "шарф",
+      "lt": "šalikas",
+      "type": "n"
+    },
+    {
+      "id": "word_000619",
+      "ru": "нижнее бельё",
+      "lt": "apatiniai drabužiai",
+      "type": "n"
+    },
+    {
+      "id": "word_000620",
+      "ru": "купальник",
+      "lt": "maudymosi kostiumėlis",
+      "type": "n"
+    },
+    {
+      "id": "word_000621",
+      "ru": "плавки",
+      "lt": "glaudės",
+      "type": "n"
+    },
+    {
+      "id": "word_000622",
+      "ru": "джемпер",
+      "lt": "džemperis, džemperio",
+      "type": "n"
+    },
+    {
+      "id": "word_000623",
+      "ru": "жилет",
+      "lt": "liemenė",
+      "type": "n"
+    },
+    {
+      "id": "word_000624",
+      "ru": "обувь",
+      "lt": "avalynė",
+      "type": "n"
+    },
+    {
+      "id": "word_000625",
+      "ru": "туфли, ботинки",
+      "lt": "batai",
+      "type": "n"
+    },
+    {
+      "id": "word_000626",
+      "ru": "туфли (лодочки)",
+      "lt": "bateliai",
+      "type": "n"
+    },
+    {
+      "id": "word_000627",
+      "ru": "кроссовки",
+      "lt": "sportbačiai",
+      "type": "n"
+    },
+    {
+      "id": "word_000628",
+      "ru": "сандалии",
+      "lt": "basutės",
+      "type": "n"
+    },
+    {
+      "id": "word_000629",
+      "ru": "размер",
+      "lt": "dydis, dydžio",
+      "type": "n"
+    },
+    {
+      "id": "word_000630",
+      "ru": "примерочная",
+      "lt": "matavimosi kabina",
+      "type": "n"
+    },
+    {
+      "id": "word_000631",
+      "ru": "чек, квитанция",
+      "lt": "kvitas",
+      "type": "n"
+    },
+    {
+      "id": "word_000632",
+      "ru": "распродажа",
+      "lt": "išpardavimas",
+      "type": "n"
+    },
+    {
+      "id": "word_000633",
+      "ru": "скидка",
+      "lt": "nuolaida",
+      "type": "n"
+    },
+    {
+      "id": "word_000634",
+      "ru": "шерстяной",
+      "lt": "vilnonis, vilnonė",
+      "type": "adj"
+    },
+    {
+      "id": "word_000635",
+      "ru": "хлопковый",
+      "lt": "medvilninis, medvilninė",
+      "type": "adj"
+    },
+    {
+      "id": "word_000636",
+      "ru": "кожаный",
+      "lt": "odinis, odinė",
+      "type": "adj"
+    },
+    {
+      "id": "word_000637",
+      "ru": "синтетический",
+      "lt": "sintetinis, sintetinė",
+      "type": "adj"
+    },
+    {
+      "id": "word_000638",
+      "ru": "светлый",
+      "lt": "šviesus, šviesi",
+      "type": "adj"
+    },
+    {
+      "id": "word_000639",
+      "ru": "тёмный",
+      "lt": "tamsus, tamsi",
+      "type": "adj"
+    },
+    {
+      "id": "word_000640",
+      "ru": "разноцветный",
+      "lt": "margas, marga",
+      "type": "adj"
+    },
+    {
+      "id": "word_000641",
+      "ru": "однотонный",
+      "lt": "vienspalvis, vienspalvė",
+      "type": "adj"
+    },
+    {
+      "id": "word_000642",
+      "ru": "розовый",
+      "lt": "rausvas, rausva",
+      "type": "adj"
+    },
+    {
+      "id": "word_000643",
+      "ru": "голубой (светлый)",
+      "lt": "žydras, žydra",
+      "type": "adj"
+    },
+    {
+      "id": "word_000644",
+      "ru": "оранжевый",
+      "lt": "oranžinis, oranžinė",
+      "type": "adj"
+    },
+    {
+      "id": "word_000645",
+      "ru": "фиолетовый",
+      "lt": "violetinis, violetinė",
+      "type": "adj"
+    },
+    {
+      "id": "word_000646",
+      "ru": "коричневый",
+      "lt": "rudas, ruda",
+      "type": "adj"
+    },
+    {
+      "id": "word_000647",
+      "ru": "мужская одежда",
+      "lt": "vyriškas, vyriška",
+      "type": "adj"
+    },
+    {
+      "id": "word_000648",
+      "ru": "женская одежда",
+      "lt": "moteriškas, moteriška",
+      "type": "adj"
+    },
+    {
+      "id": "word_000649",
+      "ru": "детская одежда",
+      "lt": "vaikiškas, vaikiška",
+      "type": "adj"
+    },
+    {
+      "id": "word_000650",
+      "ru": "зимний",
+      "lt": "žieminis, žieminė",
+      "type": "adj"
+    },
+    {
+      "id": "word_000651",
+      "ru": "летний",
+      "lt": "vasarinis, vasarinė",
+      "type": "adj"
+    },
+    {
+      "id": "word_000652",
+      "ru": "носить (одежду)",
+      "lt": "dėvėti, dėvi, dėvėjo",
+      "type": "v"
+    },
+    {
+      "id": "word_000653",
+      "ru": "одеваться",
+      "lt": "apsirengti, apsirenčia, apsirenė",
+      "type": "v"
+    },
+    {
+      "id": "word_000654",
+      "ru": "раздеваться",
+      "lt": "nusirengti, nusirengia, nusirengė",
+      "type": "v"
+    },
+    {
+      "id": "word_000655",
+      "ru": "обувать",
+      "lt": "apsiauti, apsiauna, apsiavė",
+      "type": "v"
+    },
+    {
+      "id": "word_000656",
+      "ru": "разувать",
+      "lt": "nusiauti, nusiauna, nusiavė",
+      "type": "v"
+    },
+    {
+      "id": "word_000657",
+      "ru": "стоить",
+      "lt": "kainuoti, kainuoja, kainavo",
+      "type": "v"
+    },
+    {
+      "id": "word_000658",
+      "ru": "показать",
+      "lt": "parodyti, parodo, parodė",
+      "type": "v"
+    },
+    {
+      "id": "word_000659",
+      "ru": "примерить",
+      "lt": "pasimatuoti, pasimatoja, pasimatavo",
+      "type": "v"
+    },
+    {
+      "id": "word_000660",
+      "ru": "купить",
+      "lt": "nusipirkti, nusipirka, nusipirko",
+      "type": "v"
+    },
+    {
+      "id": "word_000661",
+      "ru": "подходить",
+      "lt": "tikti, tinka, tiko",
+      "type": "v"
+    },
+    {
+      "id": "word_000662",
+      "ru": "делать покупки",
+      "lt": "apsipirkti, apsiperka, apsipirko",
+      "type": "v"
+    },
+    {
+      "id": "word_000663",
+      "ru": "этот / эта",
+      "lt": "šis, ši",
+      "type": "other"
+    },
+    {
+      "id": "word_000664",
+      "ru": "тот / та",
+      "lt": "tas, ta",
+      "type": "other"
+    },
+    {
+      "id": "word_000665",
+      "ru": "кошелёк",
+      "lt": "piniginė",
+      "type": "n"
+    },
+    {
+      "id": "word_000666",
+      "ru": "сумка (дамская)",
+      "lt": "rankinė",
+      "type": "n"
+    },
+    {
+      "id": "word_000667",
+      "ru": "рюкзак",
+      "lt": "kuprinė",
+      "type": "n"
+    },
+    {
+      "id": "word_000668",
+      "ru": "зонт",
+      "lt": "skėtis, skėčio",
+      "type": "n"
+    },
+    {
+      "id": "word_000669",
+      "ru": "ремень",
+      "lt": "diržas",
+      "type": "n"
+    },
+    {
+      "id": "word_000670",
+      "ru": "часы",
+      "lt": "laikrodis, laikrodžio",
+      "type": "n"
+    },
+    {
+      "id": "word_000671",
+      "ru": "очки",
+      "lt": "akiniai",
+      "type": "n"
+    },
+    {
+      "id": "word_000672",
+      "ru": "очки от солнца",
+      "lt": "akiniai nuo saulės",
+      "type": "n"
+    },
+    {
+      "id": "word_000673",
+      "ru": "серьги",
+      "lt": "auskarai",
+      "type": "n"
+    },
+    {
+      "id": "word_000674",
+      "ru": "кольцо",
+      "lt": "žiedas",
+      "type": "n"
+    },
+    {
+      "id": "word_000675",
+      "ru": "цепочка",
+      "lt": "grandinėlė",
+      "type": "n"
+    },
+    {
+      "id": "word_000676",
+      "ru": "расчёска",
+      "lt": "šukos",
+      "type": "n"
+    },
+    {
+      "id": "word_000677",
+      "ru": "пуговица",
+      "lt": "saga",
+      "type": "n"
+    },
+    {
+      "id": "word_000678",
+      "ru": "молния (застёжка)",
+      "lt": "užtrauktukas",
+      "type": "n"
+    },
+    {
+      "id": "word_000679",
+      "ru": "карман",
+      "lt": "kišenė",
+      "type": "n"
+    },
+    {
+      "id": "word_000680",
+      "ru": "рукав",
+      "lt": "rankovė",
+      "type": "n"
+    },
+    {
+      "id": "word_000681",
+      "ru": "сантиметр (см)",
+      "lt": "centimetras (cm)",
+      "type": "n"
+    },
+    {
+      "id": "word_000682",
+      "ru": "постельное бельё",
+      "lt": "patalynė",
+      "type": "n"
+    },
+    {
+      "id": "word_000683",
+      "ru": "химчистка",
+      "lt": "valykla",
+      "type": "n"
+    },
+    {
+      "id": "word_000684",
+      "ru": "химическая чистка одежды",
+      "lt": "cheminis drabužiu valymas",
+      "type": "n"
+    },
+    {
+      "id": "word_000685",
+      "ru": "прачечная",
+      "lt": "skalbykla",
+      "type": "n"
+    },
+    {
+      "id": "word_000686",
+      "ru": "прачечная самообслуживания",
+      "lt": "savitarnos skalbykla",
+      "type": "n"
+    },
+    {
+      "id": "word_000687",
+      "ru": "пятно",
+      "lt": "dėmė",
+      "type": "n"
+    },
+    {
+      "id": "word_000688",
+      "ru": "ателье по пошиву",
+      "lt": "siuvykla",
+      "type": "n"
+    },
+    {
+      "id": "word_000689",
+      "ru": "ремонтная мастерская",
+      "lt": "taisykla",
+      "type": "n"
+    },
+    {
+      "id": "word_000690",
+      "ru": "портной / портниха",
+      "lt": "siuvėjas, siuvėja",
+      "type": "n"
+    },
+    {
+      "id": "word_000691",
+      "ru": "длинный / длинная",
+      "lt": "ilgas, ilga",
+      "type": "adj"
+    },
+    {
+      "id": "word_000692",
+      "ru": "короткий / короткая",
+      "lt": "trumpas, trumpa",
+      "type": "adj"
+    },
+    {
+      "id": "word_000693",
+      "ru": "широкий / широкая",
+      "lt": "platus, plati",
+      "type": "adj"
+    },
+    {
+      "id": "word_000694",
+      "ru": "узкий / узкая",
+      "lt": "siauras, siaura",
+      "type": "adj"
+    },
+    {
+      "id": "word_000695",
+      "ru": "модный / модная",
+      "lt": "madingas, madinga",
+      "type": "adj"
+    },
+    {
+      "id": "word_000696",
+      "ru": "старомодный / старомодная",
+      "lt": "senamadiškas, senamadiška",
+      "type": "adj"
+    },
+    {
+      "id": "word_000697",
+      "ru": "золотой / золотая",
+      "lt": "auksinis, auksinė",
+      "type": "adj"
+    },
+    {
+      "id": "word_000698",
+      "ru": "серебряный / серебряная",
+      "lt": "sidabrinis, sidabrinė",
+      "type": "adj"
+    },
+    {
+      "id": "word_000699",
+      "ru": "деревянный / деревянная",
+      "lt": "medinis, medinė",
+      "type": "adj"
+    },
+    {
+      "id": "word_000700",
+      "ru": "слишком короткий, маленький, …",
+      "lt": "per trumpas, mažas, …",
+      "type": "other"
+    },
+    {
+      "id": "word_000701",
+      "ru": "носить",
+      "lt": "nešioti, nešioja, nešiojo ką?",
+      "type": "v"
+    },
+    {
+      "id": "word_000702",
+      "ru": "подрубить",
+      "lt": "palenkti, palenkia, palenkė ką?",
+      "type": "v"
+    },
+    {
+      "id": "word_000703",
+      "ru": "укоротить",
+      "lt": "patrumpinti, patrumpina, patrumpino ką?",
+      "type": "v"
+    },
+    {
+      "id": "word_000704",
+      "ru": "починить",
+      "lt": "pataisyti, pataiso, pataisė ką?",
+      "type": "v"
+    },
+    {
+      "id": "word_000705",
+      "ru": "сшить (заказать пошив)",
+      "lt": "pasiūti, pasiūva, pasiūvo ką?",
+      "type": "v"
+    },
+    {
+      "id": "word_000706",
+      "ru": "пришить",
+      "lt": "siūti, siuva, siuvo ką?",
+      "type": "v"
+    },
+    {
+      "id": "word_000707",
+      "ru": "забрать (получить)",
+      "lt": "atsiimti, atsiima, atsiėmė ką?",
+      "type": "v"
+    },
+    {
+      "id": "word_000708",
+      "ru": "поменять",
+      "lt": "pakeisti, pakeičia, pakeitė ką?",
+      "type": "v"
+    },
+    {
+      "id": "word_000709",
+      "ru": "вернуть",
+      "lt": "grąžinti, grąžina, grąžino ką?",
+      "type": "v"
+    },
+    {
+      "id": "word_000710",
+      "ru": "почистить",
+      "lt": "išvalyti, išvalo, išvalė ką?",
+      "type": "v"
+    },
+    {
+      "id": "word_000711",
+      "ru": "стирать",
+      "lt": "skalbti, skalbia, skalbė ką?",
+      "type": "v"
+    },
+    {
+      "id": "word_000712",
+      "ru": "месяцы",
+      "lt": "mėnesiai",
+      "type": "n"
+    },
+    {
+      "id": "word_000713",
+      "ru": "январь",
+      "lt": "sausis, sausio",
+      "type": "n"
+    },
+    {
+      "id": "word_000714",
+      "ru": "февраль",
+      "lt": "vasaris, vasario",
+      "type": "n"
+    },
+    {
+      "id": "word_000715",
+      "ru": "март",
+      "lt": "kovas",
+      "type": "n"
+    },
+    {
+      "id": "word_000716",
+      "ru": "апрель",
+      "lt": "balandis, balandžio",
+      "type": "n"
+    },
+    {
+      "id": "word_000717",
+      "ru": "май",
+      "lt": "gegužė",
+      "type": "n"
+    },
+    {
+      "id": "word_000718",
+      "ru": "июнь",
+      "lt": "birželis, birželio",
+      "type": "n"
+    },
+    {
+      "id": "word_000719",
+      "ru": "июль",
+      "lt": "liepa",
+      "type": "n"
+    },
+    {
+      "id": "word_000720",
+      "ru": "август",
+      "lt": "rugpjūtis, rugpjūčio",
+      "type": "n"
+    },
+    {
+      "id": "word_000721",
+      "ru": "сентябрь",
+      "lt": "rugsėjis, rugsėjo",
+      "type": "n"
+    },
+    {
+      "id": "word_000722",
+      "ru": "октябрь",
+      "lt": "spalis, spalio",
+      "type": "n"
+    },
+    {
+      "id": "word_000723",
+      "ru": "ноябрь",
+      "lt": "lapkritis, lapkričio",
+      "type": "n"
+    },
+    {
+      "id": "word_000724",
+      "ru": "декабрь",
+      "lt": "gruodis, gruodžio",
+      "type": "n"
+    },
+    {
+      "id": "word_000725",
+      "ru": "тело",
+      "lt": "kūnas",
+      "type": "n"
+    },
+    {
+      "id": "word_000726",
+      "ru": "голова",
+      "lt": "galva",
+      "type": "n"
+    },
+    {
+      "id": "word_000727",
+      "ru": "лицо",
+      "lt": "veidas",
+      "type": "n"
+    },
+    {
+      "id": "word_000728",
+      "ru": "глаз",
+      "lt": "akis, akies",
+      "type": "n"
+    },
+    {
+      "id": "word_000729",
+      "ru": "ухо",
+      "lt": "ausis, ausies",
+      "type": "n"
+    },
+    {
+      "id": "word_000730",
+      "ru": "нос",
+      "lt": "nosis, nosies",
+      "type": "n"
+    },
+    {
+      "id": "word_000731",
+      "ru": "зуб",
+      "lt": "dantis, danties",
+      "type": "n"
+    },
+    {
+      "id": "word_000732",
+      "ru": "горло",
+      "lt": "gerklė",
+      "type": "n"
+    },
+    {
+      "id": "word_000733",
+      "ru": "рука",
+      "lt": "ranka",
+      "type": "n"
+    },
+    {
+      "id": "word_000734",
+      "ru": "палец",
+      "lt": "pirštas",
+      "type": "n"
+    },
+    {
+      "id": "word_000735",
+      "ru": "нога",
+      "lt": "koja",
+      "type": "n"
+    },
+    {
+      "id": "word_000736",
+      "ru": "желудок",
+      "lt": "skrandis, skrandžio",
+      "type": "n"
+    },
+    {
+      "id": "word_000737",
+      "ru": "живот",
+      "lt": "pilvas",
+      "type": "n"
+    },
+    {
+      "id": "word_000738",
+      "ru": "спина",
+      "lt": "nugara",
+      "type": "n"
+    },
+    {
+      "id": "word_000739",
+      "ru": "сердце",
+      "lt": "širdis, širdies",
+      "type": "n"
+    },
+    {
+      "id": "word_000740",
+      "ru": "чувствовать себя",
+      "lt": "jaustis, jaučiasi, jautėsi",
+      "type": "v"
+    },
+    {
+      "id": "word_000741",
+      "ru": "болеть (о боли)",
+      "lt": "skaudėti, skauda, skaudėjo ką?",
+      "type": "v"
+    },
+    {
+      "id": "word_000742",
+      "ru": "температура",
+      "lt": "temperatūra",
+      "type": "n"
+    },
+    {
+      "id": "word_000743",
+      "ru": "высокая, низкая, нормальная",
+      "lt": "aukšta, žema, normali",
+      "type": "adj"
+    },
+    {
+      "id": "word_000744",
+      "ru": "иметь температуру / температурить",
+      "lt": "turėti, turi, turėjo temperatūros / karščiuoti, karščiuoja, karščiavo",
+      "type": "v"
+    },
+    {
+      "id": "word_000745",
+      "ru": "болеть",
+      "lt": "sirgti, serga, sirgo",
+      "type": "v"
+    },
+    {
+      "id": "word_000746",
+      "ru": "простудиться",
+      "lt": "peršalti, peršąla, peršalo",
+      "type": "v"
+    },
+    {
+      "id": "word_000747",
+      "ru": "выздоравливать, поправляться",
+      "lt": "(pa)sveikti, sveiksta, sveiko",
+      "type": "v"
+    },
+    {
+      "id": "word_000748",
+      "ru": "записаться (к врачу)",
+      "lt": "užsiregistruoti, užsiregistruoja, užsiregistravo (pas gydytoją)",
+      "type": "v"
+    },
+    {
+      "id": "word_000749",
+      "ru": "здоровье",
+      "lt": "sveikata",
+      "type": "n"
+    },
+    {
+      "id": "word_000750",
+      "ru": "здоровый / здоровая",
+      "lt": "sveikas, sveika",
+      "type": "adj"
+    },
+    {
+      "id": "word_000751",
+      "ru": "усталый / усталая",
+      "lt": "pavargęs, pavargusi",
+      "type": "adj"
+    },
+    {
+      "id": "word_000752",
+      "ru": "врач",
+      "lt": "gydytojas, gydytoja",
+      "type": "n"
+    },
+    {
+      "id": "word_000753",
+      "ru": "врач общей практики, семейный врач",
+      "lt": "šeimos gydytojas, šeimos gydytoja",
+      "type": "n"
+    },
+    {
+      "id": "word_000754",
+      "ru": "стоматолог",
+      "lt": "odontologas, odontologė",
+      "type": "n"
+    },
+    {
+      "id": "word_000755",
+      "ru": "медсестра / медбрат",
+      "lt": "slaugytojas, slaugytoja",
+      "type": "n"
+    },
+    {
+      "id": "word_000756",
+      "ru": "ветеринар",
+      "lt": "veterinaras, veterinarė",
+      "type": "n"
+    },
+    {
+      "id": "word_000757",
+      "ru": "поликлиника",
+      "lt": "poliklinika",
+      "type": "n"
+    },
+    {
+      "id": "word_000758",
+      "ru": "кабинет (врачебный)",
+      "lt": "kabinetas",
+      "type": "n"
+    },
+    {
+      "id": "word_000759",
+      "ru": "палата",
+      "lt": "palata",
+      "type": "n"
+    },
+    {
+      "id": "word_000760",
+      "ru": "ветеринарная клиника",
+      "lt": "veterinarijos klinika",
+      "type": "n"
+    },
+    {
+      "id": "word_000761",
+      "ru": "лежать в больнице",
+      "lt": "gulėti, guli, gulėjo ligoninėje",
+      "type": "v"
+    },
+    {
+      "id": "word_000762",
+      "ru": "пациент / пациентка",
+      "lt": "ligonis, ligonio ; ligonė",
+      "type": "n"
+    },
+    {
+      "id": "word_000763",
+      "ru": "возраст",
+      "lt": "amžius",
+      "type": "n"
+    },
+    {
+      "id": "word_000764",
+      "ru": "год",
+      "lt": "metai",
+      "type": "n"
+    },
+    {
+      "id": "word_000765",
+      "ru": "сто",
+      "lt": "šimtas",
+      "type": "n"
+    },
+    {
+      "id": "word_000766",
+      "ru": "тысяча",
+      "lt": "tūkstantis, tūkstančio",
+      "type": "n"
+    },
+    {
+      "id": "word_000767",
+      "ru": "медицинская страховка",
+      "lt": "sveikatos draudimas",
+      "type": "n"
+    },
+    {
+      "id": "word_000768",
+      "ru": "удостоверение личности",
+      "lt": "asmens dokumentas",
+      "type": "n"
+    },
+    {
+      "id": "word_000769",
+      "ru": "лекарства",
+      "lt": "vaistai",
+      "type": "n"
+    },
+    {
+      "id": "word_000770",
+      "ru": "рецепт",
+      "lt": "receptas",
+      "type": "n"
+    },
+    {
+      "id": "word_000771",
+      "ru": "обезболивающие",
+      "lt": "vaistai nuo skausmo (skausmas)",
+      "type": "n"
+    },
+    {
+      "id": "word_000772",
+      "ru": "от температуры",
+      "lt": "nuo temperatūros",
+      "type": "other"
+    },
+    {
+      "id": "word_000773",
+      "ru": "от насморка",
+      "lt": "nuo slogos",
+      "type": "other"
+    },
+    {
+      "id": "word_000774",
+      "ru": "от аллергии",
+      "lt": "nuo alergijos",
+      "type": "other"
+    },
+    {
+      "id": "word_000775",
+      "ru": "от кашля",
+      "lt": "nuo kosulio",
+      "type": "other"
+    },
+    {
+      "id": "word_000776",
+      "ru": "принимать лекарства",
+      "lt": "gerti vaistus",
+      "type": "v"
+    },
+    {
+      "id": "word_000777",
+      "ru": "перед едой",
+      "lt": "prieš valgį",
+      "type": "other"
+    },
+    {
+      "id": "word_000778",
+      "ru": "после еды",
+      "lt": "po valgio",
+      "type": "other"
+    },
+    {
+      "id": "word_000779",
+      "ru": "принимать таблетку один / два / три раза в день",
+      "lt": "gerti tabletę vieną kartą / du / tris kartus per dieną",
+      "type": "other"
+    },
+    {
+      "id": "word_000780",
+      "ru": "таблетка",
+      "lt": "tabletė",
+      "type": "n"
+    },
+    {
+      "id": "word_000781",
+      "ru": "антибиотики",
+      "lt": "antibiotikai",
+      "type": "n"
+    },
+    {
+      "id": "word_000782",
+      "ru": "сироп от кашля",
+      "lt": "sirupas nuo kosulio",
+      "type": "n"
+    },
+    {
+      "id": "word_000783",
+      "ru": "спрей",
+      "lt": "purškalas",
+      "type": "n"
+    },
+    {
+      "id": "word_000784",
+      "ru": "спрей для горла / носа",
+      "lt": "gerklės / nosies purškalas",
+      "type": "n"
+    },
+    {
+      "id": "word_000785",
+      "ru": "капли",
+      "lt": "lašai",
+      "type": "n"
+    },
+    {
+      "id": "word_000786",
+      "ru": "капли для глаз / ушей / сердца",
+      "lt": "akių / ausų / širdies lašai",
+      "type": "n"
+    },
+    {
+      "id": "word_000787",
+      "ru": "кровь",
+      "lt": "kraujas",
+      "type": "n"
+    },
+    {
+      "id": "word_000788",
+      "ru": "кровяное давление",
+      "lt": "kraujospūdis, kraujospūdžio",
+      "type": "n"
+    },
+    {
+      "id": "word_000789",
+      "ru": "низкое, высокое, нормальное кровяное давление",
+      "lt": "žemas, aukštas, normalus kraujospūdis",
+      "type": "adj"
+    },
+    {
+      "id": "word_000790",
+      "ru": "делать",
+      "lt": "padaryti, padaro, padarė ką?",
+      "type": "v"
+    },
+    {
+      "id": "word_000791",
+      "ru": "сдавать анализы",
+      "lt": "padaryti tyrimus",
+      "type": "v"
+    },
+    {
+      "id": "word_000792",
+      "ru": "анализ крови",
+      "lt": "kraujo tyrimas",
+      "type": "n"
+    },
+    {
+      "id": "word_000793",
+      "ru": "анализ мочи",
+      "lt": "šlapimo tyrimas",
+      "type": "n"
+    },
+    {
+      "id": "word_000794",
+      "ru": "скорая помощь",
+      "lt": "greitoji (pagalba)",
+      "type": "n"
+    },
+    {
+      "id": "word_000795",
+      "ru": "вызывать",
+      "lt": "iškviesti, iškviečia, iškvietė ką?",
+      "type": "v"
+    },
+    {
+      "id": "word_000796",
+      "ru": "вызывать врача / скорую",
+      "lt": "iškviesti gydytoją, greitąją (pagalbą)",
+      "type": "v"
+    },
+    {
+      "id": "word_000797",
+      "ru": "кашлять",
+      "lt": "kosėti, kosėja, kosėjo",
+      "type": "v"
+    },
+    {
+      "id": "word_000798",
+      "ru": "тошнить",
+      "lt": "pykinti, pykina, pykino ką?",
+      "type": "v"
+    },
+    {
+      "id": "word_000799",
+      "ru": "рвать",
+      "lt": "vemti, vemia, vėmė",
+      "type": "v"
+    },
+    {
+      "id": "word_000800",
+      "ru": "поносить (диарея)",
+      "lt": "viduriuoti, viduriuoja, viduriavo",
+      "type": "v"
+    },
+    {
+      "id": "word_000801",
+      "ru": "болезнь",
+      "lt": "liga",
+      "type": "n"
+    },
+    {
+      "id": "word_000802",
+      "ru": "аллергия",
+      "lt": "alergija",
+      "type": "n"
+    },
+    {
+      "id": "word_000803",
+      "ru": "аллергический / аллергическая",
+      "lt": "alergiškas, alergiška",
+      "type": "adj"
+    },
+    {
+      "id": "word_000804",
+      "ru": "грипп",
+      "lt": "gripas",
+      "type": "n"
+    },
+    {
+      "id": "word_000805",
+      "ru": "насморк",
+      "lt": "sloga",
+      "type": "n"
+    },
+    {
+      "id": "word_000806",
+      "ru": "кашель",
+      "lt": "kosulys",
+      "type": "n"
+    },
+    {
+      "id": "word_000807",
+      "ru": "бронхит",
+      "lt": "bronchitas",
+      "type": "n"
+    },
+    {
+      "id": "word_000808",
+      "ru": "воспаление лёгких",
+      "lt": "plaučių uždegimas",
+      "type": "n"
+    },
+    {
+      "id": "word_000809",
+      "ru": "ангина",
+      "lt": "angina",
+      "type": "n"
+    },
+    {
+      "id": "word_000810",
+      "ru": "прививаться",
+      "lt": "pasiskiepyti, pasiskiepija, pasiskiepijo nuo ko?",
+      "type": "v"
+    },
+    {
+      "id": "word_000811",
+      "ru": "выходной / день отдыха",
+      "lt": "poilsio / nedarbo diena",
+      "type": "n"
+    },
+    {
+      "id": "word_000812",
+      "ru": "рабочее место",
+      "lt": "darbovietė",
+      "type": "n"
+    },
+    {
+      "id": "word_000813",
+      "ru": "предприятие, компания",
+      "lt": "įmonė",
+      "type": "n"
+    },
+    {
+      "id": "word_000814",
+      "ru": "директор, руководитель",
+      "lt": "direktorius, direktorė",
+      "type": "n"
+    },
+    {
+      "id": "word_000815",
+      "ru": "коллега",
+      "lt": "kolega, kolegė",
+      "type": "n"
+    },
+    {
+      "id": "word_000816",
+      "ru": "сотрудник / сотрудница",
+      "lt": "darbuotojas, darbuotoja",
+      "type": "n"
+    },
+    {
+      "id": "word_000817",
+      "ru": "клиент / клиентка",
+      "lt": "klientas, klientė",
+      "type": "n"
+    },
+    {
+      "id": "word_000818",
+      "ru": "занятый / занятая",
+      "lt": "užsiėmęs, užsiėmusi",
+      "type": "adj"
+    },
+    {
+      "id": "word_000819",
+      "ru": "командировка",
+      "lt": "komandiruotė",
+      "type": "n"
+    },
+    {
+      "id": "word_000820",
+      "ru": "собрание",
+      "lt": "susirinkimas",
+      "type": "n"
+    },
+    {
+      "id": "word_000821",
+      "ru": "встреча",
+      "lt": "susitikimas",
+      "type": "n"
+    },
+    {
+      "id": "word_000822",
+      "ru": "кабинет",
+      "lt": "kabinetas",
+      "type": "n"
+    },
+    {
+      "id": "word_000823",
+      "ru": "начинаться",
+      "lt": "prasidėti, prasideda, prasidėjo",
+      "type": "v"
+    },
+    {
+      "id": "word_000824",
+      "ru": "заканчиваться",
+      "lt": "pasibaigti, pasibaigia, pasibaigė",
+      "type": "v"
+    },
+    {
+      "id": "word_000825",
+      "ru": "начинать",
+      "lt": "pradėti, pradeda, pradėjo ką?",
+      "type": "v"
+    },
+    {
+      "id": "word_000826",
+      "ru": "заканчивать",
+      "lt": "baigti, baigia, baigė ką?",
+      "type": "v"
+    },
+    {
+      "id": "word_000827",
+      "ru": "заканчивать работу",
+      "lt": "baigti darbą",
+      "type": "v"
+    },
+    {
+      "id": "word_000828",
+      "ru": "обеденный перерыв",
+      "lt": "pietų pertrauka",
+      "type": "n"
+    },
+    {
+      "id": "word_000829",
+      "ru": "быть в отпуске, отдыхать",
+      "lt": "atostogauti, atostogauja, atostogavo",
+      "type": "v"
+    },
+    {
+      "id": "word_000830",
+      "ru": "отпуск",
+      "lt": "atostogos",
+      "type": "n"
+    },
+    {
+      "id": "word_000831",
+      "ru": "распечатать",
+      "lt": "išspausdinti, išspausdina, išspausdino ką?",
+      "type": "v"
+    },
+    {
+      "id": "word_000832",
+      "ru": "документ",
+      "lt": "dokumentas",
+      "type": "n"
+    },
+    {
+      "id": "word_000833",
+      "ru": "копия",
+      "lt": "kopija",
+      "type": "n"
+    },
+    {
+      "id": "word_000834",
+      "ru": "делать копии",
+      "lt": "daryti, daro, darė kopijas",
+      "type": "v"
+    },
+    {
+      "id": "word_000835",
+      "ru": "передавать, сообщать",
+      "lt": "perduoti, perduoda, perdavė ką? kam?",
+      "type": "v"
+    },
+    {
+      "id": "word_000836",
+      "ru": "давать, вручать",
+      "lt": "paduoti, paduoda, padavė ką? kam?",
+      "type": "v"
+    },
+    {
+      "id": "word_000837",
+      "ru": "говорить, сказать",
+      "lt": "pasakyti, pasako, pasakė ką? kam?",
+      "type": "v"
+    },
+    {
+      "id": "word_000838",
+      "ru": "относить",
+      "lt": "nunešti, nuneša, nunešė ką? kam?",
+      "type": "v"
+    },
+    {
+      "id": "word_000839",
+      "ru": "писать",
+      "lt": "rašyti, rašo, rašė ką? kam?",
+      "type": "v"
+    },
+    {
+      "id": "word_000840",
+      "ru": "отправлять",
+      "lt": "išsiųsti, išsiunčia, išsiuntė ką? kam?",
+      "type": "v"
+    },
+    {
+      "id": "word_000841",
+      "ru": "получать",
+      "lt": "gauti, gauna, gavo ką? kam?",
+      "type": "v"
+    },
+    {
+      "id": "word_000842",
+      "ru": "электронное письмо",
+      "lt": "elektroninis laiškas",
+      "type": "n"
+    },
+    {
+      "id": "word_000843",
+      "ru": "подписывать",
+      "lt": "pasirašyti, pasirašo, pasirašė ką?",
+      "type": "v"
+    },
+    {
+      "id": "word_000844",
+      "ru": "parašas",
+      "lt": "parašas",
+      "type": "n"
+    },
+    {
+      "id": "word_000845",
+      "ru": "договор",
+      "lt": "sutartis, sutarties",
+      "type": "n"
+    },
+    {
+      "id": "word_000846",
+      "ru": "подождать",
+      "lt": "palaukti, palaukia, palaukė ko?",
+      "type": "v"
+    },
+    {
+      "id": "word_000847",
+      "ru": "спросить",
+      "lt": "paklausti, paklausia, paklausė",
+      "type": "v"
+    },
+    {
+      "id": "word_000848",
+      "ru": "позвонить",
+      "lt": "paskambinti, paskambina, paskambino kam?",
+      "type": "v"
+    },
+    {
+      "id": "word_000849",
+      "ru": "бумага",
+      "lt": "popierius",
+      "type": "n"
+    },
+    {
+      "id": "word_000850",
+      "ru": "лист бумаги",
+      "lt": "popieriaus lapas",
+      "type": "n"
+    },
+    {
+      "id": "word_000851",
+      "ru": "компьютер",
+      "lt": "kompiuteris, kompiuterio",
+      "type": "n"
+    },
+    {
+      "id": "word_000852",
+      "ru": "принтер",
+      "lt": "spausdintuvas",
+      "type": "n"
+    },
+    {
+      "id": "word_000853",
+      "ru": "профессии",
+      "lt": "profesijos",
+      "type": "n"
+    },
+    {
+      "id": "word_000854",
+      "ru": "администратор",
+      "lt": "administratoriums, administratorė",
+      "type": "n"
+    },
+    {
+      "id": "word_000855",
+      "ru": "секретарь",
+      "lt": "sekretorius, sekretorė",
+      "type": "n"
+    },
+    {
+      "id": "word_000856",
+      "ru": "учитель / учительница",
+      "lt": "mokytojas, mokytoja",
+      "type": "n"
+    },
+    {
+      "id": "word_000857",
+      "ru": "преподаватель",
+      "lt": "dėstytojas, dėstytoja",
+      "type": "n"
+    },
+    {
+      "id": "word_000858",
+      "ru": "менеджер",
+      "lt": "vadybininkas, vadybininkė",
+      "type": "n"
+    },
+    {
+      "id": "word_000859",
+      "ru": "бизнесмен / бизнесвумен",
+      "lt": "verslininkas, verslininkė",
+      "type": "n"
+    },
+    {
+      "id": "word_000860",
+      "ru": "юрист",
+      "lt": "teisininkas, teisininkė",
+      "type": "n"
+    },
+    {
+      "id": "word_000861",
+      "ru": "бухгалтер",
+      "lt": "buhalteris, buhalterio ; buhalterė",
+      "type": "n"
+    },
+    {
+      "id": "word_000862",
+      "ru": "инженер",
+      "lt": "inžinierius, inžinierė",
+      "type": "n"
+    },
+    {
+      "id": "word_000863",
+      "ru": "журналист",
+      "lt": "žurnalistas, žurnalistė",
+      "type": "n"
+    },
+    {
+      "id": "word_000864",
+      "ru": "архитектор",
+      "lt": "architektas, architektė",
+      "type": "n"
+    },
+    {
+      "id": "word_000865",
+      "ru": "IT-специалист",
+      "lt": "IT (informacinių technologijų) specialistas, specialistė",
+      "type": "n"
+    },
+    {
+      "id": "word_000866",
+      "ru": "актёр / актриса",
+      "lt": "aktorius, aktorė",
+      "type": "n"
+    },
+    {
+      "id": "word_000867",
+      "ru": "певец / певица",
+      "lt": "dainininkas, dainininkė",
+      "type": "n"
+    },
+    {
+      "id": "word_000868",
+      "ru": "музыкант",
+      "lt": "muzikantas, muzikantė",
+      "type": "n"
+    },
+    {
+      "id": "word_000869",
+      "ru": "строитель",
+      "lt": "statybininkas, statybininkė",
+      "type": "n"
+    },
+    {
+      "id": "word_000870",
+      "ru": "парикмахер",
+      "lt": "kirpėjas, kirpėja",
+      "type": "n"
+    },
+    {
+      "id": "word_000871",
+      "ru": "образование",
+      "lt": "išsilavinimas",
+      "type": "n"
+    },
+    {
+      "id": "word_000872",
+      "ru": "высшее образование",
+      "lt": "aukštasis",
+      "type": "n"
+    },
+    {
+      "id": "word_000873",
+      "ru": "профессиональное образование",
+      "lt": "profesinis",
+      "type": "n"
+    },
+    {
+      "id": "word_000874",
+      "ru": "среднее образование (полное)",
+      "lt": "vidurinis",
+      "type": "n"
+    },
+    {
+      "id": "word_000875",
+      "ru": "основное среднее образование",
+      "lt": "pagrindinis",
+      "type": "n"
+    },
+    {
+      "id": "word_000876",
+      "ru": "начальное образование",
+      "lt": "pradinis",
+      "type": "n"
+    },
+    {
+      "id": "word_000877",
+      "ru": "с",
+      "lt": "nuo",
+      "type": "other"
+    },
+    {
+      "id": "word_000878",
+      "ru": "до",
+      "lt": "iki",
+      "type": "other"
+    },
+    {
+      "id": "word_000879",
+      "ru": "перед, некоторое время назад",
+      "lt": "prieš",
+      "type": "other"
+    },
+    {
+      "id": "word_000880",
+      "ru": "во время",
+      "lt": "per",
+      "type": "other"
+    },
+    {
+      "id": "word_000881",
+      "ru": "о",
+      "lt": "apie",
+      "type": "other"
+    },
+    {
+      "id": "word_000882",
+      "ru": "сразу, немедленно",
+      "lt": "tuojau / tuoj",
+      "type": "adv"
+    },
+    {
+      "id": "word_000883",
+      "ru": "профессор",
+      "lt": "profesorius, profesorė",
+      "type": "n"
+    },
+    {
+      "id": "word_000884",
+      "ru": "академия",
+      "lt": "akademija",
+      "type": "n"
+    },
+    {
+      "id": "word_000885",
+      "ru": "колледж",
+      "lt": "kolegija",
+      "type": "n"
+    },
+    {
+      "id": "word_000886",
+      "ru": "аудитория",
+      "lt": "auditorija",
+      "type": "n"
+    },
+    {
+      "id": "word_000887",
+      "ru": "курс (первый, второй, …)",
+      "lt": "kursas (pirmas, antras, …)",
+      "type": "n"
+    },
+    {
+      "id": "word_000888",
+      "ru": "учиться",
+      "lt": "mokytis, mokosi, mokėsi ko?",
+      "type": "v"
+    },
+    {
+      "id": "word_000889",
+      "ru": "учить",
+      "lt": "mokyti, moko, mokė ką? ko?",
+      "type": "v"
+    },
+    {
+      "id": "word_000890",
+      "ru": "изучать",
+      "lt": "studijuoti, studijuoja, studijavo ką?",
+      "type": "v"
+    },
+    {
+      "id": "word_000891",
+      "ru": "знать",
+      "lt": "žinoti, žino, žinojo",
+      "type": "v"
+    },
+    {
+      "id": "word_000892",
+      "ru": "забывать",
+      "lt": "pamiršti, pamiršta, pamiršo ką?",
+      "type": "v"
+    },
+    {
+      "id": "word_000893",
+      "ru": "повторять",
+      "lt": "pakartoti, pakartoja, pakartojo",
+      "type": "v"
+    },
+    {
+      "id": "word_000894",
+      "ru": "слушать",
+      "lt": "klausyti, klauso, klausė ko?",
+      "type": "v"
+    },
+    {
+      "id": "word_000895",
+      "ru": "страница",
+      "lt": "puslapis, puslapio",
+      "type": "n"
+    },
+    {
+      "id": "word_000896",
+      "ru": "задание",
+      "lt": "užduotis, užduoties",
+      "type": "n"
+    },
+    {
+      "id": "word_000897",
+      "ru": "упражнение",
+      "lt": "pratimas",
+      "type": "n"
+    },
+    {
+      "id": "word_000898",
+      "ru": "вопрос",
+      "lt": "klausimas",
+      "type": "n"
+    },
+    {
+      "id": "word_000899",
+      "ru": "текст",
+      "lt": "tekstas",
+      "type": "n"
+    },
+    {
+      "id": "word_000900",
+      "ru": "домашняя работа",
+      "lt": "namų darbas",
+      "type": "n"
+    },
+    {
+      "id": "word_000901",
+      "ru": "делать домашнюю работу",
+      "lt": "daryti namų darbą",
+      "type": "v"
+    },
+    {
+      "id": "word_000902",
+      "ru": "лекция",
+      "lt": "paskaita",
+      "type": "n"
+    },
+    {
+      "id": "word_000903",
+      "ru": "семинар",
+      "lt": "seminaras",
+      "type": "n"
+    },
+    {
+      "id": "word_000904",
+      "ru": "экзамен",
+      "lt": "egzaminas",
+      "type": "n"
+    },
+    {
+      "id": "word_000905",
+      "ru": "тест",
+      "lt": "testas",
+      "type": "n"
+    },
+    {
+      "id": "word_000906",
+      "ru": "сдавать экзамен",
+      "lt": "laikyti, laiko, laikė egzaminą",
+      "type": "v"
+    },
+    {
+      "id": "word_000907",
+      "ru": "сдавать экзамен (успешно)",
+      "lt": "išlaikyti, išlaiko, išlaikė egzaminą",
+      "type": "v"
+    },
+    {
+      "id": "word_000908",
+      "ru": "оценка",
+      "lt": "pažymys",
+      "type": "n"
+    },
+    {
+      "id": "word_000909",
+      "ru": "диплом",
+      "lt": "diplomas",
+      "type": "n"
+    },
+    {
+      "id": "word_000910",
+      "ru": "сертификат",
+      "lt": "pažymėjimas",
+      "type": "n"
+    },
+    {
+      "id": "word_000911",
+      "ru": "биология",
+      "lt": "biologija",
+      "type": "n"
+    },
+    {
+      "id": "word_000912",
+      "ru": "химия",
+      "lt": "chemija",
+      "type": "n"
+    },
+    {
+      "id": "word_000913",
+      "ru": "изобразительное искусство",
+      "lt": "dailė",
+      "type": "n"
+    },
+    {
+      "id": "word_000914",
+      "ru": "филология (литовский, английский, французский, …)",
+      "lt": "filologija (lietuvių, anglų, prancūzų, …)",
+      "type": "n"
+    },
+    {
+      "id": "word_000915",
+      "ru": "экономика",
+      "lt": "ekonomika",
+      "type": "n"
+    },
+    {
+      "id": "word_000916",
+      "ru": "физика",
+      "lt": "fizika",
+      "type": "n"
+    },
+    {
+      "id": "word_000917",
+      "ru": "география",
+      "lt": "geografija",
+      "type": "n"
+    },
+    {
+      "id": "word_000918",
+      "ru": "информатика",
+      "lt": "informatika",
+      "type": "n"
+    },
+    {
+      "id": "word_000919",
+      "ru": "история",
+      "lt": "istorija",
+      "type": "n"
+    },
+    {
+      "id": "word_000920",
+      "ru": "язык (литовский, английский, французский, …)",
+      "lt": "kalba (lietuvių, anglų, prancūzų, …)",
+      "type": "n"
+    },
+    {
+      "id": "word_000921",
+      "ru": "математика",
+      "lt": "matematika",
+      "type": "n"
+    },
+    {
+      "id": "word_000922",
+      "ru": "медицина",
+      "lt": "medicina",
+      "type": "n"
+    },
+    {
+      "id": "word_000923",
+      "ru": "политология",
+      "lt": "politologija",
+      "type": "n"
+    },
+    {
+      "id": "word_000924",
+      "ru": "психология",
+      "lt": "psichologija",
+      "type": "n"
+    },
+    {
+      "id": "word_000925",
+      "ru": "право",
+      "lt": "teisė",
+      "type": "n"
+    },
+    {
+      "id": "word_000926",
+      "ru": "менеджмент",
+      "lt": "vadyba",
+      "type": "n"
+    },
+    {
+      "id": "word_000927",
+      "ru": "журналистика",
+      "lt": "žurnalistika",
+      "type": "n"
+    },
+    {
+      "id": "word_000928",
+      "ru": "книга",
+      "lt": "knyga",
+      "type": "n"
+    },
+    {
+      "id": "word_000929",
+      "ru": "учебник",
+      "lt": "vadovėlis, vadovėlio",
+      "type": "n"
+    },
+    {
+      "id": "word_000930",
+      "ru": "словарь",
+      "lt": "žodynas",
+      "type": "n"
+    },
+    {
+      "id": "word_000931",
+      "ru": "ручка",
+      "lt": "rašiklis, rašiklio",
+      "type": "n"
+    },
+    {
+      "id": "word_000932",
+      "ru": "карандаш",
+      "lt": "pieštukas",
+      "type": "n"
+    },
+    {
+      "id": "word_000933",
+      "ru": "ластик",
+      "lt": "trintukas",
+      "type": "n"
+    },
+    {
+      "id": "word_000934",
+      "ru": "тетрадь",
+      "lt": "sąsiuvinis, sąsiuvinio",
+      "type": "n"
+    },
+    {
+      "id": "word_000935",
+      "ru": "одалживать",
+      "lt": "paskolinti, paskolina, paskolino ką?",
+      "type": "v"
+    },
+    {
+      "id": "word_000936",
+      "ru": "досуг",
+      "lt": "laisvalaikis, laisvalaikio",
+      "type": "n"
+    },
+    {
+      "id": "word_000937",
+      "ru": "отдыхать",
+      "lt": "pailsėti, pailsi, pailsėjo",
+      "type": "v"
+    },
+    {
+      "id": "word_000938",
+      "ru": "нравиться",
+      "lt": "mėgti, mėgsta, mėgo",
+      "type": "v"
+    },
+    {
+      "id": "word_000939",
+      "ru": "делать",
+      "lt": "veikti, veikia, veikė",
+      "type": "v"
+    },
+    {
+      "id": "word_000940",
+      "ru": "концерт",
+      "lt": "koncertas",
+      "type": "n"
+    },
+    {
+      "id": "word_000941",
+      "ru": "опера",
+      "lt": "opera",
+      "type": "n"
+    },
+    {
+      "id": "word_000942",
+      "ru": "балет",
+      "lt": "baletas",
+      "type": "n"
+    },
+    {
+      "id": "word_000943",
+      "ru": "гитара",
+      "lt": "gitara",
+      "type": "n"
+    },
+    {
+      "id": "word_000944",
+      "ru": "пианино",
+      "lt": "pianinas",
+      "type": "n"
+    },
+    {
+      "id": "word_000945",
+      "ru": "фортепиано",
+      "lt": "fortepijonas",
+      "type": "n"
+    },
+    {
+      "id": "word_000946",
+      "ru": "танцевать",
+      "lt": "šokti, šoka, šoko",
+      "type": "v"
+    },
+    {
+      "id": "word_000947",
+      "ru": "петь",
+      "lt": "dainuoti, dainuoja, dainavo",
+      "type": "v"
+    },
+    {
+      "id": "word_000948",
+      "ru": "играть (на инструменте)",
+      "lt": "groti, groja, grojo",
+      "type": "v"
+    },
+    {
+      "id": "word_000949",
+      "ru": "уметь, знать (как делать)",
+      "lt": "mokėti, moka, mokėjo",
+      "type": "v"
+    },
+    {
+      "id": "word_000950",
+      "ru": "выставка",
+      "lt": "paroda",
+      "type": "n"
+    },
+    {
+      "id": "word_000951",
+      "ru": "фотография",
+      "lt": "fotografija",
+      "type": "n"
+    },
+    {
+      "id": "word_000952",
+      "ru": "скульптура",
+      "lt": "skulptūra",
+      "type": "n"
+    },
+    {
+      "id": "word_000953",
+      "ru": "стадион",
+      "lt": "stadionas",
+      "type": "n"
+    },
+    {
+      "id": "word_000954",
+      "ru": "бассейн",
+      "lt": "baseinas",
+      "type": "n"
+    },
+    {
+      "id": "word_000955",
+      "ru": "баскетбол",
+      "lt": "krepšinis, krepšinio",
+      "type": "n"
+    },
+    {
+      "id": "word_000956",
+      "ru": "футбол",
+      "lt": "futbolas",
+      "type": "n"
+    },
+    {
+      "id": "word_000957",
+      "ru": "теннис",
+      "lt": "tenisas",
+      "type": "n"
+    },
+    {
+      "id": "word_000958",
+      "ru": "играть",
+      "lt": "žaisti, žaidžia, žaidė ką?, kuo?",
+      "type": "v"
+    },
+    {
+      "id": "word_000959",
+      "ru": "шашки",
+      "lt": "šaškės",
+      "type": "n"
+    },
+    {
+      "id": "word_000960",
+      "ru": "шахматы",
+      "lt": "šachmatai",
+      "type": "n"
+    },
+    {
+      "id": "word_000961",
+      "ru": "играть в баскетбол",
+      "lt": "žaisti krepšinį",
+      "type": "v"
+    },
+    {
+      "id": "word_000962",
+      "ru": "играть в шашки",
+      "lt": "žaisti šaškėmis",
+      "type": "v"
+    },
+    {
+      "id": "word_000963",
+      "ru": "плавать",
+      "lt": "plaukioti, plaukioja, plaukiojo",
+      "type": "v"
+    },
+    {
+      "id": "word_000964",
+      "ru": "ходить гулять",
+      "lt": "eiti pasivaikščioti",
+      "type": "v"
+    },
+    {
+      "id": "word_000965",
+      "ru": "бегать трусцой",
+      "lt": "bėgioti, bėgioja, bėgiojo",
+      "type": "v"
+    },
+    {
+      "id": "word_000966",
+      "ru": "кататься на лыжах",
+      "lt": "slidinėti, slidinėja, slidinėjo",
+      "type": "v"
+    },
+    {
+      "id": "word_000967",
+      "ru": "ездить",
+      "lt": "važinėti, važinėja, važinėjo",
+      "type": "v"
+    },
+    {
+      "id": "word_000968",
+      "ru": "спектакль",
+      "lt": "spektaklis, spektaklio",
+      "type": "n"
+    },
+    {
+      "id": "word_000969",
+      "ru": "кино",
+      "lt": "kinas",
+      "type": "n"
+    },
+    {
+      "id": "word_000970",
+      "ru": "фильм",
+      "lt": "filmas",
+      "type": "n"
+    },
+    {
+      "id": "word_000971",
+      "ru": "зал",
+      "lt": "salė",
+      "type": "n"
+    },
+    {
+      "id": "word_000972",
+      "ru": "ряд",
+      "lt": "eilė",
+      "type": "n"
+    },
+    {
+      "id": "word_000973",
+      "ru": "место",
+      "lt": "vieta",
+      "type": "n"
+    },
+    {
+      "id": "word_000974",
+      "ru": "смотреть",
+      "lt": "žiūrėti, žiūri, žiūrėjo ką?",
+      "type": "v"
+    },
+    {
+      "id": "word_000975",
+      "ru": "смотреть телевизор",
+      "lt": "žiūrėti телевизориў",
+      "type": "v"
+    },
+    {
+      "id": "word_000976",
+      "ru": "путешествие",
+      "lt": "kelionė",
+      "type": "n"
+    },
+    {
+      "id": "word_000977",
+      "ru": "багаж",
+      "lt": "bagažas",
+      "type": "n"
+    },
+    {
+      "id": "word_000978",
+      "ru": "возвращаться",
+      "lt": "grįžti, grįžta, grįžo",
+      "type": "v"
+    },
+    {
+      "id": "word_000979",
+      "ru": "горы",
+      "lt": "kalnai",
+      "type": "n"
+    },
+    {
+      "id": "word_000980",
+      "ru": "деревня",
+      "lt": "kaimas",
+      "type": "n"
+    },
+    {
+      "id": "word_000981",
+      "ru": "дача",
+      "lt": "sodyba",
+      "type": "n"
+    },
+    {
+      "id": "word_000982",
+      "ru": "собирать грибы",
+      "lt": "grybauti, grybauja, grybavo",
+      "type": "v"
+    },
+    {
+      "id": "word_000983",
+      "ru": "рыбачить",
+      "lt": "žvejoti, žvejoja, žvejojo",
+      "type": "v"
+    },
+    {
+      "id": "word_000984",
+      "ru": "лето",
+      "lt": "vasara",
+      "type": "n"
+    },
+    {
+      "id": "word_000985",
+      "ru": "осень",
+      "lt": "ruduo, rudens",
+      "type": "n"
+    },
+    {
+      "id": "word_000986",
+      "ru": "зима",
+      "lt": "žiema",
+      "type": "n"
+    },
+    {
+      "id": "word_000987",
+      "ru": "весна",
+      "lt": "pavasaris, pavasario",
+      "type": "n"
+    },
+    {
+      "id": "word_000988",
+      "ru": "очень",
+      "lt": "labai",
+      "type": "adv"
+    },
+    {
+      "id": "word_000989",
+      "ru": "больше",
+      "lt": "labiau",
+      "type": "adv"
+    },
+    {
+      "id": "word_000990",
+      "ru": "праздник",
+      "lt": "šventė",
+      "type": "n"
+    },
+    {
+      "id": "word_000991",
+      "ru": "праздновать",
+      "lt": "švęsti, švenčia, šventė ką?",
+      "type": "v"
+    },
+    {
+      "id": "word_000992",
+      "ru": "день рождения",
+      "lt": "gimtadienis, gimtadienio",
+      "type": "n"
+    },
+    {
+      "id": "word_000993",
+      "ru": "день именин",
+      "lt": "vardadienis, vardadienio",
+      "type": "n"
+    },
+    {
+      "id": "word_000994",
+      "ru": "юбилей",
+      "lt": "jubiliejus",
+      "type": "n"
+    },
+    {
+      "id": "word_000995",
+      "ru": "приглашать",
+      "lt": "kviesti, kviečia, kvietė ką?",
+      "type": "v"
+    },
+    {
+      "id": "word_000996",
+      "ru": "вечеринка",
+      "lt": "vakarėlis, vakarėlio",
+      "type": "n"
+    },
+    {
+      "id": "word_000997",
+      "ru": "гость",
+      "lt": "svečias",
+      "type": "n"
+    },
+    {
+      "id": "word_000998",
+      "ru": "ходить в гости",
+      "lt": "eiti į svečius",
+      "type": "v"
+    },
+    {
+      "id": "word_000999",
+      "ru": "приглашать в гости",
+      "lt": "kviesti į svečius",
+      "type": "v"
+    },
+    {
+      "id": "word_001000",
+      "ru": "быти в гостях",
+      "lt": "būti svečiuose",
+      "type": "v"
+    },
+    {
+      "id": "word_001001",
+      "ru": "дарить",
+      "lt": "dovanoti, dovanoja, dovanojo ką?, ko?",
+      "type": "v"
+    },
+    {
+      "id": "word_001002",
+      "ru": "получать",
+      "lt": "gauti, gauna, gavo ką?, ko?",
+      "type": "v"
+    },
+    {
+      "id": "word_001003",
+      "ru": "подарок",
+      "lt": "dovana",
+      "type": "n"
+    },
+    {
+      "id": "word_001004",
+      "ru": "открытка",
+      "lt": "atvirukas",
+      "type": "n"
+    },
+    {
+      "id": "word_001005",
+      "ru": "написать открытку",
+      "lt": "užrašyti, užrašo, užrašė atviruką",
+      "type": "v"
+    },
+    {
+      "id": "word_001006",
+      "ru": "отправить открытку",
+      "lt": "išsiųsti, išsiunčia, išsiuntė atviruką",
+      "type": "v"
+    },
+    {
+      "id": "word_001007",
+      "ru": "свечка",
+      "lt": "žvakutė",
+      "type": "n"
+    },
+    {
+      "id": "word_001008",
+      "ru": "Сочельник",
+      "lt": "Kūčios",
+      "type": "n"
+    },
+    {
+      "id": "word_001009",
+      "ru": "рождественские печенья (кучюкай)",
+      "lt": "kūčiukai",
+      "type": "n"
+    },
+    {
+      "id": "word_001010",
+      "ru": "гимн",
+      "lt": "himnas",
+      "type": "n"
+    },
+    {
+      "id": "word_001011",
+      "ru": "петь гимн",
+      "lt": "giedoti, gieda, giedojo himną",
+      "type": "v"
+    },
+    {
+      "id": "word_001012",
+      "ru": "поздравлять",
+      "lt": "sveikinti, sveikina, sveikino ką?",
+      "type": "v"
+    },
+    {
+      "id": "word_001013",
+      "ru": "желать",
+      "lt": "linkėti, linki, linkėjo ko?",
+      "type": "v"
+    },
+    {
+      "id": "word_001014",
+      "ru": "Рождество",
+      "lt": "Kalėdos",
+      "type": "n"
+    },
+    {
+      "id": "word_001015",
+      "ru": "ёлка",
+      "lt": "eglė / eglutė",
+      "type": "n"
+    },
+    {
+      "id": "word_001016",
+      "ru": "Дед Мороз (Санта Клаус)",
+      "lt": "Kalėdų senelis",
+      "type": "n"
+    },
+    {
+      "id": "word_001017",
+      "ru": "свеча",
+      "lt": "žvakė",
+      "type": "n"
+    },
+    {
+      "id": "word_001018",
+      "ru": "Новый год",
+      "lt": "Naujieji metai",
+      "type": "n"
+    },
+    {
+      "id": "word_001019",
+      "ru": "встречать Новый год",
+      "lt": "sutikti, sutinka, sutiko Naujuosius metus",
+      "type": "v"
+    },
+    {
+      "id": "word_001020",
+      "ru": "фейерверки",
+      "lt": "fejerverkai",
+      "type": "n"
+    },
+    {
+      "id": "word_001021",
+      "ru": "Пасха",
+      "lt": "Velykos",
+      "type": "n"
+    },
+    {
+      "id": "word_001022",
+      "ru": "пасхальное яйцо",
+      "lt": "margutis, margučio",
+      "type": "n"
+    },
+    {
+      "id": "word_001023",
+      "ru": "красить яйца",
+      "lt": "dažyti, dažo, dažė kiaušinius",
+      "type": "v"
+    },
+    {
+      "id": "word_001024",
+      "ru": "катать яйца",
+      "lt": "ridenti, ridena, rideno margučius",
+      "type": "v"
+    },
+    {
+      "id": "word_001025",
+      "ru": "государственные праздники",
+      "lt": "valstybinės šventės",
+      "type": "n"
+    },
+    {
+      "id": "word_001026",
+      "ru": "День восстановления государственности Литвы (16 февраля)",
+      "lt": "Vasario šešiolikta (02-16) Lietuvos valstybės atkūrimo diena",
+      "type": "n"
+    },
+    {
+      "id": "word_001027",
+      "ru": "День восстановления независимости Литвы (11 марта)",
+      "lt": "Kovo vienuolikta (03-11) Lietuvos nepriklausomybės atkūrimo diena",
+      "type": "n"
+    },
+    {
+      "id": "word_001028",
+      "ru": "День государственности (6 июля)",
+      "lt": "Liepos šešta (07-06) Lietuvos valstybės diena",
+      "type": "n"
+    },
+    {
+      "id": "word_001029",
+      "ru": "президент",
+      "lt": "prezidentas, prezidentė",
+      "type": "n"
+    },
+    {
+      "id": "word_001030",
+      "ru": "флаг",
+      "lt": "vėliava",
+      "type": "n"
+    },
+    {
+      "id": "word_001031",
+      "ru": "успех",
+      "lt": "sėkmė",
+      "type": "n"
+    },
+    {
+      "id": "word_001032",
+      "ru": "любовь",
+      "lt": "meilė",
+      "type": "n"
+    },
+    {
+      "id": "word_001033",
+      "ru": "счастье",
+      "lt": "laimė",
+      "type": "n"
+    },
+    {
+      "id": "word_001034",
+      "ru": "радость",
+      "lt": "džiaugsmas",
+      "type": "n"
+    },
+    {
+      "id": "word_001035",
+      "ru": "счастливый / счастливая",
+      "lt": "laimingas, laiminga",
+      "type": "adj"
+    },
+    {
+      "id": "word_001036",
+      "ru": "любимый / любимая",
+      "lt": "mylimas, mylima",
+      "type": "adj"
+    },
+    {
+      "id": "word_001037",
+      "ru": "уважаемый / уважаемая",
+      "lt": "gerbiamas, gerbiama",
+      "type": "adj"
+    },
+    {
+      "id": "word_001038",
+      "ru": "красочный / красочная",
+      "lt": "spalvingas, spalvinga",
+      "type": "adj"
+    },
+    {
+      "id": "word_001039",
+      "ru": "популярный / популярная",
+      "lt": "populiarus, populiari",
+      "type": "adj"
+    }
+  ]
+}

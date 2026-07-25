@@ -1,0 +1,3403 @@
+{
+  "schemaVersion": 1,
+  "id": "sekmes",
+  "title": "Sekmes",
+  "lessons": [
+    {
+      "id": "sekmes-01",
+      "title": "1. Глагол «быть» и основные слова",
+      "order": 1,
+      "wordRefs": [
+        {
+          "wordId": "word_000001"
+        },
+        {
+          "wordId": "word_000002"
+        },
+        {
+          "wordId": "word_000003"
+        },
+        {
+          "wordId": "word_000004"
+        },
+        {
+          "wordId": "word_000005"
+        },
+        {
+          "wordId": "word_000006"
+        },
+        {
+          "wordId": "word_000007"
+        },
+        {
+          "wordId": "word_000008"
+        },
+        {
+          "wordId": "word_000009"
+        },
+        {
+          "wordId": "word_000010"
+        },
+        {
+          "wordId": "word_000011"
+        }
+      ]
+    },
+    {
+      "id": "sekmes-02",
+      "title": "2. Общение",
+      "order": 2,
+      "wordRefs": [
+        {
+          "wordId": "word_000012"
+        },
+        {
+          "wordId": "word_000013"
+        },
+        {
+          "wordId": "word_000014"
+        },
+        {
+          "wordId": "word_000015"
+        },
+        {
+          "wordId": "word_000016"
+        },
+        {
+          "wordId": "word_000017"
+        },
+        {
+          "wordId": "word_000018"
+        },
+        {
+          "wordId": "word_000019"
+        },
+        {
+          "wordId": "word_000020"
+        },
+        {
+          "wordId": "word_000021"
+        },
+        {
+          "wordId": "word_000022"
+        }
+      ]
+    },
+    {
+      "id": "sekmes-03",
+      "title": "3. Город, места и учреждения",
+      "order": 3,
+      "wordRefs": [
+        {
+          "wordId": "word_000023"
+        },
+        {
+          "wordId": "word_000024"
+        },
+        {
+          "wordId": "word_000025"
+        },
+        {
+          "wordId": "word_000026"
+        },
+        {
+          "wordId": "word_000027"
+        },
+        {
+          "wordId": "word_000028"
+        },
+        {
+          "wordId": "word_000029"
+        },
+        {
+          "wordId": "word_000030"
+        },
+        {
+          "wordId": "word_000031"
+        },
+        {
+          "wordId": "word_000032"
+        },
+        {
+          "wordId": "word_000033"
+        },
+        {
+          "wordId": "word_000034"
+        },
+        {
+          "wordId": "word_000035"
+        },
+        {
+          "wordId": "word_000036"
+        },
+        {
+          "wordId": "word_000037"
+        },
+        {
+          "wordId": "word_000038"
+        },
+        {
+          "wordId": "word_000039"
+        },
+        {
+          "wordId": "word_000040"
+        },
+        {
+          "wordId": "word_000041"
+        },
+        {
+          "wordId": "word_000042"
+        },
+        {
+          "wordId": "word_000043"
+        },
+        {
+          "wordId": "word_000044"
+        },
+        {
+          "wordId": "word_000045"
+        },
+        {
+          "wordId": "word_000046"
+        },
+        {
+          "wordId": "word_000047"
+        },
+        {
+          "wordId": "word_000048"
+        },
+        {
+          "wordId": "word_000049"
+        },
+        {
+          "wordId": "word_000050"
+        },
+        {
+          "wordId": "word_000051"
+        },
+        {
+          "wordId": "word_000052"
+        },
+        {
+          "wordId": "word_000053"
+        },
+        {
+          "wordId": "word_000054"
+        },
+        {
+          "wordId": "word_000055"
+        },
+        {
+          "wordId": "word_000056"
+        },
+        {
+          "wordId": "word_000057"
+        },
+        {
+          "wordId": "word_000058"
+        },
+        {
+          "wordId": "word_000059"
+        },
+        {
+          "wordId": "word_000060"
+        },
+        {
+          "wordId": "word_000061"
+        },
+        {
+          "wordId": "word_000062"
+        },
+        {
+          "wordId": "word_000063"
+        },
+        {
+          "wordId": "word_000064"
+        },
+        {
+          "wordId": "word_000065"
+        },
+        {
+          "wordId": "word_000066"
+        },
+        {
+          "wordId": "word_000067"
+        },
+        {
+          "wordId": "word_000068"
+        },
+        {
+          "wordId": "word_000069"
+        },
+        {
+          "wordId": "word_000070"
+        },
+        {
+          "wordId": "word_000071"
+        },
+        {
+          "wordId": "word_000072"
+        },
+        {
+          "wordId": "word_000073"
+        },
+        {
+          "wordId": "word_000074"
+        },
+        {
+          "wordId": "word_000075"
+        },
+        {
+          "wordId": "word_000076"
+        },
+        {
+          "wordId": "word_000077"
+        },
+        {
+          "wordId": "word_000078"
+        },
+        {
+          "wordId": "word_000079"
+        },
+        {
+          "wordId": "word_000080"
+        },
+        {
+          "wordId": "word_000081"
+        },
+        {
+          "wordId": "word_000082"
+        },
+        {
+          "wordId": "word_000083"
+        },
+        {
+          "wordId": "word_000084"
+        },
+        {
+          "wordId": "word_000085"
+        },
+        {
+          "wordId": "word_000086"
+        }
+      ]
+    },
+    {
+      "id": "sekmes-04",
+      "title": "4. Время и дни недели",
+      "order": 4,
+      "wordRefs": [
+        {
+          "wordId": "word_000087"
+        },
+        {
+          "wordId": "word_000088"
+        },
+        {
+          "wordId": "word_000089"
+        },
+        {
+          "wordId": "word_000090"
+        },
+        {
+          "wordId": "word_000091"
+        },
+        {
+          "wordId": "word_000092"
+        },
+        {
+          "wordId": "word_000093"
+        },
+        {
+          "wordId": "word_000094"
+        },
+        {
+          "wordId": "word_000095"
+        },
+        {
+          "wordId": "word_000096"
+        },
+        {
+          "wordId": "word_000097"
+        },
+        {
+          "wordId": "word_000098"
+        },
+        {
+          "wordId": "word_000099"
+        },
+        {
+          "wordId": "word_000100"
+        },
+        {
+          "wordId": "word_000101"
+        },
+        {
+          "wordId": "word_000102"
+        },
+        {
+          "wordId": "word_000103"
+        },
+        {
+          "wordId": "word_000104"
+        },
+        {
+          "wordId": "word_000105"
+        },
+        {
+          "wordId": "word_000106"
+        },
+        {
+          "wordId": "word_000107"
+        },
+        {
+          "wordId": "word_000108"
+        },
+        {
+          "wordId": "word_000109"
+        }
+      ]
+    },
+    {
+      "id": "sekmes-05",
+      "title": "5. Семья, родственники и домашние животные",
+      "order": 5,
+      "wordRefs": [
+        {
+          "wordId": "word_000110"
+        },
+        {
+          "wordId": "word_000111"
+        },
+        {
+          "wordId": "word_000112"
+        },
+        {
+          "wordId": "word_000113"
+        },
+        {
+          "wordId": "word_000114"
+        },
+        {
+          "wordId": "word_000115"
+        },
+        {
+          "wordId": "word_000116"
+        },
+        {
+          "wordId": "word_000117"
+        },
+        {
+          "wordId": "word_000118"
+        },
+        {
+          "wordId": "word_000119"
+        },
+        {
+          "wordId": "word_000120"
+        },
+        {
+          "wordId": "word_000121"
+        },
+        {
+          "wordId": "word_000122"
+        },
+        {
+          "wordId": "word_000123"
+        },
+        {
+          "wordId": "word_000124"
+        },
+        {
+          "wordId": "word_000125"
+        },
+        {
+          "wordId": "word_000126"
+        },
+        {
+          "wordId": "word_000127"
+        },
+        {
+          "wordId": "word_000128"
+        },
+        {
+          "wordId": "word_000129"
+        },
+        {
+          "wordId": "word_000130"
+        },
+        {
+          "wordId": "word_000131"
+        },
+        {
+          "wordId": "word_000132"
+        },
+        {
+          "wordId": "word_000133"
+        },
+        {
+          "wordId": "word_000134"
+        },
+        {
+          "wordId": "word_000135"
+        },
+        {
+          "wordId": "word_000136"
+        },
+        {
+          "wordId": "word_000137"
+        },
+        {
+          "wordId": "word_000138"
+        },
+        {
+          "wordId": "word_000139"
+        },
+        {
+          "wordId": "word_000140"
+        },
+        {
+          "wordId": "word_000141"
+        },
+        {
+          "wordId": "word_000142"
+        },
+        {
+          "wordId": "word_000143"
+        },
+        {
+          "wordId": "word_000144"
+        },
+        {
+          "wordId": "word_000145"
+        },
+        {
+          "wordId": "word_000146"
+        },
+        {
+          "wordId": "word_000147"
+        },
+        {
+          "wordId": "word_000148"
+        },
+        {
+          "wordId": "word_000149"
+        },
+        {
+          "wordId": "word_000150"
+        },
+        {
+          "wordId": "word_000151"
+        },
+        {
+          "wordId": "word_000152"
+        },
+        {
+          "wordId": "word_000153"
+        },
+        {
+          "wordId": "word_000061"
+        },
+        {
+          "wordId": "word_000154"
+        },
+        {
+          "wordId": "word_000155"
+        },
+        {
+          "wordId": "word_000156"
+        },
+        {
+          "wordId": "word_000157"
+        },
+        {
+          "wordId": "word_000158"
+        },
+        {
+          "wordId": "word_000159"
+        },
+        {
+          "wordId": "word_000160"
+        },
+        {
+          "wordId": "word_000161"
+        }
+      ]
+    },
+    {
+      "id": "sekmes-06",
+      "title": "6. Прилагательные и описания",
+      "order": 6,
+      "wordRefs": [
+        {
+          "wordId": "word_000162"
+        },
+        {
+          "wordId": "word_000163"
+        },
+        {
+          "wordId": "word_000164"
+        },
+        {
+          "wordId": "word_000165"
+        },
+        {
+          "wordId": "word_000166"
+        },
+        {
+          "wordId": "word_000167"
+        },
+        {
+          "wordId": "word_000168"
+        },
+        {
+          "wordId": "word_000169"
+        },
+        {
+          "wordId": "word_000170"
+        },
+        {
+          "wordId": "word_000171"
+        },
+        {
+          "wordId": "word_000172"
+        },
+        {
+          "wordId": "word_000173"
+        },
+        {
+          "wordId": "word_000174"
+        },
+        {
+          "wordId": "word_000175"
+        },
+        {
+          "wordId": "word_000176"
+        },
+        {
+          "wordId": "word_000177"
+        },
+        {
+          "wordId": "word_000178"
+        },
+        {
+          "wordId": "word_000179"
+        },
+        {
+          "wordId": "word_000180"
+        },
+        {
+          "wordId": "word_000181"
+        },
+        {
+          "wordId": "word_000182"
+        },
+        {
+          "wordId": "word_000183"
+        },
+        {
+          "wordId": "word_000184"
+        },
+        {
+          "wordId": "word_000185"
+        },
+        {
+          "wordId": "word_000186"
+        },
+        {
+          "wordId": "word_000187"
+        },
+        {
+          "wordId": "word_000188"
+        }
+      ]
+    },
+    {
+      "id": "sekmes-07",
+      "title": "7. Еда и напитки",
+      "order": 7,
+      "wordRefs": [
+        {
+          "wordId": "word_000189"
+        },
+        {
+          "wordId": "word_000190"
+        },
+        {
+          "wordId": "word_000191"
+        },
+        {
+          "wordId": "word_000192"
+        },
+        {
+          "wordId": "word_000193"
+        },
+        {
+          "wordId": "word_000194"
+        },
+        {
+          "wordId": "word_000195"
+        },
+        {
+          "wordId": "word_000196"
+        },
+        {
+          "wordId": "word_000197"
+        },
+        {
+          "wordId": "word_000198"
+        },
+        {
+          "wordId": "word_000199"
+        },
+        {
+          "wordId": "word_000200"
+        },
+        {
+          "wordId": "word_000201"
+        },
+        {
+          "wordId": "word_000202"
+        },
+        {
+          "wordId": "word_000203"
+        },
+        {
+          "wordId": "word_000204"
+        },
+        {
+          "wordId": "word_000205"
+        },
+        {
+          "wordId": "word_000206"
+        },
+        {
+          "wordId": "word_000207"
+        },
+        {
+          "wordId": "word_000208"
+        },
+        {
+          "wordId": "word_000209"
+        },
+        {
+          "wordId": "word_000210"
+        },
+        {
+          "wordId": "word_000211"
+        },
+        {
+          "wordId": "word_000212"
+        },
+        {
+          "wordId": "word_000213"
+        },
+        {
+          "wordId": "word_000214"
+        },
+        {
+          "wordId": "word_000215"
+        },
+        {
+          "wordId": "word_000216"
+        },
+        {
+          "wordId": "word_000217"
+        },
+        {
+          "wordId": "word_000218"
+        },
+        {
+          "wordId": "word_000219"
+        },
+        {
+          "wordId": "word_000220"
+        },
+        {
+          "wordId": "word_000221"
+        },
+        {
+          "wordId": "word_000222"
+        },
+        {
+          "wordId": "word_000223"
+        },
+        {
+          "wordId": "word_000224"
+        },
+        {
+          "wordId": "word_000225"
+        },
+        {
+          "wordId": "word_000226"
+        },
+        {
+          "wordId": "word_000227"
+        },
+        {
+          "wordId": "word_000228"
+        },
+        {
+          "wordId": "word_000229"
+        },
+        {
+          "wordId": "word_000230"
+        },
+        {
+          "wordId": "word_000231"
+        },
+        {
+          "wordId": "word_000232"
+        },
+        {
+          "wordId": "word_000233"
+        },
+        {
+          "wordId": "word_000234"
+        },
+        {
+          "wordId": "word_000235"
+        },
+        {
+          "wordId": "word_000236"
+        },
+        {
+          "wordId": "word_000237"
+        },
+        {
+          "wordId": "word_000238"
+        },
+        {
+          "wordId": "word_000239"
+        },
+        {
+          "wordId": "word_000240"
+        },
+        {
+          "wordId": "word_000241"
+        },
+        {
+          "wordId": "word_000242"
+        },
+        {
+          "wordId": "word_000243"
+        },
+        {
+          "wordId": "word_000244"
+        },
+        {
+          "wordId": "word_000245"
+        },
+        {
+          "wordId": "word_000246"
+        },
+        {
+          "wordId": "word_000247"
+        },
+        {
+          "wordId": "word_000248"
+        },
+        {
+          "wordId": "word_000249"
+        },
+        {
+          "wordId": "word_000250"
+        }
+      ]
+    },
+    {
+      "id": "sekmes-08",
+      "title": "8. Рынок и продукты",
+      "order": 8,
+      "wordRefs": [
+        {
+          "wordId": "word_000057"
+        },
+        {
+          "wordId": "word_000251"
+        },
+        {
+          "wordId": "word_000252"
+        },
+        {
+          "wordId": "word_000253"
+        },
+        {
+          "wordId": "word_000254"
+        },
+        {
+          "wordId": "word_000255"
+        },
+        {
+          "wordId": "word_000256"
+        },
+        {
+          "wordId": "word_000257"
+        },
+        {
+          "wordId": "word_000258"
+        },
+        {
+          "wordId": "word_000259"
+        },
+        {
+          "wordId": "word_000260"
+        },
+        {
+          "wordId": "word_000261"
+        },
+        {
+          "wordId": "word_000262"
+        },
+        {
+          "wordId": "word_000263"
+        },
+        {
+          "wordId": "word_000264"
+        },
+        {
+          "wordId": "word_000265"
+        },
+        {
+          "wordId": "word_000266"
+        },
+        {
+          "wordId": "word_000267"
+        },
+        {
+          "wordId": "word_000268"
+        },
+        {
+          "wordId": "word_000269"
+        },
+        {
+          "wordId": "word_000270"
+        },
+        {
+          "wordId": "word_000271"
+        },
+        {
+          "wordId": "word_000272"
+        },
+        {
+          "wordId": "word_000273"
+        },
+        {
+          "wordId": "word_000274"
+        },
+        {
+          "wordId": "word_000275"
+        },
+        {
+          "wordId": "word_000276"
+        },
+        {
+          "wordId": "word_000277"
+        },
+        {
+          "wordId": "word_000278"
+        },
+        {
+          "wordId": "word_000279"
+        },
+        {
+          "wordId": "word_000280"
+        },
+        {
+          "wordId": "word_000281"
+        },
+        {
+          "wordId": "word_000282"
+        },
+        {
+          "wordId": "word_000283"
+        },
+        {
+          "wordId": "word_000284"
+        },
+        {
+          "wordId": "word_000285"
+        },
+        {
+          "wordId": "word_000286"
+        },
+        {
+          "wordId": "word_000287"
+        },
+        {
+          "wordId": "word_000288"
+        },
+        {
+          "wordId": "word_000289"
+        },
+        {
+          "wordId": "word_000290"
+        },
+        {
+          "wordId": "word_000291"
+        },
+        {
+          "wordId": "word_000292"
+        },
+        {
+          "wordId": "word_000293"
+        },
+        {
+          "wordId": "word_000294"
+        },
+        {
+          "wordId": "word_000295"
+        },
+        {
+          "wordId": "word_000296"
+        },
+        {
+          "wordId": "word_000297"
+        },
+        {
+          "wordId": "word_000298"
+        },
+        {
+          "wordId": "word_000299"
+        },
+        {
+          "wordId": "word_000300"
+        },
+        {
+          "wordId": "word_000301"
+        },
+        {
+          "wordId": "word_000302"
+        },
+        {
+          "wordId": "word_000303"
+        },
+        {
+          "wordId": "word_000304"
+        },
+        {
+          "wordId": "word_000305"
+        },
+        {
+          "wordId": "word_000306"
+        },
+        {
+          "wordId": "word_000307"
+        },
+        {
+          "wordId": "word_000308"
+        },
+        {
+          "wordId": "word_000309"
+        },
+        {
+          "wordId": "word_000310"
+        },
+        {
+          "wordId": "word_000311"
+        },
+        {
+          "wordId": "word_000312"
+        }
+      ]
+    },
+    {
+      "id": "sekmes-09",
+      "title": "9. Заведения, меню, блюда и напитки",
+      "order": 9,
+      "wordRefs": [
+        {
+          "wordId": "word_000052"
+        },
+        {
+          "wordId": "word_000313"
+        },
+        {
+          "wordId": "word_000050"
+        },
+        {
+          "wordId": "word_000051"
+        },
+        {
+          "wordId": "word_000314"
+        },
+        {
+          "wordId": "word_000315"
+        },
+        {
+          "wordId": "word_000316"
+        },
+        {
+          "wordId": "word_000317"
+        },
+        {
+          "wordId": "word_000318"
+        },
+        {
+          "wordId": "word_000319"
+        },
+        {
+          "wordId": "word_000320"
+        },
+        {
+          "wordId": "word_000321"
+        },
+        {
+          "wordId": "word_000322"
+        },
+        {
+          "wordId": "word_000323"
+        },
+        {
+          "wordId": "word_000324"
+        },
+        {
+          "wordId": "word_000325"
+        },
+        {
+          "wordId": "word_000326"
+        },
+        {
+          "wordId": "word_000327"
+        },
+        {
+          "wordId": "word_000328"
+        },
+        {
+          "wordId": "word_000329"
+        },
+        {
+          "wordId": "word_000330"
+        },
+        {
+          "wordId": "word_000331"
+        },
+        {
+          "wordId": "word_000332"
+        },
+        {
+          "wordId": "word_000333"
+        },
+        {
+          "wordId": "word_000334"
+        },
+        {
+          "wordId": "word_000335"
+        },
+        {
+          "wordId": "word_000336"
+        },
+        {
+          "wordId": "word_000337"
+        },
+        {
+          "wordId": "word_000338"
+        },
+        {
+          "wordId": "word_000339"
+        },
+        {
+          "wordId": "word_000340"
+        },
+        {
+          "wordId": "word_000341"
+        },
+        {
+          "wordId": "word_000342"
+        },
+        {
+          "wordId": "word_000343"
+        },
+        {
+          "wordId": "word_000344"
+        },
+        {
+          "wordId": "word_000345"
+        },
+        {
+          "wordId": "word_000346"
+        },
+        {
+          "wordId": "word_000347"
+        },
+        {
+          "wordId": "word_000348"
+        },
+        {
+          "wordId": "word_000349"
+        },
+        {
+          "wordId": "word_000223"
+        },
+        {
+          "wordId": "word_000350"
+        },
+        {
+          "wordId": "word_000351"
+        },
+        {
+          "wordId": "word_000352"
+        },
+        {
+          "wordId": "word_000353"
+        },
+        {
+          "wordId": "word_000354"
+        },
+        {
+          "wordId": "word_000222"
+        },
+        {
+          "wordId": "word_000355"
+        },
+        {
+          "wordId": "word_000356"
+        },
+        {
+          "wordId": "word_000357"
+        },
+        {
+          "wordId": "word_000213"
+        },
+        {
+          "wordId": "word_000358"
+        },
+        {
+          "wordId": "word_000359"
+        },
+        {
+          "wordId": "word_000360"
+        },
+        {
+          "wordId": "word_000361"
+        },
+        {
+          "wordId": "word_000362"
+        },
+        {
+          "wordId": "word_000363"
+        },
+        {
+          "wordId": "word_000364"
+        },
+        {
+          "wordId": "word_000365"
+        },
+        {
+          "wordId": "word_000366"
+        },
+        {
+          "wordId": "word_000367"
+        },
+        {
+          "wordId": "word_000368"
+        },
+        {
+          "wordId": "word_000369"
+        },
+        {
+          "wordId": "word_000370"
+        },
+        {
+          "wordId": "word_000371"
+        },
+        {
+          "wordId": "word_000372"
+        },
+        {
+          "wordId": "word_000373"
+        },
+        {
+          "wordId": "word_000374"
+        },
+        {
+          "wordId": "word_000375"
+        },
+        {
+          "wordId": "word_000376"
+        },
+        {
+          "wordId": "word_000377"
+        },
+        {
+          "wordId": "word_000378"
+        },
+        {
+          "wordId": "word_000379"
+        },
+        {
+          "wordId": "word_000380"
+        },
+        {
+          "wordId": "word_000381"
+        },
+        {
+          "wordId": "word_000382"
+        },
+        {
+          "wordId": "word_000383"
+        },
+        {
+          "wordId": "word_000384"
+        },
+        {
+          "wordId": "word_000215"
+        },
+        {
+          "wordId": "word_000385"
+        },
+        {
+          "wordId": "word_000386"
+        },
+        {
+          "wordId": "word_000387"
+        }
+      ]
+    },
+    {
+      "id": "sekmes-10",
+      "title": "10. Транспорт",
+      "order": 10,
+      "wordRefs": [
+        {
+          "wordId": "word_000388"
+        },
+        {
+          "wordId": "word_000389"
+        },
+        {
+          "wordId": "word_000390"
+        },
+        {
+          "wordId": "word_000391"
+        },
+        {
+          "wordId": "word_000392"
+        },
+        {
+          "wordId": "word_000393"
+        },
+        {
+          "wordId": "word_000394"
+        },
+        {
+          "wordId": "word_000395"
+        },
+        {
+          "wordId": "word_000396"
+        },
+        {
+          "wordId": "word_000397"
+        },
+        {
+          "wordId": "word_000398"
+        },
+        {
+          "wordId": "word_000399"
+        },
+        {
+          "wordId": "word_000400"
+        },
+        {
+          "wordId": "word_000401"
+        },
+        {
+          "wordId": "word_000072"
+        },
+        {
+          "wordId": "word_000402"
+        },
+        {
+          "wordId": "word_000403"
+        },
+        {
+          "wordId": "word_000404"
+        },
+        {
+          "wordId": "word_000405"
+        },
+        {
+          "wordId": "word_000406"
+        },
+        {
+          "wordId": "word_000407"
+        },
+        {
+          "wordId": "word_000408"
+        },
+        {
+          "wordId": "word_000409"
+        },
+        {
+          "wordId": "word_000410"
+        },
+        {
+          "wordId": "word_000411"
+        },
+        {
+          "wordId": "word_000412"
+        },
+        {
+          "wordId": "word_000413"
+        },
+        {
+          "wordId": "word_000414"
+        },
+        {
+          "wordId": "word_000415"
+        },
+        {
+          "wordId": "word_000416"
+        },
+        {
+          "wordId": "word_000417"
+        },
+        {
+          "wordId": "word_000418"
+        },
+        {
+          "wordId": "word_000419"
+        },
+        {
+          "wordId": "word_000420"
+        },
+        {
+          "wordId": "word_000421"
+        },
+        {
+          "wordId": "word_000422"
+        },
+        {
+          "wordId": "word_000423"
+        },
+        {
+          "wordId": "word_000424"
+        },
+        {
+          "wordId": "word_000425"
+        },
+        {
+          "wordId": "word_000426"
+        },
+        {
+          "wordId": "word_000427"
+        },
+        {
+          "wordId": "word_000428"
+        },
+        {
+          "wordId": "word_000429"
+        },
+        {
+          "wordId": "word_000430"
+        },
+        {
+          "wordId": "word_000431"
+        },
+        {
+          "wordId": "word_000432"
+        },
+        {
+          "wordId": "word_000433"
+        },
+        {
+          "wordId": "word_000434"
+        },
+        {
+          "wordId": "word_000435"
+        },
+        {
+          "wordId": "word_000436"
+        },
+        {
+          "wordId": "word_000437"
+        },
+        {
+          "wordId": "word_000438"
+        },
+        {
+          "wordId": "word_000439"
+        },
+        {
+          "wordId": "word_000440"
+        },
+        {
+          "wordId": "word_000441"
+        },
+        {
+          "wordId": "word_000442"
+        },
+        {
+          "wordId": "word_000443"
+        },
+        {
+          "wordId": "word_000444"
+        },
+        {
+          "wordId": "word_000445"
+        },
+        {
+          "wordId": "word_000446"
+        },
+        {
+          "wordId": "word_000447"
+        },
+        {
+          "wordId": "word_000448"
+        }
+      ]
+    },
+    {
+      "id": "sekmes-11",
+      "title": "11. Путешествия и автомобиль",
+      "order": 11,
+      "wordRefs": [
+        {
+          "wordId": "word_000449"
+        },
+        {
+          "wordId": "word_000450"
+        },
+        {
+          "wordId": "word_000451"
+        },
+        {
+          "wordId": "word_000452"
+        },
+        {
+          "wordId": "word_000453"
+        },
+        {
+          "wordId": "word_000454"
+        },
+        {
+          "wordId": "word_000455"
+        },
+        {
+          "wordId": "word_000456"
+        },
+        {
+          "wordId": "word_000457"
+        },
+        {
+          "wordId": "word_000458"
+        },
+        {
+          "wordId": "word_000459"
+        },
+        {
+          "wordId": "word_000460"
+        },
+        {
+          "wordId": "word_000461"
+        },
+        {
+          "wordId": "word_000462"
+        },
+        {
+          "wordId": "word_000463"
+        },
+        {
+          "wordId": "word_000464"
+        },
+        {
+          "wordId": "word_000465"
+        },
+        {
+          "wordId": "word_000466"
+        },
+        {
+          "wordId": "word_000467"
+        },
+        {
+          "wordId": "word_000468"
+        },
+        {
+          "wordId": "word_000469"
+        },
+        {
+          "wordId": "word_000470"
+        },
+        {
+          "wordId": "word_000471"
+        },
+        {
+          "wordId": "word_000472"
+        },
+        {
+          "wordId": "word_000473"
+        },
+        {
+          "wordId": "word_000474"
+        },
+        {
+          "wordId": "word_000475"
+        },
+        {
+          "wordId": "word_000476"
+        },
+        {
+          "wordId": "word_000477"
+        },
+        {
+          "wordId": "word_000478"
+        },
+        {
+          "wordId": "word_000479"
+        },
+        {
+          "wordId": "word_000480"
+        },
+        {
+          "wordId": "word_000481"
+        },
+        {
+          "wordId": "word_000482"
+        },
+        {
+          "wordId": "word_000483"
+        },
+        {
+          "wordId": "word_000484"
+        },
+        {
+          "wordId": "word_000485"
+        },
+        {
+          "wordId": "word_000486"
+        },
+        {
+          "wordId": "word_000487"
+        },
+        {
+          "wordId": "word_000488"
+        },
+        {
+          "wordId": "word_000489"
+        },
+        {
+          "wordId": "word_000490"
+        },
+        {
+          "wordId": "word_000491"
+        },
+        {
+          "wordId": "word_000492"
+        },
+        {
+          "wordId": "word_000493"
+        },
+        {
+          "wordId": "word_000494"
+        },
+        {
+          "wordId": "word_000495"
+        },
+        {
+          "wordId": "word_000496"
+        },
+        {
+          "wordId": "word_000497"
+        },
+        {
+          "wordId": "word_000498"
+        },
+        {
+          "wordId": "word_000499"
+        },
+        {
+          "wordId": "word_000500"
+        }
+      ]
+    },
+    {
+      "id": "sekmes-12",
+      "title": "12. Дом и мебель",
+      "order": 12,
+      "wordRefs": [
+        {
+          "wordId": "word_000034"
+        },
+        {
+          "wordId": "word_000501"
+        },
+        {
+          "wordId": "word_000035"
+        },
+        {
+          "wordId": "word_000502"
+        },
+        {
+          "wordId": "word_000503"
+        },
+        {
+          "wordId": "word_000504"
+        },
+        {
+          "wordId": "word_000505"
+        },
+        {
+          "wordId": "word_000506"
+        },
+        {
+          "wordId": "word_000507"
+        },
+        {
+          "wordId": "word_000508"
+        },
+        {
+          "wordId": "word_000509"
+        },
+        {
+          "wordId": "word_000510"
+        },
+        {
+          "wordId": "word_000511"
+        },
+        {
+          "wordId": "word_000512"
+        },
+        {
+          "wordId": "word_000513"
+        },
+        {
+          "wordId": "word_000514"
+        },
+        {
+          "wordId": "word_000515"
+        },
+        {
+          "wordId": "word_000516"
+        },
+        {
+          "wordId": "word_000517"
+        },
+        {
+          "wordId": "word_000518"
+        },
+        {
+          "wordId": "word_000519"
+        },
+        {
+          "wordId": "word_000520"
+        },
+        {
+          "wordId": "word_000521"
+        },
+        {
+          "wordId": "word_000522"
+        },
+        {
+          "wordId": "word_000523"
+        },
+        {
+          "wordId": "word_000524"
+        },
+        {
+          "wordId": "word_000525"
+        },
+        {
+          "wordId": "word_000526"
+        },
+        {
+          "wordId": "word_000527"
+        },
+        {
+          "wordId": "word_000528"
+        },
+        {
+          "wordId": "word_000529"
+        },
+        {
+          "wordId": "word_000530"
+        },
+        {
+          "wordId": "word_000531"
+        },
+        {
+          "wordId": "word_000532"
+        },
+        {
+          "wordId": "word_000533"
+        },
+        {
+          "wordId": "word_000534"
+        },
+        {
+          "wordId": "word_000535"
+        },
+        {
+          "wordId": "word_000536"
+        },
+        {
+          "wordId": "word_000537"
+        },
+        {
+          "wordId": "word_000538"
+        },
+        {
+          "wordId": "word_000539"
+        },
+        {
+          "wordId": "word_000430"
+        },
+        {
+          "wordId": "word_000540"
+        },
+        {
+          "wordId": "word_000541"
+        },
+        {
+          "wordId": "word_000542"
+        },
+        {
+          "wordId": "word_000543"
+        },
+        {
+          "wordId": "word_000544"
+        },
+        {
+          "wordId": "word_000545"
+        },
+        {
+          "wordId": "word_000546"
+        },
+        {
+          "wordId": "word_000446"
+        },
+        {
+          "wordId": "word_000547"
+        },
+        {
+          "wordId": "word_000155"
+        },
+        {
+          "wordId": "word_000548"
+        },
+        {
+          "wordId": "word_000549"
+        },
+        {
+          "wordId": "word_000550"
+        }
+      ]
+    },
+    {
+      "id": "sekmes-13",
+      "title": "13. Бытовая техника и уборка",
+      "order": 13,
+      "wordRefs": [
+        {
+          "wordId": "word_000551"
+        },
+        {
+          "wordId": "word_000552"
+        },
+        {
+          "wordId": "word_000553"
+        },
+        {
+          "wordId": "word_000554"
+        },
+        {
+          "wordId": "word_000555"
+        },
+        {
+          "wordId": "word_000556"
+        },
+        {
+          "wordId": "word_000557"
+        },
+        {
+          "wordId": "word_000558"
+        },
+        {
+          "wordId": "word_000559"
+        },
+        {
+          "wordId": "word_000560"
+        },
+        {
+          "wordId": "word_000561"
+        },
+        {
+          "wordId": "word_000562"
+        },
+        {
+          "wordId": "word_000563"
+        },
+        {
+          "wordId": "word_000564"
+        },
+        {
+          "wordId": "word_000565"
+        },
+        {
+          "wordId": "word_000566"
+        },
+        {
+          "wordId": "word_000567"
+        },
+        {
+          "wordId": "word_000568"
+        },
+        {
+          "wordId": "word_000569"
+        },
+        {
+          "wordId": "word_000570"
+        },
+        {
+          "wordId": "word_000571"
+        },
+        {
+          "wordId": "word_000572"
+        },
+        {
+          "wordId": "word_000573"
+        },
+        {
+          "wordId": "word_000574"
+        },
+        {
+          "wordId": "word_000575"
+        },
+        {
+          "wordId": "word_000576"
+        },
+        {
+          "wordId": "word_000577"
+        },
+        {
+          "wordId": "word_000578"
+        },
+        {
+          "wordId": "word_000579"
+        },
+        {
+          "wordId": "word_000580"
+        },
+        {
+          "wordId": "word_000581"
+        },
+        {
+          "wordId": "word_000582"
+        },
+        {
+          "wordId": "word_000583"
+        },
+        {
+          "wordId": "word_000584"
+        },
+        {
+          "wordId": "word_000585"
+        },
+        {
+          "wordId": "word_000586"
+        },
+        {
+          "wordId": "word_000476"
+        },
+        {
+          "wordId": "word_000477"
+        },
+        {
+          "wordId": "word_000587"
+        },
+        {
+          "wordId": "word_000588"
+        },
+        {
+          "wordId": "word_000589"
+        },
+        {
+          "wordId": "word_000590"
+        },
+        {
+          "wordId": "word_000591"
+        },
+        {
+          "wordId": "word_000592"
+        },
+        {
+          "wordId": "word_000593"
+        },
+        {
+          "wordId": "word_000594"
+        },
+        {
+          "wordId": "word_000595"
+        },
+        {
+          "wordId": "word_000596"
+        },
+        {
+          "wordId": "word_000597"
+        },
+        {
+          "wordId": "word_000492"
+        },
+        {
+          "wordId": "word_000493"
+        },
+        {
+          "wordId": "word_000598"
+        },
+        {
+          "wordId": "word_000599"
+        },
+        {
+          "wordId": "word_000600"
+        }
+      ]
+    },
+    {
+      "id": "sekmes-14",
+      "title": "14. Одежда и аксессуары",
+      "order": 14,
+      "wordRefs": [
+        {
+          "wordId": "word_000601"
+        },
+        {
+          "wordId": "word_000602"
+        },
+        {
+          "wordId": "word_000603"
+        },
+        {
+          "wordId": "word_000604"
+        },
+        {
+          "wordId": "word_000605"
+        },
+        {
+          "wordId": "word_000606"
+        },
+        {
+          "wordId": "word_000607"
+        },
+        {
+          "wordId": "word_000608"
+        },
+        {
+          "wordId": "word_000609"
+        },
+        {
+          "wordId": "word_000610"
+        },
+        {
+          "wordId": "word_000611"
+        },
+        {
+          "wordId": "word_000612"
+        },
+        {
+          "wordId": "word_000613"
+        },
+        {
+          "wordId": "word_000614"
+        },
+        {
+          "wordId": "word_000615"
+        },
+        {
+          "wordId": "word_000616"
+        },
+        {
+          "wordId": "word_000617"
+        },
+        {
+          "wordId": "word_000618"
+        },
+        {
+          "wordId": "word_000619"
+        },
+        {
+          "wordId": "word_000620"
+        },
+        {
+          "wordId": "word_000621"
+        },
+        {
+          "wordId": "word_000622"
+        },
+        {
+          "wordId": "word_000623"
+        },
+        {
+          "wordId": "word_000624"
+        },
+        {
+          "wordId": "word_000625"
+        },
+        {
+          "wordId": "word_000626"
+        },
+        {
+          "wordId": "word_000627"
+        },
+        {
+          "wordId": "word_000628"
+        },
+        {
+          "wordId": "word_000629"
+        },
+        {
+          "wordId": "word_000630"
+        },
+        {
+          "wordId": "word_000631"
+        },
+        {
+          "wordId": "word_000632"
+        },
+        {
+          "wordId": "word_000633"
+        },
+        {
+          "wordId": "word_000634"
+        },
+        {
+          "wordId": "word_000635"
+        },
+        {
+          "wordId": "word_000636"
+        },
+        {
+          "wordId": "word_000637"
+        },
+        {
+          "wordId": "word_000638"
+        },
+        {
+          "wordId": "word_000639"
+        },
+        {
+          "wordId": "word_000640"
+        },
+        {
+          "wordId": "word_000641"
+        },
+        {
+          "wordId": "word_000642"
+        },
+        {
+          "wordId": "word_000643"
+        },
+        {
+          "wordId": "word_000644"
+        },
+        {
+          "wordId": "word_000645"
+        },
+        {
+          "wordId": "word_000646"
+        },
+        {
+          "wordId": "word_000647"
+        },
+        {
+          "wordId": "word_000648"
+        },
+        {
+          "wordId": "word_000649"
+        },
+        {
+          "wordId": "word_000650"
+        },
+        {
+          "wordId": "word_000651"
+        },
+        {
+          "wordId": "word_000652"
+        },
+        {
+          "wordId": "word_000653"
+        },
+        {
+          "wordId": "word_000654"
+        },
+        {
+          "wordId": "word_000655"
+        },
+        {
+          "wordId": "word_000656"
+        },
+        {
+          "wordId": "word_000657"
+        },
+        {
+          "wordId": "word_000658"
+        },
+        {
+          "wordId": "word_000659"
+        },
+        {
+          "wordId": "word_000660"
+        },
+        {
+          "wordId": "word_000661"
+        },
+        {
+          "wordId": "word_000662"
+        },
+        {
+          "wordId": "word_000663"
+        },
+        {
+          "wordId": "word_000664"
+        }
+      ]
+    },
+    {
+      "id": "sekmes-15",
+      "title": "15. Аксессуары и услуги ателье",
+      "order": 15,
+      "wordRefs": [
+        {
+          "wordId": "word_000665"
+        },
+        {
+          "wordId": "word_000666"
+        },
+        {
+          "wordId": "word_000667"
+        },
+        {
+          "wordId": "word_000668"
+        },
+        {
+          "wordId": "word_000669"
+        },
+        {
+          "wordId": "word_000670"
+        },
+        {
+          "wordId": "word_000671"
+        },
+        {
+          "wordId": "word_000672"
+        },
+        {
+          "wordId": "word_000673"
+        },
+        {
+          "wordId": "word_000674"
+        },
+        {
+          "wordId": "word_000675"
+        },
+        {
+          "wordId": "word_000676"
+        },
+        {
+          "wordId": "word_000677"
+        },
+        {
+          "wordId": "word_000678"
+        },
+        {
+          "wordId": "word_000679"
+        },
+        {
+          "wordId": "word_000680"
+        },
+        {
+          "wordId": "word_000681"
+        },
+        {
+          "wordId": "word_000682"
+        },
+        {
+          "wordId": "word_000683"
+        },
+        {
+          "wordId": "word_000684"
+        },
+        {
+          "wordId": "word_000685"
+        },
+        {
+          "wordId": "word_000686"
+        },
+        {
+          "wordId": "word_000687"
+        },
+        {
+          "wordId": "word_000688"
+        },
+        {
+          "wordId": "word_000689"
+        },
+        {
+          "wordId": "word_000690"
+        },
+        {
+          "wordId": "word_000691"
+        },
+        {
+          "wordId": "word_000692"
+        },
+        {
+          "wordId": "word_000693"
+        },
+        {
+          "wordId": "word_000694"
+        },
+        {
+          "wordId": "word_000695"
+        },
+        {
+          "wordId": "word_000696"
+        },
+        {
+          "wordId": "word_000697"
+        },
+        {
+          "wordId": "word_000698"
+        },
+        {
+          "wordId": "word_000699"
+        },
+        {
+          "wordId": "word_000700"
+        },
+        {
+          "wordId": "word_000701"
+        },
+        {
+          "wordId": "word_000702"
+        },
+        {
+          "wordId": "word_000703"
+        },
+        {
+          "wordId": "word_000704"
+        },
+        {
+          "wordId": "word_000705"
+        },
+        {
+          "wordId": "word_000706"
+        },
+        {
+          "wordId": "word_000707"
+        },
+        {
+          "wordId": "word_000708"
+        },
+        {
+          "wordId": "word_000709"
+        },
+        {
+          "wordId": "word_000710"
+        },
+        {
+          "wordId": "word_000711"
+        }
+      ]
+    },
+    {
+      "id": "sekmes-16",
+      "title": "16. Месяцы, части тела и здоровье",
+      "order": 16,
+      "wordRefs": [
+        {
+          "wordId": "word_000712"
+        },
+        {
+          "wordId": "word_000713"
+        },
+        {
+          "wordId": "word_000714"
+        },
+        {
+          "wordId": "word_000715"
+        },
+        {
+          "wordId": "word_000716"
+        },
+        {
+          "wordId": "word_000717"
+        },
+        {
+          "wordId": "word_000718"
+        },
+        {
+          "wordId": "word_000719"
+        },
+        {
+          "wordId": "word_000720"
+        },
+        {
+          "wordId": "word_000721"
+        },
+        {
+          "wordId": "word_000722"
+        },
+        {
+          "wordId": "word_000723"
+        },
+        {
+          "wordId": "word_000724"
+        },
+        {
+          "wordId": "word_000725"
+        },
+        {
+          "wordId": "word_000726"
+        },
+        {
+          "wordId": "word_000727"
+        },
+        {
+          "wordId": "word_000728"
+        },
+        {
+          "wordId": "word_000729"
+        },
+        {
+          "wordId": "word_000730"
+        },
+        {
+          "wordId": "word_000731"
+        },
+        {
+          "wordId": "word_000732"
+        },
+        {
+          "wordId": "word_000733"
+        },
+        {
+          "wordId": "word_000734"
+        },
+        {
+          "wordId": "word_000735"
+        },
+        {
+          "wordId": "word_000736"
+        },
+        {
+          "wordId": "word_000737"
+        },
+        {
+          "wordId": "word_000738"
+        },
+        {
+          "wordId": "word_000739"
+        },
+        {
+          "wordId": "word_000740"
+        },
+        {
+          "wordId": "word_000741"
+        },
+        {
+          "wordId": "word_000742"
+        },
+        {
+          "wordId": "word_000743"
+        },
+        {
+          "wordId": "word_000744"
+        },
+        {
+          "wordId": "word_000745"
+        },
+        {
+          "wordId": "word_000746"
+        },
+        {
+          "wordId": "word_000747"
+        },
+        {
+          "wordId": "word_000748"
+        },
+        {
+          "wordId": "word_000749"
+        },
+        {
+          "wordId": "word_000750"
+        },
+        {
+          "wordId": "word_000751"
+        },
+        {
+          "wordId": "word_000752"
+        },
+        {
+          "wordId": "word_000753"
+        },
+        {
+          "wordId": "word_000754"
+        },
+        {
+          "wordId": "word_000755"
+        },
+        {
+          "wordId": "word_000756"
+        },
+        {
+          "wordId": "word_000757"
+        },
+        {
+          "wordId": "word_000758"
+        },
+        {
+          "wordId": "word_000065"
+        },
+        {
+          "wordId": "word_000759"
+        },
+        {
+          "wordId": "word_000760"
+        },
+        {
+          "wordId": "word_000761"
+        },
+        {
+          "wordId": "word_000762"
+        },
+        {
+          "wordId": "word_000763"
+        },
+        {
+          "wordId": "word_000764"
+        },
+        {
+          "wordId": "word_000765"
+        },
+        {
+          "wordId": "word_000766"
+        },
+        {
+          "wordId": "word_000767"
+        },
+        {
+          "wordId": "word_000768"
+        }
+      ]
+    },
+    {
+      "id": "sekmes-17",
+      "title": "17. Лекарства и болезни",
+      "order": 17,
+      "wordRefs": [
+        {
+          "wordId": "word_000769"
+        },
+        {
+          "wordId": "word_000770"
+        },
+        {
+          "wordId": "word_000771"
+        },
+        {
+          "wordId": "word_000772"
+        },
+        {
+          "wordId": "word_000773"
+        },
+        {
+          "wordId": "word_000774"
+        },
+        {
+          "wordId": "word_000775"
+        },
+        {
+          "wordId": "word_000776"
+        },
+        {
+          "wordId": "word_000777"
+        },
+        {
+          "wordId": "word_000778"
+        },
+        {
+          "wordId": "word_000779"
+        },
+        {
+          "wordId": "word_000780"
+        },
+        {
+          "wordId": "word_000781"
+        },
+        {
+          "wordId": "word_000782"
+        },
+        {
+          "wordId": "word_000783"
+        },
+        {
+          "wordId": "word_000784"
+        },
+        {
+          "wordId": "word_000785"
+        },
+        {
+          "wordId": "word_000786"
+        },
+        {
+          "wordId": "word_000787"
+        },
+        {
+          "wordId": "word_000788"
+        },
+        {
+          "wordId": "word_000789"
+        },
+        {
+          "wordId": "word_000790"
+        },
+        {
+          "wordId": "word_000791"
+        },
+        {
+          "wordId": "word_000792"
+        },
+        {
+          "wordId": "word_000793"
+        },
+        {
+          "wordId": "word_000794"
+        },
+        {
+          "wordId": "word_000795"
+        },
+        {
+          "wordId": "word_000796"
+        },
+        {
+          "wordId": "word_000797"
+        },
+        {
+          "wordId": "word_000798"
+        },
+        {
+          "wordId": "word_000799"
+        },
+        {
+          "wordId": "word_000800"
+        },
+        {
+          "wordId": "word_000801"
+        },
+        {
+          "wordId": "word_000802"
+        },
+        {
+          "wordId": "word_000803"
+        },
+        {
+          "wordId": "word_000804"
+        },
+        {
+          "wordId": "word_000805"
+        },
+        {
+          "wordId": "word_000806"
+        },
+        {
+          "wordId": "word_000807"
+        },
+        {
+          "wordId": "word_000808"
+        },
+        {
+          "wordId": "word_000809"
+        },
+        {
+          "wordId": "word_000810"
+        }
+      ]
+    },
+    {
+      "id": "sekmes-18",
+      "title": "18. Работа и профессии",
+      "order": 18,
+      "wordRefs": [
+        {
+          "wordId": "word_000077"
+        },
+        {
+          "wordId": "word_000811"
+        },
+        {
+          "wordId": "word_000812"
+        },
+        {
+          "wordId": "word_000813"
+        },
+        {
+          "wordId": "word_000814"
+        },
+        {
+          "wordId": "word_000815"
+        },
+        {
+          "wordId": "word_000816"
+        },
+        {
+          "wordId": "word_000817"
+        },
+        {
+          "wordId": "word_000818"
+        },
+        {
+          "wordId": "word_000819"
+        },
+        {
+          "wordId": "word_000820"
+        },
+        {
+          "wordId": "word_000821"
+        },
+        {
+          "wordId": "word_000822"
+        },
+        {
+          "wordId": "word_000823"
+        },
+        {
+          "wordId": "word_000824"
+        },
+        {
+          "wordId": "word_000825"
+        },
+        {
+          "wordId": "word_000826"
+        },
+        {
+          "wordId": "word_000827"
+        },
+        {
+          "wordId": "word_000828"
+        },
+        {
+          "wordId": "word_000829"
+        },
+        {
+          "wordId": "word_000830"
+        },
+        {
+          "wordId": "word_000831"
+        },
+        {
+          "wordId": "word_000832"
+        },
+        {
+          "wordId": "word_000833"
+        },
+        {
+          "wordId": "word_000834"
+        },
+        {
+          "wordId": "word_000835"
+        },
+        {
+          "wordId": "word_000836"
+        },
+        {
+          "wordId": "word_000837"
+        },
+        {
+          "wordId": "word_000838"
+        },
+        {
+          "wordId": "word_000839"
+        },
+        {
+          "wordId": "word_000840"
+        },
+        {
+          "wordId": "word_000841"
+        },
+        {
+          "wordId": "word_000842"
+        },
+        {
+          "wordId": "word_000843"
+        },
+        {
+          "wordId": "word_000844"
+        },
+        {
+          "wordId": "word_000845"
+        },
+        {
+          "wordId": "word_000846"
+        },
+        {
+          "wordId": "word_000847"
+        },
+        {
+          "wordId": "word_000848"
+        },
+        {
+          "wordId": "word_000849"
+        },
+        {
+          "wordId": "word_000850"
+        },
+        {
+          "wordId": "word_000851"
+        },
+        {
+          "wordId": "word_000852"
+        },
+        {
+          "wordId": "word_000853"
+        },
+        {
+          "wordId": "word_000854"
+        },
+        {
+          "wordId": "word_000855"
+        },
+        {
+          "wordId": "word_000856"
+        },
+        {
+          "wordId": "word_000857"
+        },
+        {
+          "wordId": "word_000752"
+        },
+        {
+          "wordId": "word_000755"
+        },
+        {
+          "wordId": "word_000858"
+        },
+        {
+          "wordId": "word_000859"
+        },
+        {
+          "wordId": "word_000860"
+        },
+        {
+          "wordId": "word_000861"
+        },
+        {
+          "wordId": "word_000862"
+        },
+        {
+          "wordId": "word_000863"
+        },
+        {
+          "wordId": "word_000864"
+        },
+        {
+          "wordId": "word_000865"
+        },
+        {
+          "wordId": "word_000866"
+        },
+        {
+          "wordId": "word_000867"
+        },
+        {
+          "wordId": "word_000868"
+        },
+        {
+          "wordId": "word_000451"
+        },
+        {
+          "wordId": "word_000869"
+        },
+        {
+          "wordId": "word_000870"
+        },
+        {
+          "wordId": "word_000315"
+        },
+        {
+          "wordId": "word_000251"
+        },
+        {
+          "wordId": "word_000871"
+        },
+        {
+          "wordId": "word_000872"
+        },
+        {
+          "wordId": "word_000873"
+        },
+        {
+          "wordId": "word_000874"
+        },
+        {
+          "wordId": "word_000875"
+        },
+        {
+          "wordId": "word_000876"
+        },
+        {
+          "wordId": "word_000877"
+        },
+        {
+          "wordId": "word_000878"
+        },
+        {
+          "wordId": "word_000879"
+        },
+        {
+          "wordId": "word_000880"
+        },
+        {
+          "wordId": "word_000881"
+        },
+        {
+          "wordId": "word_000882"
+        }
+      ]
+    },
+    {
+      "id": "sekmes-19",
+      "title": "19. Образование и учёба",
+      "order": 19,
+      "wordRefs": [
+        {
+          "wordId": "word_000883"
+        },
+        {
+          "wordId": "word_000045"
+        },
+        {
+          "wordId": "word_000884"
+        },
+        {
+          "wordId": "word_000885"
+        },
+        {
+          "wordId": "word_000048"
+        },
+        {
+          "wordId": "word_000886"
+        },
+        {
+          "wordId": "word_000887"
+        },
+        {
+          "wordId": "word_000888"
+        },
+        {
+          "wordId": "word_000889"
+        },
+        {
+          "wordId": "word_000890"
+        },
+        {
+          "wordId": "word_000891"
+        },
+        {
+          "wordId": "word_000892"
+        },
+        {
+          "wordId": "word_000893"
+        },
+        {
+          "wordId": "word_000894"
+        },
+        {
+          "wordId": "word_000408"
+        },
+        {
+          "wordId": "word_000895"
+        },
+        {
+          "wordId": "word_000896"
+        },
+        {
+          "wordId": "word_000897"
+        },
+        {
+          "wordId": "word_000898"
+        },
+        {
+          "wordId": "word_000899"
+        },
+        {
+          "wordId": "word_000900"
+        },
+        {
+          "wordId": "word_000901"
+        },
+        {
+          "wordId": "word_000902"
+        },
+        {
+          "wordId": "word_000903"
+        },
+        {
+          "wordId": "word_000904"
+        },
+        {
+          "wordId": "word_000905"
+        },
+        {
+          "wordId": "word_000906"
+        },
+        {
+          "wordId": "word_000907"
+        },
+        {
+          "wordId": "word_000908"
+        },
+        {
+          "wordId": "word_000909"
+        },
+        {
+          "wordId": "word_000910"
+        },
+        {
+          "wordId": "word_000911"
+        },
+        {
+          "wordId": "word_000912"
+        },
+        {
+          "wordId": "word_000913"
+        },
+        {
+          "wordId": "word_000914"
+        },
+        {
+          "wordId": "word_000915"
+        },
+        {
+          "wordId": "word_000916"
+        },
+        {
+          "wordId": "word_000917"
+        },
+        {
+          "wordId": "word_000918"
+        },
+        {
+          "wordId": "word_000919"
+        },
+        {
+          "wordId": "word_000920"
+        },
+        {
+          "wordId": "word_000921"
+        },
+        {
+          "wordId": "word_000922"
+        },
+        {
+          "wordId": "word_000923"
+        },
+        {
+          "wordId": "word_000924"
+        },
+        {
+          "wordId": "word_000925"
+        },
+        {
+          "wordId": "word_000926"
+        },
+        {
+          "wordId": "word_000927"
+        },
+        {
+          "wordId": "word_000928"
+        },
+        {
+          "wordId": "word_000929"
+        },
+        {
+          "wordId": "word_000930"
+        },
+        {
+          "wordId": "word_000931"
+        },
+        {
+          "wordId": "word_000932"
+        },
+        {
+          "wordId": "word_000933"
+        },
+        {
+          "wordId": "word_000934"
+        },
+        {
+          "wordId": "word_000935"
+        }
+      ]
+    },
+    {
+      "id": "sekmes-20",
+      "title": "20. Времена года и досуг",
+      "order": 20,
+      "wordRefs": [
+        {
+          "wordId": "word_000936"
+        },
+        {
+          "wordId": "word_000937"
+        },
+        {
+          "wordId": "word_000938"
+        },
+        {
+          "wordId": "word_000939"
+        },
+        {
+          "wordId": "word_000151"
+        },
+        {
+          "wordId": "word_000940"
+        },
+        {
+          "wordId": "word_000941"
+        },
+        {
+          "wordId": "word_000942"
+        },
+        {
+          "wordId": "word_000943"
+        },
+        {
+          "wordId": "word_000944"
+        },
+        {
+          "wordId": "word_000945"
+        },
+        {
+          "wordId": "word_000894"
+        },
+        {
+          "wordId": "word_000946"
+        },
+        {
+          "wordId": "word_000947"
+        },
+        {
+          "wordId": "word_000948"
+        },
+        {
+          "wordId": "word_000949"
+        },
+        {
+          "wordId": "word_000950"
+        },
+        {
+          "wordId": "word_000951"
+        },
+        {
+          "wordId": "word_000567"
+        },
+        {
+          "wordId": "word_000952"
+        },
+        {
+          "wordId": "word_000153"
+        },
+        {
+          "wordId": "word_000953"
+        },
+        {
+          "wordId": "word_000954"
+        },
+        {
+          "wordId": "word_000955"
+        },
+        {
+          "wordId": "word_000956"
+        },
+        {
+          "wordId": "word_000957"
+        },
+        {
+          "wordId": "word_000958"
+        },
+        {
+          "wordId": "word_000959"
+        },
+        {
+          "wordId": "word_000960"
+        },
+        {
+          "wordId": "word_000961"
+        },
+        {
+          "wordId": "word_000962"
+        },
+        {
+          "wordId": "word_000160"
+        },
+        {
+          "wordId": "word_000963"
+        },
+        {
+          "wordId": "word_000964"
+        },
+        {
+          "wordId": "word_000965"
+        },
+        {
+          "wordId": "word_000966"
+        },
+        {
+          "wordId": "word_000967"
+        },
+        {
+          "wordId": "word_000061"
+        },
+        {
+          "wordId": "word_000968"
+        },
+        {
+          "wordId": "word_000969"
+        },
+        {
+          "wordId": "word_000970"
+        },
+        {
+          "wordId": "word_000971"
+        },
+        {
+          "wordId": "word_000972"
+        },
+        {
+          "wordId": "word_000973"
+        },
+        {
+          "wordId": "word_000974"
+        },
+        {
+          "wordId": "word_000975"
+        },
+        {
+          "wordId": "word_000976"
+        },
+        {
+          "wordId": "word_000401"
+        },
+        {
+          "wordId": "word_000977"
+        },
+        {
+          "wordId": "word_000485"
+        },
+        {
+          "wordId": "word_000445"
+        },
+        {
+          "wordId": "word_000978"
+        },
+        {
+          "wordId": "word_000081"
+        },
+        {
+          "wordId": "word_000080"
+        },
+        {
+          "wordId": "word_000078"
+        },
+        {
+          "wordId": "word_000083"
+        },
+        {
+          "wordId": "word_000979"
+        },
+        {
+          "wordId": "word_000980"
+        },
+        {
+          "wordId": "word_000981"
+        },
+        {
+          "wordId": "word_000982"
+        },
+        {
+          "wordId": "word_000983"
+        },
+        {
+          "wordId": "word_000984"
+        },
+        {
+          "wordId": "word_000985"
+        },
+        {
+          "wordId": "word_000986"
+        },
+        {
+          "wordId": "word_000987"
+        },
+        {
+          "wordId": "word_000988"
+        },
+        {
+          "wordId": "word_000989"
+        }
+      ]
+    },
+    {
+      "id": "sekmes-21",
+      "title": "21. Праздники",
+      "order": 21,
+      "wordRefs": [
+        {
+          "wordId": "word_000990"
+        },
+        {
+          "wordId": "word_000991"
+        },
+        {
+          "wordId": "word_000992"
+        },
+        {
+          "wordId": "word_000993"
+        },
+        {
+          "wordId": "word_000994"
+        },
+        {
+          "wordId": "word_000995"
+        },
+        {
+          "wordId": "word_000996"
+        },
+        {
+          "wordId": "word_000997"
+        },
+        {
+          "wordId": "word_000998"
+        },
+        {
+          "wordId": "word_000999"
+        },
+        {
+          "wordId": "word_001000"
+        },
+        {
+          "wordId": "word_001001"
+        },
+        {
+          "wordId": "word_001002"
+        },
+        {
+          "wordId": "word_001003"
+        },
+        {
+          "wordId": "word_000568"
+        },
+        {
+          "wordId": "word_001004"
+        },
+        {
+          "wordId": "word_001005"
+        },
+        {
+          "wordId": "word_001006"
+        },
+        {
+          "wordId": "word_000222"
+        },
+        {
+          "wordId": "word_001007"
+        },
+        {
+          "wordId": "word_001008"
+        },
+        {
+          "wordId": "word_001009"
+        },
+        {
+          "wordId": "word_001010"
+        },
+        {
+          "wordId": "word_001011"
+        },
+        {
+          "wordId": "word_001012"
+        },
+        {
+          "wordId": "word_001013"
+        },
+        {
+          "wordId": "word_001014"
+        },
+        {
+          "wordId": "word_001015"
+        },
+        {
+          "wordId": "word_001016"
+        },
+        {
+          "wordId": "word_001017"
+        },
+        {
+          "wordId": "word_001018"
+        },
+        {
+          "wordId": "word_001019"
+        },
+        {
+          "wordId": "word_001020"
+        },
+        {
+          "wordId": "word_001021"
+        },
+        {
+          "wordId": "word_001022"
+        },
+        {
+          "wordId": "word_001023"
+        },
+        {
+          "wordId": "word_001024"
+        },
+        {
+          "wordId": "word_001025"
+        },
+        {
+          "wordId": "word_001026"
+        },
+        {
+          "wordId": "word_001027"
+        },
+        {
+          "wordId": "word_001028"
+        },
+        {
+          "wordId": "word_001029"
+        },
+        {
+          "wordId": "word_001030"
+        },
+        {
+          "wordId": "word_001031"
+        },
+        {
+          "wordId": "word_001032"
+        },
+        {
+          "wordId": "word_001033"
+        },
+        {
+          "wordId": "word_001034"
+        },
+        {
+          "wordId": "word_001035"
+        },
+        {
+          "wordId": "word_001036"
+        },
+        {
+          "wordId": "word_001037"
+        },
+        {
+          "wordId": "word_001038"
+        },
+        {
+          "wordId": "word_001039"
+        }
+      ]
+    }
+  ]
+}
