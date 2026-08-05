@@ -11,8 +11,11 @@ import androidx.room.RoomDatabase
 import androidx.room.TypeConverter
 import androidx.room.TypeConverters
 import androidx.room.Upsert
+import androidx.room.migration.Migration
+import androidx.sqlite.db.SupportSQLiteDatabase
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
+import java.util.UUID
 
 enum class WordLearningStatus {
     NEW,
@@ -44,6 +47,27 @@ data class WordProgressEntity(
     val updatedAtEpochMillis: Long,
 )
 
+data class CustomWord(
+    val id: WordId,
+    val lt: String,
+    val ru: String,
+    val type: String,
+    val note: String = "",
+    val createdAtEpochMillis: Long,
+    val updatedAtEpochMillis: Long,
+)
+
+@Entity(tableName = "custom_words")
+data class CustomWordEntity(
+    @PrimaryKey val id: WordId,
+    val lt: String,
+    val ru: String,
+    val type: String,
+    val note: String,
+    val createdAtEpochMillis: Long,
+    val updatedAtEpochMillis: Long,
+)
+
 class WordProgressConverters {
     @TypeConverter
     fun statusToString(status: WordLearningStatus): String = status.name
@@ -70,14 +94,29 @@ interface WordProgressDao {
     suspend fun delete(wordId: WordId)
 }
 
+@Dao
+interface CustomWordDao {
+    @Query("SELECT * FROM custom_words ORDER BY lt COLLATE NOCASE")
+    fun observeAll(): Flow<List<CustomWordEntity>>
+
+    @Query("SELECT * FROM custom_words WHERE id = :id")
+    suspend fun get(id: WordId): CustomWordEntity?
+
+    @Upsert suspend fun upsert(word: CustomWordEntity)
+
+    @Query("DELETE FROM custom_words WHERE id = :id")
+    suspend fun delete(id: WordId)
+}
+
 @Database(
-    entities = [WordProgressEntity::class],
-    version = 1,
+    entities = [WordProgressEntity::class, CustomWordEntity::class],
+    version = 2,
     exportSchema = true,
 )
 @TypeConverters(WordProgressConverters::class)
 abstract class SekmesDatabase : RoomDatabase() {
     abstract fun wordProgressDao(): WordProgressDao
+    abstract fun customWordDao(): CustomWordDao
 
     companion object {
         @Volatile
@@ -89,8 +128,14 @@ abstract class SekmesDatabase : RoomDatabase() {
                     context.applicationContext,
                     SekmesDatabase::class.java,
                     "sekmes.db",
-                ).build().also { instance = it }
+                ).addMigrations(MIGRATION_1_2).build().also { instance = it }
             }
+
+        val MIGRATION_1_2 = object : Migration(1, 2) {
+            override fun migrate(database: SupportSQLiteDatabase) {
+                database.execSQL("CREATE TABLE IF NOT EXISTS custom_words (id TEXT NOT NULL, lt TEXT NOT NULL, ru TEXT NOT NULL, type TEXT NOT NULL, note TEXT NOT NULL, createdAtEpochMillis INTEGER NOT NULL, updatedAtEpochMillis INTEGER NOT NULL, PRIMARY KEY(id))")
+            }
+        }
     }
 }
 
@@ -104,6 +149,7 @@ interface WordProgressRepository {
         updatedAtEpochMillis: Long = System.currentTimeMillis(),
     )
     suspend fun reset(wordId: WordId)
+    suspend fun recordAnswer(wordId: WordId, correct: Boolean)
 }
 
 object ProgressStore {
@@ -117,6 +163,32 @@ object ProgressStore {
 
     fun repository(): WordProgressRepository =
         requireNotNull(progressRepository) { "ProgressStore must be initialized before use" }
+}
+
+interface CustomWordRepository {
+    fun observeAll(): Flow<List<CustomWord>>
+    suspend fun save(word: CustomWord)
+    suspend fun create(lt: String, ru: String, type: String, note: String = ""): CustomWord
+    suspend fun delete(id: WordId)
+}
+
+class RoomCustomWordRepository(private val dao: CustomWordDao) : CustomWordRepository {
+    override fun observeAll(): Flow<List<CustomWord>> = dao.observeAll().map { it.map(CustomWordEntity::toDomain) }
+    override suspend fun save(word: CustomWord) { dao.upsert(word.toEntity()) }
+    override suspend fun create(lt: String, ru: String, type: String, note: String): CustomWord {
+        require(lt.isNotBlank() && ru.isNotBlank()) { "Lithuanian word and translation are required" }
+        val now = System.currentTimeMillis()
+        val word = CustomWord("user_${UUID.randomUUID()}", lt.trim(), ru.trim(), type, note.trim(), now, now)
+        save(word)
+        return word
+    }
+    override suspend fun delete(id: WordId) { dao.delete(id); ProgressStore.repository().reset(id) }
+}
+
+object CustomWordsStore {
+    private var repository: CustomWordRepository? = null
+    fun initialize(context: Context) { repository = RoomCustomWordRepository(SekmesDatabase.getInstance(context).customWordDao()) }
+    fun repository(): CustomWordRepository = requireNotNull(repository)
 }
 
 class RoomWordProgressRepository(
@@ -150,6 +222,19 @@ class RoomWordProgressRepository(
     override suspend fun reset(wordId: WordId) {
         dao.delete(wordId)
     }
+
+    override suspend fun recordAnswer(wordId: WordId, correct: Boolean) {
+        val current = get(wordId)
+        val now = System.currentTimeMillis()
+        dao.upsert(current.copy(
+            status = if (current.status == WordLearningStatus.NEW) WordLearningStatus.LEARNING else current.status,
+            correctCount = current.correctCount + if (correct) 1 else 0,
+            errorCount = current.errorCount + if (correct) 0 else 1,
+            streak = if (correct) current.streak + 1 else 0,
+            lastSeenAtEpochMillis = now,
+            updatedAtEpochMillis = now,
+        ).toEntity())
+    }
 }
 
 private fun WordProgressEntity.toDomain(): WordProgress = WordProgress(
@@ -173,3 +258,6 @@ private fun WordProgress.toEntity(): WordProgressEntity = WordProgressEntity(
     nextReviewAtEpochMillis = nextReviewAtEpochMillis,
     updatedAtEpochMillis = updatedAtEpochMillis,
 )
+
+private fun CustomWordEntity.toDomain() = CustomWord(id, lt, ru, type, note, createdAtEpochMillis, updatedAtEpochMillis)
+private fun CustomWord.toEntity() = CustomWordEntity(id, lt, ru, type, note, createdAtEpochMillis, updatedAtEpochMillis)

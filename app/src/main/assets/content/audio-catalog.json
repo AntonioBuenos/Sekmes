@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "courses": [
+    {
+      "courseId": "sekmes",
+      "books": [
+        {
+          "number": 1,
+          "chapters": [
+            { "number": 0, "title": "Pradžia", "trackGroups": [{ "from": 1, "to": 1, "type": "POKALBIS", "label": "intro" }] },
+            { "number": 1, "title": "Koks jūsų vardas?", "trackGroups": [{ "from": 2, "to": 9, "type": "POKALBIS", "label": "dialogue" }] },
+            { "number": 2, "title": "Čia mano draugas", "trackGroups": [{ "from": 10, "to": 18, "type": "POKALBIS", "label": "dialogue" }, { "from": 19, "to": 19, "type": "SKAITYMAS", "label": "reading" }] },
+            { "number": 3, "title": "Koks tavo adresas?", "trackGroups": [{ "from": 20, "to": 24, "type": "POKALBIS", "label": "dialogue" }, { "from": 25, "to": 25, "type": "SKAITYMAS", "label": "reading" }, { "from": 26, "to": 28, "type": "KLAUSYMAS", "label": "listening" }] },
+            { "number": 4, "title": "Kada ir kur susitinkame?", "trackGroups": [{ "from": 29, "to": 39, "type": "POKALBIS", "label": "dialogue" }, { "from": 40, "to": 45, "type": "KLAUSYMAS", "label": "listening" }] },
+            { "number": 5, "title": "Čia mano šeima", "trackGroups": [{ "from": 46, "to": 54, "type": "POKALBIS", "label": "dialogue" }, { "from": 55, "to": 55, "type": "SKAITYMAS", "label": "reading" }, { "from": 56, "to": 59, "type": "KLAUSYMAS", "label": "listening" }] },
+            { "number": 6, "title": "Mano sesers vardas yra Lina", "trackGroups": [{ "from": 60, "to": 65, "type": "POKALBIS", "label": "dialogue" }, { "from": 66, "to": 70, "type": "KLAUSYMAS", "label": "listening" }] },
+            { "number": 7, "title": "Labai skanu!", "trackGroups": [{ "from": 71, "to": 77, "type": "POKALBIS", "label": "dialogue" }, { "from": 78, "to": 78, "type": "SKAITYMAS", "label": "reading" }, { "from": 79, "to": 84, "type": "KLAUSYMAS", "label": "listening" }] },
+            { "number": 8, "title": "Šiandien eisiu į turgų", "trackGroups": [{ "from": 85, "to": 90, "type": "POKALBIS", "label": "dialogue" }, { "from": 91, "to": 94, "type": "KLAUSYMAS", "label": "listening" }] },
+            { "number": 9, "title": "Norėčiau kavos", "trackGroups": [{ "from": 95, "to": 102, "type": "POKALBIS", "label": "dialogue" }, { "from": 103, "to": 103, "type": "SKAITYMAS", "label": "reading" }, { "from": 104, "to": 109, "type": "KLAUSYMAS", "label": "listening" }] }
+          ]
+        },
+        {
+          "number": 2,
+          "chapters": [
+            { "number": 0, "title": "Pradžia", "trackGroups": [{ "from": 110, "to": 110, "type": "POKALBIS", "label": "intro" }] },
+            { "number": 10, "title": "Kaip nuvažiuoti į universitetą?", "trackGroups": [{ "from": 111, "to": 124, "type": "POKALBIS", "label": "dialogue" }, { "from": 125, "to": 129, "type": "KLAUSYMAS", "label": "listening" }] },
+            { "number": 11, "title": "Geros kelionės!", "trackGroups": [{ "from": 130, "to": 137, "type": "POKALBIS", "label": "dialogue" }, { "from": 138, "to": 138, "type": "SKAITYMAS", "label": "reading" }, { "from": 139, "to": 143, "type": "KLAUSYMAS", "label": "listening" }] },
+            { "number": 12, "title": "Koks jaukus butas!", "trackGroups": [{ "from": 144, "to": 150, "type": "POKALBIS", "label": "dialogue" }, { "from": 151, "to": 155, "type": "KLAUSYMAS", "label": "listening" }] },
+            { "number": 13, "title": "Reikia meistro!", "trackGroups": [{ "from": 156, "to": 162, "type": "POKALBIS", "label": "dialogue" }, { "from": 163, "to": 163, "type": "SKAITYMAS", "label": "reading" }, { "from": 164, "to": 168, "type": "KLAUSYMAS", "label": "listening" }] },
+            { "number": 14, "title": "Važiuojame apsipirkti?", "trackGroups": [{ "from": 169, "to": 177, "type": "POKALBIS", "label": "dialogue" }, { "from": 178, "to": 178, "type": "SKAITYMAS", "label": "reading" }, { "from": 179, "to": 183, "type": "KLAUSYMAS", "label": "listening" }] },
+            { "number": 15, "title": "Kada galėsiu atsiimti?", "trackGroups": [{ "from": 184, "to": 190, "type": "POKALBIS", "label": "dialogue" }, { "from": 191, "to": 196, "type": "KLAUSYMAS", "label": "listening" }] },
+            { "number": 16, "title": "Kada dirba šeimos gydytojas?", "trackGroups": [{ "from": 197, "to": 205, "type": "POKALBIS", "label": "dialogue" }, { "from": 206, "to": 206, "type": "SKAITYMAS", "label": "reading" }, { "from": 207, "to": 212, "type": "KLAUSYMAS", "label": "listening" }] },
+            { "number": 17, "title": "Prašom duoti vaistų nuo skausmo!", "trackGroups": [{ "from": 213, "to": 219, "type": "POKALBIS", "label": "dialogue" }, { "from": 220, "to": 226, "type": "KLAUSYMAS", "label": "listening" }] },
+            { "number": 18, "title": "Kur jūs dirbate?", "trackGroups": [{ "from": 227, "to": 235, "type": "POKALBIS", "label": "dialogue" }, { "from": 236, "to": 240, "type": "KLAUSYMAS", "label": "listening" }] },
+            { "number": 19, "title": "Ką tu studijuoji?", "trackGroups": [{ "from": 241, "to": 248, "type": "POKALBIS", "label": "dialogue" }, { "from": 249, "to": 249, "type": "SKAITYMAS", "label": "reading" }, { "from": 250, "to": 253, "type": "KLAUSYMAS", "label": "listening" }] },
+            { "number": 20, "title": "Ką mėgsti veikti laisvalaikiu?", "trackGroups": [{ "from": 254, "to": 260, "type": "POKALBIS", "label": "dialogue" }, { "from": 261, "to": 261, "type": "SKAITYMAS", "label": "reading" }, { "from": 262, "to": 262, "type": "KLAUSYMAS", "label": "listening" }] },
+            { "number": 21, "title": "Su gimtadieniu!", "trackGroups": [{ "from": 263, "to": 268, "type": "POKALBIS", "label": "dialogue" }, { "from": 269, "to": 269, "type": "SKAITYMAS", "label": "reading" }, { "from": 270, "to": 275, "type": "KLAUSYMAS", "label": "listening" }] }
+          ]
+        }
+      ]
+    },
+    {
+      "courseId": "ne-dienos-be-lietuviu-kalbos",
+      "books": [
+        { "number": 1, "chapters": [
+          { "number": 1, "title": "1 skyrius", "trackGroups": [{"from":1,"to":9,"type":"POKALBIS","label":"dialogue","resourcePrefix":"ne_dienos_"},{"from":10,"to":10,"type":"SKAITYMAS","label":"readingExercise","resourcePrefix":"ne_dienos_"}] },
+          { "number": 2, "title": "2 skyrius", "trackGroups": [{"from":11,"to":21,"type":"POKALBIS","label":"dialogue","resourcePrefix":"ne_dienos_"},{"from":22,"to":22,"type":"KLAUSYMAS","label":"listeningExercise","resourcePrefix":"ne_dienos_"}] },
+          { "number": 3, "title": "3 skyrius", "trackGroups": [{"from":23,"to":27,"type":"POKALBIS","label":"dialogue","resourcePrefix":"ne_dienos_"},{"from":28,"to":29,"type":"KLAUSYMAS","label":"listeningExercise","resourcePrefix":"ne_dienos_"},{"from":30,"to":30,"type":"SKAITYMAS","label":"readingExercise","resourcePrefix":"ne_dienos_"}] },
+          { "number": 4, "title": "4 skyrius", "trackGroups": [{"from":31,"to":38,"type":"POKALBIS","label":"dialogue","resourcePrefix":"ne_dienos_"},{"from":39,"to":40,"type":"KLAUSYMAS","label":"listeningExercise","resourcePrefix":"ne_dienos_"}] },
+          { "number": 5, "title": "5 skyrius", "trackGroups": [{"from":41,"to":50,"type":"POKALBIS","label":"dialogue","resourcePrefix":"ne_dienos_"},{"from":51,"to":54,"type":"KLAUSYMAS","label":"listeningExercise","resourcePrefix":"ne_dienos_"},{"from":55,"to":55,"type":"SKAITYMAS","label":"readingExercise","resourcePrefix":"ne_dienos_"}] },
+          { "number": 6, "title": "6 skyrius", "trackGroups": [{"from":56,"to":66,"type":"POKALBIS","label":"dialogue","resourcePrefix":"ne_dienos_"},{"from":67,"to":71,"type":"KLAUSYMAS","label":"listeningExercise","resourcePrefix":"ne_dienos_"},{"from":72,"to":72,"type":"SKAITYMAS","label":"readingExercise","resourcePrefix":"ne_dienos_"}] },
+          { "number": 7, "title": "7 skyrius", "trackGroups": [{"from":73,"to":77,"type":"POKALBIS","label":"dialogue","resourcePrefix":"ne_dienos_"},{"from":78,"to":78,"type":"KLAUSYMAS","label":"listeningExercise","resourcePrefix":"ne_dienos_"},{"from":79,"to":79,"type":"SKAITYMAS","label":"readingExercise","resourcePrefix":"ne_dienos_"}] },
+          { "number": 8, "title": "8 skyrius", "trackGroups": [{"from":80,"to":87,"type":"POKALBIS","label":"dialogue","resourcePrefix":"ne_dienos_"},{"from":88,"to":92,"type":"KLAUSYMAS","label":"listeningExercise","resourcePrefix":"ne_dienos_"},{"from":93,"to":94,"type":"SKAITYMAS","label":"readingExercise","resourcePrefix":"ne_dienos_"}] },
+          { "number": 9, "title": "9 skyrius", "trackGroups": [{"from":95,"to":101,"type":"POKALBIS","label":"dialogue","resourcePrefix":"ne_dienos_"},{"from":102,"to":104,"type":"KLAUSYMAS","label":"listeningExercise","resourcePrefix":"ne_dienos_"},{"from":105,"to":107,"type":"SKAITYMAS","label":"readingExercise","resourcePrefix":"ne_dienos_"}] },
+          { "number": 10, "title": "10 skyrius", "trackGroups": [{"from":108,"to":117,"type":"POKALBIS","label":"dialogue","resourcePrefix":"ne_dienos_"},{"from":118,"to":119,"type":"KLAUSYMAS","label":"listeningExercise","resourcePrefix":"ne_dienos_"},{"from":120,"to":122,"type":"SKAITYMAS","label":"readingExercise","resourcePrefix":"ne_dienos_"}] },
+          { "number": 11, "title": "11 skyrius", "trackGroups": [{"from":123,"to":128,"type":"POKALBIS","label":"dialogue","resourcePrefix":"ne_dienos_"},{"from":129,"to":132,"type":"KLAUSYMAS","label":"listeningExercise","resourcePrefix":"ne_dienos_"},{"from":133,"to":134,"type":"SKAITYMAS","label":"readingExercise","resourcePrefix":"ne_dienos_"}] },
+          { "number": 12, "title": "12 skyrius", "trackGroups": [{"from":135,"to":139,"type":"POKALBIS","label":"dialogue","resourcePrefix":"ne_dienos_"},{"from":140,"to":144,"type":"KLAUSYMAS","label":"listeningExercise","resourcePrefix":"ne_dienos_"},{"from":145,"to":147,"type":"SKAITYMAS","label":"readingExercise","resourcePrefix":"ne_dienos_"}] }
+        ] }
+      ]
+    }
+  ]
+}

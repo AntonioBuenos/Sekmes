@@ -2,6 +2,9 @@
   "schemaVersion": 1,
   "id": "shared-vocabulary-demo",
   "title": "Демонстрационный курс: общие слова",
+  "description": "Технический fixture для проверки повторного использования словаря.",
+  "capabilities": ["DICTIONARY", "QUIZ"],
+  "visibility": "FIXTURE",
   "lessons": [
     {
       "id": "shared-demo-01",

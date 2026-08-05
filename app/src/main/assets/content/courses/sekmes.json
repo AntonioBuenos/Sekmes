@@ -2,6 +2,9 @@
   "schemaVersion": 1,
   "id": "sekmes",
   "title": "Sekmes",
+  "description": "Базовый курс литовского языка со словарём, тестами и аудиоматериалами.",
+  "capabilities": ["DICTIONARY", "QUIZ", "AUDIO"],
+  "visibility": "LEARNING",
   "lessons": [
     {
       "id": "sekmes-01",

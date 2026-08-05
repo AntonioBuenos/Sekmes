@@ -1,0 +1,2649 @@
+{
+  "source": {
+    "title": "Nė dienos be lietuvių kalbos",
+    "edition": 2020,
+    "selection": "Žodynas",
+    "excluded": [
+      "личные имена",
+      "названия городов",
+      "названия стран"
+    ]
+  },
+  "chapters": [
+    {
+      "id": "ne-dienos-01",
+      "order": 1,
+      "titleLt": "Pirmas skyrius: abėcėlė; šalys, miestai, gyventojai, vardai",
+      "titleRu": "1. Алфавит; страны, города, жители, имена",
+      "sourcePdfPage": 17,
+      "terms": [
+        {
+          "lit": "abėcėlė",
+          "ru": "алфавит",
+          "type": "n"
+        },
+        {
+          "lit": "gyventojas, gyventoja",
+          "ru": "житель, жительница",
+          "type": "n"
+        },
+        {
+          "lit": "vardas",
+          "ru": "имя",
+          "type": "n"
+        },
+        {
+          "lit": "amerikietis, amerikietė",
+          "ru": "американец, американка",
+          "type": "n"
+        },
+        {
+          "lit": "bulgaras, bulgarė",
+          "ru": "болгарин, болгарка",
+          "type": "n"
+        },
+        {
+          "lit": "čekas, čekė",
+          "ru": "чех, чешка",
+          "type": "n"
+        },
+        {
+          "lit": "danas, danė",
+          "ru": "датчанин, датчанка",
+          "type": "n"
+        },
+        {
+          "lit": "estas, estė",
+          "ru": "эстонец, эстонка",
+          "type": "n"
+        },
+        {
+          "lit": "filipinietis, filipinietė",
+          "ru": "филиппинец, филиппинка",
+          "type": "n"
+        },
+        {
+          "lit": "graikas, graikė",
+          "ru": "грек, гречанка",
+          "type": "n"
+        },
+        {
+          "lit": "havajietis, havajietė",
+          "ru": "гаваец, гавайка",
+          "type": "n"
+        },
+        {
+          "lit": "ispanas, ispanė",
+          "ru": "испанец, испанка",
+          "type": "n"
+        },
+        {
+          "lit": "japonas, japonė",
+          "ru": "японец, японка",
+          "type": "n"
+        },
+        {
+          "lit": "kinas, kinė",
+          "ru": "китаец, китаянка",
+          "type": "n"
+        },
+        {
+          "lit": "lietuvis, lietuvė",
+          "ru": "литовец, литовка",
+          "type": "n"
+        },
+        {
+          "lit": "moldavas, moldavė",
+          "ru": "молдаванин, молдаванка",
+          "type": "n"
+        },
+        {
+          "lit": "norvegas, norvegė",
+          "ru": "норвежец, норвежка",
+          "type": "n"
+        },
+        {
+          "lit": "olandas, olandė",
+          "ru": "голландец, голландка",
+          "type": "n"
+        },
+        {
+          "lit": "prancūzas, prancūzė",
+          "ru": "француз, француженка",
+          "type": "n"
+        },
+        {
+          "lit": "rusas, rusė",
+          "ru": "русский, русская",
+          "type": "n"
+        },
+        {
+          "lit": "suomis, suomė",
+          "ru": "финн, финка",
+          "type": "n"
+        },
+        {
+          "lit": "švedas, švedė",
+          "ru": "швед, шведка",
+          "type": "n"
+        },
+        {
+          "lit": "turkas, turkė",
+          "ru": "турок, турчанка",
+          "type": "n"
+        },
+        {
+          "lit": "ukrainietis, ukrainietė",
+          "ru": "украинец, украинка",
+          "type": "n"
+        },
+        {
+          "lit": "vokietis, vokietė",
+          "ru": "немец, немка",
+          "type": "n"
+        },
+        {
+          "lit": "zimbabvietis, zimbabvietė",
+          "ru": "зимбабвиец, зимбабвийка",
+          "type": "n"
+        },
+        {
+          "lit": "žydas, žydė",
+          "ru": "еврей, еврейка",
+          "type": "n"
+        }
+      ]
+    },
+    {
+      "id": "ne-dienos-02",
+      "order": 2,
+      "titleLt": "Antras skyrius: miestas, senamiestis",
+      "titleRu": "2. Город, старый город",
+      "sourcePdfPage": 33,
+      "terms": [
+        {
+          "lit": "bankas",
+          "ru": "банк",
+          "type": "n"
+        },
+        {
+          "lit": "baras",
+          "ru": "бар",
+          "type": "n"
+        },
+        {
+          "lit": "baseinas",
+          "ru": "бассейн",
+          "type": "n"
+        },
+        {
+          "lit": "biblioteka",
+          "ru": "библиотека",
+          "type": "n"
+        },
+        {
+          "lit": "bokštas",
+          "ru": "башня",
+          "type": "n"
+        },
+        {
+          "lit": "fontanas",
+          "ru": "фонтан",
+          "type": "n"
+        },
+        {
+          "lit": "kirpykla",
+          "ru": "парикмахерская",
+          "type": "n"
+        },
+        {
+          "lit": "knygynas",
+          "ru": "книжный магазин",
+          "type": "n"
+        },
+        {
+          "lit": "klubas",
+          "ru": "клуб",
+          "type": "n"
+        },
+        {
+          "lit": "mokykla",
+          "ru": "школа",
+          "type": "n"
+        },
+        {
+          "lit": "muziejus",
+          "ru": "музей",
+          "type": "n"
+        },
+        {
+          "lit": "operos teatras",
+          "ru": "оперный театр",
+          "type": "n"
+        },
+        {
+          "lit": "oro uostas",
+          "ru": "аэропорт",
+          "type": "n"
+        },
+        {
+          "lit": "sankryža",
+          "ru": "перекрёсток",
+          "type": "n"
+        },
+        {
+          "lit": "sporto klubas",
+          "ru": "спортивный клуб",
+          "type": "n"
+        },
+        {
+          "lit": "stotelė",
+          "ru": "остановка",
+          "type": "n"
+        },
+        {
+          "lit": "stotis, -ies",
+          "ru": "станция, вокзал",
+          "type": "n"
+        },
+        {
+          "lit": "šviesoforas",
+          "ru": "светофор",
+          "type": "n"
+        },
+        {
+          "lit": "teatras",
+          "ru": "театр",
+          "type": "n"
+        },
+        {
+          "lit": "uostas",
+          "ru": "порт",
+          "type": "n"
+        },
+        {
+          "lit": "ežeras",
+          "ru": "озеро",
+          "type": "n"
+        },
+        {
+          "lit": "jūra",
+          "ru": "море",
+          "type": "n"
+        },
+        {
+          "lit": "atostogauti, atostogauja, atostogavo",
+          "ru": "отдыхать, быть в отпуске",
+          "type": "v"
+        },
+        {
+          "lit": "eiti, eina, ėjo",
+          "ru": "идти",
+          "type": "v"
+        },
+        {
+          "lit": "skambinti, skambina, skambino",
+          "ru": "звонить",
+          "type": "v"
+        },
+        {
+          "lit": "skubėti, skuba, skubėjo",
+          "ru": "спешить",
+          "type": "v"
+        },
+        {
+          "lit": "susitikti, susitinka, susitiko",
+          "ru": "встречаться, встретиться",
+          "type": "v"
+        },
+        {
+          "lit": "važiuoti, važiuoja, važiavo",
+          "ru": "ехать",
+          "type": "v"
+        },
+        {
+          "lit": "vėluoti, vėluoja, vėlavo",
+          "ru": "опаздывать",
+          "type": "v"
+        },
+        {
+          "lit": "aikštė",
+          "ru": "площадь",
+          "type": "n"
+        },
+        {
+          "lit": "ambasada",
+          "ru": "посольство",
+          "type": "n"
+        },
+        {
+          "lit": "bažnyčia",
+          "ru": "церковь",
+          "type": "n"
+        },
+        {
+          "lit": "bendrabutis, -io",
+          "ru": "общежитие",
+          "type": "n"
+        },
+        {
+          "lit": "gatvė",
+          "ru": "улица",
+          "type": "n"
+        },
+        {
+          "lit": "upė",
+          "ru": "река",
+          "type": "n"
+        },
+        {
+          "lit": "parkas",
+          "ru": "парк",
+          "type": "n"
+        },
+        {
+          "lit": "ligoninė",
+          "ru": "больница",
+          "type": "n"
+        },
+        {
+          "lit": "vaistinė",
+          "ru": "аптека",
+          "type": "n"
+        },
+        {
+          "lit": "parduotuvė",
+          "ru": "магазин",
+          "type": "n"
+        },
+        {
+          "lit": "pilis, -ies",
+          "ru": "замок",
+          "type": "n"
+        },
+        {
+          "lit": "tiltas",
+          "ru": "мост",
+          "type": "n"
+        },
+        {
+          "lit": "turgus",
+          "ru": "рынок",
+          "type": "n"
+        },
+        {
+          "lit": "restoranas",
+          "ru": "ресторан",
+          "type": "n"
+        },
+        {
+          "lit": "viešbutis, -io",
+          "ru": "гостиница",
+          "type": "n"
+        },
+        {
+          "lit": "ministerija",
+          "ru": "министерство",
+          "type": "n"
+        },
+        {
+          "lit": "paštas",
+          "ru": "почта",
+          "type": "n"
+        },
+        {
+          "lit": "kavinė",
+          "ru": "кафе",
+          "type": "n"
+        },
+        {
+          "lit": "kioskas",
+          "ru": "киоск",
+          "type": "n"
+        },
+        {
+          "lit": "kino teatras",
+          "ru": "кинотеатр",
+          "type": "n"
+        }
+      ]
+    },
+    {
+      "id": "ne-dienos-03",
+      "order": 3,
+      "titleLt": "Trečias skyrius: čia mano šeima",
+      "titleRu": "3. Это моя семья",
+      "sourcePdfPage": 56,
+      "terms": [
+        {
+          "lit": "šeima",
+          "ru": "семья",
+          "type": "n"
+        },
+        {
+          "lit": "vyras",
+          "ru": "мужчина; муж",
+          "type": "n"
+        },
+        {
+          "lit": "žmona",
+          "ru": "жена",
+          "type": "n"
+        },
+        {
+          "lit": "brolis, -io",
+          "ru": "брат",
+          "type": "n"
+        },
+        {
+          "lit": "sesuo",
+          "ru": "сестра",
+          "type": "n"
+        },
+        {
+          "lit": "pusseserė",
+          "ru": "двоюродная сестра",
+          "type": "n"
+        },
+        {
+          "lit": "galėti, gali, galėjo",
+          "ru": "мочь",
+          "type": "v"
+        },
+        {
+          "lit": "mylėti, myli, mylėjo",
+          "ru": "любить",
+          "type": "v"
+        },
+        {
+          "lit": "norėti, nori, norėjo",
+          "ru": "хотеть",
+          "type": "v"
+        },
+        {
+          "lit": "pasiilgti, pasiilgsta, pasiilgo",
+          "ru": "скучать по",
+          "type": "v"
+        },
+        {
+          "lit": "giminės",
+          "ru": "родственники",
+          "type": "n"
+        },
+        {
+          "lit": "vaikas",
+          "ru": "ребёнок",
+          "type": "n"
+        },
+        {
+          "lit": "kūdikis, -io",
+          "ru": "младенец",
+          "type": "n"
+        },
+        {
+          "lit": "anūkas, anūkė",
+          "ru": "внук, внучка",
+          "type": "n"
+        },
+        {
+          "lit": "vedęs, ištekėjusi",
+          "ru": "женатый, замужняя",
+          "type": "adj"
+        },
+        {
+          "lit": "išsiskyręs, išsiskyrusi",
+          "ru": "разведённый, разведённая",
+          "type": "adj"
+        },
+        {
+          "lit": "miręs, mirusi",
+          "ru": "умерший, умершая",
+          "type": "adj"
+        },
+        {
+          "lit": "sėdėti, sėdi, sėdėjo",
+          "ru": "сидеть",
+          "type": "v"
+        },
+        {
+          "lit": "stovėti, stovi, stovėjo",
+          "ru": "стоять",
+          "type": "v"
+        },
+        {
+          "lit": "turėti, turi, turėjo",
+          "ru": "иметь",
+          "type": "v"
+        },
+        {
+          "lit": "žiūrėti, žiūri, žiūrėjo",
+          "ru": "смотреть",
+          "type": "v"
+        },
+        {
+          "lit": "girdėti, girdi, girdėjo",
+          "ru": "слышать",
+          "type": "v"
+        },
+        {
+          "lit": "mėgti, mėgsta, mėgo",
+          "ru": "любить, нравиться",
+          "type": "v"
+        },
+        {
+          "lit": "susipažinti, susipažįsta, susipažino",
+          "ru": "познакомиться",
+          "type": "v"
+        },
+        {
+          "lit": "žaisti, žaidžia, žaidė",
+          "ru": "играть",
+          "type": "v"
+        },
+        {
+          "lit": "motina / mama",
+          "ru": "мать, мама",
+          "type": "n"
+        },
+        {
+          "lit": "tėvas / tėtis, -io",
+          "ru": "отец, папа",
+          "type": "n"
+        },
+        {
+          "lit": "tėvai",
+          "ru": "родители",
+          "type": "n"
+        },
+        {
+          "lit": "sūnus",
+          "ru": "сын",
+          "type": "n"
+        },
+        {
+          "lit": "duktė",
+          "ru": "дочь",
+          "type": "n"
+        },
+        {
+          "lit": "senelis, -io",
+          "ru": "дедушка",
+          "type": "n"
+        },
+        {
+          "lit": "senelė / močiutė",
+          "ru": "бабушка",
+          "type": "n"
+        },
+        {
+          "lit": "prosenelis, -io",
+          "ru": "прадедушка",
+          "type": "n"
+        },
+        {
+          "lit": "prosenelė",
+          "ru": "прабабушка",
+          "type": "n"
+        },
+        {
+          "lit": "dėdė",
+          "ru": "дядя",
+          "type": "n"
+        },
+        {
+          "lit": "teta",
+          "ru": "тётя",
+          "type": "n"
+        },
+        {
+          "lit": "pusbrolis, -io",
+          "ru": "двоюродный брат",
+          "type": "n"
+        }
+      ]
+    },
+    {
+      "id": "ne-dienos-04",
+      "order": 4,
+      "titleLt": "Ketvirtas skyrius: maistas ir valgymas",
+      "titleRu": "4. Еда и приём пищи",
+      "sourcePdfPage": 81,
+      "terms": [
+        {
+          "lit": "mėgti, mėgsta, mėgo",
+          "ru": "любить, нравиться",
+          "type": "v"
+        },
+        {
+          "lit": "patikti, patinka, patiko",
+          "ru": "нравиться",
+          "type": "v"
+        },
+        {
+          "lit": "ragauti, ragauja, ragavo",
+          "ru": "пробовать на вкус",
+          "type": "v"
+        },
+        {
+          "lit": "valgyti, valgo, valgė",
+          "ru": "есть",
+          "type": "v"
+        },
+        {
+          "lit": "gerti, geria, gėrė",
+          "ru": "пить",
+          "type": "v"
+        },
+        {
+          "lit": "pusryčiauti, pusryčiauja, pusryčiavo",
+          "ru": "завтракать",
+          "type": "v"
+        },
+        {
+          "lit": "pietauti, pietauja, pietavo",
+          "ru": "обедать",
+          "type": "v"
+        },
+        {
+          "lit": "vakarieniauti, vakarieniauja, vakarieniavo",
+          "ru": "ужинать",
+          "type": "v"
+        },
+        {
+          "lit": "kviesti, kviečia, kvietė",
+          "ru": "приглашать",
+          "type": "v"
+        },
+        {
+          "lit": "laukti, laukia, laukė",
+          "ru": "ждать",
+          "type": "v"
+        },
+        {
+          "lit": "virti, verda, virė",
+          "ru": "варить",
+          "type": "v"
+        },
+        {
+          "lit": "kepti, kepa, kepė",
+          "ru": "печь, жарить",
+          "type": "v"
+        },
+        {
+          "lit": "daryti, daro, darė",
+          "ru": "делать",
+          "type": "v"
+        },
+        {
+          "lit": "imti, ima, ėmė",
+          "ru": "брать",
+          "type": "v"
+        },
+        {
+          "lit": "duoti, duoda, davė",
+          "ru": "давать",
+          "type": "v"
+        },
+        {
+          "lit": "pilti, pila, pylė",
+          "ru": "наливать, сыпать",
+          "type": "v"
+        },
+        {
+          "lit": "dėti, deda, dėjo",
+          "ru": "класть",
+          "type": "v"
+        },
+        {
+          "lit": "maišyti, maišo, maišė",
+          "ru": "мешать",
+          "type": "v"
+        },
+        {
+          "lit": "pjaustyti, pjausto, pjaustė",
+          "ru": "нарезать",
+          "type": "v"
+        },
+        {
+          "lit": "pašildyti, pašildo, pašildė",
+          "ru": "подогреть",
+          "type": "v"
+        },
+        {
+          "lit": "atrodyti, atrodo, atrodė",
+          "ru": "выглядеть, казаться",
+          "type": "v"
+        },
+        {
+          "lit": "manyti, mano, manė",
+          "ru": "полагать, думать",
+          "type": "v"
+        },
+        {
+          "lit": "prašyti, prašo, prašė",
+          "ru": "просить",
+          "type": "v"
+        },
+        {
+          "lit": "rašyti, rašo, rašė",
+          "ru": "писать",
+          "type": "v"
+        },
+        {
+          "lit": "skaityti, skaito, skaitė",
+          "ru": "читать",
+          "type": "v"
+        },
+        {
+          "lit": "valgymo laikas",
+          "ru": "время приёма пищи",
+          "type": "other"
+        },
+        {
+          "lit": "pietūs",
+          "ru": "обед",
+          "type": "n"
+        },
+        {
+          "lit": "pusryčiai",
+          "ru": "завтрак",
+          "type": "n"
+        },
+        {
+          "lit": "vakarienė",
+          "ru": "ужин",
+          "type": "n"
+        },
+        {
+          "lit": "šaukštas deguto statinę medaus sugadina",
+          "ru": "ложка дёгтя портит бочку мёда",
+          "type": "other"
+        },
+        {
+          "lit": "saldu gardu kaip du medu",
+          "ru": "сладко и вкусно, как два мёда",
+          "type": "other"
+        },
+        {
+          "lit": "grietinė",
+          "ru": "сметана",
+          "type": "n"
+        },
+        {
+          "lit": "grietinėlė",
+          "ru": "сливки",
+          "type": "n"
+        },
+        {
+          "lit": "jogurtas",
+          "ru": "йогурт",
+          "type": "n"
+        },
+        {
+          "lit": "kefyras",
+          "ru": "кефир",
+          "type": "n"
+        },
+        {
+          "lit": "rūgpienis, -io",
+          "ru": "простокваша",
+          "type": "n"
+        },
+        {
+          "lit": "ledai",
+          "ru": "мороженое",
+          "type": "n"
+        },
+        {
+          "lit": "pienas",
+          "ru": "молоко",
+          "type": "n"
+        },
+        {
+          "lit": "sūris, -io",
+          "ru": "сыр",
+          "type": "n"
+        },
+        {
+          "lit": "sviestas",
+          "ru": "сливочное масло",
+          "type": "n"
+        },
+        {
+          "lit": "varškė",
+          "ru": "творог",
+          "type": "n"
+        },
+        {
+          "lit": "maistas",
+          "ru": "еда, пища",
+          "type": "n"
+        },
+        {
+          "lit": "pieno produktai",
+          "ru": "молочные продукты",
+          "type": "n"
+        }
+      ]
+    },
+    {
+      "id": "ne-dienos-05",
+      "order": 5,
+      "titleLt": "Penktas skyrius: maisto įpakavimas, patiekalai",
+      "titleRu": "5. Упаковка продуктов и блюда",
+      "sourcePdfPage": 111,
+      "terms": [
+        {
+          "lit": "Raudonas kaip burokas",
+          "ru": "красный как свёкла",
+          "type": "other"
+        },
+        {
+          "lit": "Baltas kaip sniegas",
+          "ru": "белый как снег",
+          "type": "other"
+        },
+        {
+          "lit": "šaukštai po pietų",
+          "ru": "кулаками после драки",
+          "type": "other"
+        },
+        {
+          "lit": "maisto įpakavimas",
+          "ru": "упаковка продуктов",
+          "type": "other"
+        },
+        {
+          "lit": "butelis, -io",
+          "ru": "бутылка",
+          "type": "n"
+        },
+        {
+          "lit": "dėžutė",
+          "ru": "коробочка",
+          "type": "n"
+        },
+        {
+          "lit": "indelis, -io",
+          "ru": "контейнер, ёмкость",
+          "type": "n"
+        },
+        {
+          "lit": "maišelis, -io",
+          "ru": "пакетик",
+          "type": "n"
+        },
+        {
+          "lit": "pakelis, -io",
+          "ru": "пачка, упаковка",
+          "type": "n"
+        },
+        {
+          "lit": "gabalėlis, -io",
+          "ru": "кусочек",
+          "type": "n"
+        },
+        {
+          "lit": "riekė",
+          "ru": "ломтик",
+          "type": "n"
+        },
+        {
+          "lit": "stiklainis, -io",
+          "ru": "банка",
+          "type": "n"
+        },
+        {
+          "lit": "gramas",
+          "ru": "грамм",
+          "type": "n"
+        },
+        {
+          "lit": "kilogramas",
+          "ru": "килограмм",
+          "type": "n"
+        },
+        {
+          "lit": "dėžė",
+          "ru": "ящик, коробка",
+          "type": "n"
+        },
+        {
+          "lit": "kepalas",
+          "ru": "буханка",
+          "type": "n"
+        },
+        {
+          "lit": "plytelė",
+          "ru": "плитка",
+          "type": "n"
+        },
+        {
+          "lit": "patiekalai",
+          "ru": "блюда",
+          "type": "n"
+        },
+        {
+          "lit": "kainuoti, kainuoja, kainavo",
+          "ru": "стоить",
+          "type": "v"
+        },
+        {
+          "lit": "mokėti, moka, mokėjo",
+          "ru": "платить; уметь",
+          "type": "v"
+        },
+        {
+          "lit": "parduoti, parduoda, pardavė",
+          "ru": "продавать",
+          "type": "v"
+        },
+        {
+          "lit": "pirkti, perka, pirko",
+          "ru": "покупать",
+          "type": "v"
+        },
+        {
+          "lit": "reikėti, reikia, reikėjo",
+          "ru": "нужно, требоваться",
+          "type": "v"
+        },
+        {
+          "lit": "siūlyti, siūlo, siūlė",
+          "ru": "предлагать",
+          "type": "v"
+        },
+        {
+          "lit": "užsisakyti, užsisako, užsisakė",
+          "ru": "заказывать",
+          "type": "v"
+        },
+        {
+          "lit": "barščiai",
+          "ru": "борщ",
+          "type": "n"
+        },
+        {
+          "lit": "sriuba",
+          "ru": "суп",
+          "type": "n"
+        },
+        {
+          "lit": "sultinys",
+          "ru": "бульон",
+          "type": "n"
+        },
+        {
+          "lit": "šaltibarščiai",
+          "ru": "холодный литовский свекольник",
+          "type": "n"
+        },
+        {
+          "lit": "balandėliai",
+          "ru": "голубцы",
+          "type": "n"
+        },
+        {
+          "lit": "blynai",
+          "ru": "блины, оладьи",
+          "type": "n"
+        },
+        {
+          "lit": "didžkukuliai / cepelinai",
+          "ru": "цеппелины",
+          "type": "n"
+        },
+        {
+          "lit": "kepsnys",
+          "ru": "жаркое, отбивная",
+          "type": "n"
+        },
+        {
+          "lit": "kiaušinienė",
+          "ru": "яичница",
+          "type": "n"
+        },
+        {
+          "lit": "koldūnai",
+          "ru": "пельмени",
+          "type": "n"
+        },
+        {
+          "lit": "košė",
+          "ru": "каша",
+          "type": "n"
+        },
+        {
+          "lit": "kotletas",
+          "ru": "котлета",
+          "type": "n"
+        },
+        {
+          "lit": "omletas",
+          "ru": "омлет",
+          "type": "n"
+        },
+        {
+          "lit": "salotos",
+          "ru": "салат",
+          "type": "n"
+        },
+        {
+          "lit": "troškinys",
+          "ru": "рагу",
+          "type": "n"
+        },
+        {
+          "lit": "virtiniai",
+          "ru": "вареники",
+          "type": "n"
+        }
+      ]
+    },
+    {
+      "id": "ne-dienos-06",
+      "order": 6,
+      "titleLt": "Šeštas skyrius: kelionė ir transportas",
+      "titleRu": "6. Путешествия и транспорт",
+      "sourcePdfPage": 135,
+      "terms": [
+        {
+          "lit": "Moki žodį – žinai kelią",
+          "ru": "знаешь слово — знаешь дорогу",
+          "type": "other"
+        },
+        {
+          "lit": "Gera pradžia – pusė darbo",
+          "ru": "хорошее начало — половина дела",
+          "type": "other"
+        },
+        {
+          "lit": "važiuoti, važiuoja, važiavo",
+          "ru": "ехать",
+          "type": "v"
+        },
+        {
+          "lit": "vykti, vyksta, vyko",
+          "ru": "направляться, происходить",
+          "type": "v"
+        },
+        {
+          "lit": "grįžti, grįžta, grįžo",
+          "ru": "возвращаться",
+          "type": "v"
+        },
+        {
+          "lit": "keliauti, keliauja, keliavo",
+          "ru": "путешествовать",
+          "type": "v"
+        },
+        {
+          "lit": "skristi, skrenda, skrido",
+          "ru": "лететь",
+          "type": "v"
+        },
+        {
+          "lit": "plaukti, plaukia, plaukė",
+          "ru": "плыть",
+          "type": "v"
+        },
+        {
+          "lit": "vairuoti, vairuoja, vairavo",
+          "ru": "водить транспорт",
+          "type": "v"
+        },
+        {
+          "lit": "sukti, suka, suko",
+          "ru": "поворачивать",
+          "type": "v"
+        },
+        {
+          "lit": "sustoti, sustoja, sustojo",
+          "ru": "останавливаться",
+          "type": "v"
+        },
+        {
+          "lit": "vaikščioti, vaikščioja, vaikščiojo",
+          "ru": "ходить, гулять",
+          "type": "v"
+        },
+        {
+          "lit": "eiti pasivaikščioti",
+          "ru": "идти гулять",
+          "type": "other"
+        },
+        {
+          "lit": "autobusas",
+          "ru": "автобус",
+          "type": "n"
+        },
+        {
+          "lit": "automobilis, -io",
+          "ru": "автомобиль",
+          "type": "n"
+        },
+        {
+          "lit": "keltas",
+          "ru": "паром",
+          "type": "n"
+        },
+        {
+          "lit": "metro",
+          "ru": "метро",
+          "type": "n"
+        },
+        {
+          "lit": "taksi",
+          "ru": "такси",
+          "type": "n"
+        },
+        {
+          "lit": "tramvajus",
+          "ru": "трамвай",
+          "type": "n"
+        },
+        {
+          "lit": "laivas",
+          "ru": "корабль",
+          "type": "n"
+        },
+        {
+          "lit": "motociklas",
+          "ru": "мотоцикл",
+          "type": "n"
+        },
+        {
+          "lit": "traukinys",
+          "ru": "поезд",
+          "type": "n"
+        },
+        {
+          "lit": "troleibusas",
+          "ru": "троллейбус",
+          "type": "n"
+        },
+        {
+          "lit": "lėktuvas",
+          "ru": "самолёт",
+          "type": "n"
+        },
+        {
+          "lit": "dviratis, -io",
+          "ru": "велосипед",
+          "type": "n"
+        },
+        {
+          "lit": "keleivis, -io",
+          "ru": "пассажир",
+          "type": "n"
+        },
+        {
+          "lit": "kelionė",
+          "ru": "путешествие, поездка",
+          "type": "n"
+        },
+        {
+          "lit": "kelias",
+          "ru": "дорога, путь",
+          "type": "n"
+        },
+        {
+          "lit": "greitkelis, -io",
+          "ru": "автомагистраль",
+          "type": "n"
+        },
+        {
+          "lit": "takas",
+          "ru": "тропинка, дорожка",
+          "type": "n"
+        },
+        {
+          "lit": "dviračių takas",
+          "ru": "велодорожка",
+          "type": "n"
+        },
+        {
+          "lit": "bilietas",
+          "ru": "билет",
+          "type": "n"
+        },
+        {
+          "lit": "elektroninis bilietas",
+          "ru": "электронный билет",
+          "type": "n"
+        },
+        {
+          "lit": "bilietas pirmyn ir atgal",
+          "ru": "билет туда и обратно",
+          "type": "n"
+        },
+        {
+          "lit": "nuolaida",
+          "ru": "скидка",
+          "type": "n"
+        },
+        {
+          "lit": "vieta",
+          "ru": "место",
+          "type": "n"
+        },
+        {
+          "lit": "bauda",
+          "ru": "штраф",
+          "type": "n"
+        },
+        {
+          "lit": "transportas",
+          "ru": "транспорт",
+          "type": "n"
+        },
+        {
+          "lit": "krypties ir vietos prieveiksmiai",
+          "ru": "наречия направления и места",
+          "type": "other"
+        },
+        {
+          "lit": "greitis, -io",
+          "ru": "скорость",
+          "type": "n"
+        },
+        {
+          "lit": "kilometrai per valandą",
+          "ru": "километры в час",
+          "type": "other"
+        }
+      ]
+    },
+    {
+      "id": "ne-dienos-07",
+      "order": 7,
+      "titleLt": "Septintas skyrius: namas, butas, baldai",
+      "titleRu": "7. Дом, квартира, мебель",
+      "sourcePdfPage": 163,
+      "terms": [
+        {
+          "lit": "rūsys",
+          "ru": "подвал",
+          "type": "n"
+        },
+        {
+          "lit": "miegamasis",
+          "ru": "спальня",
+          "type": "n"
+        },
+        {
+          "lit": "svetainė",
+          "ru": "гостиная",
+          "type": "n"
+        },
+        {
+          "lit": "balkonas",
+          "ru": "балкон",
+          "type": "n"
+        },
+        {
+          "lit": "vaikų kambarys",
+          "ru": "детская комната",
+          "type": "n"
+        },
+        {
+          "lit": "virtuvė",
+          "ru": "кухня",
+          "type": "n"
+        },
+        {
+          "lit": "palėpė",
+          "ru": "чердак",
+          "type": "n"
+        },
+        {
+          "lit": "stogas",
+          "ru": "крыша",
+          "type": "n"
+        },
+        {
+          "lit": "kaminas",
+          "ru": "дымоход",
+          "type": "n"
+        },
+        {
+          "lit": "vonia ir tualetas",
+          "ru": "ванная и туалет",
+          "type": "other"
+        },
+        {
+          "lit": "prieškambaris, -io",
+          "ru": "прихожая",
+          "type": "n"
+        },
+        {
+          "lit": "pastatas",
+          "ru": "здание",
+          "type": "n"
+        },
+        {
+          "lit": "namas",
+          "ru": "дом",
+          "type": "n"
+        },
+        {
+          "lit": "butas",
+          "ru": "квартира",
+          "type": "n"
+        },
+        {
+          "lit": "garažas",
+          "ru": "гараж",
+          "type": "n"
+        },
+        {
+          "lit": "laiptinė",
+          "ru": "лестничная клетка",
+          "type": "n"
+        },
+        {
+          "lit": "liftas",
+          "ru": "лифт",
+          "type": "n"
+        },
+        {
+          "lit": "mokestis už butą, vandenį, šildymą, elektrą, dujas",
+          "ru": "плата за квартиру, воду, отопление, электричество, газ",
+          "type": "other"
+        },
+        {
+          "lit": "viduje",
+          "ru": "внутри",
+          "type": "adv"
+        },
+        {
+          "lit": "lauke",
+          "ru": "снаружи, на улице",
+          "type": "adv"
+        },
+        {
+          "lit": "siena",
+          "ru": "стена",
+          "type": "n"
+        },
+        {
+          "lit": "lubos",
+          "ru": "потолок",
+          "type": "n"
+        },
+        {
+          "lit": "grindys, -ų",
+          "ru": "пол",
+          "type": "n"
+        },
+        {
+          "lit": "durys, -ų",
+          "ru": "дверь",
+          "type": "n"
+        },
+        {
+          "lit": "raktas",
+          "ru": "ключ",
+          "type": "n"
+        },
+        {
+          "lit": "langas",
+          "ru": "окно",
+          "type": "n"
+        },
+        {
+          "lit": "palangė",
+          "ru": "подоконник",
+          "type": "n"
+        },
+        {
+          "lit": "apsigyventi, apsigyvena, apsigyveno",
+          "ru": "поселиться",
+          "type": "v"
+        },
+        {
+          "lit": "nakvoti, nakvoja, nakvojo",
+          "ru": "ночевать",
+          "type": "v"
+        },
+        {
+          "lit": "persikelti, persikelia, persikėlė",
+          "ru": "переехать, переселиться",
+          "type": "v"
+        },
+        {
+          "lit": "statyti, stato, statė",
+          "ru": "строить",
+          "type": "v"
+        },
+        {
+          "lit": "nuomoti, nuomoja, nuomojo",
+          "ru": "сдавать в аренду",
+          "type": "v"
+        },
+        {
+          "lit": "atidaryti, atidaro, atidarė",
+          "ru": "открывать",
+          "type": "v"
+        },
+        {
+          "lit": "uždaryti, uždaro, uždarė",
+          "ru": "закрывать",
+          "type": "v"
+        },
+        {
+          "lit": "atrakinti, atrakina, atrakino",
+          "ru": "отпирать",
+          "type": "v"
+        },
+        {
+          "lit": "užrakinti, užrakina, užrakino",
+          "ru": "запирать",
+          "type": "v"
+        },
+        {
+          "lit": "laiptai",
+          "ru": "лестница",
+          "type": "n"
+        }
+      ]
+    },
+    {
+      "id": "ne-dienos-08",
+      "order": 8,
+      "titleLt": "Aštuntas skyrius: oras",
+      "titleRu": "8. Погода",
+      "sourcePdfPage": 193,
+      "terms": [
+        {
+          "lit": "Lyja kaip iš kibiro",
+          "ru": "льёт как из ведра",
+          "type": "other"
+        },
+        {
+          "lit": "Baltas kaip sniegas",
+          "ru": "белый как снег",
+          "type": "other"
+        },
+        {
+          "lit": "šaltas kaip ledas",
+          "ru": "холодный как лёд",
+          "type": "other"
+        },
+        {
+          "lit": "oras",
+          "ru": "погода, воздух",
+          "type": "n"
+        },
+        {
+          "lit": "lyti, lyja, lijo",
+          "ru": "идти (о дожде)",
+          "type": "v"
+        },
+        {
+          "lit": "lietus",
+          "ru": "дождь",
+          "type": "n"
+        },
+        {
+          "lit": "bala",
+          "ru": "лужа",
+          "type": "n"
+        },
+        {
+          "lit": "snigti, sninga, snigo",
+          "ru": "идти (о снеге)",
+          "type": "v"
+        },
+        {
+          "lit": "sniegas",
+          "ru": "снег",
+          "type": "n"
+        },
+        {
+          "lit": "pūga",
+          "ru": "метель",
+          "type": "n"
+        },
+        {
+          "lit": "ledas",
+          "ru": "лёд",
+          "type": "n"
+        },
+        {
+          "lit": "šlapdriba",
+          "ru": "мокрый снег",
+          "type": "n"
+        },
+        {
+          "lit": "pūsti, pučia, pūtė",
+          "ru": "дуть",
+          "type": "v"
+        },
+        {
+          "lit": "vėjas",
+          "ru": "ветер",
+          "type": "n"
+        },
+        {
+          "lit": "audra",
+          "ru": "буря, гроза",
+          "type": "n"
+        },
+        {
+          "lit": "temperatūra",
+          "ru": "температура",
+          "type": "n"
+        },
+        {
+          "lit": "laipsnis, -io",
+          "ru": "градус",
+          "type": "n"
+        },
+        {
+          "lit": "šiluma",
+          "ru": "тепло",
+          "type": "n"
+        },
+        {
+          "lit": "atšilti, atšyla, atšilo",
+          "ru": "потеплеть",
+          "type": "v"
+        },
+        {
+          "lit": "šaltis, -io",
+          "ru": "холод, мороз",
+          "type": "n"
+        },
+        {
+          "lit": "atšalti, atšąla, atšalo",
+          "ru": "похолодать",
+          "type": "v"
+        },
+        {
+          "lit": "krituliai",
+          "ru": "осадки",
+          "type": "n"
+        },
+        {
+          "lit": "perkūnija",
+          "ru": "гроза",
+          "type": "n"
+        },
+        {
+          "lit": "griaustinis, -io",
+          "ru": "гром",
+          "type": "n"
+        },
+        {
+          "lit": "žaibas",
+          "ru": "молния",
+          "type": "n"
+        },
+        {
+          "lit": "šviesti, šviečia, švietė",
+          "ru": "светить",
+          "type": "v"
+        },
+        {
+          "lit": "saulė",
+          "ru": "солнце",
+          "type": "n"
+        },
+        {
+          "lit": "pragiedruliai",
+          "ru": "прояснения",
+          "type": "n"
+        },
+        {
+          "lit": "dangus",
+          "ru": "небо",
+          "type": "n"
+        },
+        {
+          "lit": "debesis, -ies; -ų",
+          "ru": "облако",
+          "type": "n"
+        },
+        {
+          "lit": "vaivorykštė",
+          "ru": "радуга",
+          "type": "n"
+        },
+        {
+          "lit": "rūkas",
+          "ru": "туман",
+          "type": "n"
+        },
+        {
+          "lit": "bjaurus, -i",
+          "ru": "противный, плохой",
+          "type": "adj"
+        },
+        {
+          "lit": "debesuotas, -a",
+          "ru": "облачный",
+          "type": "adj"
+        },
+        {
+          "lit": "drėgnas, -a",
+          "ru": "влажный",
+          "type": "adj"
+        },
+        {
+          "lit": "giedras, -a",
+          "ru": "ясный",
+          "type": "adj"
+        },
+        {
+          "lit": "lietingas, -a",
+          "ru": "дождливый",
+          "type": "adj"
+        },
+        {
+          "lit": "saulėtas, -a",
+          "ru": "солнечный",
+          "type": "adj"
+        },
+        {
+          "lit": "sausas, -a",
+          "ru": "сухой",
+          "type": "adj"
+        },
+        {
+          "lit": "slidus, -i",
+          "ru": "скользкий",
+          "type": "adj"
+        },
+        {
+          "lit": "šlapias, -ia",
+          "ru": "мокрый",
+          "type": "adj"
+        },
+        {
+          "lit": "tirštas, -a",
+          "ru": "густой",
+          "type": "adj"
+        },
+        {
+          "lit": "vėjuotas, -a",
+          "ru": "ветреный",
+          "type": "adj"
+        },
+        {
+          "lit": "šiaurė",
+          "ru": "север",
+          "type": "n"
+        },
+        {
+          "lit": "pietūs",
+          "ru": "юг",
+          "type": "n"
+        },
+        {
+          "lit": "rytai",
+          "ru": "восток",
+          "type": "n"
+        },
+        {
+          "lit": "vakarai",
+          "ru": "запад",
+          "type": "n"
+        },
+        {
+          "lit": "visur",
+          "ru": "везде",
+          "type": "adv"
+        },
+        {
+          "lit": "kai kur",
+          "ru": "кое-где",
+          "type": "adv"
+        },
+        {
+          "lit": "savi marškiniai arčiau kūno",
+          "ru": "своя рубашка ближе к телу",
+          "type": "other"
+        },
+        {
+          "lit": "sutinka pagal drabužį, palydi pagal protą",
+          "ru": "встречают по одёжке, провожают по уму",
+          "type": "other"
+        },
+        {
+          "lit": "Auksas ir pelenuose žiba",
+          "ru": "золото и в пепле блестит",
+          "type": "other"
+        },
+        {"lit":"drabužiai","ru":"одежда","type":"n"},{"lit":"medžiagos","ru":"материалы, ткани","type":"n"},{"lit":"avalynė","ru":"обувь","type":"n"},{"lit":"papuošalai","ru":"украшения","type":"n"},
+        {"lit":"dėvėti, dėvi, dėvėjo","ru":"носить (одежду)","type":"v"},{"lit":"vilkėti, vilki, vilkėjo","ru":"носить (одежду)","type":"v"},{"lit":"apsirengti, apsirengia, apsirengė","ru":"одеться","type":"v"},{"lit":"nusirengti, nusirengia, nusirengė","ru":"раздеться","type":"v"},{"lit":"apsiauti, apsiauna, apsiavė","ru":"обуться","type":"v"},{"lit":"nusiauti, nusiauna, nusiavė","ru":"разуться","type":"v"},{"lit":"yra apsirengęs / yra apsirengusi","ru":"одет, одета","type":"other"},{"lit":"pasimatuoti, pasimatuoja, pasimatavo","ru":"примерить","type":"v"},{"lit":"parodyti, parodo, parodė","ru":"показать","type":"v"},{"lit":"tikti, tinka, tiko","ru":"подходить","type":"v"},{"lit":"patarti, pataria, patarė","ru":"советовать","type":"v"},{"lit":"megzti, mezga, mezgė","ru":"вязать","type":"v"},{"lit":"siūti, siuva, siuvo","ru":"шить","type":"v"},
+        {"lit":"skrybėlė","ru":"шляпа","type":"n"},{"lit":"šalikėlis, -io","ru":"шейный платок","type":"n"},{"lit":"kailiniai","ru":"шуба","type":"n"},{"lit":"dydis, -io","ru":"размер","type":"n"},{"lit":"madingas, -a","ru":"модный","type":"adj"},{"lit":"senamadiškas (nemadingas), -a","ru":"старомодный (немодный)","type":"adj"},{"lit":"kaklaraištis, -io","ru":"галстук","type":"n"},{"lit":"liemenė","ru":"жилет","type":"n"},{"lit":"švarkas","ru":"пиджак","type":"n"},{"lit":"striukė","ru":"куртка","type":"n"},{"lit":"paltas","ru":"пальто","type":"n"},{"lit":"bateliai","ru":"туфли","type":"n"},{"lit":"kepurė","ru":"шапка","type":"n"},{"lit":"kostiumas","ru":"костюм","type":"n"},{"lit":"kostiumėlis, -io","ru":"женский костюм","type":"n"},{"lit":"megztinis, -io","ru":"свитер","type":"n"},{"lit":"sportbačiai","ru":"кроссовки","type":"n"},{"lit":"diržas","ru":"ремень","type":"n"},{"lit":"palaidinė","ru":"блузка","type":"n"},{"lit":"suknelė","ru":"платье","type":"n"},{"lit":"skara, skarelė","ru":"платок, косынка","type":"n"},{"lit":"guminiai batai","ru":"резиновые сапоги","type":"n"},{"lit":"kelnės","ru":"брюки","type":"n"},{"lit":"batai","ru":"ботинки, обувь","type":"n"},{"lit":"šalikas","ru":"шарф","type":"n"},{"lit":"nosinė","ru":"носовой платок","type":"n"},{"lit":"marškinėliai","ru":"футболка","type":"n"},{"lit":"džinsai","ru":"джинсы","type":"n"},{"lit":"kojinės","ru":"носки","type":"n"},{"lit":"pirštinės","ru":"перчатки","type":"n"},{"lit":"sijonas","ru":"юбка","type":"n"},{"lit":"marškiniai","ru":"рубашка","type":"n"},
+        {"lit":"raštuotas, -a","ru":"узорчатый","type":"adj"},{"lit":"gėlėtas, -a","ru":"цветочный","type":"adj"},{"lit":"languotas, -a","ru":"клетчатый","type":"adj"},{"lit":"vienspalvis, -ė","ru":"однотонный","type":"adj"},{"lit":"dryžuotas, -a","ru":"полосатый","type":"adj"},{"lit":"taškuotas, -a","ru":"в горошек","type":"adj"},{"lit":"margas, -a","ru":"пёстрый","type":"adj"},{"lit":"ryškus, -i","ru":"яркий","type":"adj"},
+        {"lit":"saga","ru":"пуговица","type":"n"},{"lit":"užtrauktukas","ru":"молния","type":"n"},{"lit":"kišenė","ru":"карман","type":"n"},{"lit":"krepšys","ru":"сумка","type":"n"},{"lit":"kuprinė","ru":"рюкзак","type":"n"},{"lit":"piniginė","ru":"кошелёк","type":"n"},{"lit":"portfelis, -io","ru":"портфель","type":"n"},{"lit":"rankinė","ru":"дамская сумка","type":"n"},{"lit":"naktiniai marškiniai","ru":"ночная рубашка","type":"n"},{"lit":"skrybėlaitė","ru":"шляпка","type":"n"},
+        {"lit":"vilna – vilnonis, -ė","ru":"шерсть — шерстяной","type":"other"},{"lit":"medvilnė – medvilninis, -ė","ru":"хлопок — хлопковый","type":"other"},{"lit":"šilkas – šilkinis, -ė","ru":"шёлк — шёлковый","type":"other"},{"lit":"oda – odinis, -ė","ru":"кожа — кожаный","type":"other"},{"lit":"sintetika – sintetinis, -ė","ru":"синтетика — синтетический","type":"other"},{"lit":"kailis – kailinis, -ė","ru":"мех — меховой","type":"other"},{"lit":"natūralus, -i","ru":"натуральный","type":"adj"},{"lit":"dirbtinis, -ė","ru":"искусственный","type":"adj"},{"lit":"švelnus, -i","ru":"мягкий","type":"adj"},{"lit":"šiurkštus, -i","ru":"грубый, шершавый","type":"adj"},{"lit":"sidabras – sidabrinis, -ė","ru":"серебро — серебряный","type":"other"},{"lit":"auksas – auksinis, -ė","ru":"золото — золотой","type":"other"},{"lit":"gintaras – gintarinis, -ė","ru":"янтарь — янтарный","type":"other"},
+        {"lit":"pėdkelnės","ru":"колготки","type":"n"},{"lit":"skėtis, -io","ru":"зонт","type":"n"},{"lit":"pižama","ru":"пижама","type":"n"},{"lit":"šlepetės","ru":"тапочки","type":"n"},{"lit":"apatiniai marškinėliai","ru":"майка","type":"n"},{"lit":"kelnaitės","ru":"трусы","type":"n"},{"lit":"liemenėlė","ru":"бюстгальтер","type":"n"},{"lit":"basutės","ru":"босоножки","type":"n"},{"lit":"auskarai","ru":"серьги","type":"n"},{"lit":"grandinėlė","ru":"цепочка","type":"n"},{"lit":"žiedas","ru":"кольцо","type":"n"},{"lit":"karoliai","ru":"бусы","type":"n"},{"lit":"segė","ru":"брошь","type":"n"},{"lit":"apyrankė","ru":"браслет","type":"n"}
+      ]
+    },
+    {
+      "id": "ne-dienos-09",
+      "order": 9,
+      "titleLt": "Devintas skyrius: kūno dalys, išvaizda",
+      "titleRu": "9. Части тела и внешность",
+      "sourcePdfPage": 215,
+      "terms": [
+        {
+          "lit": "sveikas kaip ridikas",
+          "ru": "здоров как редиска",
+          "type": "other"
+        },
+        {
+          "lit": "Auksinė širdis",
+          "ru": "золотое сердце",
+          "type": "other"
+        },
+        {
+          "lit": "Ledinė širdis",
+          "ru": "ледяное сердце",
+          "type": "other"
+        },
+        {
+          "lit": "Auksinės rankos",
+          "ru": "золотые руки",
+          "type": "other"
+        },
+        {
+          "lit": "Galva kaip kopūstas",
+          "ru": "голова как кочан капусты",
+          "type": "other"
+        },
+        {
+          "lit": "Nekišk nosies, kur nereikia",
+          "ru": "не суй нос куда не надо",
+          "type": "other"
+        },
+        {
+          "lit": "galva",
+          "ru": "голова",
+          "type": "n"
+        },
+        {
+          "lit": "kaklas",
+          "ru": "шея",
+          "type": "n"
+        },
+        {
+          "lit": "pečiai",
+          "ru": "плечи",
+          "type": "n"
+        },
+        {
+          "lit": "krūtinė",
+          "ru": "грудь",
+          "type": "n"
+        },
+        {
+          "lit": "ranka",
+          "ru": "рука",
+          "type": "n"
+        },
+        {
+          "lit": "pirštas",
+          "ru": "палец",
+          "type": "n"
+        },
+        {
+          "lit": "pilvas",
+          "ru": "живот",
+          "type": "n"
+        },
+        {
+          "lit": "nugara",
+          "ru": "спина",
+          "type": "n"
+        },
+        {
+          "lit": "koja",
+          "ru": "нога",
+          "type": "n"
+        },
+        {
+          "lit": "pėda",
+          "ru": "ступня",
+          "type": "n"
+        },
+        {
+          "lit": "kūnas",
+          "ru": "тело",
+          "type": "n"
+        },
+        {
+          "lit": "išvaizda",
+          "ru": "внешность",
+          "type": "n"
+        },
+        {
+          "lit": "figūra",
+          "ru": "фигура",
+          "type": "n"
+        },
+        {
+          "lit": "lieknas, -a",
+          "ru": "стройный",
+          "type": "adj"
+        },
+        {
+          "lit": "stambus, -i",
+          "ru": "крупный, полный",
+          "type": "adj"
+        },
+        {
+          "lit": "ūgis, -io",
+          "ru": "рост",
+          "type": "n"
+        },
+        {
+          "lit": "svoris, -io",
+          "ru": "вес",
+          "type": "n"
+        },
+        {
+          "lit": "skruostas",
+          "ru": "щека",
+          "type": "n"
+        },
+        {
+          "lit": "burna",
+          "ru": "рот",
+          "type": "n"
+        },
+        {
+          "lit": "kakta",
+          "ru": "лоб",
+          "type": "n"
+        },
+        {
+          "lit": "dantis, -ies; -ų",
+          "ru": "зуб",
+          "type": "n"
+        },
+        {
+          "lit": "smakras",
+          "ru": "подбородок",
+          "type": "n"
+        },
+        {
+          "lit": "veidas",
+          "ru": "лицо",
+          "type": "n"
+        },
+        {
+          "lit": "apvalus",
+          "ru": "круглый",
+          "type": "adj"
+        },
+        {
+          "lit": "pailgas",
+          "ru": "вытянутый",
+          "type": "adj"
+        },
+        {
+          "lit": "kampuotas",
+          "ru": "угловатый",
+          "type": "adj"
+        },
+        {
+          "lit": "strazdanos",
+          "ru": "веснушки",
+          "type": "n"
+        },
+        {
+          "lit": "strazdanotas, -a",
+          "ru": "веснушчатый",
+          "type": "adj"
+        },
+        {
+          "lit": "antakis, -io",
+          "ru": "бровь",
+          "type": "n"
+        },
+        {
+          "lit": "akis, -ies",
+          "ru": "глаз",
+          "type": "n"
+        },
+        {
+          "lit": "nosis, -ies",
+          "ru": "нос",
+          "type": "n"
+        },
+        {
+          "lit": "lūpos",
+          "ru": "губы",
+          "type": "n"
+        },
+        {
+          "lit": "blakstienos",
+          "ru": "ресницы",
+          "type": "n"
+        },
+        {
+          "lit": "ausis, -ies",
+          "ru": "ухо",
+          "type": "n"
+        }
+      ]
+    },
+    {
+      "id": "ne-dienos-10",
+      "order": 10,
+      "titleLt": "Dešimtas skyrius: darbas ir biuras",
+      "titleRu": "10. Работа и офис",
+      "sourcePdfPage": 239,
+      "terms": [
+        {
+          "lit": "aplankas",
+          "ru": "папка",
+          "type": "n"
+        },
+        {
+          "lit": "klijai",
+          "ru": "клей",
+          "type": "n"
+        },
+        {
+          "lit": "pieštukas",
+          "ru": "карандаш",
+          "type": "n"
+        },
+        {
+          "lit": "popieriaus lapas",
+          "ru": "лист бумаги",
+          "type": "n"
+        },
+        {
+          "lit": "sąsiuvinis, -io",
+          "ru": "тетрадь",
+          "type": "n"
+        },
+        {
+          "lit": "segtuvas",
+          "ru": "папка-регистратор",
+          "type": "n"
+        },
+        {
+          "lit": "skaičiuoklė",
+          "ru": "калькулятор",
+          "type": "n"
+        },
+        {
+          "lit": "stalinė lempa",
+          "ru": "настольная лампа",
+          "type": "n"
+        },
+        {
+          "lit": "trintukas",
+          "ru": "ластик",
+          "type": "n"
+        },
+        {
+          "lit": "užrašų knygelė",
+          "ru": "записная книжка",
+          "type": "n"
+        },
+        {
+          "lit": "darbas",
+          "ru": "работа",
+          "type": "n"
+        },
+        {
+          "lit": "skyrius",
+          "ru": "отдел",
+          "type": "n"
+        },
+        {
+          "lit": "pertrauka",
+          "ru": "перерыв",
+          "type": "n"
+        },
+        {
+          "lit": "atostogos",
+          "ru": "отпуск",
+          "type": "n"
+        },
+        {
+          "lit": "darbuotojas, darbuotoja",
+          "ru": "работник, работница",
+          "type": "n"
+        },
+        {
+          "lit": "direktorius, direktorė",
+          "ru": "директор, директорша",
+          "type": "n"
+        },
+        {
+          "lit": "viršininkas, viršininkė",
+          "ru": "начальник",
+          "type": "n"
+        },
+        {
+          "lit": "bendradarbis, -io; kolega, kolegė",
+          "ru": "коллега",
+          "type": "n"
+        },
+        {
+          "lit": "bedarbis, -io, bedarbė",
+          "ru": "безработный, безработная",
+          "type": "n"
+        },
+        {
+          "lit": "išsilavinimas",
+          "ru": "образование",
+          "type": "n"
+        },
+        {
+          "lit": "komandiruotė",
+          "ru": "командировка",
+          "type": "n"
+        },
+        {
+          "lit": "konferencija",
+          "ru": "конференция",
+          "type": "n"
+        },
+        {
+          "lit": "kursai",
+          "ru": "курсы",
+          "type": "n"
+        },
+        {
+          "lit": "posėdis, -io",
+          "ru": "заседание",
+          "type": "n"
+        },
+        {
+          "lit": "seminaras",
+          "ru": "семинар",
+          "type": "n"
+        },
+        {
+          "lit": "susirinkimas",
+          "ru": "собрание",
+          "type": "n"
+        },
+        {
+          "lit": "susitikimas",
+          "ru": "встреча",
+          "type": "n"
+        },
+        {
+          "lit": "alga / atlyginimas",
+          "ru": "зарплата",
+          "type": "n"
+        },
+        {
+          "lit": "dokumentas",
+          "ru": "документ",
+          "type": "n"
+        },
+        {
+          "lit": "gyvenimo aprašymas (CV)",
+          "ru": "резюме",
+          "type": "n"
+        },
+        {
+          "lit": "parašas",
+          "ru": "подпись",
+          "type": "n"
+        },
+        {
+          "lit": "pasas",
+          "ru": "паспорт",
+          "type": "n"
+        },
+        {
+          "lit": "prašymas",
+          "ru": "заявление",
+          "type": "n"
+        },
+        {
+          "lit": "sutartis, -ies",
+          "ru": "договор",
+          "type": "n"
+        },
+        {
+          "lit": "atleisti, atleidžia, atleido",
+          "ru": "увольнять, прощать",
+          "type": "v"
+        },
+        {
+          "lit": "dalyvauti, dalyvauja, dalyvavo",
+          "ru": "участвовать",
+          "type": "v"
+        },
+        {
+          "lit": "pasirašyti, pasirašo, pasirašė",
+          "ru": "подписывать",
+          "type": "v"
+        },
+        {
+          "lit": "priimti, priima, priėmė",
+          "ru": "принимать",
+          "type": "v"
+        },
+        {
+          "lit": "ruoštis, ruošiasi, ruošėsi",
+          "ru": "готовиться",
+          "type": "v"
+        },
+        {
+          "lit": "tartis, tariasi, tarėsi",
+          "ru": "договариваться",
+          "type": "v"
+        },
+        {
+          "lit": "kompiuteris, -io",
+          "ru": "компьютер",
+          "type": "n"
+        },
+        {
+          "lit": "pelė",
+          "ru": "мышь",
+          "type": "n"
+        },
+        {
+          "lit": "tušinukas",
+          "ru": "шариковая ручка",
+          "type": "n"
+        },
+        {
+          "lit": "žirklės",
+          "ru": "ножницы",
+          "type": "n"
+        },
+        {
+          "lit": "liniuotė",
+          "ru": "линейка",
+          "type": "n"
+        },
+        {
+          "lit": "stalčius",
+          "ru": "ящик стола",
+          "type": "n"
+        },
+        {
+          "lit": "sąvaržėlė",
+          "ru": "скрепка",
+          "type": "n"
+        },
+        {
+          "lit": "vokas",
+          "ru": "конверт",
+          "type": "n"
+        }
+      ]
+    },
+    {
+      "id": "ne-dienos-11",
+      "order": 11,
+      "titleLt": "Vienuoliktas skyrius: laisvalaikis, kaimas, gamta",
+      "titleRu": "11. Досуг, деревня и природа",
+      "sourcePdfPage": 265,
+      "terms": [
+        {
+          "lit": "laisvalaikis",
+          "ru": "свободное время",
+          "type": "n"
+        },
+        {
+          "lit": "pomėgiai",
+          "ru": "увлечения",
+          "type": "n"
+        },
+        {
+          "lit": "Rašo kaip vištos koja",
+          "ru": "пишет как курица лапой",
+          "type": "other"
+        },
+        {
+          "lit": "Dirbu kaip juodas jautis",
+          "ru": "работаю как вол",
+          "type": "other"
+        },
+        {
+          "lit": "užsispyręs kaip ožys",
+          "ru": "упрямый как козёл",
+          "type": "other"
+        },
+        {
+          "lit": "Tyli kaip pelė po šluota",
+          "ru": "тихий как мышь под метлой",
+          "type": "other"
+        },
+        {
+          "lit": "Darbšti kaip bitutė",
+          "ru": "трудолюбивая как пчёлка",
+          "type": "other"
+        },
+        {
+          "lit": "Gudrus kaip lapė",
+          "ru": "хитрый как лиса",
+          "type": "other"
+        },
+        {
+          "lit": "Bailus kaip kiškis",
+          "ru": "трусливый как заяц",
+          "type": "other"
+        },
+        {
+          "lit": "poilsis, -io",
+          "ru": "отдых",
+          "type": "n"
+        },
+        {
+          "lit": "ilsėtis, ilsisi, ilsėjosi",
+          "ru": "отдыхать",
+          "type": "v"
+        },
+        {
+          "lit": "leisti laiką",
+          "ru": "проводить время",
+          "type": "other"
+        },
+        {
+          "lit": "nuspręsti, nusprendžia, nusprendė",
+          "ru": "решить",
+          "type": "v"
+        },
+        {
+          "lit": "sumanyti, sumano, sumanė",
+          "ru": "задумать",
+          "type": "v"
+        },
+        {
+          "lit": "kaimas",
+          "ru": "деревня",
+          "type": "n"
+        },
+        {
+          "lit": "tvartas",
+          "ru": "хлев",
+          "type": "n"
+        },
+        {
+          "lit": "arklys",
+          "ru": "лошадь",
+          "type": "n"
+        },
+        {
+          "lit": "ožka",
+          "ru": "коза",
+          "type": "n"
+        },
+        {
+          "lit": "antis, -ies",
+          "ru": "утка",
+          "type": "n"
+        },
+        {
+          "lit": "kiaulė",
+          "ru": "свинья",
+          "type": "n"
+        },
+        {
+          "lit": "gaidys",
+          "ru": "петух",
+          "type": "n"
+        },
+        {
+          "lit": "katinas",
+          "ru": "кот",
+          "type": "n"
+        },
+        {
+          "lit": "viščiukai",
+          "ru": "цыплята",
+          "type": "n"
+        },
+        {
+          "lit": "višta",
+          "ru": "курица",
+          "type": "n"
+        },
+        {
+          "lit": "karvė",
+          "ru": "корова",
+          "type": "n"
+        },
+        {
+          "lit": "šulinys",
+          "ru": "колодец",
+          "type": "n"
+        },
+        {
+          "lit": "akmenys",
+          "ru": "камни",
+          "type": "n"
+        },
+        {
+          "lit": "žolė",
+          "ru": "трава",
+          "type": "n"
+        },
+        {
+          "lit": "ąsotis, -io",
+          "ru": "кувшин",
+          "type": "n"
+        },
+        {
+          "lit": "tvora",
+          "ru": "забор",
+          "type": "n"
+        },
+        {
+          "lit": "saulėgrąža",
+          "ru": "подсолнух",
+          "type": "n"
+        },
+        {
+          "lit": "kriaušė",
+          "ru": "груша",
+          "type": "n"
+        },
+        {
+          "lit": "būda",
+          "ru": "будка",
+          "type": "n"
+        },
+        {
+          "lit": "šuo",
+          "ru": "собака",
+          "type": "n"
+        },
+        {
+          "lit": "darželis, -io",
+          "ru": "садик",
+          "type": "n"
+        }
+      ]
+    },
+    {
+      "id": "ne-dienos-12",
+      "order": 12,
+      "titleLt": "Dvyliktas skyrius: šventės ir tradicijos",
+      "titleRu": "12. Праздники и традиции",
+      "sourcePdfPage": 293,
+      "terms": [
+        {
+          "lit": "švęsti, švenčia, šventė",
+          "ru": "праздновать",
+          "type": "v"
+        },
+        {
+          "lit": "Kūčios",
+          "ru": "сочельник",
+          "type": "n"
+        },
+        {
+          "lit": "Kalėdos",
+          "ru": "Рождество",
+          "type": "n"
+        },
+        {
+          "lit": "Naujieji metai",
+          "ru": "Новый год",
+          "type": "n"
+        },
+        {
+          "lit": "eglė / eglutė",
+          "ru": "ель, ёлка",
+          "type": "n"
+        },
+        {
+          "lit": "eglės šaka",
+          "ru": "еловая ветка",
+          "type": "n"
+        },
+        {
+          "lit": "žvakutė",
+          "ru": "свечка",
+          "type": "n"
+        },
+        {
+          "lit": "degti, dega, degė",
+          "ru": "гореть",
+          "type": "v"
+        },
+        {
+          "lit": "eglutės papuošalai",
+          "ru": "ёлочные украшения",
+          "type": "n"
+        },
+        {
+          "lit": "puošti, puošia, puošė",
+          "ru": "украшать",
+          "type": "v"
+        },
+        {
+          "lit": "Kalėdų Senelis",
+          "ru": "Дед Мороз",
+          "type": "n"
+        },
+        {
+          "lit": "dovana",
+          "ru": "подарок",
+          "type": "n"
+        },
+        {
+          "lit": "dovanoti, dovanoja, dovanojo",
+          "ru": "дарить",
+          "type": "v"
+        },
+        {
+          "lit": "pakuoti, pakuoja, pakavo",
+          "ru": "упаковывать",
+          "type": "v"
+        },
+        {
+          "lit": "eilėraštis, -io",
+          "ru": "стихотворение",
+          "type": "n"
+        },
+        {
+          "lit": "susitaikyti, susitaiko, susitaikė",
+          "ru": "помириться",
+          "type": "v"
+        },
+        {
+          "lit": "atleisti, atleidžia, atleido",
+          "ru": "прощать",
+          "type": "v"
+        },
+        {
+          "lit": "gerbti, gerbia, gerbė",
+          "ru": "уважать",
+          "type": "v"
+        },
+        {
+          "lit": "Velykos",
+          "ru": "Пасха",
+          "type": "n"
+        },
+        {
+          "lit": "verba",
+          "ru": "верба",
+          "type": "n"
+        },
+        {
+          "lit": "margutis, -io",
+          "ru": "пасхальное яйцо",
+          "type": "n"
+        },
+        {
+          "lit": "dažyti, dažo, dažė",
+          "ru": "красить",
+          "type": "v"
+        },
+        {
+          "lit": "Joninės / Rasos šventė",
+          "ru": "Йонинес, праздник Росы",
+          "type": "n"
+        },
+        {
+          "lit": "papartis, -io",
+          "ru": "папоротник",
+          "type": "n"
+        },
+        {
+          "lit": "paparčio žiedas",
+          "ru": "цветок папоротника",
+          "type": "n"
+        },
+        {
+          "lit": "žydėti, žydi, žydėjo",
+          "ru": "цвести",
+          "type": "v"
+        },
+        {
+          "lit": "laužas",
+          "ru": "костёр",
+          "type": "n"
+        },
+        {
+          "lit": "Užgavėnės",
+          "ru": "Масленица",
+          "type": "n"
+        },
+        {
+          "lit": "kaukė",
+          "ru": "маска",
+          "type": "n"
+        },
+        {
+          "lit": "Visų šventųjų diena",
+          "ru": "День всех святых",
+          "type": "n"
+        },
+        {
+          "lit": "Vėlinės",
+          "ru": "День поминовения усопших",
+          "type": "n"
+        },
+        {
+          "lit": "kapinės",
+          "ru": "кладбище",
+          "type": "n"
+        },
+        {
+          "lit": "kapas",
+          "ru": "могила",
+          "type": "n"
+        },
+        {
+          "lit": "vestuvės",
+          "ru": "свадьба",
+          "type": "n"
+        },
+        {
+          "lit": "nuotaka / jaunoji",
+          "ru": "невеста",
+          "type": "n"
+        },
+        {
+          "lit": "jaunasis",
+          "ru": "жених",
+          "type": "n"
+        },
+        {
+          "lit": "rūta",
+          "ru": "рута",
+          "type": "n"
+        },
+        {
+          "lit": "vainikas",
+          "ru": "венок",
+          "type": "n"
+        },
+        {
+          "lit": "pinti vainiką",
+          "ru": "плести венок",
+          "type": "other"
+        },
+        {
+          "lit": "pinti, pina, pynė",
+          "ru": "плести",
+          "type": "v"
+        },
+        {
+          "lit": "tuoktis, tuokiasi, tuokėsi",
+          "ru": "жениться, выходить замуж",
+          "type": "v"
+        },
+        {
+          "lit": "tekėti, teka, tekėjo",
+          "ru": "выходить замуж",
+          "type": "v"
+        },
+        {
+          "lit": "vesti, veda, vedė",
+          "ru": "жениться",
+          "type": "v"
+        },
+        {
+          "lit": "krikštynos",
+          "ru": "крестины",
+          "type": "n"
+        },
+        {
+          "lit": "krikšto tėvai",
+          "ru": "крёстные родители",
+          "type": "n"
+        },
+        {
+          "lit": "krikšto mama",
+          "ru": "крёстная мать",
+          "type": "n"
+        },
+        {
+          "lit": "krikšto tėvas",
+          "ru": "крёстный отец",
+          "type": "n"
+        },
+        {
+          "lit": "krikšto sūnus",
+          "ru": "крёстный сын",
+          "type": "n"
+        },
+        {
+          "lit": "krikšto duktė",
+          "ru": "крёстная дочь",
+          "type": "n"
+        },
+        {
+          "lit": "vardadienis, -io",
+          "ru": "именины",
+          "type": "n"
+        },
+        {
+          "lit": "gimtadienis, -io",
+          "ru": "день рождения",
+          "type": "n"
+        },
+        {
+          "lit": "jubiliejus",
+          "ru": "юбилей",
+          "type": "n"
+        },
+        {
+          "lit": "linkėti, linki, linkėjo",
+          "ru": "желать",
+          "type": "v"
+        },
+        {
+          "lit": "sveikinti, sveikina, sveikino",
+          "ru": "поздравлять",
+          "type": "v"
+        }
+      ]
+    }
+  ]
+}

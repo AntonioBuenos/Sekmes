@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "cards": [
+    {
+      "id": "verb-o-past",
+      "category": "Глаголы",
+      "title": "Прошедшее время: -o tipas",
+      "rule": "ragauti, ragauja, ragavo",
+      "hint": "Форма прошедшего времени меняется по лицам.",
+      "examples": ["aš ragavau — mes ragavome", "tu ragavai — jūs ragavote", "jis, ji ragavo — jie, jos ragavo"],
+      "exceptions": [],
+      "table": { "headers": ["Лицо", "Форма", "Лицо", "Форма"], "rows": [["aš", "ragavau", "mes", "ragavome"], ["tu", "ragavai", "jūs", "ragavote"], ["jis, ji", "ragavo", "jie, jos", "ragavo"]] }
+    },
+    {
+      "id": "su-instrumental",
+      "category": "Предлоги",
+      "title": "su + Įn. (Inst.) kuo?",
+      "rule": "После su используется творительный падеж — įnagininkas.",
+      "hint": "Задайте вопрос kuo? — с кем? с чем?",
+      "examples": ["Ar tu mėgsti ledus su uogiene?", "Ты любишь мороженое с вареньем?"],
+      "exceptions": ["Не путайте su с формой существительного: падеж определяется предлогом."],
+      "table": null
+    },
+    {
+      "id": "personal-pronouns-singular",
+      "category": "Местоимения",
+      "title": "Личные местоимения: vienaskaita",
+      "rule": "Склонение личных местоимений в единственном числе.",
+      "hint": "V. — vardininkas; K. — kilmininkas; N. — naudininkas; Įn. — įnagininkas.",
+      "examples": ["Vienaskaita — единственное число."],
+      "exceptions": [],
+      "table": { "headers": ["Падеж", "aš", "tu", "jis", "ji"], "rows": [["V. kas?", "aš", "tu", "jis", "ji"], ["K. ko?", "manęs", "tavęs", "jo", "jos"], ["N. kam?", "man", "tau", "jam", "jai"], ["Įn. kuo?", "manimi", "tavimi", "juo", "ja"]] }
+    },
+    {
+      "id": "personal-pronouns-plural",
+      "category": "Местоимения",
+      "title": "Личные местоимения: daugiskaita",
+      "rule": "Склонение личных местоимений во множественном числе.",
+      "hint": "Daugiskaita — множественное число.",
+      "examples": ["Mes kalbame lietuviškai. — Мы говорим по-литовски."],
+      "exceptions": [],
+      "table": { "headers": ["Падеж", "mes", "jūs", "jie", "jos"], "rows": [["V. kas?", "mes", "jūs", "jie", "jos"], ["K. ko?", "mūsų", "jūsų", "jų", "jų"], ["N. kam?", "mums", "jums", "jiems", "joms"], ["Įn. kuo?", "mumis", "jumis", "jais", "jomis"]] }
+    }
+  ]
+}

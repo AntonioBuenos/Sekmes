@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "id": "ne-dienos-be-lietuviu-kalbos",
+  "title": "Nė dienos be lietuvių kalbos",
+  "description": "Курс литовского языка: словарь по 12 темам и офлайн-аудиоматериалы.",
+  "capabilities": ["DICTIONARY", "QUIZ", "AUDIO"],
+  "visibility": "LEARNING",
+  "lessons": []
+}

@@ -2,6 +2,9 @@
   "schemaVersion": 1,
   "id": "constitution",
   "title": "Конституция Литвы",
+  "description": "Специализированный модуль для чтения Конституции и изучения терминов.",
+  "capabilities": ["DICTIONARY", "QUIZ"],
+  "visibility": "SPECIAL",
   "lessons": [
     {
       "id": "constitution-01",

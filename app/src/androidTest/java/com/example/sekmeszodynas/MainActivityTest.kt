@@ -19,19 +19,21 @@ class MainActivityTest {
 
     @Test
     fun systemBackReturnsFromThemeSelectionToDashboard() {
+        composeRule.onNodeWithText("Sekmes").performClick()
         composeRule.onNodeWithText("Словарь").performClick()
-        composeRule.onNodeWithText("Словарь: Выбор темы").assertIsDisplayed()
+        composeRule.onNodeWithText("Словарь: Sekmes").assertIsDisplayed()
 
         composeRule.activityRule.scenario.onActivity {
             it.onBackPressedDispatcher.onBackPressed()
         }
 
-        composeRule.onNodeWithText("Словарь").assertIsDisplayed()
+        composeRule.onNodeWithText("Пройти тест").assertIsDisplayed()
     }
 
     @Test
     fun quizProgressSurvivesActivityRecreation() {
-        val theme = THEMES_DATA.getValue("1")
+        val theme = THEMES_DATA.values.first()
+        composeRule.onNodeWithText("Sekmes").performClick()
         composeRule.onNodeWithText("Пройти тест").performClick()
         composeRule.onNodeWithText("${theme.title} (${theme.words.size})").performClick()
 
@@ -52,7 +54,7 @@ class MainActivityTest {
 
     @Test
     fun constitutionPreambleShowsTranslationAndCanHideIt() {
-        composeRule.onNodeWithText("Конституция Литвы").performClick()
+        composeRule.onNodeWithText("⚖️ Конституция Литвы").performClick()
         composeRule.onNodeWithText("1. Основы государства").performClick()
         composeRule.onNodeWithText("Преамбула").performClick()
 
@@ -62,5 +64,27 @@ class MainActivityTest {
         composeRule.onNodeWithText("Скрыть русский перевод").performClick()
 
         assertEquals(0, composeRule.onAllNodesWithText("ЛИТОВСКИЙ НАРОД").fetchSemanticsNodes().size)
+    }
+
+    @Test
+    fun neDienosCourseShowsThemesAndAudio() {
+        composeRule.onNodeWithText("Nė dienos be lietuvių kalbos").performClick()
+        composeRule.onNodeWithText("Словарь").performClick()
+        composeRule.onNodeWithText("Все темы курса (588)").assertIsDisplayed()
+        composeRule.onNodeWithText("Выберите урок:").assertIsDisplayed()
+
+        composeRule.activityRule.scenario.onActivity { it.onBackPressedDispatcher.onBackPressed() }
+        composeRule.onNodeWithText("Аудиокурс").performClick()
+        composeRule.onNodeWithText("Глава 1: 1 skyrius").assertIsDisplayed()
+    }
+
+    @Test
+    fun grammarCardsSupportCategorySearchAndDetail() {
+        composeRule.onNodeWithText("🧩 Грамматические карточки").performClick()
+        composeRule.onAllNodesWithText("Глаголы")[0].performClick()
+        composeRule.onNodeWithText("Прошедшее время: -o tipas").performClick()
+        composeRule.onNodeWithText("ragauti, ragauja, ragavo").assertIsDisplayed()
+        composeRule.onNodeWithText("Следующая →").performClick()
+        composeRule.onNodeWithText("su + Įn. (Inst.) kuo?").assertIsDisplayed()
     }
 }

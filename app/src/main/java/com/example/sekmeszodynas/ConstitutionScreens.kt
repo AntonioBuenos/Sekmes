@@ -38,9 +38,22 @@ import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import kotlinx.coroutines.launch
+
+/** Confirmed general-language entries: they stay in the shared dictionary, not in Constitution terms. */
+private val excludedConstitutionTermIds = setOf(
+    "word_000001", // būti
+    "word_000077", // darbas (работа)
+    "word_000110", // šeima
+    "word_000135", // žmogus
+    "word_001095", // darbas (труд, работа)
+    "word_001105", // turėti
+    "word_001106", // galėti
+    "word_001134", // pagal
+)
 
 @Composable
 fun ConstitutionHomeScreen(
@@ -237,7 +250,13 @@ private fun LinkedConstitutionText(
     onTermSelected: (WordId) -> Unit,
     color: Color = MaterialTheme.colorScheme.onSurface,
 ) {
-    val annotated = constitutionAnnotatedText(text, numericFragments, termLinks, color)
+    val annotated = constitutionAnnotatedText(
+        text = text,
+        numericFragments = numericFragments,
+        termLinks = termLinks.filterNot { it.wordId in excludedConstitutionTermIds },
+        baseColor = color,
+        termColor = MaterialTheme.colorScheme.primary,
+    )
     ClickableText(
         text = annotated,
         style = MaterialTheme.typography.bodyLarge.copy(color = color),
@@ -254,6 +273,7 @@ fun constitutionAnnotatedText(
     numericFragments: List<NumericFragment>,
     termLinks: List<ConstitutionTermLink>,
     baseColor: Color = Color.Unspecified,
+    termColor: Color = Color(0xFF1B5E20),
 ): AnnotatedString = buildAnnotatedString {
     append(text)
     numericFragments.forEach { fragment ->
@@ -270,8 +290,9 @@ fun constitutionAnnotatedText(
     termLinks.forEach { link ->
         addStyle(
             SpanStyle(
-                color = Color(0xFF1B5E20),
+                color = termColor,
                 fontWeight = FontWeight.SemiBold,
+                textDecoration = TextDecoration.Underline,
             ),
             link.start,
             link.end,
@@ -331,6 +352,7 @@ private fun constitutionWords(blockId: ConstitutionBlockId?): List<Word> {
         ?: ConstitutionStore.repository().blocks.map(ConstitutionBlock::id)
     return lessonIds
         .flatMap(catalog::wordsForLesson)
+        .filterNot { it.id in excludedConstitutionTermIds }
         .map { entry -> Word(ru = entry.ru, lt = entry.lt, type = entry.type, id = entry.id) }
         .distinctBy(Word::id)
 }

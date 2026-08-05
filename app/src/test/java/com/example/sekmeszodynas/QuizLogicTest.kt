@@ -100,18 +100,11 @@ class QuizLogicTest {
     }
 
     @Test
-    fun everyAudioTrackHasMatchingRawResource() {
-        val trackResourceNames = AUDIO_BOOKS
-            .flatMap { it.chapters }
-            .flatMap { it.tracks }
-            .map { "audio_${it.id}" }
-            .toSet()
-        val packagedAudioResources = R.raw::class.java.fields
-            .map { it.name }
-            .filter { it.startsWith("audio_") }
-            .toSet()
+    fun audioCatalogExpandsCompactTrackGroups() {
+        val courses = parseAudioCourses(
+            """{"courses":[{"courseId":"test","books":[{"number":1,"chapters":[{"number":1,"title":"Tema","trackGroups":[{"from":4,"to":5,"type":"POKALBIS","label":"dialogue"}]}]}]}]}""",
+        )
 
-        assertEquals(275, trackResourceNames.size)
-        assertEquals(trackResourceNames, packagedAudioResources)
+        assertEquals(listOf("4 | Pokalbis 1", "5 | Pokalbis 2"), courses.single().books.single().chapters.single().tracks.map { it.title })
     }
 }

@@ -5,6 +5,7 @@ data class Word(
     val lt: String,
     val type: String,
     val id: String,
+    val sourceIds: Set<String> = emptySet(),
 )
 
 data class Theme(
