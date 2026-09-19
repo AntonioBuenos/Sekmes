@@ -3,13 +3,14 @@ package com.example.sekmeszodynas.feature.vocabulary
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.rounded.ArrowBack
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import com.example.sekmeszodynas.*
 import com.example.sekmeszodynas.feature.words.asWord
 
@@ -17,6 +18,7 @@ import com.example.sekmeszodynas.feature.words.asWord
 fun GlobalVocabularyScreen(
     onDictionary: (VocabularyScope) -> Unit,
     onQuiz: (VocabularyScope) -> Unit,
+    onVisualCards: (VocabularyScope) -> Unit,
     onBack: () -> Unit,
 ) {
     var part by rememberSaveable { mutableStateOf<PartOfSpeech?>(null) }
@@ -25,9 +27,10 @@ fun GlobalVocabularyScreen(
     val scope = VocabularyScope(part, sourceId)
     val allWords = (GLOBAL_POOL + customWords.map { it.asWord() }).distinctBy(Word::id)
     val count = allWords.count(scope::contains)
+    val visualCardCount = visualVocabularyCards(scope).size
     Column(Modifier.fillMaxSize().padding(16.dp)) {
         Row(verticalAlignment = Alignment.CenterVertically) {
-            IconButton(onClick = onBack) { Text("←", fontSize = 24.sp) }
+            IconButton(onClick = onBack) { Icon(Icons.AutoMirrored.Rounded.ArrowBack, contentDescription = "Назад") }
             Text("Общий словарь", style = MaterialTheme.typography.headlineSmall)
         }
         Text("Соберите выборку из всех курсов и своих слов.", modifier = Modifier.padding(vertical = 8.dp))
@@ -43,6 +46,7 @@ fun GlobalVocabularyScreen(
         }
         Text("Доступно слов: $count", modifier = Modifier.padding(vertical = 16.dp), style = MaterialTheme.typography.titleMedium)
         Button(onClick = { onDictionary(scope) }, modifier = Modifier.fillMaxWidth(), enabled = count > 0) { Text("Открыть словарь") }
+        Button(onClick = { onVisualCards(scope) }, modifier = Modifier.fillMaxWidth().padding(top = 8.dp), enabled = visualCardCount > 0) { Text("Смотреть карточки ($visualCardCount)") }
         Button(onClick = { onQuiz(scope) }, modifier = Modifier.fillMaxWidth().padding(top = 8.dp), enabled = count > 0) { Text("Начать тест") }
     }
 }

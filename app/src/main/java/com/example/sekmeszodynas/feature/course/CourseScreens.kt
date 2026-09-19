@@ -1,49 +1,106 @@
 package com.example.sekmeszodynas.feature.course
 
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.material3.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.rounded.FactCheck
+import androidx.compose.material.icons.rounded.Gavel
+import androidx.compose.material.icons.rounded.Headphones
+import androidx.compose.material.icons.rounded.Category
+import androidx.compose.material.icons.rounded.MenuBook
+import androidx.compose.material.icons.rounded.EditNote
+import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedCard
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
-import com.example.sekmeszodynas.*
+import com.example.sekmeszodynas.AppSettings
+import com.example.sekmeszodynas.CatalogStore
+import com.example.sekmeszodynas.Course
+import com.example.sekmeszodynas.CourseCapability
+import com.example.sekmeszodynas.CourseVisibility
+import com.example.sekmeszodynas.DictionaryEntry
+import com.example.sekmeszodynas.SettingsStore
+import com.example.sekmeszodynas.Theme
+import com.example.sekmeszodynas.Word
+import com.example.sekmeszodynas.DictionaryWordsScreen
+import com.example.sekmeszodynas.QuizWordsScreen
+import com.example.sekmeszodynas.themesForCourse
+import com.example.sekmeszodynas.wordsForCourse
+import com.example.sekmeszodynas.ui.components.SekmesActionRow
+import com.example.sekmeszodynas.ui.components.SekmesCourseCard
+import com.example.sekmeszodynas.ui.components.SekmesSectionHeader
+import com.example.sekmeszodynas.ui.components.SekmesTopAppBar
+import com.example.sekmeszodynas.ui.theme.SekmesSpacing
 
 @Composable
-fun LearningHubScreen(onCourseSelected: (String) -> Unit, onConstitutionSelected: () -> Unit, onGlobalVocabulary: () -> Unit, onMyWords: () -> Unit, onGrammar: () -> Unit, onSettings: () -> Unit) {
-    val courses = CatalogStore.repository().courses.filter { it.visibility == CourseVisibility.LEARNING }
+fun LearningHubScreen(
+    onCourseSelected: (String) -> Unit,
+    onConstitutionSelected: () -> Unit,
+    onGlobalVocabulary: () -> Unit,
+    onMyWords: () -> Unit,
+    onGrammar: () -> Unit,
+) {
+    val repository = CatalogStore.repository()
+    val courses = repository.courses.filter { it.visibility == CourseVisibility.LEARNING }
+    val settings = SettingsStore.repository().settings.collectAsState(initial = AppSettings()).value
+    val continueCourse = courses.firstOrNull { it.id == settings.lastOpenedCourseId } ?: courses.firstOrNull()
+
     LazyColumn(
-        modifier = Modifier.fillMaxSize().padding(24.dp),
-        verticalArrangement = Arrangement.spacedBy(8.dp),
+        modifier = Modifier.fillMaxSize(),
+        contentPadding = PaddingValues(horizontal = SekmesSpacing.Medium, vertical = SekmesSpacing.Small),
+        verticalArrangement = Arrangement.spacedBy(SekmesSpacing.XSmall),
     ) {
-        item {
-            Text("🇱🇹 Sėkmės", style = MaterialTheme.typography.displayMedium, fontWeight = FontWeight.Bold)
-            Text("Учебные курсы", style = MaterialTheme.typography.headlineSmall, modifier = Modifier.padding(top = 12.dp))
-            Text("Выберите курс, чтобы открыть словарь, тесты и аудиоматериалы.", modifier = Modifier.padding(top = 4.dp))
-        }
-        item { TextButton(onClick = onSettings, modifier = Modifier.fillMaxWidth()) { Text("⚙️ Настройки") } }
-        item { TextButton(onClick = onMyWords, modifier = Modifier.fillMaxWidth()) { Text("✍️ Мои слова") } }
-        item { TextButton(onClick = onGrammar, modifier = Modifier.fillMaxWidth()) { Text("🧩 Грамматические карточки") } }
-        items(courses, key = Course::id) { course -> CourseCard(course) { onCourseSelected(course.id) } }
-        item { Text("Отдельные модули", style = MaterialTheme.typography.headlineSmall, modifier = Modifier.padding(top = 16.dp)) }
-        item {
-            Card(onClick = onConstitutionSelected, modifier = Modifier.fillMaxWidth(), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer)) {
-                Column(Modifier.padding(16.dp)) {
-                    Text("⚖️ Конституция Литвы", style = MaterialTheme.typography.titleLarge)
-                    Text("Параллельное чтение текста, термины и тесты по блокам.", modifier = Modifier.padding(top = 4.dp))
+        item { AppBrandHeader() }
+        item { Text("Продолжим учиться?", style = MaterialTheme.typography.headlineMedium, modifier = Modifier.padding(top = SekmesSpacing.XSmall)) }
+        continueCourse?.let { course ->
+            item {
+                Card(onClick = { onCourseSelected(course.id) }, colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer)) {
+                    Column(Modifier.padding(SekmesSpacing.Small)) {
+                        Text("Текущий курс", style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.primary)
+                        Text(course.title, style = MaterialTheme.typography.titleLarge, modifier = Modifier.padding(top = SekmesSpacing.XSmall))
+                        Text(courseMetadata(course), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onPrimaryContainer, modifier = Modifier.padding(top = SekmesSpacing.XxxSmall))
+                    }
                 }
             }
         }
+        item { SekmesSectionHeader("Быстрый доступ") }
         item {
-            Card(onClick = onGlobalVocabulary, modifier = Modifier.fillMaxWidth(), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.secondaryContainer)) {
-                Column(Modifier.padding(16.dp)) {
-                    Text("📚 Общий словарь", style = MaterialTheme.typography.titleLarge)
-                    Text("Слова всех курсов с выбором части речи и тестом.", modifier = Modifier.padding(top = 4.dp))
-                }
+            Row(horizontalArrangement = Arrangement.spacedBy(SekmesSpacing.XSmall)) {
+                QuickAccessCard("Словарь", "Все слова", Icons.Rounded.MenuBook, onGlobalVocabulary, Modifier.weight(1f))
+                QuickAccessCard("Грамматика", "Правила", Icons.Rounded.Category, onGrammar, Modifier.weight(1f))
             }
+        }
+        item {
+            Row(horizontalArrangement = Arrangement.spacedBy(SekmesSpacing.XSmall)) {
+                QuickAccessCard("Конституция", "Текст и термины", Icons.Rounded.Gavel, onConstitutionSelected, Modifier.weight(1f))
+                QuickAccessCard("Мои слова", "Личный список", Icons.Rounded.EditNote, onMyWords, Modifier.weight(1f))
+            }
+        }
+        item { SekmesSectionHeader("Курсы", modifier = Modifier.padding(top = SekmesSpacing.Small)) }
+        items(courses, key = Course::id) { course ->
+            SekmesCourseCard(course.title, course.description, courseMetadata(course), onClick = { onCourseSelected(course.id) })
         }
     }
 }
@@ -53,17 +110,15 @@ fun CourseHomeScreen(courseId: String, onDictionary: () -> Unit, onQuiz: () -> U
     val repository = CatalogStore.repository()
     val course = repository.courseById[courseId] ?: return
     val hasLessons = repository.lessonsForCourse(courseId).isNotEmpty()
-    Column(Modifier.fillMaxSize().padding(16.dp)) {
-        CourseHeader(course.title, onBack)
-        Text(course.description.ifBlank { "Учебный курс литовского языка." }, modifier = Modifier.padding(vertical = 8.dp))
-        if (!hasLessons) {
-            Card(Modifier.fillMaxWidth(), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.secondaryContainer)) {
-                Text("Материалы готовятся. Здесь появятся уроки, словарь и аудиофайлы.", modifier = Modifier.padding(16.dp))
-            }
+    Column(Modifier.fillMaxSize()) {
+        SekmesTopAppBar(course.title, subtitle = courseMetadata(course), onBack = onBack)
+        Column(Modifier.padding(horizontal = SekmesSpacing.Medium), verticalArrangement = Arrangement.spacedBy(SekmesSpacing.XSmall)) {
+            Text(course.description.ifBlank { "Учебный курс литовского языка." }, style = MaterialTheme.typography.bodyLarge)
+            if (!hasLessons) Text("Материалы готовятся. Здесь появятся уроки, словарь и аудиофайлы.", color = MaterialTheme.colorScheme.onSurfaceVariant)
+            if (hasLessons && CourseCapability.DICTIONARY in course.capabilities) SekmesActionRow("Учить слова", "Словарь по темам", Icons.Rounded.MenuBook, onDictionary, highlighted = true)
+            if (hasLessons && CourseCapability.QUIZ in course.capabilities) SekmesActionRow("Пройти тест", "Настроить и начать", Icons.Rounded.FactCheck, onQuiz)
+            if (hasLessons && CourseCapability.AUDIO in course.capabilities) SekmesActionRow("Слушать аудио", "Уроки офлайн", Icons.Rounded.Headphones, onAudio)
         }
-        CourseActionCard("📖", "Словарь", hasLessons && CourseCapability.DICTIONARY in course.capabilities, onDictionary)
-        CourseActionCard("📝", "Пройти тест", hasLessons && CourseCapability.QUIZ in course.capabilities, onQuiz)
-        CourseActionCard("🎧", "Аудиокурс", hasLessons && CourseCapability.AUDIO in course.capabilities, onAudio)
     }
 }
 
@@ -71,23 +126,13 @@ fun CourseHomeScreen(courseId: String, onDictionary: () -> Unit, onQuiz: () -> U
 fun CourseThemeSelectionScreen(courseId: String, modeTitle: String, onThemeSelected: (String?) -> Unit, onBack: () -> Unit) {
     val repository = CatalogStore.repository()
     val course = repository.courseById[courseId] ?: return
-    val themes = themesForCourse(courseId).values.sortedBy(Theme::title)
-    Column(Modifier.fillMaxSize().padding(16.dp)) {
-        CourseHeader("$modeTitle: ${course.title}", onBack)
-        if (themes.isEmpty()) {
-            Text("В этом курсе пока нет уроков.", modifier = Modifier.padding(top = 16.dp))
-            return@Column
-        }
-        Button(onClick = { onThemeSelected(null) }, modifier = Modifier.fillMaxWidth().padding(vertical = 8.dp)) {
-            Text("Все темы курса (${wordsForCourse(courseId).size})")
-        }
-        Text("Выберите урок:", modifier = Modifier.padding(vertical = 8.dp))
-        LazyColumn(Modifier.weight(1f)) {
-            items(themes, key = Theme::id) { theme ->
-                Card(onClick = { onThemeSelected(theme.id) }, modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp)) {
-                    Text("${theme.title} (${theme.words.size})", modifier = Modifier.padding(16.dp), style = MaterialTheme.typography.titleMedium)
-                }
-            }
+    val themes = themesForCourse(courseId).values.sortedBy { repository.lessonById[it.id]?.order ?: it.title.substringBefore('.').trim().toIntOrNull() ?: Int.MAX_VALUE }
+    Column(Modifier.fillMaxSize()) {
+        SekmesTopAppBar("$modeTitle: ${course.title}", onBack = onBack)
+        if (themes.isEmpty()) Text("В этом курсе пока нет уроков.", modifier = Modifier.padding(SekmesSpacing.Medium)) else LazyColumn(contentPadding = PaddingValues(horizontal = SekmesSpacing.Medium), verticalArrangement = Arrangement.spacedBy(SekmesSpacing.XSmall)) {
+            item { SekmesActionRow("Все темы курса", "${wordsForCourse(courseId).size} слов", Icons.Rounded.MenuBook, onClick = { onThemeSelected(null) }, highlighted = true) }
+            item { Text("Выберите урок", style = MaterialTheme.typography.titleMedium, modifier = Modifier.padding(top = SekmesSpacing.XSmall)) }
+            items(themes, key = Theme::id) { theme -> SekmesCourseCard(theme.title, "${theme.words.size} слов", "Открыть урок", onClick = { onThemeSelected(theme.id) }) }
         }
     }
 }
@@ -108,20 +153,25 @@ fun CourseQuizScreen(courseId: String, lessonId: String?, onQuizFinished: (Int, 
     QuizWordsScreen("course:$courseId:quiz:${lessonId ?: "all"}", words, onQuizFinished, onBack)
 }
 
-@Composable private fun CourseCard(course: Course, onClick: () -> Unit) {
-    Card(onClick = onClick, modifier = Modifier.fillMaxWidth()) {
-        Column(Modifier.padding(16.dp)) { Text(course.title, style = MaterialTheme.typography.titleLarge); Text(course.description, modifier = Modifier.padding(top = 4.dp)) }
+@Composable private fun AppBrandHeader() {
+    Row(verticalAlignment = Alignment.CenterVertically) {
+        LithuaniaMark()
+        Spacer(Modifier.width(SekmesSpacing.XSmall))
+        Column { Text("Sėkmės", style = MaterialTheme.typography.headlineMedium); Text("Литовский каждый день", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant) }
     }
 }
 
-@Composable private fun CourseActionCard(emoji: String, title: String, enabled: Boolean, onClick: () -> Unit) {
-    Card(onClick = onClick, enabled = enabled, modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp)) {
-        Row(Modifier.padding(20.dp), verticalAlignment = Alignment.CenterVertically) { Text(emoji, fontSize = 28.sp); Text(title, style = MaterialTheme.typography.titleLarge, modifier = Modifier.padding(start = 16.dp)) }
+@Composable private fun LithuaniaMark() {
+    Column(Modifier.size(34.dp).clip(MaterialTheme.shapes.small)) {
+        Box(Modifier.weight(1f).fillMaxWidth().background(MaterialTheme.colorScheme.secondary))
+        Box(Modifier.weight(1f).fillMaxWidth().background(MaterialTheme.colorScheme.primary))
+        Box(Modifier.weight(1f).fillMaxWidth().background(MaterialTheme.colorScheme.tertiary))
     }
 }
 
-@Composable private fun CourseHeader(title: String, onBack: () -> Unit) {
-    Row(verticalAlignment = Alignment.CenterVertically) { IconButton(onClick = onBack) { Text("←", fontSize = 24.sp) }; Text(title, style = MaterialTheme.typography.headlineSmall) }
+@Composable private fun QuickAccessCard(title: String, description: String, icon: ImageVector, onClick: () -> Unit, modifier: Modifier) {
+    OutlinedCard(onClick = onClick, modifier = modifier) { Column(Modifier.padding(SekmesSpacing.XSmall)) { Icon(icon, null, tint = MaterialTheme.colorScheme.primary); Text(title, style = MaterialTheme.typography.titleSmall, modifier = Modifier.padding(top = SekmesSpacing.XSmall)); Text(description, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant) } }
 }
 
+private fun courseMetadata(course: Course): String = "${CatalogStore.repository().lessonsForCourse(course.id).size} тем · ${wordsForCourse(course.id).size} слов"
 private fun List<DictionaryEntry>.asWords() = map { Word(it.ru, it.lt, it.type, it.id) }

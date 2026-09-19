@@ -11,6 +11,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.sekmeszodynas.*
+import com.example.sekmeszodynas.ui.components.SekmesEmptyState
+import com.example.sekmeszodynas.ui.components.SekmesTopAppBar
+import com.example.sekmeszodynas.ui.theme.SekmesSpacing
 import kotlinx.coroutines.launch
 
 @Composable
@@ -22,22 +25,21 @@ fun MyWordsScreen(onBack: () -> Unit) {
     var type by rememberSaveable { mutableStateOf("n") }
     var note by rememberSaveable { mutableStateOf("") }
     var editingId by rememberSaveable { mutableStateOf<String?>(null) }
+    var deletingId by rememberSaveable { mutableStateOf<String?>(null) }
     val duplicate = words.firstOrNull { it.id != editingId && it.lt.equals(lt.trim(), true) && it.ru.equals(ru.trim(), true) }
     fun clearForm() { lt = ""; ru = ""; type = "n"; note = ""; editingId = null }
 
-    Column(Modifier.fillMaxSize().padding(16.dp)) {
-        Row(verticalAlignment = Alignment.CenterVertically) {
-            IconButton(onClick = onBack) { Text("←", fontSize = 24.sp) }
-            Text(if (editingId == null) "Мои слова" else "Редактирование слова", style = MaterialTheme.typography.headlineSmall)
-        }
-        OutlinedTextField(lt, { lt = it }, label = { Text("Слово по-литовски") }, modifier = Modifier.fillMaxWidth())
-        OutlinedTextField(ru, { ru = it }, label = { Text("Перевод") }, modifier = Modifier.fillMaxWidth())
-        Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+    Column(Modifier.fillMaxSize()) {
+        SekmesTopAppBar(if (editingId == null) "Мои слова" else "Редактирование слова", subtitle = "${words.size} слов", onBack = onBack)
+        Column(Modifier.padding(horizontal = SekmesSpacing.Medium), verticalArrangement = Arrangement.spacedBy(SekmesSpacing.XSmall)) {
+        OutlinedTextField(lt, { lt = it }, label = { Text("Слово по-литовски") }, singleLine = true, modifier = Modifier.fillMaxWidth())
+        OutlinedTextField(ru, { ru = it }, label = { Text("Перевод") }, singleLine = true, modifier = Modifier.fillMaxWidth())
+        Row(horizontalArrangement = Arrangement.spacedBy(SekmesSpacing.XSmall)) {
             PartOfSpeech.entries.forEach { part -> FilterChip(type == part.typeCode, { type = part.typeCode }, label = { Text(part.typeCode) }) }
         }
         OutlinedTextField(note, { note = it }, label = { Text("Заметка или пример") }, modifier = Modifier.fillMaxWidth())
         if (duplicate != null) Text("Такое слово уже есть: ${duplicate.lt} — ${duplicate.ru}", color = MaterialTheme.colorScheme.error)
-        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(SekmesSpacing.XSmall)) {
             Button(
                 onClick = {
                     scope.launch {
@@ -53,21 +55,32 @@ fun MyWordsScreen(onBack: () -> Unit) {
             ) { Text(if (editingId == null) "Добавить слово" else "Сохранить") }
             if (editingId != null) TextButton(onClick = ::clearForm) { Text("Отмена") }
         }
-        LazyColumn(Modifier.weight(1f)) {
+        }
+        LazyColumn(Modifier.weight(1f), contentPadding = PaddingValues(SekmesSpacing.Medium), verticalArrangement = Arrangement.spacedBy(SekmesSpacing.XSmall)) {
+            if (words.isEmpty()) item { SekmesEmptyState("Личный список пуст", "Добавьте своё первое слово выше.") }
             items(words, key = CustomWord::id) { word ->
-                Card(Modifier.fillMaxWidth().padding(vertical = 4.dp)) {
-                    Row(Modifier.padding(12.dp), verticalAlignment = Alignment.CenterVertically) {
+                OutlinedCard(Modifier.fillMaxWidth()) {
+                    Row(Modifier.padding(SekmesSpacing.Small), verticalAlignment = Alignment.CenterVertically) {
                         Column(Modifier.weight(1f)) {
                             Text("${word.lt} — ${word.ru}", style = MaterialTheme.typography.titleMedium)
                             Text(PartOfSpeech.fromTypeCode(word.type).label, style = MaterialTheme.typography.bodySmall)
                             if (word.note.isNotBlank()) Text(word.note, style = MaterialTheme.typography.bodySmall)
                         }
                         TextButton(onClick = { lt = word.lt; ru = word.ru; type = word.type; note = word.note; editingId = word.id }) { Text("Изменить") }
-                        TextButton(onClick = { scope.launch { CustomWordsStore.repository().delete(word.id); if (editingId == word.id) clearForm() } }) { Text("Удалить") }
+                        TextButton(onClick = { deletingId = word.id }) { Text("Удалить") }
                     }
                 }
             }
         }
+    }
+    deletingId?.let { id ->
+        AlertDialog(
+            onDismissRequest = { deletingId = null },
+            title = { Text("Удалить слово?") },
+            text = { Text("Это действие нельзя отменить.") },
+            confirmButton = { TextButton(onClick = { scope.launch { CustomWordsStore.repository().delete(id); if (editingId == id) clearForm(); deletingId = null } }) { Text("Удалить") } },
+            dismissButton = { TextButton(onClick = { deletingId = null }) { Text("Отмена") } },
+        )
     }
 }
 

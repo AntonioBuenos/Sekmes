@@ -18,6 +18,7 @@ data class AppSettings(
     val quizSize: Int = 20,
     val showKnownWords: Boolean = false,
     val showConstitutionTranslation: Boolean = true,
+    val lastOpenedCourseId: String? = null,
 )
 
 class AppSettingsRepository(private val context: Context) {
@@ -27,6 +28,7 @@ class AppSettingsRepository(private val context: Context) {
             quizSize = preferences[QUIZ_SIZE] ?: 20,
             showKnownWords = preferences[SHOW_KNOWN] ?: false,
             showConstitutionTranslation = preferences[SHOW_CONSTITUTION_TRANSLATION] ?: true,
+            lastOpenedCourseId = preferences[LAST_OPENED_COURSE_ID],
         )
     }
 
@@ -37,13 +39,21 @@ class AppSettingsRepository(private val context: Context) {
                 quizSize = preferences[QUIZ_SIZE] ?: 20,
                 showKnownWords = preferences[SHOW_KNOWN] ?: false,
                 showConstitutionTranslation = preferences[SHOW_CONSTITUTION_TRANSLATION] ?: true,
+                lastOpenedCourseId = preferences[LAST_OPENED_COURSE_ID],
             )
             transform(current).also { updated ->
                 preferences[QUIZ_DIRECTION] = updated.quizDirection.name
                 preferences[QUIZ_SIZE] = updated.quizSize
                 preferences[SHOW_KNOWN] = updated.showKnownWords
                 preferences[SHOW_CONSTITUTION_TRANSLATION] = updated.showConstitutionTranslation
+                updated.lastOpenedCourseId?.let { preferences[LAST_OPENED_COURSE_ID] = it }
             }
+        }
+    }
+
+    suspend fun setLastOpenedCourseId(courseId: String) {
+        context.settingsDataStore.edit { preferences ->
+            preferences[LAST_OPENED_COURSE_ID] = courseId
         }
     }
 
@@ -52,6 +62,7 @@ class AppSettingsRepository(private val context: Context) {
         val QUIZ_SIZE = intPreferencesKey("quiz_size")
         val SHOW_KNOWN = booleanPreferencesKey("show_known")
         val SHOW_CONSTITUTION_TRANSLATION = booleanPreferencesKey("show_constitution_translation")
+        val LAST_OPENED_COURSE_ID = stringPreferencesKey("last_opened_course_id")
     }
 }
 

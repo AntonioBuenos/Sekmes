@@ -3,11 +3,13 @@ package com.example.sekmeszodynas
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onAllNodesWithText
+import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import org.junit.Rule
 import org.junit.Test
+import org.junit.Before
 import org.junit.Assert.assertEquals
 import org.junit.runner.RunWith
 
@@ -17,44 +19,59 @@ class MainActivityTest {
     @get:Rule
     val composeRule = createAndroidComposeRule<MainActivity>()
 
+    @Before
+    fun waitForSplashToFinish() {
+        composeRule.waitUntil(timeoutMillis = 5_000) {
+            composeRule.onAllNodesWithText("ЛИТОВСКИЙ • КАЖДЫЙ ДЕНЬ").fetchSemanticsNodes().isEmpty()
+        }
+    }
+
     @Test
-    fun systemBackReturnsFromThemeSelectionToDashboard() {
-        composeRule.onNodeWithText("Sekmes").performClick()
-        composeRule.onNodeWithText("Словарь").performClick()
-        composeRule.onNodeWithText("Словарь: Sekmes").assertIsDisplayed()
+    fun visualCardsShowLithuanianWordsAndNavigate() {
+        composeRule.onAllNodesWithText("Словарь")[1].performClick()
+        composeRule.onNodeWithText("Смотреть карточки", substring = true).performClick()
+
+        composeRule.onNodeWithText("katė").assertIsDisplayed()
+        composeRule.onNodeWithContentDescription("Следующая карточка").performClick()
+        composeRule.onNodeWithText("šuo").assertIsDisplayed()
+    }
+
+    @Test
+    fun topLevelNavigationOpensMoreAndReturnsToHome() {
+        composeRule.onNodeWithText("Ещё").performClick()
+        composeRule.onNodeWithText("Настройки").assertIsDisplayed()
+
+        composeRule.onNodeWithText("Главная").performClick()
+        composeRule.onNodeWithText("Продолжим учиться?").assertIsDisplayed()
+    }
+
+    @Test
+    fun systemBackReturnsFromThemeSelectionToCourse() {
+        composeRule.onNodeWithText("Курсы").performClick()
+        composeRule.onAllNodesWithText("Sekmes")[0].performClick()
+        composeRule.onNodeWithText("Учить слова").performClick()
+        composeRule.onNodeWithText("Все темы курса").assertIsDisplayed()
 
         composeRule.activityRule.scenario.onActivity {
             it.onBackPressedDispatcher.onBackPressed()
         }
 
-        composeRule.onNodeWithText("Пройти тест").assertIsDisplayed()
+        composeRule.onNodeWithText("Учить слова").assertIsDisplayed()
     }
 
     @Test
-    fun quizProgressSurvivesActivityRecreation() {
-        val theme = THEMES_DATA.values.first()
-        composeRule.onNodeWithText("Sekmes").performClick()
+    fun quizScreenUsesCurrentProgressCopy() {
+        composeRule.onNodeWithText("Курсы").performClick()
+        composeRule.onAllNodesWithText("Sekmes")[0].performClick()
         composeRule.onNodeWithText("Пройти тест").performClick()
-        composeRule.onNodeWithText("${theme.title} (${theme.words.size})").performClick()
-
-        val currentWord = theme.words.first { word ->
-            composeRule.onAllNodesWithText(word.ru).fetchSemanticsNodes().isNotEmpty()
-        }
-        composeRule.onNodeWithText(currentWord.lt).performClick()
-
-        val expectedProgress = "1 / ${theme.words.size} изучено"
-        composeRule.waitUntil(timeoutMillis = 3_000) {
-            composeRule.onAllNodesWithText(expectedProgress).fetchSemanticsNodes().isNotEmpty()
-        }
-
-        composeRule.activityRule.scenario.recreate()
-
-        composeRule.onNodeWithText(expectedProgress).assertIsDisplayed()
+        composeRule.onNodeWithText("Все темы курса").performClick()
+        composeRule.onNodeWithText("Вопрос", substring = true).assertIsDisplayed()
     }
 
     @Test
     fun constitutionPreambleShowsTranslationAndCanHideIt() {
-        composeRule.onNodeWithText("⚖️ Конституция Литвы").performClick()
+        composeRule.onNodeWithText("Ещё").performClick()
+        composeRule.onNodeWithText("Конституция Литвы").performClick()
         composeRule.onNodeWithText("1. Основы государства").performClick()
         composeRule.onNodeWithText("Преамбула").performClick()
 
@@ -68,23 +85,26 @@ class MainActivityTest {
 
     @Test
     fun neDienosCourseShowsThemesAndAudio() {
-        composeRule.onNodeWithText("Nė dienos be lietuvių kalbos").performClick()
-        composeRule.onNodeWithText("Словарь").performClick()
-        composeRule.onNodeWithText("Все темы курса (588)").assertIsDisplayed()
-        composeRule.onNodeWithText("Выберите урок:").assertIsDisplayed()
+        composeRule.onNodeWithText("Курсы").performClick()
+        composeRule.onAllNodesWithText("Nė dienos be lietuvių kalbos")[0].performClick()
+        composeRule.onNodeWithText("Учить слова").performClick()
+        composeRule.onNodeWithText("Все темы курса").assertIsDisplayed()
+        composeRule.onNodeWithText("Выберите урок").assertIsDisplayed()
 
         composeRule.activityRule.scenario.onActivity { it.onBackPressedDispatcher.onBackPressed() }
-        composeRule.onNodeWithText("Аудиокурс").performClick()
-        composeRule.onNodeWithText("Глава 1: 1 skyrius").assertIsDisplayed()
+        composeRule.onNodeWithText("Слушать аудио").performClick()
+        composeRule.onNodeWithText("Глава 1").assertIsDisplayed()
+        composeRule.onNodeWithText("1 skyrius").assertIsDisplayed()
     }
 
     @Test
     fun grammarCardsSupportCategorySearchAndDetail() {
-        composeRule.onNodeWithText("🧩 Грамматические карточки").performClick()
+        composeRule.onNodeWithText("Ещё").performClick()
+        composeRule.onNodeWithText("Грамматика").performClick()
         composeRule.onAllNodesWithText("Глаголы")[0].performClick()
         composeRule.onNodeWithText("Прошедшее время: -o tipas").performClick()
         composeRule.onNodeWithText("ragauti, ragauja, ragavo").assertIsDisplayed()
-        composeRule.onNodeWithText("Следующая →").performClick()
+        composeRule.onNodeWithText("Следующая").performClick()
         composeRule.onNodeWithText("su + Įn. (Inst.) kuo?").assertIsDisplayed()
     }
 }

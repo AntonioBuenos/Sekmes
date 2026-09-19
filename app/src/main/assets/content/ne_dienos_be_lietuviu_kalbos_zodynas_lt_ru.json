@@ -2359,6 +2359,521 @@
           "lit": "ausis, -ies",
           "ru": "ухо",
           "type": "n"
+        },
+        {
+          "lit": "garbanoti plaukai",
+          "ru": "кудрявые волосы",
+          "type": "n"
+        },
+        {
+          "lit": "tiesūs plaukai",
+          "ru": "прямые волосы",
+          "type": "n"
+        },
+        {
+          "lit": "banguoti plaukai",
+          "ru": "волнистые волосы",
+          "type": "n"
+        },
+        {
+          "lit": "ūsai",
+          "ru": "усы",
+          "type": "n"
+        },
+        {
+          "lit": "kumpa nosis",
+          "ru": "горбатый нос",
+          "type": "n"
+        },
+        {
+          "lit": "plikas, -a",
+          "ru": "лысый, лысая",
+          "type": "adj"
+        },
+        {
+          "lit": "barzda",
+          "ru": "борода",
+          "type": "n"
+        },
+        {
+          "lit": "arklio uodega",
+          "ru": "конский хвост",
+          "type": "n"
+        },
+        {
+          "lit": "tiesi nosis",
+          "ru": "прямой нос",
+          "type": "n"
+        },
+        {
+          "lit": "kirpčiukai",
+          "ru": "чёлка",
+          "type": "n"
+        },
+        {
+          "lit": "riesta nosis",
+          "ru": "вздернутый нос",
+          "type": "n"
+        },
+        {
+          "lit": "plaukai",
+          "ru": "волосы",
+          "type": "n"
+        },
+        {
+          "lit": "šukuosena",
+          "ru": "причёска",
+          "type": "n"
+        },
+        {
+          "lit": "kuodas",
+          "ru": "пучок волос",
+          "type": "n"
+        },
+        {
+          "lit": "žilas žmogus / žili plaukai",
+          "ru": "седой человек / седые волосы",
+          "type": "adj"
+        },
+        {
+          "lit": "sveikata, ligos",
+          "ru": "здоровье, болезни",
+          "type": "n"
+        },
+        {
+          "lit": "ligoninė",
+          "ru": "больница",
+          "type": "n"
+        },
+        {
+          "lit": "greitoji pagalba",
+          "ru": "скорая помощь",
+          "type": "n"
+        },
+        {
+          "lit": "klinika",
+          "ru": "клиника",
+          "type": "n"
+        },
+        {
+          "lit": "poliklinika",
+          "ru": "поликлиника",
+          "type": "n"
+        },
+        {
+          "lit": "kabinetas",
+          "ru": "кабинет",
+          "type": "n"
+        },
+        {
+          "lit": "palata",
+          "ru": "больничная палата",
+          "type": "n"
+        },
+        {
+          "lit": "registratūra",
+          "ru": "регистратура",
+          "type": "n"
+        },
+        {
+          "lit": "registratorius, -ė",
+          "ru": "регистратор, регистраторша",
+          "type": "n"
+        },
+        {
+          "lit": "ligonis, -io; -ė / pacientas, -ė",
+          "ru": "больной, больная / пациент, пациентка",
+          "type": "n"
+        },
+        {
+          "lit": "gulėti, guli, gulėjo ligoninėje",
+          "ru": "лежать в больнице",
+          "type": "v"
+        },
+        {
+          "lit": "sveikatos pažyma",
+          "ru": "медицинская справка",
+          "type": "n"
+        },
+        {
+          "lit": "sveikatos draudimas",
+          "ru": "медицинская страховка",
+          "type": "n"
+        },
+        {
+          "lit": "nedarbingumo pažymėjimas",
+          "ru": "больничный лист",
+          "type": "n"
+        },
+        {
+          "lit": "receptas",
+          "ru": "рецепт",
+          "type": "n"
+        },
+        {
+          "lit": "išrašyti receptą",
+          "ru": "выписать рецепт",
+          "type": "v"
+        },
+        {
+          "lit": "išrašyti, išrašo, išrašė (ką?)",
+          "ru": "выписывать, выписать",
+          "type": "v"
+        },
+        {
+          "lit": "kasa",
+          "ru": "касса",
+          "type": "n"
+        },
+        {
+          "lit": "ežiukas",
+          "ru": "ёжик",
+          "type": "n"
+        },
+        {
+          "lit": "gydytojai",
+          "ru": "врачи",
+          "type": "n"
+        },
+        {
+          "lit": "alergologas, alergologė",
+          "ru": "аллерголог",
+          "type": "n"
+        },
+        {
+          "lit": "ausų, nosies ir gerklės gydytojas, gydytoja",
+          "ru": "ЛОР-врач",
+          "type": "n"
+        },
+        {
+          "lit": "chirurgas, chirurgė",
+          "ru": "хирург",
+          "type": "n"
+        },
+        {
+          "lit": "dermatologas, dermatologė",
+          "ru": "дерматолог",
+          "type": "n"
+        },
+        {
+          "lit": "kardiologas, kardiologė",
+          "ru": "кардиолог",
+          "type": "n"
+        },
+        {
+          "lit": "neurologas, neurologė",
+          "ru": "невролог",
+          "type": "n"
+        },
+        {
+          "lit": "odontologas, odontologė",
+          "ru": "стоматолог",
+          "type": "n"
+        },
+        {
+          "lit": "oftalmologas, oftalmologė",
+          "ru": "офтальмолог",
+          "type": "n"
+        },
+        {
+          "lit": "psichiatras, psichiatrė",
+          "ru": "психиатр",
+          "type": "n"
+        },
+        {
+          "lit": "šeimos gydytojas, gydytoja",
+          "ru": "семейный врач",
+          "type": "n"
+        },
+        {
+          "lit": "jaučiuosi puikiai!",
+          "ru": "я чувствую себя отлично!",
+          "type": "other"
+        },
+        {
+          "lit": "vidaus organai",
+          "ru": "внутренние органы",
+          "type": "n"
+        },
+        {
+          "lit": "širdis, -ies",
+          "ru": "сердце",
+          "type": "n"
+        },
+        {
+          "lit": "gerklė",
+          "ru": "горло",
+          "type": "n"
+        },
+        {
+          "lit": "skrandis, -io",
+          "ru": "желудок",
+          "type": "n"
+        },
+        {
+          "lit": "plaučiai",
+          "ru": "лёгкие",
+          "type": "n"
+        },
+        {
+          "lit": "inkstai",
+          "ru": "почки",
+          "type": "n"
+        },
+        {
+          "lit": "kepenys, -ų",
+          "ru": "печень",
+          "type": "n"
+        },
+        {
+          "lit": "smegenys, -ų",
+          "ru": "мозг",
+          "type": "n"
+        },
+        {
+          "lit": "oda",
+          "ru": "кожа",
+          "type": "n"
+        },
+        {
+          "lit": "kraujas",
+          "ru": "кровь",
+          "type": "n"
+        },
+        {
+          "lit": "ligos",
+          "ru": "болезни",
+          "type": "n"
+        },
+        {
+          "lit": "alergija",
+          "ru": "аллергия",
+          "type": "n"
+        },
+        {
+          "lit": "angina",
+          "ru": "ангина",
+          "type": "n"
+        },
+        {
+          "lit": "gripas",
+          "ru": "грипп",
+          "type": "n"
+        },
+        {
+          "lit": "kosulys",
+          "ru": "кашель",
+          "type": "n"
+        },
+        {
+          "lit": "plaučių, akių, ausų, odos uždegimas",
+          "ru": "воспаление лёгких, глаз, ушей, кожи",
+          "type": "n"
+        },
+        {
+          "lit": "sloga",
+          "ru": "насморк",
+          "type": "n"
+        },
+        {
+          "lit": "skausmas",
+          "ru": "боль",
+          "type": "n"
+        },
+        {
+          "lit": "žaizda",
+          "ru": "рана",
+          "type": "n"
+        },
+        {
+          "lit": "operacija",
+          "ru": "операция",
+          "type": "n"
+        },
+        {
+          "lit": "vaistai",
+          "ru": "лекарства",
+          "type": "n"
+        },
+        {
+          "lit": "vaistai nuo skausmo",
+          "ru": "обезболивающие",
+          "type": "n"
+        },
+        {
+          "lit": "antibiotikai",
+          "ru": "антибиотики",
+          "type": "n"
+        },
+        {
+          "lit": "vitaminai",
+          "ru": "витамины",
+          "type": "n"
+        },
+        {
+          "lit": "gerti vaistus, vitaminus",
+          "ru": "принимать лекарства, витамины",
+          "type": "v"
+        },
+        {
+          "lit": "vartoti, vartoja, vartojo (ką?)",
+          "ru": "принимать, употреблять",
+          "type": "v"
+        },
+        {
+          "lit": "leisti vaistus",
+          "ru": "вводить лекарства",
+          "type": "v"
+        },
+        {
+          "lit": "leisti, leidžia, leido (ką?)",
+          "ru": "вводить, разрешать",
+          "type": "v"
+        },
+        {
+          "lit": "tabletės",
+          "ru": "таблетки",
+          "type": "n"
+        },
+        {
+          "lit": "lašai",
+          "ru": "капли",
+          "type": "n"
+        },
+        {
+          "lit": "mikstūra",
+          "ru": "микстура",
+          "type": "n"
+        },
+        {
+          "lit": "tepalas",
+          "ru": "мазь",
+          "type": "n"
+        },
+        {
+          "lit": "ampulė",
+          "ru": "ампула",
+          "type": "n"
+        },
+        {
+          "lit": "tvarstis, -io",
+          "ru": "бинт",
+          "type": "n"
+        },
+        {
+          "lit": "pleistras",
+          "ru": "пластырь",
+          "type": "n"
+        },
+        {
+          "lit": "skiepai",
+          "ru": "прививки",
+          "type": "n"
+        },
+        {
+          "lit": "tikrinti, tikrina, tikrino (ką?)",
+          "ru": "проверять, осматривать",
+          "type": "v"
+        },
+        {
+          "lit": "matuoti, matuoja, matavo (ką?)",
+          "ru": "измерять",
+          "type": "v"
+        },
+        {
+          "lit": "kraujospūdis, -džio (ką? kraujospūdį)",
+          "ru": "кровяное давление",
+          "type": "n"
+        },
+        {
+          "lit": "daryti, daro, darė tyrimus, rentgeno nuotrauką",
+          "ru": "делать анализы, рентгеновский снимок",
+          "type": "v"
+        },
+        {
+          "lit": "tirti, tiria, tyrė (ką?)",
+          "ru": "исследовать, обследовать",
+          "type": "v"
+        },
+        {
+          "lit": "apsinuodyti, apsinuodija, apsinuodijo (kuo?)",
+          "ru": "отравиться",
+          "type": "v"
+        },
+        {
+          "lit": "karščiuoti, karščiuoja, karščiavo",
+          "ru": "температурить",
+          "type": "v"
+        },
+        {
+          "lit": "kosėti, kosėja, kosėjo",
+          "ru": "кашлять",
+          "type": "v"
+        },
+        {
+          "lit": "lūžti, lūžta, lūžo",
+          "ru": "ломаться",
+          "type": "v"
+        },
+        {
+          "lit": "peršalti, peršąla, peršalo",
+          "ru": "простудиться",
+          "type": "v"
+        },
+        {
+          "lit": "sirgti, serga, sirgo (kuo?)",
+          "ru": "болеть",
+          "type": "v"
+        },
+        {
+          "lit": "skaudėti, skauda, skaudėjo (kam? ką?)",
+          "ru": "болеть, причинять боль",
+          "type": "v"
+        },
+        {
+          "lit": "sloguoti, sloguoja, slogavo",
+          "ru": "быть с насморком",
+          "type": "v"
+        },
+        {
+          "lit": "susilaužyti, susilaužo, susilaužė (ką?)",
+          "ru": "сломать себе (часть тела)",
+          "type": "v"
+        },
+        {
+          "lit": "susižeisti, susižeidžia, susižeidė (ką?)",
+          "ru": "пораниться, травмироваться",
+          "type": "v"
+        },
+        {
+          "lit": "užsikrėsti, užsikrečia, užsikrėtė (kuo?)",
+          "ru": "заразиться",
+          "type": "v"
+        },
+        {
+          "lit": "lankyti, lanko, lankė (ką?)",
+          "ru": "посещать",
+          "type": "v"
+        },
+        {
+          "lit": "linkėti, linki, linkėjo (kam? ko?)",
+          "ru": "желать",
+          "type": "v"
+        },
+        {
+          "lit": "pasveikti, pasveiksta, pasveiko",
+          "ru": "выздороветь",
+          "type": "v"
+        },
+        {
+          "lit": "gimti, gimsta, gimė",
+          "ru": "родиться",
+          "type": "v"
+        },
+        {
+          "lit": "mirti, miršta, mirė",
+          "ru": "умереть",
+          "type": "v"
         }
       ]
     },
@@ -2607,6 +3122,421 @@
           "lit": "vokas",
           "ru": "конверт",
           "type": "n"
+        },
+        {
+          "lit": "direktoriaus pavaduotojas, pavaduotoja",
+          "ru": "заместитель директора, заместительница директора",
+          "type": "n"
+        },
+        {
+          "lit": "vedėjas, vedėja",
+          "ru": "заведующий, заведующая; руководитель, руководительница",
+          "type": "n"
+        },
+        {
+          "lit": "dalyvis, -io; dalyvė",
+          "ru": "участник, участница",
+          "type": "n"
+        },
+        {
+          "lit": "rašomasis stalas",
+          "ru": "письменный стол",
+          "type": "n"
+        },
+        {
+          "lit": "rašiklis, -io",
+          "ru": "ручка",
+          "type": "n"
+        },
+        {
+          "lit": "stalinis kalendorius",
+          "ru": "настольный календарь",
+          "type": "n"
+        },
+        {
+          "lit": "paso numeris, -io",
+          "ru": "номер паспорта",
+          "type": "n"
+        },
+        {
+          "lit": "baigtis, baigiasi, baigėsi",
+          "ru": "заканчиваться",
+          "type": "v"
+        },
+        {
+          "lit": "derėtis, derasi, derėjosi (su kuo? dėl ko?)",
+          "ru": "договариваться, вести переговоры",
+          "type": "v"
+        },
+        {
+          "lit": "kreiptis, kreipiasi, kreipėsi (į ką?)",
+          "ru": "обращаться",
+          "type": "v"
+        },
+        {
+          "lit": "prasidėti, prasideda, prasidėjo",
+          "ru": "начинаться",
+          "type": "v"
+        },
+        {
+          "lit": "susirinkti, susirenka, susirinko",
+          "ru": "собираться",
+          "type": "v"
+        },
+        {
+          "lit": "teirautis, teiraujasi, teiravosi (ko?)",
+          "ru": "спрашивать, осведомляться",
+          "type": "v"
+        },
+        {
+          "lit": "trukti, trunka, truko",
+          "ru": "длиться",
+          "type": "v"
+        },
+        {
+          "lit": "veikti, veikia, veikė (ką?)",
+          "ru": "действовать, работать",
+          "type": "v"
+        },
+        {
+          "lit": "vykti, vyksta, vyko",
+          "ru": "происходить, ехать",
+          "type": "v"
+        },
+        {
+          "lit": "bankas",
+          "ru": "банк",
+          "type": "n"
+        },
+        {
+          "lit": "nešiojamas kompiuteris",
+          "ru": "ноутбук",
+          "type": "n"
+        },
+        {
+          "lit": "planšetinis kompiuteris",
+          "ru": "планшетный компьютер",
+          "type": "n"
+        },
+        {
+          "lit": "elektroninis laiškas",
+          "ru": "электронное письмо",
+          "type": "n"
+        },
+        {
+          "lit": "elektroninis paštas",
+          "ru": "электронная почта",
+          "type": "n"
+        },
+        {
+          "lit": "kopija",
+          "ru": "копия",
+          "type": "n"
+        },
+        {
+          "lit": "kopijavimo aparatas",
+          "ru": "копировальный аппарат",
+          "type": "n"
+        },
+        {
+          "lit": "kirpti, kerpa, kirpo (ką?)",
+          "ru": "резать",
+          "type": "v"
+        },
+        {
+          "lit": "klijuoti, klijuoja, klijavo (ką?)",
+          "ru": "клеить",
+          "type": "v"
+        },
+        {
+          "lit": "kopijuoti, kopijuoja, kopijavo (ką?)",
+          "ru": "копировать",
+          "type": "v"
+        },
+        {
+          "lit": "matuoti, matuoja, matavo (ką?)",
+          "ru": "измерять",
+          "type": "v"
+        },
+        {
+          "lit": "susegti, susega, susegė (ką?)",
+          "ru": "скреплять",
+          "type": "v"
+        },
+        {
+          "lit": "trinti, trina, trynė (ką?)",
+          "ru": "стирать, тереть",
+          "type": "v"
+        },
+        {
+          "lit": "paštas",
+          "ru": "почта",
+          "type": "n"
+        },
+        {
+          "lit": "atvirukas",
+          "ru": "открытка",
+          "type": "n"
+        },
+        {
+          "lit": "laiškas",
+          "ru": "письмо",
+          "type": "n"
+        },
+        {
+          "lit": "pašto ženklas",
+          "ru": "почтовая марка",
+          "type": "n"
+        },
+        {
+          "lit": "siuntinys",
+          "ru": "посылка",
+          "type": "n"
+        },
+        {
+          "lit": "gauti, gauna, gavo (ką?)",
+          "ru": "получать",
+          "type": "v"
+        },
+        {
+          "lit": "siųsti, siunčia, siuntė (ką?)",
+          "ru": "отправлять",
+          "type": "v"
+        },
+        {
+          "lit": "autis, aunasi, avėsi (ką? / kuo?)",
+          "ru": "обуваться, надевать обувь",
+          "type": "v"
+        },
+        {
+          "lit": "dažytis, dažosi, dažėsi (ką?)",
+          "ru": "краситься",
+          "type": "v"
+        },
+        {
+          "lit": "domėtis, domisi, domėjosi (kuo?)",
+          "ru": "интересоваться",
+          "type": "v"
+        },
+        {
+          "lit": "džiaugtis, džiaugiasi, džiaugėsi (kuo?)",
+          "ru": "радоваться",
+          "type": "v"
+        },
+        {
+          "lit": "gultis, gulasi, gulėsi",
+          "ru": "ложиться",
+          "type": "v"
+        },
+        {
+          "lit": "jaudintis, jaudinasi, jaudinosi (dėl ko?)",
+          "ru": "волноваться",
+          "type": "v"
+        },
+        {
+          "lit": "jaustis, jaučiasi, jautėsi",
+          "ru": "чувствовать себя",
+          "type": "v"
+        },
+        {
+          "lit": "keltis, keliasi, kėlėsi",
+          "ru": "вставать",
+          "type": "v"
+        },
+        {
+          "lit": "mankštintis, mankštinasi, mankštinosi",
+          "ru": "делать зарядку",
+          "type": "v"
+        },
+        {
+          "lit": "maudytis, maudosi, maudėsi",
+          "ru": "купаться",
+          "type": "v"
+        },
+        {
+          "lit": "mokytis, mokosi, mokėsi (ko? ką?)",
+          "ru": "учиться, изучать",
+          "type": "v"
+        },
+        {
+          "lit": "banknotas",
+          "ru": "банкнота",
+          "type": "n"
+        },
+        {
+          "lit": "blankas",
+          "ru": "бланк",
+          "type": "n"
+        },
+        {
+          "lit": "čekis, -io",
+          "ru": "чек",
+          "type": "n"
+        },
+        {
+          "lit": "grąža",
+          "ru": "сдача",
+          "type": "n"
+        },
+        {
+          "lit": "kasa",
+          "ru": "касса",
+          "type": "n"
+        },
+        {
+          "lit": "kursas",
+          "ru": "курс, обменный курс",
+          "type": "n"
+        },
+        {
+          "lit": "mokėjimo kortelė",
+          "ru": "платёжная карта",
+          "type": "n"
+        },
+        {
+          "lit": "moneta",
+          "ru": "монета",
+          "type": "n"
+        },
+        {
+          "lit": "paskola",
+          "ru": "заём, кредит",
+          "type": "n"
+        },
+        {
+          "lit": "pinigai",
+          "ru": "деньги",
+          "type": "n"
+        },
+        {
+          "lit": "sąskaita",
+          "ru": "счёт",
+          "type": "n"
+        },
+        {
+          "lit": "skola",
+          "ru": "долг",
+          "type": "n"
+        },
+        {
+          "lit": "valiuta",
+          "ru": "валюта",
+          "type": "n"
+        },
+        {
+          "lit": "atiduoti, atiduoda, atidavė (ką?)",
+          "ru": "отдавать",
+          "type": "v"
+        },
+        {
+          "lit": "atidaryti, atidaro, atidarė sąskaitą",
+          "ru": "открыть счёт",
+          "type": "v"
+        },
+        {
+          "lit": "grąžinti, grąžina, grąžino (ką?)",
+          "ru": "возвращать",
+          "type": "v"
+        },
+        {
+          "lit": "keisti, keičia, keitė (ką? į ką?)",
+          "ru": "менять, обменивать",
+          "type": "v"
+        },
+        {
+          "lit": "mokėti, moka, mokėjo grynais, kortele",
+          "ru": "платить наличными, картой",
+          "type": "v"
+        },
+        {
+          "lit": "skolinti, skolina, skolino (ką?)",
+          "ru": "одалживать",
+          "type": "v"
+        },
+        {
+          "lit": "skolintis, skolinasi, skolinosi (ką?)",
+          "ru": "брать взаймы",
+          "type": "v"
+        },
+        {
+          "lit": "uždaryti, uždaro, uždarė sąskaitą",
+          "ru": "закрыть счёт",
+          "type": "v"
+        },
+        {
+          "lit": "užpildyti, užpildo, užpildė (ką?)",
+          "ru": "заполнять",
+          "type": "v"
+        },
+        {
+          "lit": "nervintis, nervinasi, nervinosi (dėl ko?)",
+          "ru": "нервничать",
+          "type": "v"
+        },
+        {
+          "lit": "praustis, prausiasi, prausėsi",
+          "ru": "умываться",
+          "type": "v"
+        },
+        {
+          "lit": "rengtis, rengiasi, rengėsi (ką? / kuo?)",
+          "ru": "одеваться",
+          "type": "v"
+        },
+        {
+          "lit": "rūpintis, rūpinasi, rūpinosi (kuo? dėl ko?)",
+          "ru": "заботиться",
+          "type": "v"
+        },
+        {
+          "lit": "sektis, sekasi, sekėsi (kam? kas?)",
+          "ru": "удаваться",
+          "type": "v"
+        },
+        {
+          "lit": "skustis, skutasi, skutosi (ką?)",
+          "ru": "бриться",
+          "type": "v"
+        },
+        {
+          "lit": "stengtis, stengiasi, stengėsi",
+          "ru": "стараться",
+          "type": "v"
+        },
+        {
+          "lit": "suktis, sukasi, sukosi",
+          "ru": "вертеться, крутиться",
+          "type": "v"
+        },
+        {
+          "lit": "šukuotis, šukuojasi, šukavosi (ką?)",
+          "ru": "причёсываться",
+          "type": "v"
+        },
+        {
+          "lit": "tikėtis, tikisi, tikėjosi (ko?)",
+          "ru": "надеяться",
+          "type": "v"
+        },
+        {
+          "lit": "valytis, valosi, valėsi (ką?)",
+          "ru": "чиститься",
+          "type": "v"
+        },
+        {
+          "lit": "ilsėtis, ilsisi, ilsėjosi",
+          "ru": "отдыхать",
+          "type": "v"
+        },
+        {
+          "lit": "juoktis, juokiasi, juokėsi",
+          "ru": "смеяться",
+          "type": "v"
+        },
+        {
+          "lit": "šypsotis, šypsosi, šypsojosi",
+          "ru": "улыбаться",
+          "type": "v"
         }
       ]
     },

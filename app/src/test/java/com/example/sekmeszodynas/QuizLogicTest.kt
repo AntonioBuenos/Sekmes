@@ -55,6 +55,31 @@ class QuizLogicTest {
     }
 
     @Test
+    fun quizSessionKeepsItsStartingWordsWhenProgressChanges() {
+        val sourceWords = THEMES_DATA.getValue("1").words
+        val sessionWords = createQuizSessionWords(
+            sourceWords = sourceWords,
+            progressByWordId = emptyMap(),
+            quizSize = 3,
+            random = Random(4),
+        )
+
+        val progressAfterAnswer = mapOf(
+            sessionWords.first().id to WordProgress(
+                wordId = sessionWords.first().id,
+                status = WordLearningStatus.KNOWN,
+            ),
+        )
+
+        assertEquals(3, sessionWords.size)
+        assertTrue(sessionWords.first().id in sessionWords.map { it.id })
+        assertTrue(
+            createQuizSessionWords(sourceWords, progressAfterAnswer, quizSize = 3, random = Random(4))
+                .none { it.id == sessionWords.first().id },
+        )
+    }
+
+    @Test
     fun hardWordsHaveHigherSelectionWeightWithoutImmediateRepeat() {
         val words = THEMES_DATA.getValue("1").words
         val hardId = words.first().id

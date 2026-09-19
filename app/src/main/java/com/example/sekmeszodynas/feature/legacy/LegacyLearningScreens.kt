@@ -4,6 +4,16 @@ import android.annotation.SuppressLint
 import android.content.res.Resources
 import android.os.Bundle
 import androidx.compose.foundation.layout.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.rounded.ArrowBack
+import androidx.compose.material.icons.automirrored.rounded.FactCheck
+import androidx.compose.material.icons.automirrored.rounded.MenuBook
+import androidx.compose.material.icons.rounded.ExpandLess
+import androidx.compose.material.icons.rounded.ExpandMore
+import androidx.compose.material.icons.rounded.Gavel
+import androidx.compose.material.icons.rounded.Headphones
+import androidx.compose.material.icons.rounded.Pause
+import androidx.compose.material.icons.rounded.PlayArrow
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -19,6 +29,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.runtime.collectAsState
 import kotlinx.coroutines.delay
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 import kotlin.random.Random
 import androidx.compose.ui.text.style.TextAlign
@@ -28,6 +39,15 @@ import androidx.core.net.toUri
 import androidx.media3.common.MediaItem
 import androidx.media3.common.Player
 import androidx.media3.exoplayer.ExoPlayer
+import com.example.sekmeszodynas.ui.components.SekmesEmptyState
+import com.example.sekmeszodynas.ui.components.AnswerOptionState
+import com.example.sekmeszodynas.ui.components.SekmesAnswerOption
+import com.example.sekmeszodynas.ui.components.SekmesStatusChip
+import com.example.sekmeszodynas.ui.components.SekmesStatusOption
+import com.example.sekmeszodynas.ui.components.SekmesStatusTone
+import com.example.sekmeszodynas.ui.components.SekmesTopAppBar
+import com.example.sekmeszodynas.ui.components.SekmesWordRow
+import com.example.sekmeszodynas.ui.theme.SekmesSpacing
 
 private val StringSetSaver = Saver<Set<String>, ArrayList<String>>(
     save = { ArrayList(it) },
@@ -66,7 +86,7 @@ fun MainDashboardScreen(
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
-            text = "🇱🇹 Sėkmės",
+            text = "Sėkmės",
             style = MaterialTheme.typography.displayMedium,
             fontWeight = FontWeight.Bold,
             modifier = Modifier.padding(bottom = 32.dp)
@@ -79,7 +99,7 @@ fun MainDashboardScreen(
         ) {
             Box(contentAlignment = Alignment.Center, modifier = Modifier.fillMaxSize()) {
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                    Text("📖", fontSize = 32.sp)
+                    Icon(Icons.AutoMirrored.Rounded.MenuBook, contentDescription = null, modifier = Modifier.size(32.dp))
                     Text("Словарь", style = MaterialTheme.typography.titleLarge)
                 }
             }
@@ -92,7 +112,7 @@ fun MainDashboardScreen(
         ) {
             Box(contentAlignment = Alignment.Center, modifier = Modifier.fillMaxSize()) {
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                    Text("📝", fontSize = 32.sp)
+                    Icon(Icons.AutoMirrored.Rounded.FactCheck, contentDescription = null, modifier = Modifier.size(32.dp))
                     Text("Пройти тест", style = MaterialTheme.typography.titleLarge)
                 }
             }
@@ -105,7 +125,7 @@ fun MainDashboardScreen(
         ) {
             Box(contentAlignment = Alignment.Center, modifier = Modifier.fillMaxSize()) {
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                    Text("🎧", fontSize = 32.sp)
+                    Icon(Icons.Rounded.Headphones, contentDescription = null, modifier = Modifier.size(32.dp))
                     Text("Аудио курс", style = MaterialTheme.typography.titleLarge)
                 }
             }
@@ -118,7 +138,7 @@ fun MainDashboardScreen(
         ) {
             Box(contentAlignment = Alignment.Center, modifier = Modifier.fillMaxSize()) {
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                    Text("⚖️", fontSize = 32.sp)
+                    Icon(Icons.Rounded.Gavel, contentDescription = null, modifier = Modifier.size(32.dp))
                     Text("Конституция Литвы", style = MaterialTheme.typography.titleLarge)
                 }
             }
@@ -131,7 +151,7 @@ fun ThemeSelectionScreen(title: String, onThemeSelected: (String) -> Unit, onBac
     Column(modifier = Modifier.fillMaxSize().padding(16.dp)) {
         Row(verticalAlignment = Alignment.CenterVertically) {
             IconButton(onClick = onBack) {
-                Text("←", fontSize = 24.sp)
+                Icon(Icons.AutoMirrored.Rounded.ArrowBack, contentDescription = "Назад")
             }
             Text(
                 text = title,
@@ -205,60 +225,69 @@ fun DictionaryWordsScreen(
             (query.isBlank() || word.lt.contains(query, true) || word.ru.contains(query, true))
     }
 
-    Column(modifier = Modifier.fillMaxSize().padding(16.dp)) {
-        Row(verticalAlignment = Alignment.CenterVertically) {
-            IconButton(onClick = onBack) {
-                Text("←", fontSize = 24.sp)
-            }
-            Text(
-                text = themeTitle,
-                style = MaterialTheme.typography.headlineSmall,
-                modifier = Modifier.weight(1f)
-            )
-            Text("${visibleWords.size}", style = MaterialTheme.typography.bodyMedium, color = Color.Gray)
-        }
-
-        TextButton(onClick = { showKnown = !showKnown }) {
-            Text(if (showKnown) "Скрыть известные" else "Показать известные")
-        }
-        OutlinedTextField(
-            value = query,
-            onValueChange = { query = it },
-            label = { Text("Поиск на литовском или русском") },
-            singleLine = true,
-            modifier = Modifier.fillMaxWidth(),
+    val statusOptions = WordLearningStatus.entries.map { it.asStatusOption() }
+    Column(modifier = Modifier.fillMaxSize()) {
+        SekmesTopAppBar(
+            title = themeTitle,
+            subtitle = "${visibleWords.size} из ${words.size} слов",
+            onBack = onBack,
         )
-        Row(
-            modifier = Modifier.fillMaxWidth().horizontalScroll(rememberScrollState()),
-            horizontalArrangement = Arrangement.spacedBy(8.dp),
+        Column(
+            modifier = Modifier.padding(horizontal = SekmesSpacing.Medium),
+            verticalArrangement = Arrangement.spacedBy(SekmesSpacing.XSmall),
         ) {
-            FilterChip(selected = selectedStatus == null, onClick = { selectedStatus = null }, label = { Text("Все статусы") })
-            WordLearningStatus.entries.forEach { status ->
-                FilterChip(selected = selectedStatus == status, onClick = { selectedStatus = status }, label = { Text(statusLabel(status)) })
+            OutlinedTextField(
+                value = query,
+                onValueChange = { query = it },
+                label = { Text("Поиск на литовском или русском") },
+                singleLine = true,
+                modifier = Modifier.fillMaxWidth(),
+            )
+            Row(
+                modifier = Modifier.fillMaxWidth().horizontalScroll(rememberScrollState()),
+                horizontalArrangement = Arrangement.spacedBy(SekmesSpacing.XSmall),
+            ) {
+                SekmesStatusChip("Все", SekmesStatusTone.Neutral, onClick = { selectedStatus = null }, selected = selectedStatus == null)
+                WordLearningStatus.entries.forEach { status ->
+                    val option = status.asStatusOption()
+                    SekmesStatusChip(option.label, option.tone, onClick = { selectedStatus = status }, selected = selectedStatus == status)
+                }
+                SekmesStatusChip(
+                    label = "Известные",
+                    tone = SekmesStatusTone.Known,
+                    selected = showKnown,
+                    onClick = { showKnown = !showKnown },
+                )
             }
         }
-
-        LazyColumn(modifier = Modifier.weight(1f)) {
-            items(visibleWords) { word ->
-                val status = progressByWordId[word.id]?.status ?: WordLearningStatus.NEW
-                Card(
-                    modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp),
-                    colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant)
-                ) {
-                    Column(modifier = Modifier.padding(16.dp)) {
-                        Row(verticalAlignment = Alignment.CenterVertically) {
-                            Text(text = word.lt, style = MaterialTheme.typography.titleMedium, color = MaterialTheme.colorScheme.primary, fontWeight = FontWeight.Bold, modifier = Modifier.weight(1f))
-                            Text(text = word.ru, style = MaterialTheme.typography.bodyLarge, modifier = Modifier.weight(1f), textAlign = TextAlign.End)
-                        }
-                        Text(statusLabel(status), style = MaterialTheme.typography.bodySmall, color = Color.Gray)
-                        Row {
-                            TextButton(onClick = { scope.launch { ProgressStore.repository().setStatus(word.id, WordLearningStatus.KNOWN) } }) { Text("Знаю") }
-                            TextButton(onClick = { scope.launch { ProgressStore.repository().setStatus(word.id, WordLearningStatus.HARD) } }) { Text("Повторять") }
-                            if (status != WordLearningStatus.LEARNING) {
-                                TextButton(onClick = { scope.launch { ProgressStore.repository().setStatus(word.id, WordLearningStatus.LEARNING) } }) { Text("Изучаю") }
+        LazyColumn(
+            modifier = Modifier.weight(1f),
+            contentPadding = PaddingValues(SekmesSpacing.Medium),
+            verticalArrangement = Arrangement.spacedBy(SekmesSpacing.XSmall),
+        ) {
+            if (visibleWords.isEmpty()) {
+                item {
+                    SekmesEmptyState(
+                        title = "Ничего не найдено",
+                        description = "Измените запрос или фильтры, чтобы увидеть слова.",
+                    )
+                }
+            } else {
+                items(visibleWords, key = Word::id) { word ->
+                    val status = progressByWordId[word.id]?.status ?: WordLearningStatus.NEW
+                    SekmesWordRow(
+                        word = word.lt,
+                        translation = word.ru,
+                        status = status.asStatusOption(),
+                        statusOptions = statusOptions,
+                        onStatusSelected = { option ->
+                            val target = WordLearningStatus.valueOf(option.id)
+                            scope.launch {
+                                if (target == WordLearningStatus.NEW) ProgressStore.repository().reset(word.id)
+                                else ProgressStore.repository().setStatus(word.id, target)
                             }
-                        }
-                    }
+                        },
+                    )
                 }
             }
         }
@@ -287,15 +316,45 @@ fun QuizWordsScreen(
     onQuizFinished: (Int, Int, Map<String, Int>) -> Unit,
     onBack: () -> Unit,
 ) {
-    val progressByWordId by ProgressStore.repository().observeAll().collectAsState(initial = emptyMap())
-    val settings by SettingsStore.repository().settings.collectAsState(initial = AppSettings())
-    val progressScope = rememberCoroutineScope()
-    val quizWords = remember(sessionKey, sourceWords, progressByWordId, settings.quizSize) {
-        sourceWords.distinctBy(Word::id)
-            .filter { word -> progressByWordId[word.id]?.status != WordLearningStatus.KNOWN }
-            .shuffled()
-            .let { words -> if (settings.quizSize > 0) words.take(settings.quizSize) else words }
+    val liveProgressByWordId by ProgressStore.repository().observeAll().collectAsState(initial = emptyMap())
+    val initialProgressByWordId by produceState<Map<WordId, WordProgress>?>(initialValue = null, key1 = sessionKey) {
+        value = ProgressStore.repository().observeAll().first()
     }
+    val initialSettings by produceState<AppSettings?>(initialValue = null, key1 = sessionKey) {
+        value = SettingsStore.repository().settings.first()
+    }
+    val progressScope = rememberCoroutineScope()
+    var quizWordIds by rememberSaveable(sessionKey, stateSaver = StringListSaver) { mutableStateOf(emptyList()) }
+    var quizDirectionName by rememberSaveable(sessionKey) { mutableStateOf<String?>(null) }
+    var sessionInitialized by rememberSaveable(sessionKey) { mutableStateOf(false) }
+
+    LaunchedEffect(sessionKey, initialProgressByWordId, initialSettings) {
+        val progress = initialProgressByWordId ?: return@LaunchedEffect
+        val settings = initialSettings ?: return@LaunchedEffect
+        if (!sessionInitialized) {
+            quizWordIds = createQuizSessionWords(sourceWords, progress, settings.quizSize).map(Word::id)
+            quizDirectionName = settings.quizDirection.name
+            sessionInitialized = true
+        }
+    }
+
+    if (!sessionInitialized) {
+        Column(Modifier.fillMaxSize()) {
+            SekmesTopAppBar("Тест", onBack = onBack)
+            SekmesEmptyState(
+                title = "Подготавливаем тест",
+                description = "Выбираем слова для этой тренировки.",
+                modifier = Modifier.weight(1f),
+            )
+        }
+        return
+    }
+
+    val quizWords = remember(sourceWords, quizWordIds) {
+        val wordsById = sourceWords.distinctBy(Word::id).associateBy(Word::id)
+        quizWordIds.mapNotNull(wordsById::get)
+    }
+    val quizDirection = QuizDirection.valueOf(requireNotNull(quizDirectionName))
 
     var answeredCorrectlyIds by rememberSaveable(sessionKey, stateSaver = StringSetSaver) {
         mutableStateOf(emptySet())
@@ -323,12 +382,12 @@ fun QuizWordsScreen(
         } else {
             val nextWord = selectNextQuizWord(
                 words = pending,
-                hardWordIds = progressByWordId.filterValues { it.status == WordLearningStatus.HARD }.keys,
+                hardWordIds = liveProgressByWordId.filterValues { it.status == WordLearningStatus.HARD }.keys,
                 previousWordId = currentWordId,
             )
             if (nextWord != null) {
                 currentWordId = nextWord.id
-                options = generateOptions(nextWord, quizWords, settings.quizDirection)
+                options = generateOptions(nextWord, quizWords, quizDirection)
                 selectedOption = null
                 isCorrect = null
             }
@@ -339,116 +398,97 @@ fun QuizWordsScreen(
         if (currentWord == null) {
             pickNextWord(answeredCorrectlyIds)
         } else if (options.isEmpty()) {
-            options = generateOptions(currentWord, quizWords, settings.quizDirection)
+            options = generateOptions(currentWord, quizWords, quizDirection)
         }
     }
 
     if (currentWord == null) {
-        Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-            Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                Text("Для теста пока недостаточно доступных слов.", style = MaterialTheme.typography.bodyLarge)
-                TextButton(onClick = onBack) { Text("Назад") }
-            }
+        Column(Modifier.fillMaxSize()) {
+            SekmesTopAppBar("Тест", onBack = onBack)
+            SekmesEmptyState(
+                title = "Для теста пока нет слов",
+                description = "Добавьте новые или повторяемые слова в словарь и попробуйте снова.",
+                modifier = Modifier.weight(1f),
+            )
         }
         return
     }
 
-    Column(
-        modifier = Modifier.fillMaxSize().padding(16.dp),
-        horizontalAlignment = Alignment.CenterHorizontally
-    ) {
-        Row(
-            modifier = Modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.SpaceBetween,
-            verticalAlignment = Alignment.CenterVertically
+    val questionNumber = answeredCorrectlyIds.size + 1
+    val correctAnswer = answerFor(currentWord, quizDirection)
+    Column(modifier = Modifier.fillMaxSize()) {
+        SekmesTopAppBar(
+            title = "Вопрос $questionNumber из ${quizWords.size}",
+            subtitle = "${answeredCorrectlyIds.size} ответов засчитано",
+            onBack = onBack,
+        )
+        Column(
+            modifier = Modifier.padding(horizontal = SekmesSpacing.Medium),
+            verticalArrangement = Arrangement.spacedBy(SekmesSpacing.Small),
         ) {
-            TextButton(onClick = onBack) {
-                Text("← Назад")
-            }
-            Text(
-                text = "${answeredCorrectlyIds.size} / ${quizWords.size} изучено",
-                style = MaterialTheme.typography.bodyMedium
+            LinearProgressIndicator(
+                progress = { answeredCorrectlyIds.size.toFloat() / quizWords.size.coerceAtLeast(1) },
+                modifier = Modifier.fillMaxWidth(),
             )
-        }
-
-        LinearProgressIndicator(
-            progress = { if (quizWords.isNotEmpty()) answeredCorrectlyIds.size.toFloat() / quizWords.size else 0f },
-            modifier = Modifier.fillMaxWidth().padding(vertical = 8.dp)
-        )
-
-        Spacer(modifier = Modifier.height(32.dp))
-
-        Text(
-            text = questionFor(currentWord, settings.quizDirection),
-            style = MaterialTheme.typography.headlineLarge,
-            textAlign = TextAlign.Center,
-            fontWeight = FontWeight.Bold,
-            modifier = Modifier.heightIn(min = 100.dp).wrapContentHeight()
-        )
-
-        Text(statusLabel(progressByWordId[currentWord.id]?.status ?: WordLearningStatus.NEW), color = Color.Gray)
-        Row {
-            TextButton(onClick = { progressScope.launch { ProgressStore.repository().setStatus(currentWord.id, WordLearningStatus.KNOWN) } }) { Text("Знаю") }
-            TextButton(onClick = { progressScope.launch { ProgressStore.repository().setStatus(currentWord.id, WordLearningStatus.HARD) } }) { Text("Трудное") }
-        }
-
-        Spacer(modifier = Modifier.height(32.dp))
-
-        options.forEach { option ->
-            val isThisCorrectOption = option == answerFor(currentWord, settings.quizDirection)
-            val isThisSelected = selectedOption == option
-            
-            val containerColor = when {
-                selectedOption == null -> MaterialTheme.colorScheme.primary
-                isThisCorrectOption -> Color(0xFF4CAF50) // Всегда зеленый для правильного после выбора
-                isThisSelected && isCorrect == false -> Color(0xFFF44336) // Красный если выбрали неправильно
-                else -> MaterialTheme.colorScheme.primary.copy(alpha = 0.6f)
+            Text(
+                text = questionFor(currentWord, quizDirection),
+                style = MaterialTheme.typography.headlineLarge,
+                textAlign = TextAlign.Center,
+                fontWeight = FontWeight.Bold,
+                modifier = Modifier.fillMaxWidth().padding(vertical = SekmesSpacing.Large),
+            )
+            Row(horizontalArrangement = Arrangement.spacedBy(SekmesSpacing.XSmall)) {
+                SekmesStatusChip(
+                    label = "Знаю",
+                    tone = SekmesStatusTone.Known,
+                    onClick = { progressScope.launch { ProgressStore.repository().setStatus(currentWord.id, WordLearningStatus.KNOWN) } },
+                )
+                SekmesStatusChip(
+                    label = "Трудное",
+                    tone = SekmesStatusTone.Hard,
+                    onClick = { progressScope.launch { ProgressStore.repository().setStatus(currentWord.id, WordLearningStatus.HARD) } },
+                )
             }
-
-            Button(
-                onClick = {
-                    if (selectedOption == null) {
-                        selectedOption = option
-                        if (option == answerFor(currentWord, settings.quizDirection)) {
-                            isCorrect = true
-                            progressScope.launch { ProgressStore.repository().recordAnswer(currentWord.id, correct = true) }
-                        } else {
-                            isCorrect = false
-                            progressScope.launch { ProgressStore.repository().recordAnswer(currentWord.id, correct = false) }
-                            mistakes = mistakes + (
-                                currentWord.id to ((mistakes[currentWord.id] ?: 0) + 1)
-                            )
+            options.forEachIndexed { index, option ->
+                val state = when {
+                    selectedOption == null -> AnswerOptionState.Idle
+                    option == correctAnswer -> AnswerOptionState.Correct
+                    option == selectedOption -> AnswerOptionState.Incorrect
+                    else -> AnswerOptionState.Idle
+                }
+                SekmesAnswerOption(
+                    label = ('А'.code + index).toChar().toString(),
+                    option = option,
+                    state = state,
+                    enabled = selectedOption == null,
+                    onClick = {
+                        if (selectedOption == null) {
+                            selectedOption = option
+                            isCorrect = option == correctAnswer
+                            progressScope.launch { ProgressStore.repository().recordAnswer(currentWord.id, correct = isCorrect == true) }
+                            if (isCorrect == false) mistakes = mistakes + (currentWord.id to ((mistakes[currentWord.id] ?: 0) + 1))
                         }
-                    }
-                },
-                modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp),
-                shape = MaterialTheme.shapes.medium,
-                colors = ButtonDefaults.buttonColors(
-                    containerColor = containerColor,
-                    disabledContainerColor = containerColor // Важно для сохранения подсветки
-                ),
-                enabled = selectedOption == null
-            ) {
+                    },
+                )
+            }
+            if (selectedOption != null) {
                 Text(
-                    text = option,
-                    textAlign = TextAlign.Center,
-                    style = MaterialTheme.typography.bodyLarge,
-                    color = Color.White
+                    text = if (isCorrect == true) "Верно. Переходим к следующему вопросу…" else "Верный ответ: $correctAnswer",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = if (isCorrect == true) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.error,
                 )
             }
         }
-        
-        // Обработка перехода
-        if (selectedOption != null) {
-            LaunchedEffect(selectedOption, currentWord.id) {
-                delay(if (isCorrect == true) 800 else 1500)
-                if (isCorrect == true) {
-                    val completedIds = answeredCorrectlyIds + currentWord.id
-                    answeredCorrectlyIds = completedIds
-                    pickNextWord(completedIds)
-                } else {
-                    pickNextWord(answeredCorrectlyIds)
-                }
+    }
+    if (selectedOption != null) {
+        LaunchedEffect(selectedOption, currentWord.id) {
+            delay(if (isCorrect == true) 800 else 1500)
+            if (isCorrect == true) {
+                val completedIds = answeredCorrectlyIds + currentWord.id
+                answeredCorrectlyIds = completedIds
+                pickNextWord(completedIds)
+            } else {
+                pickNextWord(answeredCorrectlyIds)
             }
         }
     }
@@ -462,71 +502,56 @@ fun ResultScreen(
     onRestart: () -> Unit
 ) {
     Column(
-        modifier = Modifier.fillMaxSize().padding(16.dp),
-        horizontalAlignment = Alignment.CenterHorizontally
+        modifier = Modifier.fillMaxSize().padding(SekmesSpacing.Medium),
+        verticalArrangement = Arrangement.spacedBy(SekmesSpacing.Small),
     ) {
         Text(
-            text = "🎉 Тренировка завершена!",
+            text = "Тренировка завершена",
             style = MaterialTheme.typography.headlineMedium,
-            modifier = Modifier.padding(top = 32.dp),
-            textAlign = TextAlign.Center
+            modifier = Modifier.padding(top = SekmesSpacing.Large),
         )
-        
-        Spacer(modifier = Modifier.height(16.dp))
-
-        Text(
-            text = "Результат: $score из $total",
-            style = MaterialTheme.typography.headlineSmall,
-            fontWeight = FontWeight.Bold,
-            color = MaterialTheme.colorScheme.primary
-        )
-
-        Spacer(modifier = Modifier.height(8.dp))
-
-        Text(
-            text = "Отличная работа. Статистика ошибок:",
-            style = MaterialTheme.typography.bodyLarge,
-            color = Color.Gray
-        )
-
-        Spacer(modifier = Modifier.height(24.dp))
+        Card(colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer)) {
+            Column(Modifier.padding(SekmesSpacing.Small)) {
+                Text("Результат", style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.primary)
+                Text("$score из $total", style = MaterialTheme.typography.displaySmall)
+                Text(
+                    if (mistakes.isEmpty()) "Без ошибок — отличный результат." else "Ошибки можно повторить в следующей тренировке.",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onPrimaryContainer,
+                )
+            }
+        }
 
         if (mistakes.isNotEmpty()) {
             val sortedMistakes = mistakes.toList().sortedByDescending { it.second }
-            LazyColumn(modifier = Modifier.weight(1f)) {
+            Text("Повторить", style = MaterialTheme.typography.titleMedium)
+            LazyColumn(
+                modifier = Modifier.weight(1f),
+                verticalArrangement = Arrangement.spacedBy(SekmesSpacing.XSmall),
+            ) {
                 items(sortedMistakes) { (wordId, count) ->
-                    Card(
-                        modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp),
-                        colors = CardDefaults.cardColors(
-                            containerColor = MaterialTheme.colorScheme.surfaceVariant
-                        )
-                    ) {
+                    Card(modifier = Modifier.fillMaxWidth(), colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant)) {
                         Row(
-                            modifier = Modifier.padding(16.dp).fillMaxWidth(),
+                            modifier = Modifier.padding(SekmesSpacing.Small).fillMaxWidth(),
                             horizontalArrangement = Arrangement.SpaceBetween,
-                            verticalAlignment = Alignment.CenterVertically
+                            verticalAlignment = Alignment.CenterVertically,
                         ) {
                             Text(
                                 text = mistakeWordLabel(wordId),
-                                fontWeight = FontWeight.Bold,
-                                color = MaterialTheme.colorScheme.primary
+                                style = MaterialTheme.typography.titleMedium,
+                                color = MaterialTheme.colorScheme.primary,
                             )
-                            Text(text = "× $count", color = Color(0xFFF44336), fontWeight = FontWeight.ExtraBold)
+                            Text("$count ошибок", style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.error)
                         }
                     }
                 }
             }
         } else {
-            Box(modifier = Modifier.weight(1f), contentAlignment = Alignment.Center) {
-                Text(text = "Ошибок нет! Идеальный результат. 🌟", style = MaterialTheme.typography.bodyLarge)
-            }
+            SekmesEmptyState("Ошибок нет", "Вы ответили правильно на все вопросы.", modifier = Modifier.weight(1f))
         }
-
-        Spacer(modifier = Modifier.height(16.dp))
-
         Button(
             onClick = onRestart,
-            modifier = Modifier.fillMaxWidth().padding(bottom = 16.dp)
+            modifier = Modifier.fillMaxWidth(),
         ) {
             Text("Вернуться к темам")
         }
@@ -599,128 +624,124 @@ fun AudioScreen(courseId: String = SEKMES_COURSE_ID, onBack: () -> Unit) {
         }
     }
 
-    Column(modifier = Modifier.fillMaxSize().padding(16.dp)) {
-        Row(
-            verticalAlignment = Alignment.CenterVertically,
-            modifier = Modifier.fillMaxWidth()
-        ) {
-            IconButton(onClick = onBack) {
-                Text("←", fontSize = 24.sp)
+    val activeTrack = audioBooks.flatMap { it.chapters }.flatMap { it.tracks }.firstOrNull { it.id == playingTrackId }
+    fun toggleTrack(track: AudioTrack) {
+        if (playingTrackId == track.id) {
+            if (exoPlayer.isPlaying) {
+                playbackPosition = exoPlayer.currentPosition
+                shouldResumePlaying = false
+                exoPlayer.pause()
+            } else {
+                val startPosition = playbackStartPosition(exoPlayer.playbackState, exoPlayer.currentPosition)
+                playbackPosition = startPosition
+                if (startPosition != exoPlayer.currentPosition) exoPlayer.seekTo(startPosition)
+                shouldResumePlaying = true
+                exoPlayer.play()
             }
-            Text("Аудиокурс (оффлайн)", style = MaterialTheme.typography.headlineSmall)
-        }
-
-        Spacer(modifier = Modifier.height(8.dp))
-        Text(
-            "Все аудиофайлы встроены в приложение. Интернет не требуется.",
-            style = MaterialTheme.typography.bodySmall,
-            color = Color.Gray,
-            modifier = Modifier.padding(start = 48.dp)
-        )
-
-        var expandedChapters by rememberSaveable(stateSaver = StringSetSaver) {
-            mutableStateOf(emptySet())
-        }
-
-        if (audioBooks.isEmpty()) {
-            Text("Аудиоматериалы этого курса пока готовятся.", style = MaterialTheme.typography.bodyLarge)
         } else {
-        LazyColumn(modifier = Modifier.weight(1f)) {
-            audioBooks.forEach { book ->
-                item {
-                    Text(
-                        "Книга ${book.number}",
-                        style = MaterialTheme.typography.titleLarge,
-                        modifier = Modifier.padding(top = 16.dp, bottom = 8.dp)
-                    )
-                }
-                book.chapters.forEach { chapter ->
-                    val chapterKey = "${book.number}_${chapter.number}"
-                    val isExpanded = expandedChapters.contains(chapterKey)
-                    item {
-                        Card(
-                            onClick = {
-                                expandedChapters = if (isExpanded) {
-                                    expandedChapters - chapterKey
-                                } else {
-                                    expandedChapters + chapterKey
-                                }
-                            },
-                            modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp),
-                            colors = CardDefaults.cardColors(
-                                containerColor = if (isExpanded) MaterialTheme.colorScheme.primaryContainer else MaterialTheme.colorScheme.surfaceVariant
-                            )
-                        ) {
-                            Row(
-                                modifier = Modifier.padding(16.dp),
-                                verticalAlignment = Alignment.CenterVertically
-                            ) {
-                                Text(if (isExpanded) "▼" else "▶", modifier = Modifier.width(24.dp))
-                                Text(
-                                    "Глава ${chapter.number}: ${chapter.title}",
-                                    style = MaterialTheme.typography.titleMedium,
-                                    modifier = Modifier.weight(1f)
-                                )
-                            }
-                        }
-                    }
-
-                    if (isExpanded) {
-                        items(chapter.tracks) { track ->
-                            Card(
-                                modifier = Modifier.fillMaxWidth().padding(vertical = 2.dp, horizontal = 16.dp),
-                                onClick = {
-                                    if (playingTrackId == track.id) {
-                                        if (exoPlayer.isPlaying) {
-                                            playbackPosition = exoPlayer.currentPosition
-                                            shouldResumePlaying = false
-                                            exoPlayer.pause()
-                                        } else {
-                                            val startPosition = playbackStartPosition(
-                                                exoPlayer.playbackState,
-                                                exoPlayer.currentPosition
-                                            )
-                                            playbackPosition = startPosition
-                                            if (startPosition != exoPlayer.currentPosition) {
-                                                exoPlayer.seekTo(startPosition)
-                                            }
-                                            shouldResumePlaying = true
-                                            exoPlayer.play()
-                                        }
-                                    } else {
-                                        exoPlayer.stop()
-                                        exoPlayer.clearMediaItems()
-                                        playbackPosition = 0L
-                                        shouldResumePlaying = true
-                                        playingTrackId = track.id
-                                    }
-                                }
-                            ) {
-                                Row(
-                                    modifier = Modifier.padding(12.dp),
-                                    verticalAlignment = Alignment.CenterVertically
-                                ) {
-                                    val isCurrentPlaying = playingTrackId == track.id && isExoPlaying
-                                    Text(
-                                        text = if (isCurrentPlaying) "⏸" else "▶",
-                                        fontSize = 18.sp,
-                                        modifier = Modifier.width(24.dp),
-                                        color = if (playingTrackId == track.id) Color(0xFF4CAF50) else MaterialTheme.colorScheme.onSurface
-                                    )
-                                    Spacer(Modifier.width(12.dp))
-                                    Column(modifier = Modifier.weight(1f)) {
-                                        Text(track.title, style = MaterialTheme.typography.bodyMedium)
-                                        Text(track.type.name.lowercase(), style = MaterialTheme.typography.labelSmall, color = Color.Gray)
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+            exoPlayer.stop()
+            exoPlayer.clearMediaItems()
+            playbackPosition = 0L
+            shouldResumePlaying = true
+            playingTrackId = track.id
         }
     }
+
+    var expandedChapters by rememberSaveable(stateSaver = StringSetSaver) { mutableStateOf(emptySet()) }
+    Column(modifier = Modifier.fillMaxSize()) {
+        SekmesTopAppBar("Аудиокурс", subtitle = "Материалы доступны офлайн", onBack = onBack)
+        activeTrack?.let { track ->
+            Card(
+                modifier = Modifier.fillMaxWidth().padding(horizontal = SekmesSpacing.Medium),
+                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.primaryContainer),
+            ) {
+                Row(Modifier.padding(SekmesSpacing.Small), verticalAlignment = Alignment.CenterVertically) {
+                    Icon(Icons.Rounded.Headphones, contentDescription = null, tint = MaterialTheme.colorScheme.primary)
+                    Spacer(Modifier.width(SekmesSpacing.XSmall))
+                    Column(Modifier.weight(1f)) {
+                        Text(track.title, style = MaterialTheme.typography.titleMedium)
+                        Text(
+                            "${audioTypeLabel(track.type)} · ${formatAudioPosition(playbackPosition)}",
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onPrimaryContainer,
+                        )
+                    }
+                    IconButton(onClick = { toggleTrack(track) }) {
+                        Icon(
+                            if (isExoPlaying) Icons.Rounded.Pause else Icons.Rounded.PlayArrow,
+                            contentDescription = if (isExoPlaying) "Пауза" else "Воспроизвести",
+                        )
+                    }
+                }
+            }
+        }
+        if (audioBooks.isEmpty()) {
+            SekmesEmptyState(
+                title = "Аудиоматериалы готовятся",
+                description = "Для этого курса пока нет доступных офлайн-треков.",
+                modifier = Modifier.weight(1f),
+            )
+        } else {
+            LazyColumn(
+                modifier = Modifier.weight(1f),
+                contentPadding = PaddingValues(SekmesSpacing.Medium),
+                verticalArrangement = Arrangement.spacedBy(SekmesSpacing.XSmall),
+            ) {
+                audioBooks.forEach { book ->
+                    item { Text("Книга ${book.number}", style = MaterialTheme.typography.titleLarge, modifier = Modifier.padding(top = SekmesSpacing.XSmall)) }
+                    book.chapters.forEach { chapter ->
+                        val chapterKey = "${book.number}_${chapter.number}"
+                        val isExpanded = chapterKey in expandedChapters
+                        item {
+                            Card(
+                                onClick = { expandedChapters = if (isExpanded) expandedChapters - chapterKey else expandedChapters + chapterKey },
+                                modifier = Modifier.fillMaxWidth(),
+                                colors = CardDefaults.cardColors(containerColor = if (isExpanded) MaterialTheme.colorScheme.primaryContainer else MaterialTheme.colorScheme.surfaceVariant),
+                            ) {
+                                Row(Modifier.padding(SekmesSpacing.Small), verticalAlignment = Alignment.CenterVertically) {
+                                    Column(Modifier.weight(1f)) {
+                                        Text("Глава ${chapter.number}", style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.primary)
+                                        Text(chapter.title, style = MaterialTheme.typography.titleMedium)
+                                    }
+                                    Icon(if (isExpanded) Icons.Rounded.ExpandLess else Icons.Rounded.ExpandMore, contentDescription = if (isExpanded) "Свернуть главу" else "Развернуть главу")
+                                }
+                            }
+                        }
+                        if (isExpanded) {
+                            items(chapter.tracks, key = AudioTrack::id) { track ->
+                                val isCurrent = track.id == playingTrackId
+                                OutlinedCard(onClick = { toggleTrack(track) }, modifier = Modifier.fillMaxWidth()) {
+                                    Row(Modifier.padding(SekmesSpacing.Small), verticalAlignment = Alignment.CenterVertically) {
+                                        Icon(
+                                            if (isCurrent && isExoPlaying) Icons.Rounded.Pause else Icons.Rounded.PlayArrow,
+                                            contentDescription = if (isCurrent && isExoPlaying) "Пауза" else "Воспроизвести",
+                                            tint = if (isCurrent) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant,
+                                        )
+                                        Spacer(Modifier.width(SekmesSpacing.XSmall))
+                                        Column(Modifier.weight(1f)) {
+                                            Text(track.title, style = MaterialTheme.typography.bodyLarge)
+                                            Text(audioTypeLabel(track.type), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+private fun audioTypeLabel(type: AudioType): String = when (type) {
+    AudioType.POKALBIS -> "Диалог"
+    AudioType.SKAITYMAS -> "Чтение"
+    AudioType.KLAUSYMAS -> "Аудирование"
+}
+
+private fun formatAudioPosition(positionMs: Long): String {
+    val totalSeconds = (positionMs / 1_000).coerceAtLeast(0)
+    return "%d:%02d".format(totalSeconds / 60, totalSeconds % 60)
 }
 
 fun quizPoolForTheme(
@@ -735,6 +756,21 @@ fun quizPoolForTheme(
     return words.distinctBy { it.id }
         .filter { word -> progressByWordId[word.id]?.status != WordLearningStatus.KNOWN }
 }
+
+/**
+ * Chooses a fixed set of words when a training session starts. Progress may change while
+ * answering, but the active session must not shrink or reshuffle as a side effect.
+ */
+fun createQuizSessionWords(
+    sourceWords: List<Word>,
+    progressByWordId: Map<WordId, WordProgress>,
+    quizSize: Int,
+    random: Random = Random.Default,
+): List<Word> = sourceWords
+    .distinctBy(Word::id)
+    .filter { word -> progressByWordId[word.id]?.status != WordLearningStatus.KNOWN }
+    .shuffled(random)
+    .let { words -> if (quizSize > 0) words.take(quizSize) else words }
 
 fun selectNextQuizWord(
     words: List<Word>,
@@ -759,6 +795,17 @@ fun statusLabel(status: WordLearningStatus): String = when (status) {
     WordLearningStatus.HARD -> "Повторять чаще"
     WordLearningStatus.KNOWN -> "Знаю"
 }
+
+private fun WordLearningStatus.asStatusOption() = SekmesStatusOption(
+    id = name,
+    label = statusLabel(this),
+    tone = when (this) {
+        WordLearningStatus.NEW -> SekmesStatusTone.Neutral
+        WordLearningStatus.LEARNING -> SekmesStatusTone.Learning
+        WordLearningStatus.HARD -> SekmesStatusTone.Hard
+        WordLearningStatus.KNOWN -> SekmesStatusTone.Known
+    },
+)
 
 fun playbackStartPosition(playbackState: Int, currentPosition: Long): Long {
     return if (playbackState == Player.STATE_ENDED) 0L else currentPosition.coerceAtLeast(0L)

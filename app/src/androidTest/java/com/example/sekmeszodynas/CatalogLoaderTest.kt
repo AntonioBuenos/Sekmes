@@ -10,6 +10,18 @@ import org.junit.runner.RunWith
 @RunWith(AndroidJUnit4::class)
 class CatalogLoaderTest {
     @Test
+    fun visualCardAssetsReferenceExistingConcreteNouns() {
+        val context = ApplicationProvider.getApplicationContext<android.content.Context>()
+        val catalog = AssetCatalogLoader(context.assets).load()
+
+        assertEquals(54, VISUAL_CARD_ASSETS.size)
+        assertEquals(VISUAL_CARD_ASSETS.size, VISUAL_CARD_ASSETS.map { it.wordId }.distinct().size)
+        assertTrue(VISUAL_CARD_ASSETS.all { asset ->
+            catalog.wordById[asset.wordId]?.partOfSpeech == PartOfSpeech.NOUN
+        })
+    }
+
+    @Test
     fun audioCatalogMatchesPackagedRawResources() {
         val context = ApplicationProvider.getApplicationContext<android.content.Context>()
         AudioCatalogStore.initialize(context.assets)
@@ -46,7 +58,17 @@ class CatalogLoaderTest {
 
         assertEquals(4, catalog.courses.size)
         assertEquals(12, catalog.lessonsForCourse("ne-dienos-be-lietuviu-kalbos").size)
-        assertEquals(588, catalog.wordsForCourse("ne-dienos-be-lietuviu-kalbos").size)
+        assertEquals(768, catalog.wordsForCourse("ne-dienos-be-lietuviu-kalbos").size)
+        val lessonNine = catalog.wordsForLesson("ne-dienos-09")
+        assertEquals(143, lessonNine.size)
+        assertTrue(lessonNine.any { it.lt == "garbanoti plaukai" })
+        assertTrue(lessonNine.any { it.lt == "greitoji pagalba" })
+        assertTrue(lessonNine.any { it.lt == "mirti, miršta, mirė" })
+        val lessonTen = catalog.wordsForLesson("ne-dienos-10")
+        assertEquals(131, lessonTen.size)
+        assertTrue(lessonTen.any { it.lt == "direktoriaus pavaduotojas, pavaduotoja" })
+        assertTrue(lessonTen.any { it.lt == "elektroninis paštas" })
+        assertTrue(lessonTen.any { it.lt == "banknotas" })
         assertEquals(CourseVisibility.LEARNING, catalog.courseById.getValue("ne-dienos-be-lietuviu-kalbos").visibility)
         val demoWords = catalog.wordsForLesson("shared-demo-01")
         assertEquals(listOf("word_000001", "word_000002", "word_000003", "word_000004"), demoWords.map { it.id })

@@ -14,6 +14,9 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.text.ClickableText
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.rounded.FactCheck
+import androidx.compose.material.icons.rounded.MenuBook
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
@@ -42,6 +45,9 @@ import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import kotlinx.coroutines.launch
+import com.example.sekmeszodynas.ui.components.SekmesActionRow
+import com.example.sekmeszodynas.ui.components.SekmesTopAppBar
+import com.example.sekmeszodynas.ui.theme.SekmesSpacing
 
 /** Confirmed general-language entries: they stay in the shared dictionary, not in Constitution terms. */
 private val excludedConstitutionTermIds = setOf(
@@ -63,32 +69,31 @@ fun ConstitutionHomeScreen(
     onBack: () -> Unit,
 ) {
     val repository = ConstitutionStore.repository()
-    Column(modifier = Modifier.fillMaxSize().padding(16.dp)) {
-        ScreenHeader(title = "Конституция Литвы", onBack = onBack)
+    Column(modifier = Modifier.fillMaxSize()) {
+        SekmesTopAppBar(title = "Конституция Литвы", subtitle = "Чтение, термины и тест", onBack = onBack)
         Text(
             text = "Читайте литовский текст по смысловым частям, открывайте термины и закрепляйте их тестом.",
             style = MaterialTheme.typography.bodyLarge,
-            modifier = Modifier.padding(vertical = 8.dp),
+            modifier = Modifier.padding(horizontal = SekmesSpacing.Medium, vertical = SekmesSpacing.XSmall),
         )
-        Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-            Button(onClick = onDictionary, modifier = Modifier.weight(1f)) { Text("Все термины") }
-            Button(onClick = onQuiz, modifier = Modifier.weight(1f)) { Text("Итоговый тест") }
+        Column(Modifier.padding(horizontal = SekmesSpacing.Medium), verticalArrangement = Arrangement.spacedBy(SekmesSpacing.XSmall)) {
+            SekmesActionRow("Все термины", "Словарь конституционных понятий", Icons.Rounded.MenuBook, onDictionary, highlighted = true)
+            SekmesActionRow("Итоговый тест", "Проверить знание терминов", Icons.Rounded.FactCheck, onQuiz)
         }
-        Spacer(Modifier.height(8.dp))
-        LazyColumn(modifier = Modifier.weight(1f)) {
+        LazyColumn(modifier = Modifier.weight(1f), contentPadding = androidx.compose.foundation.layout.PaddingValues(SekmesSpacing.Medium), verticalArrangement = Arrangement.spacedBy(SekmesSpacing.XSmall)) {
             items(repository.blocks, key = ConstitutionBlock::id) { block ->
-                Card(
+                androidx.compose.material3.OutlinedCard(
                     onClick = { onBlockSelected(block.id) },
-                    modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp),
+                    modifier = Modifier.fillMaxWidth(),
                 ) {
-                    Column(modifier = Modifier.padding(16.dp)) {
+                    Column(modifier = Modifier.padding(SekmesSpacing.Small)) {
                         Text("${block.order}. ${block.title}", style = MaterialTheme.typography.titleMedium)
-                        Text(block.description, style = MaterialTheme.typography.bodyMedium, modifier = Modifier.padding(top = 4.dp))
+                        Text(block.description, style = MaterialTheme.typography.bodyMedium, modifier = Modifier.padding(top = SekmesSpacing.XxxSmall))
                         Text(
                             text = blockRangeLabel(block),
                             style = MaterialTheme.typography.labelLarge,
                             color = MaterialTheme.colorScheme.primary,
-                            modifier = Modifier.padding(top = 8.dp),
+                            modifier = Modifier.padding(top = SekmesSpacing.XSmall),
                         )
                     }
                 }
@@ -109,28 +114,27 @@ fun ConstitutionBlockScreen(
     val block = repository.blockById[blockId] ?: return
     val content = repository.contentForBlock(blockId)
 
-    Column(modifier = Modifier.fillMaxSize().padding(16.dp)) {
-        ScreenHeader(title = block.title, onBack = onBack)
-        Text(block.description, style = MaterialTheme.typography.bodyLarge)
+    Column(modifier = Modifier.fillMaxSize()) {
+        SekmesTopAppBar(title = block.title, subtitle = blockRangeLabel(block), onBack = onBack)
+        Text(block.description, style = MaterialTheme.typography.bodyLarge, modifier = Modifier.padding(horizontal = SekmesSpacing.Medium))
         Text(
             blockRangeLabel(block),
             style = MaterialTheme.typography.labelLarge,
             color = MaterialTheme.colorScheme.primary,
-            modifier = Modifier.padding(top = 4.dp),
+            modifier = Modifier.padding(start = SekmesSpacing.Medium, top = SekmesSpacing.XxxSmall, end = SekmesSpacing.Medium),
         )
-        Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-            Button(onClick = onDictionary, modifier = Modifier.weight(1f)) { Text("Словарь блока") }
-            Button(onClick = onQuiz, modifier = Modifier.weight(1f)) { Text("Тест по блоку") }
+        Column(Modifier.padding(horizontal = SekmesSpacing.Medium), verticalArrangement = Arrangement.spacedBy(SekmesSpacing.XSmall)) {
+            SekmesActionRow("Словарь блока", "Термины этого раздела", Icons.Rounded.MenuBook, onDictionary, highlighted = true)
+            SekmesActionRow("Тест по блоку", "Проверить знания", Icons.Rounded.FactCheck, onQuiz)
         }
-        Spacer(Modifier.height(8.dp))
-        LazyColumn(modifier = Modifier.weight(1f)) {
+        LazyColumn(modifier = Modifier.weight(1f), contentPadding = androidx.compose.foundation.layout.PaddingValues(SekmesSpacing.Medium), verticalArrangement = Arrangement.spacedBy(SekmesSpacing.XSmall)) {
             items(content, key = ConstitutionContent::id) { item ->
                 Card(
                     onClick = { onContentSelected(item.id) },
-                    modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp),
+                    modifier = Modifier.fillMaxWidth(),
                     colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant),
                 ) {
-                    Column(modifier = Modifier.padding(16.dp)) {
+                    Column(modifier = Modifier.padding(SekmesSpacing.Small)) {
                         Text(contentLabel(item), style = MaterialTheme.typography.titleMedium)
                         Text(item.parts.first().lt, style = MaterialTheme.typography.bodyMedium, maxLines = 2)
                     }
@@ -153,15 +157,15 @@ fun ConstitutionArticleScreen(
     var showTranslation by rememberSaveable(contentId) { mutableStateOf(true) }
     var selectedWordId by rememberSaveable(contentId) { mutableStateOf<WordId?>(null) }
 
-    Column(modifier = Modifier.fillMaxSize().padding(16.dp)) {
-        ScreenHeader(title = contentLabel(content), onBack = onBack)
+    Column(modifier = Modifier.fillMaxSize()) {
+        SekmesTopAppBar(title = contentLabel(content), onBack = onBack)
         if (content is ConstitutionArticle) {
-            Text(content.sectionTitle, style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.primary)
+            Text(content.sectionTitle, style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.primary, modifier = Modifier.padding(horizontal = SekmesSpacing.Medium))
         }
-        TextButton(onClick = { showTranslation = !showTranslation }) {
+        TextButton(onClick = { showTranslation = !showTranslation }, modifier = Modifier.padding(horizontal = SekmesSpacing.Medium)) {
             Text(if (showTranslation) "Скрыть русский перевод" else "Показать русский перевод")
         }
-        LazyColumn(modifier = Modifier.weight(1f)) {
+        LazyColumn(modifier = Modifier.weight(1f), contentPadding = androidx.compose.foundation.layout.PaddingValues(SekmesSpacing.Medium), verticalArrangement = Arrangement.spacedBy(SekmesSpacing.XSmall)) {
             items(content.parts, key = ConstitutionPart::id) { part ->
                 ConstitutionPartCard(
                     part = part,
@@ -215,10 +219,10 @@ private fun ConstitutionPartCard(
     onTermSelected: (WordId) -> Unit,
 ) {
     Card(
-        modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp),
+        modifier = Modifier.fillMaxWidth(),
         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant),
     ) {
-        Column(modifier = Modifier.padding(16.dp)) {
+        Column(modifier = Modifier.padding(SekmesSpacing.Small)) {
             if (part.itemNumber != null) {
                 Text("Пункт ${part.itemNumber}", style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.primary)
             }
@@ -229,7 +233,7 @@ private fun ConstitutionPartCard(
                 onTermSelected = onTermSelected,
             )
             if (showTranslation) {
-                Spacer(Modifier.height(8.dp))
+                Spacer(Modifier.height(SekmesSpacing.XSmall))
                 LinkedConstitutionText(
                     text = part.ru,
                     numericFragments = part.ruNumericFragments,
@@ -336,14 +340,6 @@ private fun ConstitutionTermDialog(word: DictionaryEntry, onDismiss: () -> Unit)
             }
         },
     )
-}
-
-@Composable
-private fun ScreenHeader(title: String, onBack: () -> Unit) {
-    Row(verticalAlignment = Alignment.CenterVertically) {
-        IconButton(onClick = onBack) { Text("←", fontSize = 24.sp) }
-        Text(title, style = MaterialTheme.typography.headlineSmall)
-    }
 }
 
 private fun constitutionWords(blockId: ConstitutionBlockId?): List<Word> {
