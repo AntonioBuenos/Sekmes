@@ -14,7 +14,7 @@ class CatalogLoaderTest {
         val context = ApplicationProvider.getApplicationContext<android.content.Context>()
         val catalog = AssetCatalogLoader(context.assets).load()
 
-        assertEquals(54, VISUAL_CARD_ASSETS.size)
+        assertEquals(204, VISUAL_CARD_ASSETS.size)
         assertEquals(VISUAL_CARD_ASSETS.size, VISUAL_CARD_ASSETS.map { it.wordId }.distinct().size)
         assertTrue(VISUAL_CARD_ASSETS.all { asset ->
             catalog.wordById[asset.wordId]?.partOfSpeech == PartOfSpeech.NOUN
